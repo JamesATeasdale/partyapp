@@ -1,86 +1,366 @@
 [
-  "Read out the last dirty text you sent",
-  "Eat five spoonfuls of a condiment of your choice",
-  "Try to juggle 3 things of the group's choice",
-  "Pretend to be a food item of your choice",
-  "Show the most embarrassing photo on your phone",
-  "Show the last five people you texted and what the messages said",
-  "Let the rest of the group DM someone from your Instagram account",
-  "Eat a raw piece of garlic",
-  "Do 100 squats",
-  "Let the group look in your Instagram DMs",
-  "Show us your screen time report",
-  "Keep three ice cubes in your mouth until they melt",
-  "Say something dirty to the person on your left",
-  "Give a foot massage to the person on your right",
-  "Put 10 different available liquids into a cup and drink it",
-  "Yell out the first word that comes to your mind",
-  "Give a lap dance to someone of your choice",
-  "Repeat everything the person on your right is saying until it's your turn again",
-  "Remove four items of clothing",
-  "Like the first 15 posts on your Facebook newsfeed",
-  "Eat a spoonful of mustard",
-  "Keep your eyes closed until it's your go again",
-  "Try and get all the toes on one foot in your mouth",
-  "Send a sext to the last person in your phonebook",
-  "Show your orgasm face",
-  "Seductively eat a banana",
-  "Empty out your wallet/purse and show everyone what's inside",
-  "Do your best sexy crawl",
-  "Pretend to be the person to your right for 10 minutes",
-  "Eat a snack without using your hands",
-  "Whisper a secret to the person on your left",
-  "Say two honest things about everyone else in the group",
-  "Twerk for a minute",
-  "Try and make the group laugh as quickly as possible",
-  "Try to put your whole fist in your mouth",
-  "Let another person in the group touch up your makeup",
-  "Tell everyone an embarrassing story about yourself",
-  "Try to lick your elbow",
-  "Peel a banana with your toes",
-  "Say everything in a whisper for the next 10 minutes",
-  "Smell another player's armpit",
-  "Talk in an American accent for the rest of the evening",
-  "Do your best celebrity impression",
-  "Play air guitar for 2 minutes straight",
-  "Post the oldest selfie on your phone on Instagram Stories",
-  "Tell the saddest story you know",
-  "Howl like a wolf for two minutes",
-  "Dance without music for two minutes",
-  "Pole dance with an imaginary pole",
-  "Belt out the chorus of a cheesy ballad at full volume",
-  "Let someone else tickle you and try not to laugh",
-  "Put as many snacks into your mouth at once as you can",
-  "Scroll through your phone book until someone says stop. You either have to call or delete that person.",
-  "Put your clothing on backwards for the rest of the evening",
-  "Down your drink (responsibly)",
-  "Try and make yourself cry in front of the group",
-  "Give a celebrity lookalike for every person in the room",
-  "Tell the group two truths and a lie, and they have to guess which one the lie is",
-  "Attempt to impersonate everyone in the room",
-  "Reply to the first five Instagram Stories on your timeline",
-  "Share the first celebrity on your timeline's Instagram to your Story",
-  "Put on as many layers as possible in 60 seconds",
-  "Fill your mouth with drink and gargle your answer to the next Truth",
-  "Make another player jump in the next 10 minutes",
-  "Smile as widely as you can and hold it for two minutes",
-  "Hold your drink with two hands for the rest of the evening",
-  "Attempt the first TikTok dance on your for you page",
-  "Sit on the floor for the rest of the evening",
-  "Put on make-up without a mirror and leave it like that for the rest of the game",
-  "Give a personalised insult to everyone in the room",
-  "Try not to laugh for the next 10 minutes",
-  "For the next 10 minutes, every time someone asks you something, respond with a bark",
-  "Let the person next to you wax you wherever they want",
-  "Call the first person in your phonebook and howl like a wolf",
-  "Eat a raw egg",
-  "Do a Facebook Live and say everything your friends tell you to",
-  "Update your relationship status to 'engaged' on Facebook",
-  "Download the Wetherspoons app and order a random food item to someone's table",
-  "Neck the drink (responsibly) of the person on your right",
-  "Sit in the corner of the room without speaking to anyone for the next 10 minutes",
-  "Call a person in the room's dad and tell him you think he's sexy",
-  "Let someone order something random on your Amazon account (£10 or under)",
-  "Do the cinnamon challenge",
-  "Run out of the house and shout \"I'm not like a regular mom, I'm a cool mom!\""
+  {
+    "question": "Read out the last dirty text you sent",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Eat five spoonfuls of a condiment of your choice",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Try to juggle 3 things of the group's choice",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Pretend to be a food item of your choice",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Show the most embarrassing photo on your phone",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Show the last five people you texted and what the messages said",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Let the rest of the group DM someone from your Instagram account",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "Eat a raw piece of garlic", "likes": 0, "category": "na" },
+  { "question": "Do 100 squats", "likes": 0, "category": "na" },
+  {
+    "question": "Let the group look in your Instagram DMs",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Show us your screen time report",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Keep three ice cubes in your mouth until they melt",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Say something dirty to the person on your left",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Give a foot massage to the person on your right",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Put 10 different available liquids into a cup and drink it",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Yell out the first word that comes to your mind",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Give a lap dance to someone of your choice",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Repeat everything the person on your right is saying until it's your turn again",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "Remove four items of clothing", "likes": 0, "category": "na" },
+  {
+    "question": "Like the first 15 posts on your Facebook newsfeed",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "Eat a spoonful of mustard", "likes": 0, "category": "na" },
+  {
+    "question": "Keep your eyes closed until it's your go again",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Try and get all the toes on one foot in your mouth",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Send a sext to the last person in your phonebook",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "Show your orgasm face", "likes": 0, "category": "na" },
+  { "question": "Seductively eat a banana", "likes": 0, "category": "na" },
+  {
+    "question": "Empty out your wallet/purse and show everyone what's inside",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "Do your best sexy crawl", "likes": 0, "category": "na" },
+  {
+    "question": "Pretend to be the person to your right for 10 minutes",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Eat a snack without using your hands",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Whisper a secret to the person on your left",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Say two honest things about everyone else in the group",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "Twerk for a minute", "likes": 0, "category": "na" },
+  {
+    "question": "Try and make the group laugh as quickly as possible",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Try to put your whole fist in your mouth",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Let another person in the group touch up your makeup",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Tell everyone an embarrassing story about yourself",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "Try to lick your elbow", "likes": 0, "category": "na" },
+  { "question": "Peel a banana with your toes", "likes": 0, "category": "na" },
+  {
+    "question": "Say everything in a whisper for the next 10 minutes",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "Smell another player's armpit", "likes": 0, "category": "na" },
+  {
+    "question": "Talk in an American accent for the rest of the evening",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Do your best celebrity impression",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Play air guitar for 2 minutes straight",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Post the oldest selfie on your phone on Instagram Stories",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Tell the saddest story you know",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Howl like a wolf for two minutes",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Dance without music for two minutes",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Pole dance with an imaginary pole",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Belt out the chorus of a cheesy ballad at full volume",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Let someone else tickle you and try not to laugh",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Put as many snacks into your mouth at once as you can",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Scroll through your phone book until someone says stop. You either have to call or delete that person.",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Put your clothing on backwards for the rest of the evening",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "Down your drink (responsibly)", "likes": 0, "category": "na" },
+  {
+    "question": "Try and make yourself cry in front of the group",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Give a celebrity lookalike for every person in the room",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Tell the group two truths and a lie, and they have to guess which one the lie is",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Attempt to impersonate everyone in the room",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Reply to the first five Instagram Stories on your timeline",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Share the first celebrity on your timeline's Instagram to your Story",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Put on as many layers as possible in 60 seconds",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Fill your mouth with drink and gargle your answer to the next Truth",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Make another player jump in the next 10 minutes",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Smile as widely as you can and hold it for two minutes",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Hold your drink with two hands for the rest of the evening",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Attempt the first TikTok dance on your for you page",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Sit on the floor for the rest of the evening",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Put on make-up without a mirror and leave it like that for the rest of the game",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Give a personalised insult to everyone in the room",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Try not to laugh for the next 10 minutes",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "For the next 10 minutes, every time someone asks you something, respond with a bark",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Let the person next to you wax you wherever they want",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Call the first person in your phonebook and howl like a wolf",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "Eat a raw egg", "likes": 0, "category": "na" },
+  {
+    "question": "Do a Facebook Live and say everything your friends tell you to",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Update your relationship status to 'engaged' on Facebook",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Download the Wetherspoons app and order a random food item to someone's table",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Neck the drink (responsibly) of the person on your right",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Sit in the corner of the room without speaking to anyone for the next 10 minutes",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Call a person in the room's dad and tell him you think he's sexy",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Let someone order something random on your Amazon account (\u00a310 or under)",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "Do the cinnamon challenge", "likes": 0, "category": "na" },
+  {
+    "question": "Run out of the house and shout \"I'm not like a regular mom, I'm a cool mom!\"",
+    "likes": 0,
+    "category": "na"
+  }
 ]

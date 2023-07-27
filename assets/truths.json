@@ -1,93 +1,409 @@
 [
-  "When was the last time you lied?",
-  "What's the worst thing you've ever done at work?",
-  "When was the last time you cried?",
-  "What's your biggest fear?",
-  "What's your biggest fantasy?",
-  "Do you have any fetishes?",
-  "Who's the last person you searched on Instagram?",
-  "What's something you're glad your family doesn't know about you?",
-  "Have you ever cheated on someone?",
-  "Where's the weirdest place you peed?",
-  "What's the worst thing you've ever done?",
-  "What's the strangest thing you've ever eaten?",
-  "What's your relationship dealbreaker?",
-  "What's a secret you've never told anyone?",
-  "Do you have a hidden talent?",
-  "Who was your first celebrity crush?",
-  "What are your thoughts on polyamory?",
-  "What's the worst intimate experience you've ever had?",
-  "What's the best intimate experience you've ever had?",
-  "Have you ever cheated in an exam?",
-  "If you were going to be on a reality TV show, which would it be?",
-  "What's the drunkest you've ever been?",
-  "Have you ever broken the law?",
-  "What's the most embarrassing thing you've ever done?",
-  "What's your biggest insecurity?",
-  "Have you ever stayed friends with someone because it benefitted you beyond just the friendship?",
-  "What's the biggest mistake you've ever made?",
-  "What's the most disgusting thing you've ever done?",
-  "Who would you like to kiss in this room?",
-  "What's one thing you hate people knowing about you?",
-  "What's the worst thing anyone's ever done to you?",
-  "What's the best thing anyone's ever done for you?",
-  "Have you ever had a run in with the law?",
-  "What's your worst habit?",
-  "What's the most embarrassing thing you've done in a taxi?",
-  "What's the worst thing you've ever said to anyone?",
-  "Have you ever peed in the shower?",
-  "What's the strangest dream you've had?",
-  "Have you ever been caught doing something you shouldn't have?",
-  "What's the worst date you've been on?",
-  "What's the best date you've been on?",
-  "What happened on the latest night out you've ever had?",
-  "What's your biggest regret?",
-  "What's the biggest misconception about you?",
-  "Have you ever said something you regret about someone in this room?",
-  "What's one thing you wish people knew about you?",
-  "Where's the weirdest place you've had sex?",
-  "Why did your last relationship break down?",
-  "Have you ever lied to get out of a bad date?",
-  "What's the most trouble you've been in?",
-  "When did you last have sex outside?",
-  "What's the worst thing you've lied about?",
-  "What's one thing you wish you'd lied about?",
-  "What's the best piece of advice you've been given?",
-  "What's the most you've spent on a night out?",
-  "Have you ever returned or re-gifted a present?",
-  "Name a time you think you were a bad partner",
-  "What's your guilty pleasure?",
-  "What's one thing you only do when you're alone?",
-  "If you had to get back with an ex, who would you choose?",
-  "If you had to cut one friend out of your life, who would it be?",
-  "Do you have a favourite friend?",
-  "Do you have a favourite sibling?",
-  "What's the strangest rumour you've heard about yourself?",
-  "What's your biggest turn on?",
-  "What's your favourite gross food combination?",
-  "What's the silliest reason you've left a club early?",
-  "What have you purchased that's been the biggest waste of money?",
-  "If you could swap lives with someone in this room, who would it be?",
-  "Tell me about your first kiss",
-  "What was the most inappropriate time you farted?",
-  "What's something you really hope your family never finds out about?",
-  "What's the weirdest lie you've ever told?",
-  "Do you have any fake social media accounts?",
-  "Have you ever peed in the pool?",
-  "Who do you think is the worst-dressed person in this room?",
-  "Have you ever practised kissing in a mirror?",
-  "How would you rate your looks on a scale of 1 to 10?",
-  "What gives you the ick?",
-  "Have you ever told a lie about your BFF to make yourself look better?",
-  "What's your worst fashion moment?",
-  "What's your biggest pet peeve?",
-  "What TV character do you relate to the most?",
-  "What celebrity do you look up to?",
-  "Who do you like best - Kris, Kourtney, Kim, Khloé, Kendall or Kylie?",
-  "If you could be one celebrity for a day, who would it be?",
-  "Have you ever dined and dashed?",
-  "What's the weirdest thing you've ever eaten?",
-  "If you could do any job in the world, what would it be?",
-  "What's your dream life?",
-  "What do you value the most - money, fame, success, friends, family, etc?"
+  {
+    "question": "When was the last time you lied?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's the worst thing you've ever done at work?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "When was the last time you cried?",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "What's your biggest fear?", "likes": 0, "category": "na" },
+  { "question": "What's your biggest fantasy?", "likes": 0, "category": "na" },
+  { "question": "Do you have any fetishes?", "likes": 0, "category": "na" },
+  {
+    "question": "Who's the last person you searched on Instagram?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's something you're glad your family doesn't know about you?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever cheated on someone?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Where's the weirdest place you peed?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's the worst thing you've ever done?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's the strangest thing you've ever eaten?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's your relationship dealbreaker?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's a secret you've never told anyone?",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "Do you have a hidden talent?", "likes": 0, "category": "na" },
+  {
+    "question": "Who was your first celebrity crush?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What are your thoughts on polyamory?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's the worst intimate experience you've ever had?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's the best intimate experience you've ever had?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever cheated in an exam?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "If you were going to be on a reality TV show, which would it be?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's the drunkest you've ever been?",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "Have you ever broken the law?", "likes": 0, "category": "na" },
+  {
+    "question": "What's the most embarrassing thing you've ever done?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's your biggest insecurity?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever stayed friends with someone because it benefitted you beyond just the friendship?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's the biggest mistake you've ever made?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's the most disgusting thing you've ever done?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Who would you like to kiss in this room?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's one thing you hate people knowing about you?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's the worst thing anyone's ever done to you?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's the best thing anyone's ever done for you?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever had a run in with the law?",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "What's your worst habit?", "likes": 0, "category": "na" },
+  {
+    "question": "What's the most embarrassing thing you've done in a taxi?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's the worst thing you've ever said to anyone?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever peed in the shower?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's the strangest dream you've had?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever been caught doing something you shouldn't have?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's the worst date you've been on?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's the best date you've been on?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What happened on the latest night out you've ever had?",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "What's your biggest regret?", "likes": 0, "category": "na" },
+  {
+    "question": "What's the biggest misconception about you?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever said something you regret about someone in this room?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's one thing you wish people knew about you?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Where's the weirdest place you've had sex?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Why did your last relationship break down?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever lied to get out of a bad date?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's the most trouble you've been in?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "When did you last have sex outside?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's the worst thing you've lied about?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's one thing you wish you'd lied about?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's the best piece of advice you've been given?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's the most you've spent on a night out?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever returned or re-gifted a present?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Name a time you think you were a bad partner",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "What's your guilty pleasure?", "likes": 0, "category": "na" },
+  {
+    "question": "What's one thing you only do when you're alone?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "If you had to get back with an ex, who would you choose?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "If you had to cut one friend out of your life, who would it be?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Do you have a favourite friend?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Do you have a favourite sibling?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's the strangest rumour you've heard about yourself?",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "What's your biggest turn on?", "likes": 0, "category": "na" },
+  {
+    "question": "What's your favourite gross food combination?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's the silliest reason you've left a club early?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What have you purchased that's been the biggest waste of money?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "If you could swap lives with someone in this room, who would it be?",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "Tell me about your first kiss", "likes": 0, "category": "na" },
+  {
+    "question": "What was the most inappropriate time you farted?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's something you really hope your family never finds out about?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's the weirdest lie you've ever told?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Do you have any fake social media accounts?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever peed in the pool?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Who do you think is the worst-dressed person in this room?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever practised kissing in a mirror?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "How would you rate your looks on a scale of 1 to 10?",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "What gives you the ick?", "likes": 0, "category": "na" },
+  {
+    "question": "Have you ever told a lie about your BFF to make yourself look better?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's your worst fashion moment?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's your biggest pet peeve?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What TV character do you relate to the most?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What celebrity do you look up to?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Who do you like best - Kris, Kourtney, Kim, Khlo\u00e9, Kendall or Kylie?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "If you could be one celebrity for a day, who would it be?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever dined and dashed?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What's the weirdest thing you've ever eaten?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "If you could do any job in the world, what would it be?",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "What's your dream life?", "likes": 0, "category": "na" },
+  {
+    "question": "What do you value the most - money, fame, success, friends, family, etc?",
+    "likes": 0,
+    "category": "na"
+  }
 ]
