@@ -25,7 +25,7 @@ export default function Welcome({ setPage, players, setPlayers }) {
           <Text tw="text-white font-extrabold text-xl">{err}</Text>
         </View>
       )}
-      <View tw="m-6 flex-row">
+      <View tw="w-11/12 m-6 flex-row bg-[#341651] p-4 rounded-3xl justify-center">
         {title.map((letter, index) => {
           return (
             <Animated.View entering={FadeIn.duration(index * 200)}>
@@ -46,7 +46,35 @@ export default function Welcome({ setPage, players, setPlayers }) {
         setPlayers={setPlayers}
         setIsAdd={setIsAdd}
       />
-      <View tw="w-full h-1/6 m-4 bg-[#00adf0] border-2">
+      <View tw="flex w-11/12 m-4 bg-[#341651] rounded-xl h-2/6 flex-row flex-wrap p-2 content-center">
+        <TouchableOpacity
+          tw="bg-red-900 basis-1/2 h-1/2 justify-center"
+          onPress={() => {
+            setPage("truth or dare");
+          }}>
+          <Text tw="text-center p-6 text-xl font-black ">Truth Or Dare</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          tw="bg-blue-900 basis-1/2 h-1/2 justify-center"
+          onPress={() => {
+            setPage("truth or dare");
+          }}>
+          <Text tw="text-center p-6 text-xl font-black">Truth Or Dare</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          tw="bg-blue-900 basis-1/2 h-1/2 justify-center"
+          onPress={() => {
+            setPage("truth or dare");
+          }}>
+          <Text tw="text-center p-6 text-xl font-black">Truth Or Dare</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          tw="bg-green-900 basis-1/2 h-1/2 justify-center"
+          onPress={() => {
+            setPage("truth or dare");
+          }}>
+          <Text tw="text-center p-6 text-xl font-black">Truth Or Dare</Text>
+        </TouchableOpacity>
         <View
           style={{
             width: 144,
@@ -72,16 +100,7 @@ export default function Welcome({ setPage, players, setPlayers }) {
             Sets
           </Text>
         </View>
-        <ScrollView>
-          <TouchableOpacity
-            onPress={() => {
-              setPage("truth or dare");
-            }}>
-            <Text tw="text-center p-6 text-xl font-black">Truth Or Dare</Text>
-          </TouchableOpacity>
-        </ScrollView>
       </View>
-      <Sets />
       {isAdd && (
         <AddPlayerForm
           players={players}

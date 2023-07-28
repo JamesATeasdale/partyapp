@@ -19,7 +19,7 @@ export default function App() {
   }, [players, page]);
 
   return (
-    <View tw="bg-[#0f0f0f]">
+    <View tw="bg-[#190927]">
       <LottieView
         tw="absolute h-full"
         ref={LottieRef}

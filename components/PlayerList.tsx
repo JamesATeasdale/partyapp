@@ -21,17 +21,19 @@ export default function PlayerList({ setIsAdd, setPlayers, players }) {
   }
 
   return (
-    <View tw="bg-[#696969] w-11/12 ml-4 mr-4 h-2/6 rounded-xl">
+    <View tw="bg-[#341651] w-11/12 h-2/6 rounded-xl">
       <ScrollView>
-        <View tw="flex-row flex-wrap ">
-          {players.map((player = { name: "", color: "" }) => (
-            <Animated.View key={player.name} entering={PinwheelIn}>
+        <View tw="flex-row flex-wrap justify-center">
+          {players.map((player = { name: "", color: "" }, index = 0) => (
+            <Animated.View
+              key={player.name}
+              entering={PinwheelIn.duration(Math.floor(Math.random() * 1000))}>
               <TouchableOpacity
                 key={player.name}
                 style={{ backgroundColor: player.color }}
-                tw={"m-1 p-1 px-2 rounded-xl border-2 border-white"}
+                tw="m-1 p-1 px-2 rounded-xl"
                 onPress={() => confirm(player.name)}>
-                <Text tw="text-xl font-bold">{player.name}</Text>
+                <Text tw="text-2xl font-bold">{player.name}</Text>
               </TouchableOpacity>
             </Animated.View>
           ))}
