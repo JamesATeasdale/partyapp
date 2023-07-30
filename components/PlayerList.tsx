@@ -1,6 +1,6 @@
 import { Text, View, ScrollView, TouchableOpacity, Alert } from "react-native";
 import { useEffect, useRef, useState } from "react";
-import Animated, { PinwheelIn, ZoomOut } from "react-native-reanimated";
+import Animated, { PinwheelIn, ZoomIn, ZoomOut } from "react-native-reanimated";
 
 export default function PlayerList({ setIsAdd, setPlayers, players }) {
   function confirm(playername) {
@@ -27,11 +27,11 @@ export default function PlayerList({ setIsAdd, setPlayers, players }) {
           {players.map((player = { name: "", color: "" }, index = 0) => (
             <Animated.View
               key={player.name}
-              entering={PinwheelIn.duration(Math.floor(Math.random() * 1000))}>
+              entering={ZoomIn.duration(Math.floor(Math.random() * 1200))}>
               <TouchableOpacity
                 key={player.name}
                 style={{ backgroundColor: player.color }}
-                tw="m-1 p-1 px-2 rounded-xl"
+                tw="px-2 rounded-xl border-white border-4"
                 onPress={() => confirm(player.name)}>
                 <Text tw="text-2xl font-bold">{player.name}</Text>
               </TouchableOpacity>
