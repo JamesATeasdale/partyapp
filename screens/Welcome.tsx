@@ -28,7 +28,7 @@ export default function Welcome({ setPage, players, setPlayers }) {
       <View tw="w-11/12 m-6 flex-row bg-[#341651] p-4 rounded-3xl justify-center">
         {title.map((letter, index) => {
           return (
-            <Animated.View entering={FadeIn.duration(index * 200)}>
+            <Animated.View key={index} entering={FadeIn.duration(index * 200)}>
               <Text
                 style={{
                   fontSize: 40,
