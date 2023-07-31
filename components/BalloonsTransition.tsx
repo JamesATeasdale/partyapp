@@ -3,9 +3,7 @@ import { useEffect, useRef } from "react";
 
 export default function BalloonTransition({ players }) {
   const LottieRef = useRef(null);
-  useEffect(() => {
-    LottieRef.current?.play();
-  }, [players]);
+  useEffect(() => LottieRef.current?.play(), [players]);
 
   return (
     <LottieView

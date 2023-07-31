@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect, createContext } from "react";
+import { useState } from "react";
 import Welcome from "./screens/Welcome";
 import TruthOrDare from "./screens/TruthOrDare";
 import { NavigationContainer } from "@react-navigation/native";
@@ -18,6 +18,7 @@ export default function App() {
         initialRouteName="Party Animals"
         screenOptions={{
           headerShown: false,
+          animation: "fade",
         }}>
         <Stack.Screen name="Party Animals">
           {(props) => <Welcome setPlayers={setPlayers} players={players} />}

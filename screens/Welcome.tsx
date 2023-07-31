@@ -1,18 +1,10 @@
-import {
-  View,
-  Text,
-  StyleSheet,
-  ImageBackground,
-  TouchableOpacity,
-  ScrollView,
-} from "react-native";
-import Animated, { FadeIn, ZoomIn } from "react-native-reanimated";
+import { View, Text } from "react-native";
 import PlayerList from "../components/PlayerList";
-import { useState, useEffect, createContext } from "react";
+import { useState } from "react";
 import Sets from "../components/Sets";
 import AddPlayerForm from "../components/AddPlayerForm";
-import colors from "../assets/colors";
 import BalloonTransition from "../components/BalloonsTransition";
+import Header from "../components/Header";
 
 export default function Welcome({ players, setPlayers }) {
   const [isAdd, setIsAdd] = useState(false);
@@ -26,22 +18,7 @@ export default function Welcome({ players, setPlayers }) {
           <Text tw="text-white font-extrabold text-xl">{err}</Text>
         </View>
       )}
-      <View tw="w-11/12 m-6 flex-row bg-[#341651] p-4 rounded-3xl justify-center">
-        {"Party Animals".split("").map((letter, index) => {
-          return (
-            <Animated.View key={index} entering={ZoomIn.duration(index * 200)}>
-              <Text
-                style={{
-                  fontSize: 40,
-                  fontFamily: "Caprasimo-Regular",
-                  color: colors[Math.floor(Math.random() * colors.length)][1],
-                }}>
-                {letter}
-              </Text>
-            </Animated.View>
-          );
-        })}
-      </View>
+      <Header palette={"multi"} title={"Party Animals"} />
       <PlayerList
         players={players}
         setIsAdd={setIsAdd}

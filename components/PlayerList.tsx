@@ -1,5 +1,4 @@
 import { Text, View, ScrollView, TouchableOpacity, Alert } from "react-native";
-import { useEffect, useRef, useState } from "react";
 import Animated, { PinwheelIn, ZoomIn, ZoomOut } from "react-native-reanimated";
 
 export default function PlayerList({ setIsAdd, setPlayers, players }) {
@@ -11,11 +10,10 @@ export default function PlayerList({ setIsAdd, setPlayers, players }) {
       },
       {
         text: "Confirm",
-        onPress: () => {
-          const copy = [...players];
-          copy.splice(copy.indexOf(playername), 1);
-          setPlayers(copy);
-        },
+        onPress: () =>
+          setPlayers(
+            [...players].filter((player) => player.name !== playername)
+          ),
       },
     ]);
   }

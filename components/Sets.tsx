@@ -7,9 +7,7 @@ export default function Sets() {
     <View tw="flex w-11/12 m-4 bg-[#341651] rounded-xl h-2/6 flex-row flex-wrap p-2 content-center">
       <TouchableOpacity
         tw="bg-[#2c935f] basis-1/2 h-1/2 justify-center border-4 border-[#341651]"
-        onPress={() => {
-          navigation.navigate("Truth or Dare");
-        }}>
+        onPress={() => navigation.navigate("Truth or Dare")}>
         <Text tw="text-center p-6 text-xl font-black ">Truth Or Dare</Text>
       </TouchableOpacity>
       <TouchableOpacity

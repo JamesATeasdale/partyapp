@@ -1,13 +1,35 @@
-import { TouchableOpacity, View, Text, Image, ScrollView } from "react-native";
+import {
+  TouchableOpacity,
+  View,
+  Text,
+  Image,
+  ScrollView,
+  Alert,
+} from "react-native";
 
-export default function GameRanking({ players }) {
+export default function GameRanking({ players, setPlayers }) {
+  function confirm(playername) {
+    Alert.alert("Delete " + playername + "?", "", [
+      {
+        text: "Cancel",
+        style: "cancel",
+      },
+      {
+        text: "Confirm",
+        onPress: () =>
+          setPlayers(
+            [...players].filter((player) => player.name !== playername)
+          ),
+      },
+    ]);
+  }
   return (
     <View tw="h-1/6 w-full self-center justify-center py-2 m-4 bg-[#2c935f] ">
       <View tw="w-full h-5/6 p-2 rounded-xl flex-row self-center justify-center">
         {players
           .sort((a, b) => b.score - a.score)
           .filter((place, index) => index < 3)
-          .map((player, index) => {
+          .map((player = { name: "" }, index = 0) => {
             let colour;
             index === 0
               ? (colour = "gold")
@@ -30,12 +52,13 @@ export default function GameRanking({ players }) {
           })}
       </View>
       <View tw="w-full flex-row bg-[#2c935f]">
-        <ScrollView tw="" horizontal={true}>
+        <ScrollView horizontal={true}>
           {players.map((player = { name: "", color: "" }, index = 0) => (
             <TouchableOpacity
+              onPress={() => confirm(player.name)}
               key={player.name}
               style={{ backgroundColor: player.color }}
-              tw="m-1 p-2 rounded-xl ">
+              tw="mx-1 p-2 rounded-xl border-4 border-white">
               <Text tw="text-xl font-extrabold">{player.name}</Text>
             </TouchableOpacity>
           ))}

@@ -1,7 +1,7 @@
 import { View, Text, TextInput, TouchableOpacity, Alert } from "react-native";
 import Animated, { FadeIn, FadeOut } from "react-native-reanimated";
 import { useState, useRef } from "react";
-import colors from "../assets/colors";
+import { colors } from "../assets/colors";
 
 export default function AddPlayerForm({
   setIsAdd,
