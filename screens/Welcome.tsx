@@ -8,19 +8,19 @@ import {
 } from "react-native";
 import Animated, { FadeIn, ZoomIn } from "react-native-reanimated";
 import PlayerList from "../components/PlayerList";
-import { useState, useEffect } from "react";
+import { useState, useEffect, createContext } from "react";
 import Sets from "../components/Sets";
 import AddPlayerForm from "../components/AddPlayerForm";
 import colors from "../assets/colors";
 import BalloonTransition from "../components/BalloonsTransition";
 
-export default function Welcome({ page, setPage, players, setPlayers }) {
+export default function Welcome({ players, setPlayers }) {
   const [isAdd, setIsAdd] = useState(false);
   const [err, setErr] = useState("");
 
   return (
     <View tw="items-center h-full bg-[#190927]">
-      <BalloonTransition players={players} page={page} />
+      <BalloonTransition players={players} />
       {err && (
         <View tw="absolute w-full top-0 bg-red-900 items-center">
           <Text tw="text-white font-extrabold text-xl">{err}</Text>
@@ -44,14 +44,14 @@ export default function Welcome({ page, setPage, players, setPlayers }) {
       </View>
       <PlayerList
         players={players}
-        setPlayers={setPlayers}
         setIsAdd={setIsAdd}
+        setPlayers={setPlayers}
       />
-      <Sets setPage={setPage} />
+      <Sets />
       {isAdd && (
         <AddPlayerForm
-          players={players}
           setPlayers={setPlayers}
+          players={players}
           setIsAdd={setIsAdd}
           setErr={setErr}
         />

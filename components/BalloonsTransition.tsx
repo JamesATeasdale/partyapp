@@ -1,11 +1,11 @@
 import LottieView from "lottie-react-native";
 import { useEffect, useRef } from "react";
 
-export default function BalloonTransition({ players, page }) {
+export default function BalloonTransition({ players }) {
   const LottieRef = useRef(null);
   useEffect(() => {
     LottieRef.current?.play();
-  }, [players, page]);
+  }, [players]);
 
   return (
     <LottieView
