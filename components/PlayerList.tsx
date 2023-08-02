@@ -19,9 +19,9 @@ export default function PlayerList({ setIsAdd, setPlayers, players }) {
   }
 
   return (
-    <View tw="bg-[#341651] w-11/12 h-2/6 rounded-xl">
+    <View tw="bg-[#341651] w-11/12 max-h-2/6 rounded-xl">
       <ScrollView>
-        <View tw="flex-row flex-wrap justify-center">
+        <View tw="flex-row flex-wrap justify-center pb-8">
           {players.map((player = { name: "", color: "" }, index = 0) => (
             <Animated.View
               key={player.name}

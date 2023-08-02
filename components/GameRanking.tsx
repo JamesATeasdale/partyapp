@@ -24,8 +24,8 @@ export default function GameRanking({ players, setPlayers }) {
     ]);
   }
   return (
-    <View tw="h-1/6 w-full self-center justify-center py-2 m-4 bg-[#2c935f] ">
-      <View tw="w-full h-5/6 p-2 rounded-xl flex-row self-center justify-center">
+    <View tw="h-1/5 w-full self-center items-center bg-[#2c935f]">
+      <View tw="h-4/6 p-2 rounded-xl flex-row">
         {players
           .sort((a, b) => b.score - a.score)
           .filter((place, index) => index < 3)
@@ -38,10 +38,9 @@ export default function GameRanking({ players, setPlayers }) {
               : (colour = "brown");
             return (
               <TouchableOpacity
-                onPress={() => {}}
                 key={player.name}
                 style={{ borderColor: colour, backgroundColor: colour }}
-                tw="basis-1/3 mx-2 items-center justify-center border-8 rounded-t-2xl">
+                tw="w-1/3 mx-1 items-center justify-center border-8 rounded-t-2xl">
                 <Image
                   source={require("../assets/Balloon_arch.jpg")}
                   tw="w-full h-full absolute rounded-t-xl"
@@ -51,7 +50,7 @@ export default function GameRanking({ players, setPlayers }) {
             );
           })}
       </View>
-      <View tw="w-full flex-row bg-[#2c935f]">
+      <View tw="w-full pb-2 h-2/6 flex-row bg-[#2c935f]">
         <ScrollView horizontal={true}>
           {players.map((player = { name: "", color: "" }, index = 0) => (
             <TouchableOpacity
@@ -59,7 +58,7 @@ export default function GameRanking({ players, setPlayers }) {
               key={player.name}
               style={{ backgroundColor: player.color }}
               tw="mx-1 p-2 rounded-xl border-4 border-white">
-              <Text tw="text-xl font-extrabold">{player.name}</Text>
+              <Text tw="text-md font-extrabold">{player.name}</Text>
             </TouchableOpacity>
           ))}
         </ScrollView>

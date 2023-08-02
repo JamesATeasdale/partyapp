@@ -1,7 +1,7 @@
 import { View, Text, TextInput, TouchableOpacity, Alert } from "react-native";
 import Animated, { FadeIn, FadeOut } from "react-native-reanimated";
 import { useState, useRef } from "react";
-import { colors } from "../assets/colors";
+import theme from "../assets/colors";
 
 export default function AddPlayerForm({
   setIsAdd,
@@ -11,7 +11,7 @@ export default function AddPlayerForm({
 }) {
   const [addPlayer, setAddPlayer] = useState({
     name: "",
-    color: colors[Math.floor(Math.random() * colors.length)][1],
+    color: theme.multi[Math.floor(Math.random() * theme.multi.length)],
     score: 0,
   });
 

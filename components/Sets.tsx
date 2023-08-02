@@ -12,7 +12,7 @@ export default function Sets() {
       </TouchableOpacity>
       <TouchableOpacity
         tw="bg-[#2194eb] basis-1/2 h-1/2 justify-center border-4 border-[#341651]"
-        onPress={() => {}}>
+        onPress={() => navigation.navigate("Example")}>
         <Text tw="text-center p-6 text-xl font-black">Would you Rather?</Text>
       </TouchableOpacity>
       <TouchableOpacity
