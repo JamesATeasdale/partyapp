@@ -1,12 +1,5 @@
 import React, { useState } from "react";
-import {
-  StyleSheet,
-  Text,
-  Dimensions,
-  Animated,
-  PanResponder,
-  View,
-} from "react-native";
+import { Text, Dimensions, Animated, PanResponder } from "react-native";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
 

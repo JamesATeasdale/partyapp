@@ -18,11 +18,11 @@ export default function CardsScreen({ players, setPlayers }) {
     <View tw="h-full w-full items-center justify-center">
       {truths.map((item) => {
         const player = players[Math.floor(Math.random() * players.length)];
-
         return (
           <SwipeableCard
             setPlayers={setPlayers}
             players={players}
+            // setPlayer={setPlayer}
             player={player}
             key={item.question}
             item={item}
