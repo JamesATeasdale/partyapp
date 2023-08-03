@@ -31,8 +31,8 @@ export default function GameRanking({ players, setPlayers }) {
     ]);
   }
   return (
-    <View tw="h-1/5 w-full self-center items-center bg-[#2c935f]">
-      <View tw=" p-2 rounded-xl flex-row">
+    <View tw="h-36 w-full self-center items-center bg-[#2c935f]">
+      <View tw="p-2 rounded-xl flex-row">
         {players
           .sort((a, b) => b.score - a.score)
           .slice(0, 3)
@@ -51,16 +51,21 @@ export default function GameRanking({ players, setPlayers }) {
                 style={{
                   borderColor: colour,
                 }}
-                tw="basis-1/3 border-4 rounded-t-2xl mx-1 items-center justify-center flex-col"
+                tw="basis-1/3 border-4 rounded-t-2xl mx-1"
                 resizeMethod="scale"
                 source={images[index]}>
-                <Text tw="font-black text-black text-3xl w-full text-center">
+                <Text tw="font-black text-black text-3xl">
                   {index === 0
                     ? index + 1 + "ST"
                     : index === 1
                     ? index + 1 + "ND"
                     : index + 1 + "RD"}
                 </Text>
+                <View
+                  tw="bg-white absolute right-0 border-2 px-1 h-full border-gold rounded-tr-xl "
+                  style={{ borderColor: colour }}>
+                  <Text tw="font-black text-2xl">{player.score}</Text>
+                </View>
                 <TouchableOpacity
                   onPress={() => confirm(player.name)}
                   key={player.name}
@@ -68,19 +73,16 @@ export default function GameRanking({ players, setPlayers }) {
                     borderColor: colour,
                     backgroundColor: player.color,
                   }}
-                  tw="pl-1 border-t-4 flex-row w-full">
-                  <View tw=" items-center">
-                    <Text tw="text-xl font-extrabold">{player.name}</Text>
-                  </View>
-                  <View tw="bg-white px-2 items-center right-0 absolute bottom-0 border-l-2 border-black">
-                    <Text tw="font-black text-lg">{player.score}</Text>
-                  </View>
+                  tw=" border-t-4 h-10 justify-start ">
+                  <Text tw="text-2xl text-center font-extrabold">
+                    {player.name}
+                  </Text>
                 </TouchableOpacity>
               </ImageBackground>
             );
           })}
       </View>
-      <View tw="w-full pb-2 flex-row bg-[#2c935f]">
+      <View tw="w-full flex-row bg-[#2c935f]">
         <ScrollView horizontal={true}>
           {players
             .slice(3)
@@ -89,9 +91,9 @@ export default function GameRanking({ players, setPlayers }) {
                 onPress={() => confirm(player.name)}
                 key={player.name}
                 style={{ backgroundColor: player.color }}
-                tw="mx-1 items-center px-2 rounded-xl border-4 border-white flex-row w-36 h-10">
-                <Text tw="text-lg font-extrabold">{player.name}</Text>
-                <View tw="bg-white p-2  items-center -my-4 -mr-2 right-0 absolute px-3 rounded-r-2xl">
+                tw="mx-1 items-center px-2 rounded-xl border-4 border-white flex-row w-44 h-10">
+                <Text tw="text-2xl font-extrabold">{player.name}</Text>
+                <View tw="bg-white p-2 items-center right-0 absolute px-3 rounded-r-2xl">
                   <Text tw="font-black text-lg">{player.score}</Text>
                 </View>
               </TouchableOpacity>

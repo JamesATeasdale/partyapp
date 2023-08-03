@@ -1,40 +1,39 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import truths from "../assets/truths.json";
-import { View, Text } from "react-native";
+import { View } from "react-native";
 import SwipeableCard from "./SwipeCard";
 
 export default function CardsScreen({ players, setPlayers }) {
-  const [noMoreCard, setNoMoreCard] = useState(false);
-  const [sampleCardArray, setSampleCardArray] = useState(truths);
-  const [swipeDirection, setSwipeDirection] = useState("--");
   const [ind, setInd] = useState(0);
-  const [truth, setTruth] = useState(sampleCardArray[ind]);
+  const [truth, setTruth] = useState(truths[ind]);
+  const removeCard = () => setInd(ind + 1);
+  function shuffle(arr) {
+    return arr
+      .map((value) => ({ value, sort: Math.random() }))
+      .sort((a, b) => a.sort - b.sort)
+      .map(({ value }) => value);
+  }
+  const [shuffledPlayers, setShuffledPlayers] = useState(shuffle([...players]));
 
   useEffect(() => {
-    setTruth(sampleCardArray[ind]);
+    setTruth(truths[ind]);
   }, [ind]);
+  if (shuffledPlayers.length === 0) {
+    setShuffledPlayers(shuffle([...players]));
+  }
+  console.log(shuffledPlayers);
 
-  const removeCard = (question) => {
-    sampleCardArray.splice(
-      sampleCardArray.findIndex((item) => item.question == question),
-      1
-    );
-    setInd(ind + 1);
-  };
   return (
-    <View tw="h-full w-full items-center justify-center ">
+    <View tw="h-3/6 w-11/12 bg-[#0c3713] rounded-md mb-4 bottom-0 absolute">
       <SwipeableCard
         setPlayers={setPlayers}
         players={players}
-        player={players[Math.floor(Math.random() * players.length)]}
+        shuffledPlayers={shuffledPlayers}
+        setShuffledPlayers={setShuffledPlayers}
         key={truth.question}
         item={truth}
-        removeCard={() => removeCard(truth.question)}
-        swipedDirection={() => setSwipeDirection("--")}
+        removeCard={removeCard}
       />
-      {noMoreCard && (
-        <Text style={{ fontSize: 22, color: "#000" }}>No Cards Found.</Text>
-      )}
     </View>
   );
 }

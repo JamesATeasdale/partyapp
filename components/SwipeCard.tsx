@@ -1,21 +1,23 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import { Text, Dimensions, Animated, PanResponder, View } from "react-native";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
 
 export default function SwipeableCard({
-  player,
   players,
   setPlayers,
   item,
   removeCard,
-  swipedDirection,
+  shuffledPlayers,
+  setShuffledPlayers,
 }) {
   const [xPosition, setXPosition] = useState(new Animated.Value(0));
 
   let swipeDirection = "";
+  const [na, swipedDirection] = useState("--");
+  let shuffledPlayer = { name: "err", color: "red" };
+  shuffledPlayer = shuffledPlayers[0];
   let cardOpacity = new Animated.Value(1);
-  let cardOpacity2 = new Animated.Value(0);
   let rotateCard = xPosition.interpolate({
     inputRange: [-200, 0, 200],
     outputRange: ["-20deg", "0deg", "20deg"],
@@ -60,10 +62,15 @@ export default function SwipeableCard({
           }),
         ]).start(() => {
           setPlayers(
-            players.map((item) =>
-              item.name === player.name
-                ? { ...item, score: (item.score += 1) }
-                : item
+            players.map((player) =>
+              player.name === shuffledPlayer.name
+                ? { ...player, score: (player.score += 1) }
+                : player
+            )
+          );
+          setShuffledPlayers(
+            shuffledPlayers.filter(
+              (player) => player.name !== shuffledPlayer.name && player
             )
           );
           swipedDirection(swipeDirection);
@@ -82,6 +89,11 @@ export default function SwipeableCard({
             useNativeDriver: false,
           }),
         ]).start(() => {
+          setShuffledPlayers(
+            shuffledPlayers.filter(
+              (player) => player.name !== shuffledPlayer.name && player
+            )
+          );
           swipedDirection(swipeDirection);
           removeCard();
         });
@@ -92,16 +104,22 @@ export default function SwipeableCard({
   return (
     <Animated.View
       {...panResponder.panHandlers}
-      tw="align-center justify-center items-center absolute w-full h-full rounded-md"
+      tw="justify-center absolute w-full h-4/5 rounded-md bottom-0 bg-[#0c3713]"
       style={{
         opacity: cardOpacity,
-        backgroundColor: player.color,
+        backgroundColor: shuffledPlayer.color,
         transform: [{ translateX: xPosition }, { rotate: rotateCard }],
       }}>
-      <Text tw="font-black text-black text-3xl top-0 absolute ">
-        {player.name}
+      <View tw="top-0 w-full absolute h-10 items-center justify-center">
+        <Text tw="left-0 absolute">^</Text>
+        <Text tw="font-black text-black text-3xl w-2/3 text-center  underline">
+          {shuffledPlayer.name}
+        </Text>
+        <Text tw="right-0 absolute">v</Text>
+      </View>
+      <Text tw="text-black font-bold text-2xl text-center m-4">
+        {item.question}
       </Text>
-      <Text tw="text-black font-bold text-2xl">{item.question}</Text>
     </Animated.View>
   );
 }

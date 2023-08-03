@@ -3,7 +3,6 @@ import Welcome from "./screens/Welcome";
 import TruthOrDare from "./screens/TruthOrDare";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import Example from "./components/CardDeck";
 
 const Stack = createNativeStackNavigator();
 
@@ -30,9 +29,6 @@ export default function App() {
         </Stack.Screen>
         <Stack.Screen name="Truth or Dare">
           {(props) => <TruthOrDare setPlayers={setPlayers} players={players} />}
-        </Stack.Screen>
-        <Stack.Screen name="Example">
-          {(props) => <Example setPlayers={setPlayers} players={players} />}
         </Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>

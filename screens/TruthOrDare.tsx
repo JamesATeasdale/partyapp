@@ -9,9 +9,7 @@ export default function TruthOrDare({ players, setPlayers }) {
     <View tw="h-full items-center bg-[#0c3713]">
       <Header palette={"reds"} title={"Truth or Dare"} />
       <GameRanking players={players} setPlayers={setPlayers} />
-      <View tw="h-3/6 w-11/12 bg-[#2c935f] rounded-md m-4 bottom-0 absolute">
-        <CardsScreen players={players} setPlayers={setPlayers} />
-      </View>
+      <CardsScreen players={players} setPlayers={setPlayers} />
     </View>
   );
 }
