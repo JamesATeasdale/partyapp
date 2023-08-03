@@ -10,6 +10,7 @@ export default function SwipeableCard({
   removeCard,
   shuffledPlayers,
   setShuffledPlayers,
+  value,
 }) {
   const [xPosition, setXPosition] = useState(new Animated.Value(0));
 
@@ -64,7 +65,7 @@ export default function SwipeableCard({
           setPlayers(
             players.map((player) =>
               player.name === shuffledPlayer.name
-                ? { ...player, score: (player.score += 1) }
+                ? { ...player, score: (player.score += value) }
                 : player
             )
           );
@@ -74,7 +75,7 @@ export default function SwipeableCard({
             )
           );
           swipedDirection(swipeDirection);
-          removeCard();
+          removeCard(value);
         });
       } else if (gestureState.dx < -SCREEN_WIDTH + 150) {
         Animated.parallel([
@@ -95,7 +96,7 @@ export default function SwipeableCard({
             )
           );
           swipedDirection(swipeDirection);
-          removeCard();
+          removeCard(value);
         });
       }
     },
@@ -104,7 +105,7 @@ export default function SwipeableCard({
   return (
     <Animated.View
       {...panResponder.panHandlers}
-      tw="justify-center absolute w-full h-4/5 rounded-md bottom-0 bg-[#0c3713]"
+      tw="justify-center absolute h-3/6 w-11/12 rounded-md bottom-4 bg-[#0c3713]"
       style={{
         opacity: cardOpacity,
         backgroundColor: shuffledPlayer.color,
