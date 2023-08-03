@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Text, Dimensions, Animated, PanResponder } from "react-native";
+import React, { useEffect, useState } from "react";
+import { Text, Dimensions, Animated, PanResponder, View } from "react-native";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
 
@@ -15,6 +15,7 @@ export default function SwipeableCard({
 
   let swipeDirection = "";
   let cardOpacity = new Animated.Value(1);
+  let cardOpacity2 = new Animated.Value(0);
   let rotateCard = xPosition.interpolate({
     inputRange: [-200, 0, 200],
     outputRange: ["-20deg", "0deg", "20deg"],
@@ -93,8 +94,8 @@ export default function SwipeableCard({
       {...panResponder.panHandlers}
       tw="align-center justify-center items-center absolute w-full h-full rounded-md"
       style={{
-        backgroundColor: player.color,
         opacity: cardOpacity,
+        backgroundColor: player.color,
         transform: [{ translateX: xPosition }, { rotate: rotateCard }],
       }}>
       <Text tw="font-black text-black text-3xl top-0 absolute ">

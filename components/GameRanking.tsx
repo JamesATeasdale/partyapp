@@ -47,6 +47,7 @@ export default function GameRanking({ players, setPlayers }) {
             return (
               <ImageBackground
                 key={player.name}
+                imageStyle={{ borderRadius: 12 }}
                 style={{
                   borderColor: colour,
                 }}
@@ -63,12 +64,15 @@ export default function GameRanking({ players, setPlayers }) {
                 <TouchableOpacity
                   onPress={() => confirm(player.name)}
                   key={player.name}
-                  style={{ backgroundColor: player.color }}
-                  tw="items-center pl-1 border-white flex-row w-full">
-                  <Text tw="text-xl font-extrabold">{player.name}</Text>
-                  <View
-                    tw="bg-white px-2 items-center right-0 absolute"
-                    style={{}}>
+                  style={{
+                    borderColor: colour,
+                    backgroundColor: player.color,
+                  }}
+                  tw="pl-1 border-t-4 flex-row w-full">
+                  <View tw=" items-center">
+                    <Text tw="text-xl font-extrabold">{player.name}</Text>
+                  </View>
+                  <View tw="bg-white px-2 items-center right-0 absolute bottom-0 border-l-2 border-black">
                     <Text tw="font-black text-lg">{player.score}</Text>
                   </View>
                 </TouchableOpacity>
@@ -86,10 +90,8 @@ export default function GameRanking({ players, setPlayers }) {
                 key={player.name}
                 style={{ backgroundColor: player.color }}
                 tw="mx-1 items-center px-2 rounded-xl border-4 border-white flex-row w-36 h-10">
-                <Text tw="text-lg font-extrabold break-keep">
-                  {player.name}
-                </Text>
-                <View tw="bg-white p-2  items-center -my-4 -mr-2 rounded-r-2xl right-0 absolute px-3">
+                <Text tw="text-lg font-extrabold">{player.name}</Text>
+                <View tw="bg-white p-2  items-center -my-4 -mr-2 right-0 absolute px-3 rounded-r-2xl">
                   <Text tw="font-black text-lg">{player.score}</Text>
                 </View>
               </TouchableOpacity>
