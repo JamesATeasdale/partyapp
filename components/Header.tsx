@@ -20,7 +20,7 @@ export default function Header({ title }) {
             ? green.fg
             : "black",
       }}
-      tw="w-11/12 m-2 flex-row p-4 rounded-xl justify-center">
+      tw="w-11/12 m-2 flex-row p-4 rounded-t-xl justify-center">
       {route.name === "Party Animals" ? (
         title.split("").map((letter, index) => {
           return (

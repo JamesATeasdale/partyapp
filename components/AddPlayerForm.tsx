@@ -1,17 +1,17 @@
 import { View, Text, TextInput, TouchableOpacity, Alert } from "react-native";
 import Animated, { FadeIn, FadeOut } from "react-native-reanimated";
 import { useState, useRef } from "react";
-import theme from "../assets/colors";
+import { multi } from "../assets/colors";
 
 export default function AddPlayerForm({
+  setErr,
   setIsAdd,
   players,
   setPlayers,
-  setErr,
 }) {
   const [addPlayer, setAddPlayer] = useState({
     name: "",
-    color: theme.multi[Math.floor(Math.random() * theme.multi.length)],
+    color: multi[Math.floor(Math.random() * multi.length)],
     score: 0,
   });
 
@@ -37,11 +37,11 @@ export default function AddPlayerForm({
         <TouchableOpacity
           tw="w-30 bg-[#c2c2c2] h-30 p-1 px-4 rounded-md"
           onPress={() => {
-            const names = [];
-            for (let player of players) names.push(player.name);
-            if (names.includes(addPlayer.name)) setErr("Player already exists");
-            else if (names.length > 16) setErr("Too Many Players");
-            else if (addPlayer.name.length !== 0) {
+            if (players.find((player) => player.name === addPlayer.name))
+              setErr("Player already exists");
+            else if (players.length > 16) setErr("Too Many Players");
+            else if (addPlayer.name.length < 3) setErr("Too Short");
+            else {
               setPlayers([...players, addPlayer]);
               setErr("");
               setIsAdd(false);

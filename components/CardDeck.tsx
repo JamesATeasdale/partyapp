@@ -26,7 +26,7 @@ export default function CardDeck({ players, setPlayers }) {
   const removeCard = (num = 0) => {
     if (num === 1) {
       setTruthInd(truthInd + 1);
-    } else if (num === 1) {
+    } else if (num === 2) {
       setDareInd(dareInd + 1);
     }
   };

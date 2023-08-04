@@ -1,3 +1,29 @@
 change border of player's bubbles to match the theme of the current page
 
 improve the GameRanking component, finish off the CardDeck component
+
+ keytool -genkey -v -keystore my-app-key.keystore -alias my-app-alias -keyalg RSA -keysize 2048 -validity 10000
+ react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
+ cd android && ./gradlew assembleRelease
+
+
+Duplicate Resources Error:
+https://stackoverflow.com/questions/53239705/react-native-error-duplicate-resources-android
+rm -rf ./android/app/src/main/res/drawable-*
+rm -rf ./android/app/src/main/res/raw
+node_modules/react-native/react.gradle path, add:
+doLast {
+    def moveFunc = { resSuffix ->
+        File originalDir = file("$buildDir/generated/res/react/release/drawable-${resSuffix}");
+        if (originalDir.exists()) {
+            File destDir = file("$buildDir/../src/main/res/drawable-${resSuffix}");
+            ant.move(file: originalDir, tofile: destDir);
+        }
+    }
+    moveFunc.curry("ldpi").call()
+    moveFunc.curry("mdpi").call()
+    moveFunc.curry("hdpi").call()
+    moveFunc.curry("xhdpi").call()
+    moveFunc.curry("xxhdpi").call()
+    moveFunc.curry("xxxhdpi").call()
+}

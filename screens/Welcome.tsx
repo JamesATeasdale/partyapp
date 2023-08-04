@@ -8,31 +8,32 @@ import Header from "../components/Header";
 import { main } from "../assets/colors";
 
 export default function Welcome({ players, setPlayers }) {
-  const [isAdd, setIsAdd] = useState(false);
   const [err, setErr] = useState("");
+
+  const [isAdd, setIsAdd] = useState(false);
 
   return (
     <View tw="items-center h-full" style={{ backgroundColor: main.bg }}>
       <BalloonTransition players={players} />
-      {err && (
-        <View tw="absolute w-full top-0 bg-red-900 items-center">
-          <Text tw="text-white font-extrabold text-xl">{err}</Text>
-        </View>
-      )}
       <Header title={"Party Animals"} />
       <PlayerList
-        players={players}
         setIsAdd={setIsAdd}
+        players={players}
         setPlayers={setPlayers}
       />
-      <Sets />
+      {players.length > 0 && <Sets />}
       {isAdd && (
         <AddPlayerForm
+          setErr={setErr}
           setPlayers={setPlayers}
           players={players}
           setIsAdd={setIsAdd}
-          setErr={setErr}
         />
+      )}
+      {err && (
+        <Text tw="bg-red-700 w-full font-bold text-white text-center text-lg pt-0 top-0 absolute">
+          {err}
+        </Text>
       )}
     </View>
   );
