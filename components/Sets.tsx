@@ -23,7 +23,9 @@ export default function Sets() {
       <TouchableOpacity
         tw="bg-green-900 basis-1/2 h-1/2 justify-center border-4 border-[#341651]"
         onPress={() => {}}>
-        <Text tw="text-center p-6 text-xl font-black">Truth Or Dare</Text>
+        <Text tw="text-center p-6 text-xl font-black">
+          Higher or Lower (na)
+        </Text>
       </TouchableOpacity>
       <View
         style={{

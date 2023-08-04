@@ -9,9 +9,8 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   const [players, setPlayers] = useState([
     { name: "james", color: "#0FC0FC", score: 10 },
-    { name: "james2", color: "#0FC0FC", score: 10 },
-    { name: "Andy444444444444444444444444444444", color: "#F8EF6B", score: 0 },
-    { name: "bog", color: "#F8EF6B", score: 3 },
+    { name: "Consdfsdfstance", color: "#0FC0FC", score: 3 },
+    { name: "jaaaames", color: "#0FC0FC", score: 10 },
     { name: "Constance", color: "#0FC0FC", score: 3 },
   ]);
   console.log(players);

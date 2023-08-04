@@ -1,0 +1,3 @@
+change border of player's bubbles to match the theme of the current page
+
+improve the GameRanking component, finish off the CardDeck component

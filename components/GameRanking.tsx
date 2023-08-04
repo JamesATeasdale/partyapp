@@ -3,11 +3,11 @@ import {
   TouchableOpacity,
   View,
   Text,
-  Image,
   ScrollView,
   Alert,
   ImageBackground,
 } from "react-native";
+import { useRoute } from "@react-navigation/native";
 
 export default function GameRanking({ players, setPlayers }) {
   const images = [
@@ -15,6 +15,9 @@ export default function GameRanking({ players, setPlayers }) {
     require("../assets/silver.jpg"),
     require("../assets/brown.jpg"),
   ];
+
+  const route = useRoute();
+  console.log(route.name);
   function confirm(playername) {
     Alert.alert("Delete " + playername + "?", "", [
       {

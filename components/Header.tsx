@@ -1,10 +1,11 @@
 import { Animated, TouchableOpacity, Text, View } from "react-native";
-import { useNavigation } from "@react-navigation/native";
+import { useNavigation, useRoute } from "@react-navigation/native";
 import { ZoomIn } from "react-native-reanimated";
-import themes from "../assets/colors";
+import { multi, green, main } from "../assets/colors";
 
-export default function Header({ palette, title }) {
+export default function Header({ title }) {
   const navigation = useNavigation();
+  const route = useRoute();
 
   return (
     <TouchableOpacity
@@ -13,14 +14,14 @@ export default function Header({ palette, title }) {
       }}
       style={{
         backgroundColor:
-          palette === "multi"
-            ? "#341651"
-            : palette === "reds"
-            ? "#2c935f"
+          route.name === "Party Animals"
+            ? main.fg
+            : route.name === "Truth or Dare"
+            ? green.fg
             : "black",
       }}
       tw="w-11/12 m-2 flex-row p-4 rounded-xl justify-center">
-      {palette === "multi" ? (
+      {route.name === "Party Animals" ? (
         title.split("").map((letter, index) => {
           return (
             <Animated.View key={index} entering={ZoomIn.duration(index * 200)}>
@@ -28,10 +29,7 @@ export default function Header({ palette, title }) {
                 style={{
                   fontSize: 40,
                   fontFamily: "Caprasimo-Regular",
-                  color:
-                    themes[palette][
-                      Math.floor(Math.random() * themes[palette].length)
-                    ],
+                  color: multi[Math.floor(Math.random() * multi.length)],
                 }}>
                 {letter}
               </Text>
