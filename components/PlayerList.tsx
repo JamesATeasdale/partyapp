@@ -23,7 +23,7 @@ export default function PlayerList({ setIsAdd, setPlayers, players }) {
 
   return (
     <View
-      tw="bg-[#341651] w-11/12 min-h-[56] max-h-[25%] rounded-b-xl border-y-8"
+      tw="bg-[#341651] w-11/12 min-h-[72] max-h-[25%] rounded-b-xl border-y-8"
       style={{ backgroundColor: main.fg, borderColor: main.fg }}>
       <ScrollView>
         <View tw="flex-row flex-wrap justify-center">

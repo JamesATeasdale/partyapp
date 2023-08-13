@@ -7,13 +7,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 const Stack = createNativeStackNavigator();
 
 export default function App() {
-  const [players, setPlayers] = useState([
-    { name: "james", color: "#0FC0FC", score: 10 },
-    { name: "Consdfsdfstance", color: "#0FC0FC", score: 3 },
-    { name: "jaaaames", color: "#0FC0FC", score: 10 },
-    { name: "Constance", color: "#0FC0FC", score: 3 },
-  ]);
-  console.log(players);
+  const [players, setPlayers] = useState([]);
 
   return (
     <NavigationContainer>

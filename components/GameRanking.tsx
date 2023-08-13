@@ -8,6 +8,7 @@ import {
   ImageBackground,
 } from "react-native";
 import { useRoute } from "@react-navigation/native";
+import { green } from "../assets/colors";
 
 export default function GameRanking({ players, setPlayers }) {
   const images = [
@@ -17,7 +18,7 @@ export default function GameRanking({ players, setPlayers }) {
   ];
 
   const route = useRoute();
-  console.log(route.name);
+
   function confirm(playername) {
     Alert.alert("Delete " + playername + "?", "", [
       {
@@ -34,13 +35,15 @@ export default function GameRanking({ players, setPlayers }) {
     ]);
   }
   return (
-    <View tw="h-36 w-full self-center items-center bg-[#2c935f]">
-      <View tw="p-2 rounded-xl flex-row">
+    <View
+      tw="h-32 w-11/12 self-center items-center rounded-b-xl"
+      style={{ backgroundColor: green.fg }}>
+      <View tw="py-3 rounded-xl flex-row">
         {players
           .sort((a, b) => b.score - a.score)
           .slice(0, 3)
           .map((player = { name: "", score: 0, color: "" }, index = 0) => {
-            let colour = "gold";
+            let colour = "brown";
             index === 0
               ? (colour = "gold")
               : index === 1
@@ -48,61 +51,51 @@ export default function GameRanking({ players, setPlayers }) {
               : (colour = "brown");
 
             return (
-              <ImageBackground
+              <TouchableOpacity
+                onPress={() => confirm(player.name)}
                 key={player.name}
-                imageStyle={{ borderRadius: 12 }}
                 style={{
-                  borderColor: colour,
+                  borderColor: player.color,
                 }}
-                tw="basis-1/3 border-4 rounded-t-2xl mx-1"
-                resizeMethod="scale"
-                source={images[index]}>
-                <Text tw="font-black text-black text-3xl">
-                  {index === 0
-                    ? index + 1 + "ST"
-                    : index === 1
-                    ? index + 1 + "ND"
-                    : index + 1 + "RD"}
-                </Text>
-                <View
-                  tw="bg-white absolute right-0 border-2 px-1 h-full border-gold rounded-tr-xl "
-                  style={{ borderColor: colour }}>
-                  <Text tw="font-black text-2xl">{player.score}</Text>
-                </View>
-                <TouchableOpacity
-                  onPress={() => confirm(player.name)}
+                tw="basis-1/3 h-12">
+                <ImageBackground
                   key={player.name}
                   style={{
                     borderColor: colour,
                     backgroundColor: player.color,
                   }}
-                  tw=" border-t-4 h-10 justify-start ">
-                  <Text tw="text-2xl text-center font-extrabold">
-                    {player.name}
+                  tw="border-8 rounded-md mx-1 "
+                  resizeMethod="scale"
+                  source={images[index]}>
+                  <Text tw="text-2xl font-extrabold">{player.name}</Text>
+                  <Text
+                    tw="absolute -bottom-4 -right-2 rounded-2xl font-black text-2xl self-center text-center px-2"
+                    style={{ backgroundColor: colour }}>
+                    {player.score}
                   </Text>
-                </TouchableOpacity>
-              </ImageBackground>
+                </ImageBackground>
+              </TouchableOpacity>
             );
           })}
       </View>
-      <View tw="w-full flex-row bg-[#2c935f]">
-        <ScrollView horizontal={true}>
-          {players
-            .slice(3)
-            .map((player = { name: "", color: "", score: 0 }, index = 0) => (
-              <TouchableOpacity
-                onPress={() => confirm(player.name)}
-                key={player.name}
-                style={{ backgroundColor: player.color }}
-                tw="mx-1 items-center px-2 rounded-xl border-4 border-white flex-row w-44 h-10">
-                <Text tw="text-2xl font-extrabold">{player.name}</Text>
-                <View tw="bg-white p-2 items-center right-0 absolute px-3 rounded-r-2xl">
-                  <Text tw="font-black text-lg">{player.score}</Text>
-                </View>
-              </TouchableOpacity>
-            ))}
-        </ScrollView>
-      </View>
+      <ScrollView horizontal={true}>
+        {players
+          .slice(3)
+          .map((player = { name: "", color: "", score: 0 }, index = 0) => (
+            <TouchableOpacity
+              onPress={() => confirm(player.name)}
+              key={player.name}
+              tw="mx-1 items-center px-2 rounded-xl border-4 flex-row w-44 h-10 bg-white"
+              style={{ borderColor: player.color }}>
+              <Text tw="text-2xl font-extrabold ">{player.name}</Text>
+              <Text
+                tw="p-1 text-center right-0 absolute px-2 font-black text-xl rounded-r-md"
+                style={{ backgroundColor: player.color }}>
+                {player.score}
+              </Text>
+            </TouchableOpacity>
+          ))}
+      </ScrollView>
     </View>
   );
 }

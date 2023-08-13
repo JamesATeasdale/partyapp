@@ -13,9 +13,14 @@ function shuffle(arr) {
 }
 
 export default function CardDeck({ players, setPlayers }) {
+  const [category, setCategory] = useState("na");
   const [shuffledPlayers, setShuffledPlayers] = useState(shuffle([...players]));
-  const [shuffledTruths, setShuffledTruths] = useState(shuffle([...truths]));
-  const [shuffledDares, setShuffledDares] = useState(shuffle([...dares]));
+  const [shuffledTruths, setShuffledTruths] = useState(
+    shuffle([...truths].filter((item) => item.category === category))
+  );
+  const [shuffledDares, setShuffledDares] = useState(
+    shuffle([...dares].filter((item) => item.category === category))
+  );
   const [truthInd, setTruthInd] = useState(0);
   const [dareInd, setDareInd] = useState(0);
   const [option, setOption] = useState("");
@@ -30,7 +35,7 @@ export default function CardDeck({ players, setPlayers }) {
       setDareInd(dareInd + 1);
     }
   };
-
+  [];
   useEffect(() => setOption(""), [shuffledPlayers]);
 
   if (shuffledPlayers.length === 0) {
@@ -45,14 +50,14 @@ export default function CardDeck({ players, setPlayers }) {
 
   return (
     <View
-      tw="w-full h-3/6 items-center justify-center bottom-0 absolute"
+      tw="w-11/12 h-3/6 items-center bottom-5 absolute rounded-xl"
       style={{ backgroundColor: green.fg }}>
-      <View tw="top-0 w-full absolute h-10 items-center justify-center">
-        <Text tw="left-0 absolute text-4xl pl-4">{"<"}</Text>
-        <Text tw="font-black text-black text-4xl w-2/3 text-center  ">
+      <View tw="w-full my-4 items-center ">
+        <Text tw="left-0 absolute text-4xl pl-4 text-gray-300">{"👎"}</Text>
+        <Text tw="font-black text-gray-300 text-4xl text-center">
           {shuffledPlayer.name}
         </Text>
-        <Text tw="right-0 absolute text-4xl pr-4">{">"}</Text>
+        <Text tw="right-0 absolute text-4xl pr-4 text-gray-300">{"👍"}</Text>
       </View>
       {option === "truth" ? (
         <SwipeableCard
@@ -79,10 +84,10 @@ export default function CardDeck({ players, setPlayers }) {
           removeCard={removeCard}
         />
       ) : (
-        <View tw="h-5/6 w-11/12 rounded-md bottom-4 absolute flex-col">
+        <View tw="h-4/6 w-11/12 rounded-md bottom-5 absolute ">
           <TouchableOpacity
             onPress={() => setOption("truth")}
-            tw="w-1/2 h-full absolute left-0 bg-black justify-center items-center  rounded-l-md">
+            tw="w-1/2 h-full absolute left-0 bg-black justify-center items-center rounded-l-md">
             <Text tw="text-white font-black text-center text-5xl top-5 absolute">
               Truth
             </Text>

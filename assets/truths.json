@@ -30,7 +30,7 @@
   {
     "question": "Have you ever cheated on someone?",
     "likes": 0,
-    "category": "na"
+    "category": "explicit"
   },
   {
     "question": "Where's the weirdest place you peed?",
@@ -376,11 +376,6 @@
     "category": "na"
   },
   {
-    "question": "Who do you like best - Kris, Kourtney, Kim, Khlo\u00e9, Kendall or Kylie?",
-    "likes": 0,
-    "category": "na"
-  },
-  {
     "question": "If you could be one celebrity for a day, who would it be?",
     "likes": 0,
     "category": "na"
@@ -405,5 +400,874 @@
     "question": "What do you value the most - money, fame, success, friends, family, etc?",
     "likes": 0,
     "category": "na"
+  },
+  {
+    "question": "Do you have a favourite sibling?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What have you bought that\u2019s been the biggest waste of money?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is a secret you have never told anyone?",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "Do you have a hidden talent?", "likes": 0, "category": "na" },
+  {
+    "question": "If you could swap lives with someone in the room, who would it be?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Do you have a favourite friend?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Name someone you\u2019ve pretended to like but actually couldn\u2019t stand.",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "If you could become invisible, what\u2019s the worst thing you\u2019d do?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s the worst thing you\u2019ve ever done at work?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Rate everyone playing from your most to least favourite.",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is your most absurd dealbreaker?",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "Have you ever broken the law?", "likes": 0, "category": "na" },
+  {
+    "question": "If you had to get back with an ex, who would you choose?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Who would you call in the room to help bury a body?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Who is the most surprising person to ever slide into your DMs?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is something you\u2019re glad your mum doesn\u2019t know about you?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever gone skinny dipping?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s the one thing you\u2019d never do for all the money in the world?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Who do you think is the worst dressed person in the room?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Who in the room would be the worst person to date and why?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s your biggest turn off?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "hat\u2019s the largest age gap between you and your sexual partners?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "Does size really matter?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "Who was your worst sexual partner and why?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "Have you ever faked an orgasm?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "Have you ever been caught in action? If so, by who?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "If you could only ever do one position for the rest of your life, which one would it be and why?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "What\u2019s the most embarrassing thing that\u2019s happened to you during sex?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "Where\u2019s the riskiest place you\u2019ve done it?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "Have you ever filmed a sex tape?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "What\u2019s your biggest turn on?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "Do you have any fetishes?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "Do you like loud or silent people in bed?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "What is your favourite song when it comes to action in the bedroom?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "What your maddest one-night stand story?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "Who do you think is the worst dressed person in this room?",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "Do you pick your nose?", "likes": 0, "category": "na" },
+  {
+    "question": "What\u2019s the strangest thing someone would find in your web search history?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Where\u2019s your favourite place to fart in public?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "If someone offered you $1 million to break up with your current partner and never get back together, would you?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever told someone you wouldn\u2019t be home just so they wouldn\u2019t come over to yours?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s the weirdest role play you\u2019ve ever done?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Who is your favourite family member?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Where is the grossest place you\u2019ve ever hooked up?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What was the most embarrassing thing that you ever did while on a date?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "Which sexual act are you best at?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "When was the last time you peed in bed?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "Tell us your most embarrassing vomit story.",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "Tell us your cheesiest pick-up line.",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "If you could get away with crime for a day, what crime would you commit and why?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "Has anyone ever accidentally seen you naked?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "Have you ever slept with someone then immediately regretted it?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "If you could kiss someone right now, who would it be?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "How many exes numbers are currently in your phone?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "Tell me a time you were rejected, and describe it in detail for at least five minutes!",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is the meanest thing you\u2019ve ever done to somebody?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever peed on yourself as an adult or teenager?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is something illegal you\u2019ve done?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is the most embarrassing thing you\u2019ve ever done?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s the most embarrassing thing that\u2019s ever happened to you?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is the most childish thing you\u2019ve done over the age of 13?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "If you were to ask your parents what the most childish thing you\u2019ve ever done was, what would it be?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is the grossest thing you\u2019ve overheard someone do?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Tell me something you don\u2019t like about me.",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Who is a person you don\u2019t like but pretend to?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Do you think you\u2019re uglier or better looking than most people you know?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "When was the last time you felt too embarrassed for somebody else?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is something you did a long time ago that you still regret today?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is a gross habit you have and never wanted anybody to find out?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever been in a police car, and if so, why?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is something your best friend or significant other does that you hate?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever hacked into someone\u2019s social media to read their messages?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever stolen something from your parents or another person?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "At what age did you stop sleeping with a light on?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is the silliest thing you\u2019re genuinely scared of?",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "Do you believe in ghosts?", "likes": 0, "category": "na" },
+  {
+    "question": "Have you ever been pulled over by the cops?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Tell me about a time you fake-cried or only pretended to be regretful to get out of trouble.",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is the biggest lie you\u2019ve ever told, and who did you tell it to?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Who do you think is the most unattractive of all your friends?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s the biggest pet peeve you have about your boyfriend/girlfriend?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What are you most attracted to in the opposite sex?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s the weirdest thing you do in the morning?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever peed in a public place that you shouldn\u2019t have?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s the craziest thing you\u2019ve ever done on the weekend?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s the most romantic thing you\u2019ve ever done with your partner?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Would you ever eat a soggy cupcake if you were craving it?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s the absolute worst thing you\u2019ve ever done?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever farted in front of your crush?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "When\u2019s the last time you cried in public?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s the grossest thing you have ever done in public?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever eaten really old food?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Who is your secret crush at work/school?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What friend would you marry if you had to marry someone?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "When was your first kiss, and who was it with?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "How many selfies do you have on your phone?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is the biggest lie you\u2019ve ever told your parents or a teacher?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is one thing you would sleep overnight on the sidewalk for?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Do you believe in angels, heaven, and hell?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s something you\u2019re attracted to in another person that you don\u2019t like to share?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s the most embarrassing moment that you had with your parents?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s something embarrassing that very few people know about you?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "If you could change your nose or your jawline, which would you pick and why?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Does your crush know that you have a crush on them?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "If you had to be a TV character from a sitcom, who would you choose and why?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s one thing that you would change about your body?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Would you ever date a friend\u2019s girlfriend?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Who is your grossest celebrity crush?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "If we were all going into your room to snoop around, what would we find that should shock us all?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever prank called a friend?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is one secret you are hiding from your mom?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever crept on or stalked someone on Facebook or Instagram?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What would you buy me if I gave you $50?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "How many boy/girl contacts do you have on your phone?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever fallen in front of your crush?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Do you currently have a crush on anyone?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Is there anything in your life that you would change?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "How many selfies do you take a week?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Do you cover your eyes during the scary parts of a movie?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever practiced kissing the mirror?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever practiced kissing on a piece of fruit from the kitchen?",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "Who do you hate and why?", "likes": 0, "category": "na" },
+  {
+    "question": "What is your biggest pet peeve?",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "Do you talk in your sleep?", "likes": 0, "category": "na" },
+  { "question": "Do you drool in your sleep?", "likes": 0, "category": "na" },
+  {
+    "question": "How many people have you kissed?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What was your most embarrassing moment in public in front of everyone?",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "What is your guilty pleasure?", "likes": 0, "category": "na" },
+  {
+    "question": "What is your go-to song to sing in the shower?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Would you rather have no heating or A/C or no internet?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "If you suddenly became invisible, what would you do?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Would you rather let your dog eat out of your mouth or eat food out of a trash can?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Would you rather lick someone\u2019s foot or lick the sidewalk on the street?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever blamed your fart on someone else?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever farted in an elevator?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What was your favorite childhood video game?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever played a prank on your parents?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Would you rather be caught picking your nose or picking a wedgie?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Do you have any silly nicknames?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Describe the strangest dream you\u2019ve ever had and who it was about.",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is your favorite type of ice cream?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Are you an early bird or a night owl?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "If you could travel anywhere in the world, where would you go?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever eaten something off the floor?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "If you could have any superpower, what would it be?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "If you could change places with a celebrity for a day, who would you choose?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is your favorite holiday?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "If you had to kiss a Disney character, who would you choose?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Describe what your crush looks like.",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "If you could change anything about yourself, what would it be?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is the weirdest food combo you\u2019ve ever eaten?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Who is the last person you tried to impress?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "If you were famous, what would you be famous for?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is the last thing that made you cry?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "If you had to be stranded on a deserted island with a celebrity, who would you choose?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Tell me about the last time you got embarrassed.",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "Where are you ticklish?", "likes": 0, "category": "na" },
+  {
+    "question": "What do you think is your best feature?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "On a scale of 1-10, how attractive do you think you are?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is your biggest insecurity?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is your biggest irrational fear?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Who is one person you wish was still in your life?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s your biggest regret in life that you never tell anyone?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s the worst thing you\u2019ve ever done in the bedroom?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "What\u2019s one thing you wish you could change about your sexual past?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "Have you ever cheated on a love interest?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "What\u2019s your ultimate sexual fantasy?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "If you were allowed to be with more than one person, would you do it?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "Who is the last person you had a sexual fantasy about?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "Have you ever done anything sexual in a public place?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "If you had to hook up with one family member, who would it be?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "Where\u2019s the riskiest or out-of-this-world place you\u2019ve ever done it?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "Have you ever got caught masturbating?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "Who have you had a fantasy about that you\u2019ve never mentioned?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "Have you ever had a fantasy about anyone\u2019s parent? Who was it?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "Have you ever heard your parents sleeping together?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "Describe your grossest kiss and why it was so nasty!",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "If you had to go out on a date with one person of the same sex, who would it be?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "Have you ever catfished anybody? If so, what happened? If not, have you wanted to?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "Have you ever been catfished before? What happened, and how did you find out?",
+    "likes": 0,
+    "category": "explicit"
+  },
+  {
+    "question": "How many people have you slept with?",
+    "likes": 0,
+    "category": "explicit"
   }
 ]

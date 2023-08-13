@@ -21,7 +21,17 @@ export default function Welcome({ players, setPlayers }) {
         players={players}
         setPlayers={setPlayers}
       />
-      {players.length > 0 && <Sets />}
+      {players.length > 0 ? (
+        <Sets />
+      ) : (
+        <View
+          tw="w-11/12 h-2/6 bottom-5 absolute justify-center items-center rounded-xl"
+          style={{ backgroundColor: main.fg }}>
+          <Text tw="text-2xl text-gray-300 font-extrabold">
+            Add a Player to get started
+          </Text>
+        </View>
+      )}
       {isAdd && (
         <AddPlayerForm
           setErr={setErr}

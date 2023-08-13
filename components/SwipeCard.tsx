@@ -30,16 +30,16 @@ export default function SwipeableCard({
     onMoveShouldSetPanResponderCapture: (evt, gestureState) => true,
     onPanResponderMove: (evt, gestureState) => {
       xPosition.setValue(gestureState.dx);
-      if (gestureState.dx > SCREEN_WIDTH - 375) {
+      if (gestureState.dx > SCREEN_WIDTH - 425) {
         swipeDirection = "Right";
-      } else if (gestureState.dx < -SCREEN_WIDTH + 375) {
+      } else if (gestureState.dx < -SCREEN_WIDTH + 425) {
         swipeDirection = "Left";
       }
     },
     onPanResponderRelease: (evt, gestureState) => {
       if (
-        gestureState.dx < SCREEN_WIDTH - 225 &&
-        gestureState.dx > -SCREEN_WIDTH + 225
+        gestureState.dx < SCREEN_WIDTH - 275 &&
+        gestureState.dx > -SCREEN_WIDTH + 275
       ) {
         swipedDirection("--");
         Animated.spring(xPosition, {
@@ -48,7 +48,7 @@ export default function SwipeableCard({
           bounciness: 10,
           useNativeDriver: false,
         }).start();
-      } else if (gestureState.dx > SCREEN_WIDTH - 225) {
+      } else if (gestureState.dx > SCREEN_WIDTH - 275) {
         Animated.parallel([
           Animated.timing(xPosition, {
             toValue: SCREEN_WIDTH,
@@ -76,7 +76,7 @@ export default function SwipeableCard({
           swipedDirection(swipeDirection);
           removeCard(value);
         });
-      } else if (gestureState.dx < -SCREEN_WIDTH + 225) {
+      } else if (gestureState.dx < -SCREEN_WIDTH + 275) {
         Animated.parallel([
           Animated.timing(xPosition, {
             toValue: -SCREEN_WIDTH,
@@ -104,7 +104,7 @@ export default function SwipeableCard({
   return (
     <Animated.View
       {...panResponder.panHandlers}
-      tw="justify-center absolute h-5/6 w-11/12 rounded-md bottom-4"
+      tw="justify-center absolute h-4/6 w-11/12 rounded-md bottom-4"
       style={{
         opacity: cardOpacity,
         backgroundColor: shuffledPlayer.color,
