@@ -1,7 +1,5 @@
-import { useState } from "react";
 import { Text, View, ScrollView, TouchableOpacity, Alert } from "react-native";
-import Animated, { PinwheelIn, ZoomIn, ZoomOut } from "react-native-reanimated";
-import AddPlayerForm from "./AddPlayerForm";
+import Animated, { ZoomIn } from "react-native-reanimated";
 import { theme } from "../assets/colors";
 import { useRoute } from "@react-navigation/native";
 

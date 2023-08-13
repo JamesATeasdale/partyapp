@@ -107,7 +107,7 @@ export default function SwipeableCard({
       tw="justify-center absolute h-4/6 w-11/12 rounded-md bottom-4"
       style={{
         opacity: cardOpacity,
-        backgroundColor: shuffledPlayer.color,
+        backgroundColor: shuffledPlayer.colour,
         transform: [{ translateX: xPosition }, { rotate: rotateCard }],
       }}>
       <Text tw="text-black font-bold text-4xl text-center m-4">

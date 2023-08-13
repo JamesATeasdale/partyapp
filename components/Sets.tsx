@@ -17,45 +17,43 @@ export default function Sets() {
         <Text tw="text-center p-6 text-xl font-black ">Truth Or Dare</Text>
       </TouchableOpacity>
       <TouchableOpacity
-        tw="bg-[#2194eb] basis-1/2 h-1/2 justify-center border-2 border-white"
+        tw="bg-[#801a13] basis-1/2 h-1/2 justify-center border-2 border-white"
         onPress={() => navigation.navigate("Fast Quiz")}>
-        <Text tw="text-center p-6 text-xl font-black">Would you Rather?</Text>
+        <Text tw="text-center p-6 text-xl font-black">Fast Quiz</Text>
       </TouchableOpacity>
       <TouchableOpacity
         tw="bg-blue-900 basis-1/2 h-1/2 justify-center border-2 border-white"
         onPress={() => {}}>
-        <Text tw="text-center p-6 text-xl font-black">Truth Or Dare</Text>
+        <Text tw="text-center p-6 text-xl font-black">Ice Breakers</Text>
       </TouchableOpacity>
       <TouchableOpacity
-        tw="bg-green-900 basis-1/2 h-1/2 justify-center border-2 border-white"
+        tw="bg-yellow-400 basis-1/2 h-1/2 justify-center border-2 border-white"
         onPress={() => {}}>
-        <Text tw="text-center p-6 text-xl font-black">
-          Higher or Lower (na)
-        </Text>
+        <Text tw="text-center p-6 text-xl font-black">Higher or Lower</Text>
       </TouchableOpacity>
       <View
         style={{
-          width: 144,
+          width: 124,
           borderBottomColor: "#ee1b24",
-          borderBottomWidth: 45,
-          borderLeftWidth: 45,
-          borderRightWidth: 45,
+          borderBottomWidth: 30,
+          borderLeftWidth: 30,
+          borderRightWidth: 30,
           borderRightColor: "transparent",
           borderLeftColor: "transparent",
           transform: [{ rotate: "315deg" }],
-          top: 12,
-          left: -37,
+          top: 18,
+          left: -30,
           position: "absolute",
         }}
         tw="items-center">
         <Text
           style={{
-            fontSize: 26,
+            fontWeight: "600",
+            fontSize: 18,
             color: "white",
             position: "absolute",
-            marginTop: 0,
           }}>
-          Sets
+          Games
         </Text>
       </View>
     </View>
