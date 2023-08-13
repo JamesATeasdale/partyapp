@@ -8,7 +8,7 @@ import {
   ImageBackground,
 } from "react-native";
 import { useRoute } from "@react-navigation/native";
-import { green } from "../assets/colors";
+import { theme } from "../assets/colors";
 
 export default function GameRanking({ players, setPlayers }) {
   const images = [
@@ -18,6 +18,7 @@ export default function GameRanking({ players, setPlayers }) {
   ];
 
   const route = useRoute();
+  const pageTheme = theme(route.name);
 
   function confirm(playername) {
     Alert.alert("Delete " + playername + "?", "", [
@@ -37,7 +38,7 @@ export default function GameRanking({ players, setPlayers }) {
   return (
     <View
       tw="h-32 w-11/12 self-center items-center rounded-b-xl"
-      style={{ backgroundColor: green.fg }}>
+      style={{ backgroundColor: pageTheme.fg }}>
       <View tw="py-3 rounded-xl flex-row">
         {players
           .sort((a, b) => b.score - a.score)

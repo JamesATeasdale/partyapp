@@ -344,7 +344,7 @@
   {
     "question": "Call a person in the room's dad and tell him you think he's sexy",
     "likes": 0,
-    "category": "na"
+    "category": "explicit"
   },
   {
     "question": "Let someone order something random on your Amazon account (\u00a310 or under)",
@@ -352,11 +352,6 @@
     "category": "na"
   },
   { "question": "Do the cinnamon challenge", "likes": 0, "category": "na" },
-  {
-    "question": "Run out of the house and shout \"I'm not like a regular mom, I'm a cool mom!\"",
-    "likes": 0,
-    "category": "na"
-  },
   {
     "question": "Let another person post a status on your behalf.",
     "likes": 0,

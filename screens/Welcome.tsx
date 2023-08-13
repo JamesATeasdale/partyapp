@@ -1,21 +1,23 @@
 import { View, Text } from "react-native";
 import PlayerList from "../components/PlayerList";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Sets from "../components/Sets";
 import AddPlayerForm from "../components/AddPlayerForm";
 import BalloonTransition from "../components/BalloonsTransition";
 import Header from "../components/Header";
-import { main } from "../assets/colors";
+import { theme } from "../assets/colors";
+import { useRoute } from "@react-navigation/native";
 
 export default function Welcome({ players, setPlayers }) {
+  const route = useRoute();
   const [err, setErr] = useState("");
-
   const [isAdd, setIsAdd] = useState(false);
+  const pageTheme = theme(route.name);
 
   return (
-    <View tw="items-center h-full" style={{ backgroundColor: main.bg }}>
+    <View tw="items-center h-full" style={{ backgroundColor: pageTheme.bg }}>
       <BalloonTransition players={players} />
-      <Header title={"Party Animals"} />
+      <Header />
       <PlayerList
         setIsAdd={setIsAdd}
         players={players}
@@ -26,7 +28,7 @@ export default function Welcome({ players, setPlayers }) {
       ) : (
         <View
           tw="w-11/12 h-2/6 bottom-5 absolute justify-center items-center rounded-xl"
-          style={{ backgroundColor: main.fg }}>
+          style={{ backgroundColor: pageTheme.fg }}>
           <Text tw="text-2xl text-gray-300 font-extrabold">
             Add a Player to get started
           </Text>

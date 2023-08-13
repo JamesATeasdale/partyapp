@@ -1,13 +1,16 @@
-import { useNavigation } from "@react-navigation/native";
+import { useNavigation, useRoute } from "@react-navigation/native";
 import { Text, TouchableOpacity, View } from "react-native";
-import { main } from "../assets/colors";
+import { theme } from "../assets/colors";
 
 export default function Sets() {
   const navigation = useNavigation();
+  const route = useRoute();
+  const pageTheme = theme(route.name);
+
   return (
     <View
       tw="flex w-11/12 m-4 rounded-xl h-2/6 flex-row flex-wrap p-2 content-center bottom-0 absolute"
-      style={{ backgroundColor: main.fg }}>
+      style={{ backgroundColor: pageTheme.fg }}>
       <TouchableOpacity
         tw="bg-[#2c935f] basis-1/2 h-1/2 justify-center border-2 border-white"
         onPress={() => navigation.navigate("Truth or Dare")}>
@@ -15,7 +18,7 @@ export default function Sets() {
       </TouchableOpacity>
       <TouchableOpacity
         tw="bg-[#2194eb] basis-1/2 h-1/2 justify-center border-2 border-white"
-        onPress={() => navigation.navigate("Example")}>
+        onPress={() => navigation.navigate("Fast Quiz")}>
         <Text tw="text-center p-6 text-xl font-black">Would you Rather?</Text>
       </TouchableOpacity>
       <TouchableOpacity

@@ -55,6 +55,16 @@ export const multi = [
 //   "#9B1003",
 // ];
 
-export const green = { bg: "#0a290e", fg: "#165222" };
+const main = { bg: "#190927", fg: "#341651" };
 
-export const main = { bg: "#190927", fg: "#341651" };
+const green = { bg: "#09260d", fg: "#165222" };
+
+const red = { bg: "#590d0d", fg: "#801a13" };
+
+export function theme(routeName) {
+  let theme = red;
+  if (routeName === "Party Animals") theme = main;
+  else if (routeName === "Truth or Dare") theme = green;
+  else if (routeName === "Fast Quiz") theme = red;
+  return theme;
+}

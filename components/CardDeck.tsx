@@ -3,7 +3,8 @@ import truths from "../assets/truths.json";
 import dares from "../assets/dares.json";
 import { TouchableOpacity, Text, View } from "react-native";
 import SwipeableCard from "./SwipeCard";
-import { green } from "../assets/colors";
+import { theme } from "../assets/colors";
+import { useRoute } from "@react-navigation/native";
 
 function shuffle(arr) {
   return arr
@@ -13,6 +14,8 @@ function shuffle(arr) {
 }
 
 export default function CardDeck({ players, setPlayers }) {
+  const route = useRoute();
+  const pageTheme = theme(route.name);
   const [category, setCategory] = useState("na");
   const [shuffledPlayers, setShuffledPlayers] = useState(shuffle([...players]));
   const [shuffledTruths, setShuffledTruths] = useState(
@@ -51,7 +54,7 @@ export default function CardDeck({ players, setPlayers }) {
   return (
     <View
       tw="w-11/12 h-3/6 items-center bottom-5 absolute rounded-xl"
-      style={{ backgroundColor: green.fg }}>
+      style={{ backgroundColor: pageTheme.fg }}>
       <View tw="w-full my-4 items-center ">
         <Text tw="left-0 absolute text-4xl pl-4 text-gray-300">{"👎"}</Text>
         <Text tw="font-black text-gray-300 text-4xl text-center">
