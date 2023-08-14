@@ -8,13 +8,7 @@ import dares from "../assets/dares.json";
 import { TouchableOpacity, Text, View } from "react-native";
 import SwipeableCard from "../components/SwipeCard";
 import BalloonTransition from "../components/BalloonsTransition";
-
-function shuffle(arr = []) {
-  return arr
-    .map((value) => ({ value, sort: Math.random() }))
-    .sort((a, b) => a.sort - b.sort)
-    .map(({ value }) => value);
-}
+import shuffle from "../hooks/shuffleArray";
 
 export default function TruthOrDare({ players, setPlayers }) {
   const route = useRoute();
