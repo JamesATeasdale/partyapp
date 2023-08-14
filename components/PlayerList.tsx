@@ -36,9 +36,8 @@ export default function PlayerList({ setIsAdd, setPlayers, players }) {
                 key={player.name}
                 style={{
                   backgroundColor: player.colour,
-                  borderColor: pageTheme.bg,
                 }}
-                tw="px-2 m-1 rounded-xl border-4"
+                tw="px-2 m-1 rounded-xl"
                 onPress={() => confirm(player.name)}>
                 <Text tw="text-2xl font-bold">{player.name}</Text>
               </TouchableOpacity>

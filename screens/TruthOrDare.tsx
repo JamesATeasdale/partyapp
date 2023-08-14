@@ -7,6 +7,7 @@ import truths from "../assets/truths.json";
 import dares from "../assets/dares.json";
 import { TouchableOpacity, Text, View } from "react-native";
 import SwipeableCard from "../components/SwipeCard";
+import BalloonTransition from "../components/BalloonsTransition";
 
 function shuffle(arr = []) {
   return arr
@@ -52,6 +53,7 @@ export default function TruthOrDare({ players, setPlayers }) {
 
   return (
     <View tw="h-full items-center" style={{ backgroundColor: pageTheme.bg }}>
+      <BalloonTransition players={players} />
       <Header />
       <GameRanking players={players} setPlayers={setPlayers} />
       <View
@@ -71,7 +73,6 @@ export default function TruthOrDare({ players, setPlayers }) {
             players={players}
             shuffledPlayers={shuffledPlayers}
             setShuffledPlayers={setShuffledPlayers}
-            key={shuffledTruth.question}
             item={shuffledTruth}
             value={1}
             removeCard={removeCard}
@@ -83,7 +84,6 @@ export default function TruthOrDare({ players, setPlayers }) {
             players={players}
             shuffledPlayers={shuffledPlayers}
             setShuffledPlayers={setShuffledPlayers}
-            key={shuffledDare.question}
             item={shuffledDare}
             value={2}
             removeCard={removeCard}

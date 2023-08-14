@@ -1,4 +1,4 @@
-import { View, Text } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import PlayerList from "../components/PlayerList";
 import { useEffect, useState } from "react";
 import Sets from "../components/Sets";
@@ -26,13 +26,14 @@ export default function Welcome({ players, setPlayers }) {
       {players.length > 0 ? (
         <Sets />
       ) : (
-        <View
+        <TouchableOpacity
+          onPress={() => setIsAdd(true)}
           tw="w-11/12 h-2/6 bottom-5 absolute justify-center items-center rounded-xl"
           style={{ backgroundColor: pageTheme.fg }}>
           <Text tw="text-2xl text-gray-300 font-extrabold">
             Add a Player to get started
           </Text>
-        </View>
+        </TouchableOpacity>
       )}
       {isAdd && (
         <AddPlayerForm

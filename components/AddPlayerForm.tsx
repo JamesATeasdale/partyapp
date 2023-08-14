@@ -11,7 +11,7 @@ export default function AddPlayerForm({
 }) {
   const [addPlayer, setAddPlayer] = useState({
     name: "",
-    color: multi[Math.floor(Math.random() * multi.length)],
+    colour: multi[Math.floor(Math.random() * multi.length)],
     score: 0,
   });
 
