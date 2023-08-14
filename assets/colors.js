@@ -55,7 +55,7 @@ export const multi = [
 //   "#9B1003",
 // ];
 
-const main = { bg: "#190927", fg: "#341651" };
+const main = { bg: "#190927", fg: "#612c94" };
 
 const green = { bg: "#09260d", fg: "#165222" };
 

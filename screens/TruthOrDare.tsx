@@ -52,13 +52,27 @@ export default function TruthOrDare({ players, setPlayers }) {
       <GameRanking players={players} setPlayers={setPlayers} />
       <View
         tw="w-11/12 h-3/6 items-center bottom-5 absolute rounded-xl"
-        style={{ backgroundColor: pageTheme.fg }}>
-        <View tw="w-full my-4 items-center ">
-          <Text tw="left-0 absolute text-4xl pl-4 text-gray-300">{"👎"}</Text>
-          <Text tw="font-black text-gray-300 text-4xl text-center">
-            {shuffledPlayer.name}
-          </Text>
-          <Text tw="right-0 absolute text-4xl pr-4 text-gray-300">{"👍"}</Text>
+        style={{ backgroundColor: shuffledPlayer.colour }}>
+        <View
+          tw="flex-row rounded-t-xl p-1 w-full"
+          style={{ backgroundColor: pageTheme.fg }}>
+          <View tw="basis-2/3 m-2">
+            <Text tw="font-black text-gray-300 text-3xl ">
+              {shuffledPlayer.name}
+            </Text>
+          </View>
+          <View tw="flex-row right-0 absolute h-14">
+            <Text
+              tw="m-1 text-xl p-2 pb-1 rounded-l-xl text-gray-300 bg-gray-600"
+              style={{ backgroundColor: pageTheme.bg }}>
+              {"👎"}
+            </Text>
+            <Text
+              tw="m-1 text-xl p-2 pb-1 rounded-r-xl text-gray-300 bg-gray-600"
+              style={{ backgroundColor: pageTheme.bg }}>
+              {"👍"}
+            </Text>
+          </View>
         </View>
         {option === "truth" ? (
           <SwipeableCard
