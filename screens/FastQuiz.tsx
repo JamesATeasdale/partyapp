@@ -9,7 +9,6 @@ import fastquizquestions from "../assets/fastquizquestions.json";
 import { useEffect, useState, useRef } from "react";
 
 export default function FastQuiz({ players, setPlayers }) {
-  const [countdown, startCountdown] = useState(true);
   const LottieRef = useRef(null);
   const route = useRoute();
   const pageTheme = theme(route.name);
@@ -19,23 +18,28 @@ export default function FastQuiz({ players, setPlayers }) {
     shuffle([...fastquizquestions].filter((item) => item.category === category))
   );
   const [fastQuizInd, setFastQuizInd] = useState(0);
-  const [option, setOption] = useState("");
   let shuffledQuestion = { question: "" };
   let shuffledPlayer = shuffledPlayers[0];
 
   const removeCard = (num = 0) => {
     if (num === 2) setFastQuizInd(fastQuizInd + 1);
   };
-  const [counter, setCounter] = useState(60);
-  const [intervalId, setIntervalId] = useState(null);
+  const [counter, setCounter] = useState(7);
+  const countRef = useRef(null);
+  countRef.current = counter;
   function timer() {
-    if (counter > 0) {
-      const id = setInterval(() => setCounter((counter) => counter - 1), 1000);
-      setIntervalId(id);
-    }
+    const countInt = setInterval(
+      () =>
+        countRef.current > 0
+          ? setCounter((counter) => counter - 1)
+          : clearInterval(countInt),
+      1000
+    );
+    setCounter(7);
   }
 
-  useEffect(() => setOption(""), [shuffledPlayers]);
+  console.log(counter);
+
   useEffect(() => LottieRef.current?.play(), [shuffledPlayers]);
 
   if (shuffledPlayers.length === 0) {
