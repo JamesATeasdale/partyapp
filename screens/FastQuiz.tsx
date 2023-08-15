@@ -17,16 +17,13 @@ export default function FastQuiz({ players, setPlayers }) {
   const [shuffledQuestions, setShuffledQuestions] = useState(
     shuffle([...fastquizquestions].filter((item) => item.category === category))
   );
-  const [fastQuizInd, setFastQuizInd] = useState(0);
   let shuffledQuestion = { question: "" };
   let shuffledPlayer = shuffledPlayers[0];
 
-  const removeCard = (num = 0) => {
-    if (num === 2) setFastQuizInd(fastQuizInd + 1);
-  };
   const [counter, setCounter] = useState(7);
   const countRef = useRef(null);
   countRef.current = counter;
+
   function timer() {
     const countInt = setInterval(
       () =>
@@ -36,6 +33,14 @@ export default function FastQuiz({ players, setPlayers }) {
       1000
     );
     setCounter(7);
+    setShuffledPlayers(
+      shuffledPlayers.filter((player) => player.name !== shuffledPlayer.name)
+    );
+    setShuffledQuestions(
+      [...fastquizquestions].filter(
+        (item) => item.question !== shuffledQuestion.question
+      )
+    );
   }
 
   console.log(counter);
@@ -49,12 +54,11 @@ export default function FastQuiz({ players, setPlayers }) {
   }
   if (shuffledQuestions.length === 0)
     setShuffledQuestions(shuffle([...fastquizquestions]));
-  if (!shuffledQuestion.question)
-    shuffledQuestion = shuffledQuestions[fastQuizInd];
+  if (!shuffledQuestion.question) shuffledQuestion = shuffledQuestions[0];
 
   return (
     <View
-      tw="h-full items-center justify-between pb-4"
+      tw="h-full items-center justify-between"
       style={{ backgroundColor: pageTheme.bg }}>
       <LottieView
         tw="absolute h-full "
@@ -68,7 +72,7 @@ export default function FastQuiz({ players, setPlayers }) {
         <GameRanking players={players} setPlayers={setPlayers} />
       </View>
       <View
-        tw="w-11/12 h-3/6 rounded-xl flex-col"
+        tw="w-11/12 h-3/6 rounded-xl flex-col mb-4"
         style={{ backgroundColor: shuffledPlayer.colour }}>
         <View
           tw="flex-row rounded-t-xl p-1 h-14"
@@ -94,7 +98,7 @@ export default function FastQuiz({ players, setPlayers }) {
         </View>
         <TouchableOpacity tw="h-5/6 justify-center" onPress={timer}>
           <Text tw=" text-white font-bold text-4xl text-center justify-center m-4 ">
-            {shuffledQuestions[fastQuizInd].question}
+            {shuffledQuestions[0].question}
           </Text>
         </TouchableOpacity>
       </View>

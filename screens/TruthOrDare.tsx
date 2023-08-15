@@ -22,16 +22,26 @@ export default function TruthOrDare({ players, setPlayers }) {
   const [shuffledDares, setShuffledDares] = useState(
     shuffle([...dares].filter((item) => item.category === category))
   );
-  const [truthInd, setTruthInd] = useState(0);
-  const [dareInd, setDareInd] = useState(0);
+  // const [truthInd, setTruthInd] = useState(0);
+  // const [dareInd, setDareInd] = useState(0);
   const [option, setOption] = useState("");
   let shuffledTruth = { question: "" };
   let shuffledDare = { question: "" };
   let shuffledPlayer = shuffledPlayers[0];
 
   const removeCard = (num = 0) => {
-    if (num === 1) setTruthInd(truthInd + 1);
-    if (num === 2) setDareInd(dareInd + 1);
+    if (num === 1)
+      setShuffledTruths(
+        [...shuffledTruths].filter(
+          (item) => item.question !== shuffledTruth.question
+        )
+      );
+    if (num === 2)
+      setShuffledDares(
+        [...shuffledDares].filter(
+          (item) => item.question !== shuffledDare.question
+        )
+      );
   };
 
   useEffect(() => setOption(""), [shuffledPlayers]);
@@ -43,8 +53,8 @@ export default function TruthOrDare({ players, setPlayers }) {
   }
   if (shuffledTruths.length === 0) setShuffledTruths(shuffle([...truths]));
   if (shuffledDares.length === 0) setShuffledDares(shuffle([...dares]));
-  if (!shuffledTruth.question) shuffledTruth = shuffledTruths[truthInd];
-  if (!shuffledDare.question) shuffledDare = shuffledDares[dareInd];
+  if (!shuffledTruth.question) shuffledTruth = shuffledTruths[0];
+  if (!shuffledDare.question) shuffledDare = shuffledDares[0];
 
   return (
     <View
