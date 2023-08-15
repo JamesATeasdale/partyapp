@@ -14,11 +14,6 @@ import { theme } from "../assets/colors";
 export default function GameRanking({ players, setPlayers }) {
   const route = useRoute();
   const pageTheme = theme(route.name);
-  const images = [
-    require("../assets/gold.webp"),
-    require("../assets/silver.jpg"),
-    require("../assets/brown.jpg"),
-  ];
 
   function confirm(playername) {
     Alert.alert("Delete " + playername + "?", "", [
@@ -37,19 +32,19 @@ export default function GameRanking({ players, setPlayers }) {
   }
   return (
     <View
-      tw="w-11/12 h-4/6 self-center items-center rounded-b-lg"
+      tw="w-11/12 h-40 self-center items-center rounded-b-lg"
       style={{ backgroundColor: pageTheme.fg }}>
-      <View tw="mt-1 rounded-lg flex-row -mb-2">
+      <View tw="mt-1 rounded-lg flex-row ">
         {players
           .sort((a, b) => b.score - a.score)
           .slice(0, 3)
           .map((player = { name: "", score: 0, colour: "" }, index = 0) => {
-            let colour = "brown";
+            let colour = "red";
             index === 0
-              ? (colour = "gold")
+              ? (colour = "#D4AF37")
               : index === 1
-              ? (colour = "silver")
-              : (colour = "brown");
+              ? (colour = "#C0C0C0")
+              : (colour = "#CD7F32");
 
             return (
               <TouchableOpacity // <- problem
@@ -60,11 +55,11 @@ export default function GameRanking({ players, setPlayers }) {
                 }}
                 tw="basis-1/3 items-center">
                 <Image
-                  source={require("../assets/crown.jpeg")}
-                  tw="w-3/6 h-3/6"
+                  source={require("../assets/crown.png")}
+                  tw="w-4/6 h-16"
                 />
                 <Text
-                  tw="text-2xl font-extrabold rounded-md w-full text-center"
+                  tw="text-2xl font-extrabold rounded-md w-full text-center text-white"
                   style={{
                     backgroundColor: player.colour,
                   }}>
@@ -86,11 +81,11 @@ export default function GameRanking({ players, setPlayers }) {
             <TouchableOpacity
               onPress={() => confirm(player.name)}
               key={player.name}
-              tw="mx-1 items-center pl-1 rounded-lg flex-row my-2 justify-center"
+              tw="mx-1 items-center pl-1 rounded-lg flex-row my-2 justify-center h-9"
               style={{
                 backgroundColor: player.colour,
               }}>
-              <Text tw="text-2xl font-extrabold pr-6 h-full">
+              <Text tw="text-2xl text-white font-extrabold pr-6 h-full">
                 {player.name}
               </Text>
               <Text tw="px-2 h-full font-black text-2xl rounded-r-md bg-white border-black">

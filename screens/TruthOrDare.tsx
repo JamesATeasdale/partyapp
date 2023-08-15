@@ -2,15 +2,16 @@ import GameRanking from "../components/GameRanking";
 import Header from "../components/Header";
 import { theme } from "../assets/colors";
 import { useRoute } from "@react-navigation/native";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import truths from "../assets/truths.json";
 import dares from "../assets/dares.json";
 import { TouchableOpacity, Text, View } from "react-native";
 import SwipeableCard from "../components/SwipeCard";
-import BalloonTransition from "../components/BalloonsTransition";
 import shuffle from "../hooks/shuffleArray";
+import LottieView from "lottie-react-native";
 
 export default function TruthOrDare({ players, setPlayers }) {
+  const LottieRef = useRef(null);
   const route = useRoute();
   const pageTheme = theme(route.name);
   const [category, setCategory] = useState("na");
@@ -47,18 +48,24 @@ export default function TruthOrDare({ players, setPlayers }) {
 
   return (
     <View
-      tw="h-full items-center justify-between pb-4"
+      tw="h-full items-center justify-between"
       style={{ backgroundColor: pageTheme.bg }}>
-      <BalloonTransition players={players} />
+      <LottieView
+        tw="absolute h-full"
+        ref={LottieRef}
+        source={require("../assets/animation_lkb6094l.json")}
+        loop={false}
+        speed={2}
+      />
       <View tw="w-full h-2/6 items-center">
         <Header />
         <GameRanking players={players} setPlayers={setPlayers} />
       </View>
       <View
-        tw="w-11/12 h-3/6 items-center rounded-xl justify-self-end"
+        tw="w-11/12 h-3/6 items-center rounded-xl justify-self-end mb-2"
         style={{ backgroundColor: pageTheme.fg }}>
         <View
-          tw="flex-row rounded-t-xl p-1 h-1/6 w-full"
+          tw="flex-row rounded-t-xl p-1 h-14 w-full"
           style={{ backgroundColor: shuffledPlayer.colour }}>
           <View tw="basis-2/3 m-2">
             <Text tw="font-black text-gray-300 text-3xl ">
@@ -68,18 +75,19 @@ export default function TruthOrDare({ players, setPlayers }) {
           <View tw="flex-row right-0 absolute">
             <Text
               tw="m-1 text-xl p-2  rounded-l-xl text-gray-300 bg-gray-600"
-              style={{ backgroundColor: pageTheme.bg }}>
+              style={{ backgroundColor: pageTheme.fg }}>
               {"👎"}
             </Text>
             <Text
               tw="m-1 text-xl p-2 rounded-r-xl text-gray-300 bg-gray-600"
-              style={{ backgroundColor: pageTheme.bg }}>
+              style={{ backgroundColor: pageTheme.fg }}>
               {"👍"}
             </Text>
           </View>
         </View>
         {option === "truth" ? (
           <SwipeableCard
+            LottieRef={LottieRef}
             shuffledPlayer={shuffledPlayers[0]}
             setPlayers={setPlayers}
             players={players}
@@ -91,6 +99,7 @@ export default function TruthOrDare({ players, setPlayers }) {
           />
         ) : option === "dare" ? (
           <SwipeableCard
+            LottieRef={LottieRef}
             shuffledPlayer={shuffledPlayer}
             setPlayers={setPlayers}
             players={players}

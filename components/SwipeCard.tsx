@@ -6,6 +6,7 @@ import { theme } from "../assets/colors";
 const SCREEN_WIDTH = Dimensions.get("window").width;
 
 export default function SwipeableCard({
+  LottieRef,
   players,
   setPlayers,
   item,
@@ -65,6 +66,7 @@ export default function SwipeableCard({
             useNativeDriver: false,
           }),
         ]).start(() => {
+          LottieRef.current?.play();
           setPlayers(
             players.map((player) =>
               player.name === shuffledPlayer.name
@@ -114,7 +116,7 @@ export default function SwipeableCard({
         backgroundColor: pageTheme.fg,
         transform: [{ translateX: xPosition }, { rotate: rotateCard }],
       }}>
-      <Text tw="text-gray-300 font-bold text-4xl text-center">
+      <Text tw="text-white font-bold text-4xl text-center">
         {item.question}
       </Text>
     </Animated.View>

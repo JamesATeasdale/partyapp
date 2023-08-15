@@ -1,14 +1,16 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import PlayerList from "../components/PlayerList";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Sets from "../components/Sets";
 import AddPlayerForm from "../components/AddPlayerForm";
-import BalloonTransition from "../components/BalloonsTransition";
 import Header from "../components/Header";
 import { theme } from "../assets/colors";
 import { useRoute } from "@react-navigation/native";
+import LottieView from "lottie-react-native";
 
 export default function Welcome({ players, setPlayers }) {
+  const LottieRef = useRef(null);
+  useEffect(() => LottieRef.current?.play(), [players]);
   const route = useRoute();
   const [err, setErr] = useState("");
   const [isAdd, setIsAdd] = useState(false);
@@ -16,7 +18,13 @@ export default function Welcome({ players, setPlayers }) {
 
   return (
     <View tw="items-center h-full" style={{ backgroundColor: pageTheme.bg }}>
-      <BalloonTransition players={players} />
+      <LottieView
+        tw="absolute h-full"
+        ref={LottieRef}
+        source={require("../assets/animation_lkb6094l.json")}
+        loop={false}
+        speed={2}
+      />
       <Header />
       <PlayerList
         setIsAdd={setIsAdd}

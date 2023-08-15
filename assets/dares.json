@@ -165,7 +165,7 @@
   },
   { "question": "Smell another player's armpit", "likes": 0, "category": "na" },
   {
-    "question": "Talk in an American accent for the rest of the evening",
+    "question": "Talk in an American accent for the rest of the round",
     "likes": 0,
     "category": "na"
   },
@@ -225,7 +225,7 @@
     "category": "na"
   },
   {
-    "question": "Put your clothing on backwards for the rest of the evening",
+    "question": "Put your clothing on backwards for the rest of the round",
     "likes": 0,
     "category": "na"
   },
@@ -276,7 +276,7 @@
     "category": "na"
   },
   {
-    "question": "Hold your drink with two hands for the rest of the evening",
+    "question": "Hold your drink with two hands for the rest of the round",
     "likes": 0,
     "category": "na"
   },
@@ -286,7 +286,7 @@
     "category": "na"
   },
   {
-    "question": "Sit on the floor for the rest of the evening",
+    "question": "Sit on the floor for the rest of the round",
     "likes": 0,
     "category": "na"
   },

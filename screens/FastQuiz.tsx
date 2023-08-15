@@ -1,14 +1,16 @@
-import { View, Text } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
+import LottieView from "lottie-react-native";
 import GameRanking from "../components/GameRanking";
 import Header from "../components/Header";
 import { theme } from "../assets/colors";
 import { useRoute } from "@react-navigation/native";
-import BalloonTransition from "../components/BalloonsTransition";
 import shuffle from "../hooks/shuffleArray";
 import fastquizquestions from "../assets/fastquizquestions.json";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 export default function FastQuiz({ players, setPlayers }) {
+  const [countdown, startCountdown] = useState(true);
+  const LottieRef = useRef(null);
   const route = useRoute();
   const pageTheme = theme(route.name);
   const [category, setCategory] = useState("na");
@@ -24,8 +26,17 @@ export default function FastQuiz({ players, setPlayers }) {
   const removeCard = (num = 0) => {
     if (num === 2) setFastQuizInd(fastQuizInd + 1);
   };
+  const [counter, setCounter] = useState(60);
+  const [intervalId, setIntervalId] = useState(null);
+  function timer() {
+    if (counter > 0) {
+      const id = setInterval(() => setCounter((counter) => counter - 1), 1000);
+      setIntervalId(id);
+    }
+  }
 
   useEffect(() => setOption(""), [shuffledPlayers]);
+  useEffect(() => LottieRef.current?.play(), [shuffledPlayers]);
 
   if (shuffledPlayers.length === 0) {
     return Promise.resolve(setShuffledPlayers(shuffle([...players]))).then(
@@ -41,7 +52,13 @@ export default function FastQuiz({ players, setPlayers }) {
     <View
       tw="h-full items-center justify-between pb-4"
       style={{ backgroundColor: pageTheme.bg }}>
-      <BalloonTransition players={players} />
+      <LottieView
+        tw="absolute h-full "
+        ref={LottieRef}
+        source={require("../assets/fireworks.json")}
+        loop={false}
+        speed={1}
+      />
       <View tw="w-full h-2/6 items-center">
         <Header />
         <GameRanking players={players} setPlayers={setPlayers} />
@@ -50,11 +67,12 @@ export default function FastQuiz({ players, setPlayers }) {
         tw="w-11/12 h-3/6 rounded-xl flex-col"
         style={{ backgroundColor: shuffledPlayer.colour }}>
         <View
-          tw="flex-row rounded-t-xl p-1 h-1/6"
+          tw="flex-row rounded-t-xl p-1 h-14"
           style={{ backgroundColor: pageTheme.fg }}>
           <View tw="basis-2/3 m-2">
             <Text tw="font-black text-gray-300 text-3xl ">
               {shuffledPlayer.name}
+              {counter}
             </Text>
           </View>
           <View tw="flex-row right-0 absolute h-14">
@@ -70,11 +88,11 @@ export default function FastQuiz({ players, setPlayers }) {
             </Text>
           </View>
         </View>
-        <View tw="h-5/6 justify-center">
+        <TouchableOpacity tw="h-5/6 justify-center" onPress={timer}>
           <Text tw=" text-white font-bold text-4xl text-center justify-center m-4 ">
             {shuffledQuestions[fastQuizInd].question}
           </Text>
-        </View>
+        </TouchableOpacity>
       </View>
     </View>
   );

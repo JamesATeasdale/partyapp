@@ -11,6 +11,8 @@ Duplicate Resources Error:
 https://stackoverflow.com/questions/53239705/react-native-error-duplicate-resources-android
 rm -rf ./android/app/src/main/res/drawable-*
 rm -rf ./android/app/src/main/res/raw
+DELETE BUILD SOMETIMES WORKS
+
 node_modules/react-native/react.gradle path, add:
 doLast {
     def moveFunc = { resSuffix ->
