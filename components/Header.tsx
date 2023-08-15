@@ -7,7 +7,6 @@ export default function Header() {
   const navigation = useNavigation();
   const route = useRoute();
   const pageTheme = theme(route.name);
-  console.log(route.name);
 
   return (
     <TouchableOpacity
@@ -17,7 +16,7 @@ export default function Header() {
       style={{
         backgroundColor: pageTheme.fg,
       }}
-      tw="w-11/12 mb-2 mt-4 flex-row p-4 rounded-t-xl justify-center">
+      tw="w-11/12 mb-2 mt-2 flex-row p-2 rounded-t-lg justify-center">
       {route.name.split("").map((letter, index) => {
         return (
           <Animated.View key={index} entering={ZoomIn.duration(index * 200)}>

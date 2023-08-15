@@ -38,16 +38,19 @@ export default function FastQuiz({ players, setPlayers }) {
     shuffledQuestion = shuffledQuestions[fastQuizInd];
 
   return (
-    <View tw="h-full items-center" style={{ backgroundColor: pageTheme.bg }}>
+    <View
+      tw="h-full items-center justify-between pb-4"
+      style={{ backgroundColor: pageTheme.bg }}>
       <BalloonTransition players={players} />
-      <Header />
-      <GameRanking players={players} setPlayers={setPlayers} />
-
+      <View tw="w-full h-2/6 items-center">
+        <Header />
+        <GameRanking players={players} setPlayers={setPlayers} />
+      </View>
       <View
-        tw="w-11/12 h-3/6 bottom-5 absolute rounded-xl"
+        tw="w-11/12 h-3/6 rounded-xl flex-col"
         style={{ backgroundColor: shuffledPlayer.colour }}>
         <View
-          tw="flex-row rounded-t-xl p-1"
+          tw="flex-row rounded-t-xl p-1 h-1/6"
           style={{ backgroundColor: pageTheme.fg }}>
           <View tw="basis-2/3 m-2">
             <Text tw="font-black text-gray-300 text-3xl ">
@@ -67,9 +70,11 @@ export default function FastQuiz({ players, setPlayers }) {
             </Text>
           </View>
         </View>
-        <Text tw="h-full  text-white font-bold text-4xl text-center m-4">
-          {shuffledQuestions[fastQuizInd].question}
-        </Text>
+        <View tw="h-5/6 justify-center">
+          <Text tw=" text-white font-bold text-4xl text-center justify-center m-4 ">
+            {shuffledQuestions[fastQuizInd].question}
+          </Text>
+        </View>
       </View>
     </View>
   );

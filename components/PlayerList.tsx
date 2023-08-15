@@ -24,7 +24,7 @@ export default function PlayerList({ setIsAdd, setPlayers, players }) {
 
   return (
     <View
-      tw="bg-[#341651] w-11/12 min-h-[72] max-h-[25%] rounded-b-xl border-y-8"
+      tw="bg-[#341651] w-11/12 min-h-[72] max-h-[25%] rounded-b-lg border-y-8"
       style={{ backgroundColor: pageTheme.fg, borderColor: pageTheme.fg }}>
       <ScrollView>
         <View tw="flex-row flex-wrap justify-center">
@@ -37,7 +37,7 @@ export default function PlayerList({ setIsAdd, setPlayers, players }) {
                 style={{
                   backgroundColor: player.colour,
                 }}
-                tw="px-2 m-1 rounded-xl"
+                tw="px-2 m-1 rounded-md"
                 onPress={() => confirm(player.name)}>
                 <Text tw="text-2xl font-bold">{player.name}</Text>
               </TouchableOpacity>

@@ -46,29 +46,33 @@ export default function TruthOrDare({ players, setPlayers }) {
   if (!shuffledDare.question) shuffledDare = shuffledDares[dareInd];
 
   return (
-    <View tw="h-full items-center" style={{ backgroundColor: pageTheme.bg }}>
+    <View
+      tw="h-full items-center justify-between pb-4"
+      style={{ backgroundColor: pageTheme.bg }}>
       <BalloonTransition players={players} />
-      <Header />
-      <GameRanking players={players} setPlayers={setPlayers} />
+      <View tw="w-full h-2/6 items-center">
+        <Header />
+        <GameRanking players={players} setPlayers={setPlayers} />
+      </View>
       <View
-        tw="w-11/12 h-3/6 items-center bottom-5 absolute rounded-xl"
-        style={{ backgroundColor: shuffledPlayer.colour }}>
+        tw="w-11/12 h-3/6 items-center rounded-xl justify-self-end"
+        style={{ backgroundColor: pageTheme.fg }}>
         <View
-          tw="flex-row rounded-t-xl p-1 w-full"
-          style={{ backgroundColor: pageTheme.fg }}>
+          tw="flex-row rounded-t-xl p-1 h-1/6 w-full"
+          style={{ backgroundColor: shuffledPlayer.colour }}>
           <View tw="basis-2/3 m-2">
             <Text tw="font-black text-gray-300 text-3xl ">
               {shuffledPlayer.name}
             </Text>
           </View>
-          <View tw="flex-row right-0 absolute h-14">
+          <View tw="flex-row right-0 absolute">
             <Text
-              tw="m-1 text-xl p-2 pb-1 rounded-l-xl text-gray-300 bg-gray-600"
+              tw="m-1 text-xl p-2  rounded-l-xl text-gray-300 bg-gray-600"
               style={{ backgroundColor: pageTheme.bg }}>
               {"👎"}
             </Text>
             <Text
-              tw="m-1 text-xl p-2 pb-1 rounded-r-xl text-gray-300 bg-gray-600"
+              tw="m-1 text-xl p-2 rounded-r-xl text-gray-300 bg-gray-600"
               style={{ backgroundColor: pageTheme.bg }}>
               {"👍"}
             </Text>
@@ -97,21 +101,17 @@ export default function TruthOrDare({ players, setPlayers }) {
             removeCard={removeCard}
           />
         ) : (
-          <View tw="h-4/6 w-11/12 rounded-md bottom-5 absolute ">
+          <View tw="h-5/6 flex-row">
             <TouchableOpacity
               onPress={() => setOption("truth")}
-              tw="w-1/2 h-full absolute left-0 bg-black justify-center items-center rounded-l-md">
-              <Text tw="text-white font-black text-center text-5xl top-5 absolute">
-                Truth
-              </Text>
+              tw="basis-1/2 bg-black justify-center items-center rounded-bl-md">
+              <Text tw="text-white font-black text-center text-5xl">Truth</Text>
               <Text tw="text-white font-black text-center text-5xl">+1</Text>
             </TouchableOpacity>
             <TouchableOpacity
               onPress={() => setOption("dare")}
-              tw="w-1/2 h-full absolute right-0 bg-white justify-center items-center  rounded-r-md">
-              <Text tw="text-black font-black text-center text-5xl top-5 absolute">
-                Dare
-              </Text>
+              tw="basis-1/2 bg-white justify-center items-center  rounded-br-md">
+              <Text tw="text-black font-black text-center text-5xl">Dare</Text>
               <Text tw="text-black font-black text-center text-5xl">+2</Text>
             </TouchableOpacity>
           </View>

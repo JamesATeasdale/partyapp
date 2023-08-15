@@ -17,12 +17,12 @@ export default function Sets() {
         <Text tw="text-center p-6 text-xl font-black ">Truth Or Dare</Text>
       </TouchableOpacity>
       <TouchableOpacity
-        tw="bg-[#801a13] basis-1/2 h-1/2 justify-center border-2 border-white"
+        tw="bg-[#e75b0e] basis-1/2 h-1/2 justify-center border-2 border-white"
         onPress={() => navigation.navigate("Fast Quiz")}>
         <Text tw="text-center p-6 text-xl font-black">Fast Quiz</Text>
       </TouchableOpacity>
       <TouchableOpacity
-        tw="bg-blue-900 basis-1/2 h-1/2 justify-center border-2 border-white"
+        tw="bg-[#2caec1] basis-1/2 h-1/2 justify-center border-2 border-white"
         onPress={() => {}}>
         <Text tw="text-center p-6 text-xl font-black">Ice Breakers</Text>
       </TouchableOpacity>

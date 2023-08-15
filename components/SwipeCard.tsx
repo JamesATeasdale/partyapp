@@ -1,5 +1,7 @@
+import { useRoute } from "@react-navigation/native";
 import { useState } from "react";
 import { Text, Dimensions, Animated, PanResponder, View } from "react-native";
+import { theme } from "../assets/colors";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
 
@@ -15,6 +17,8 @@ export default function SwipeableCard({
 }) {
   const [xPosition, setXPosition] = useState(new Animated.Value(0));
 
+  const route = useRoute();
+  const pageTheme = theme(route.name);
   let swipeDirection = "";
   const [na, swipedDirection] = useState("--");
   let cardOpacity = new Animated.Value(1);
@@ -104,13 +108,13 @@ export default function SwipeableCard({
   return (
     <Animated.View
       {...panResponder.panHandlers}
-      tw="justify-center absolute h-4/6 w-11/12 rounded-md bottom-4"
+      tw="justify-center h-5/6 w-full rounded-md p-3"
       style={{
         opacity: cardOpacity,
-        backgroundColor: shuffledPlayer.colour,
+        backgroundColor: pageTheme.fg,
         transform: [{ translateX: xPosition }, { rotate: rotateCard }],
       }}>
-      <Text tw="text-black font-bold text-4xl text-center m-4">
+      <Text tw="text-gray-300 font-bold text-4xl text-center">
         {item.question}
       </Text>
     </Animated.View>
