@@ -1,11 +1,9 @@
-import { useState } from "react";
 import {
   TouchableOpacity,
   View,
   Text,
   ScrollView,
   Alert,
-  ImageBackground,
   Image,
 } from "react-native";
 import { useRoute } from "@react-navigation/native";
@@ -14,6 +12,11 @@ import { theme } from "../assets/colors";
 export default function GameRanking({ players, setPlayers }) {
   const route = useRoute();
   const pageTheme = theme(route.name);
+  const placeImage = [
+    require("../assets/crown.png"),
+    require("../assets/swords.png"),
+    require("../assets/jesterhat.png"),
+  ];
 
   function confirm(playername) {
     Alert.alert("Delete " + playername + "?", "", [
@@ -54,10 +57,7 @@ export default function GameRanking({ players, setPlayers }) {
                   borderColor: colour,
                 }}
                 tw="basis-1/3 items-center">
-                <Image
-                  source={require("../assets/crown.png")}
-                  tw="w-4/6 h-16"
-                />
+                <Image source={placeImage[index]} tw="w-4/6 h-16" />
                 <Text
                   tw="text-2xl font-extrabold rounded-md w-full text-center text-white"
                   style={{

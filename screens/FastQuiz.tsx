@@ -13,16 +13,15 @@ export default function FastQuiz({ players, setPlayers }) {
   const route = useRoute();
   const pageTheme = theme(route.name);
   const [category, setCategory] = useState("na");
+  const [counter, setCounter] = useState(7);
+  const countRef = useRef(null);
+  countRef.current = counter;
   const [shuffledPlayers, setShuffledPlayers] = useState(shuffle([...players]));
   const [shuffledQuestions, setShuffledQuestions] = useState(
     shuffle([...fastquizquestions].filter((item) => item.category === category))
   );
   let shuffledQuestion = { question: "" };
   let shuffledPlayer = shuffledPlayers[0];
-
-  const [counter, setCounter] = useState(7);
-  const countRef = useRef(null);
-  countRef.current = counter;
 
   function timer() {
     const countInt = setInterval(
@@ -37,7 +36,7 @@ export default function FastQuiz({ players, setPlayers }) {
       shuffledPlayers.filter((player) => player.name !== shuffledPlayer.name)
     );
     setShuffledQuestions(
-      [...fastquizquestions].filter(
+      [...shuffledQuestions].filter(
         (item) => item.question !== shuffledQuestion.question
       )
     );
@@ -73,10 +72,10 @@ export default function FastQuiz({ players, setPlayers }) {
       </View>
       <View
         tw="w-11/12 h-3/6 rounded-xl flex-col mb-4"
-        style={{ backgroundColor: shuffledPlayer.colour }}>
+        style={{ backgroundColor: pageTheme.fg }}>
         <View
           tw="flex-row rounded-t-xl p-1 h-14"
-          style={{ backgroundColor: pageTheme.fg }}>
+          style={{ backgroundColor: shuffledPlayer.colour }}>
           <View tw="basis-2/3 m-2">
             <Text tw="font-black text-gray-300 text-3xl ">
               {shuffledPlayer.name}

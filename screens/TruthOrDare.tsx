@@ -22,8 +22,6 @@ export default function TruthOrDare({ players, setPlayers }) {
   const [shuffledDares, setShuffledDares] = useState(
     shuffle([...dares].filter((item) => item.category === category))
   );
-  // const [truthInd, setTruthInd] = useState(0);
-  // const [dareInd, setDareInd] = useState(0);
   const [option, setOption] = useState("");
   let shuffledTruth = { question: "" };
   let shuffledDare = { question: "" };
