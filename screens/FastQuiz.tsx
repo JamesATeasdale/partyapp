@@ -107,14 +107,16 @@ export default function FastQuiz({ players, setPlayers }) {
             </Text>
           </TouchableOpacity>
         ) : (
-          <Text tw="basis-3/6 text-white font-bold text-4xl text-center justify-center">
-            {counter
-              ? shuffledQuestions[0].question
-              : shuffledQuestions[0].answer}
-          </Text>
+          <View tw="basis-3/6 justify-center">
+            <Text tw="text-white font-bold text-4xl text-center">
+              {counter
+                ? shuffledQuestions[0].question
+                : shuffledQuestions[0].answer}
+            </Text>
+          </View>
         )}
         {counter ? (
-          <View tw="basis-2/6 flex-row border-2 justify-center items-center">
+          <View tw="basis-2/6 flex-row justify-center items-center">
             <Text tw="text-7xl font-black text-white">{counter}</Text>
           </View>
         ) : newGame ? (

@@ -17,7 +17,9 @@ export default function Welcome({ players, setPlayers }) {
   const pageTheme = theme(route.name);
 
   return (
-    <View tw="items-center h-full" style={{ backgroundColor: pageTheme.bg }}>
+    <View
+      tw="items-center h-full justify-between"
+      style={{ backgroundColor: pageTheme.bg }}>
       <LottieView
         tw="absolute h-full"
         ref={LottieRef}
@@ -25,12 +27,14 @@ export default function Welcome({ players, setPlayers }) {
         loop={false}
         speed={2}
       />
-      <Header />
-      <PlayerList
-        setIsAdd={setIsAdd}
-        players={players}
-        setPlayers={setPlayers}
-      />
+      <View tw="w-full items-center">
+        <Header />
+        <PlayerList
+          setIsAdd={setIsAdd}
+          players={players}
+          setPlayers={setPlayers}
+        />
+      </View>
       {players.length > 0 ? (
         <Sets />
       ) : (
