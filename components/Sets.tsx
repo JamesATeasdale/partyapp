@@ -9,27 +9,22 @@ export default function Sets() {
 
   return (
     <View
-      tw="flex-col w-11/12 m-4 rounded-xl h-4/6 p-2 content-center"
+      tw="flex-col w-11/12 m-4 rounded-xl h-3/6 p-2 content-center"
       style={{ backgroundColor: pageTheme.fg }}>
       <TouchableOpacity
-        tw="bg-[#2c935f] basis-1/4  justify-center"
+        tw="bg-[#2c935f] grow basis-1/4 justify-center"
         onPress={() => navigation.navigate("Truth or Dare")}>
         <Text tw="text-center text-4xl font-black ">Truth Or Dare</Text>
       </TouchableOpacity>
       <TouchableOpacity
-        tw="bg-[#e75b0e] basis-1/4  justify-center"
+        tw="bg-[#e75b0e] grow basis-1/4  justify-center"
         onPress={() => navigation.navigate("Fast Quiz")}>
         <Text tw="text-center text-4xl font-black">Fast Quiz</Text>
       </TouchableOpacity>
       <TouchableOpacity
-        tw="bg-[#2caec1] basis-1/4  justify-center"
+        tw="bg-[#2caec1] grow basis-1/4 justify-center"
         onPress={() => {}}>
         <Text tw="text-center text-4xl font-black">Ice Breakers</Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        tw="bg-yellow-400 basis-1/4  justify-center"
-        onPress={() => {}}>
-        <Text tw="text-center text-4xl font-black">Higher or Lower</Text>
       </TouchableOpacity>
       <View
         style={{

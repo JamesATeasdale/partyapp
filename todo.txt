@@ -1,4 +1,19 @@
+bugs:
 deleted users appear in truth or dare list for one round after being deleted
+
+CHOOSE A BETTER COLOUR PALETTE:
+- welcome is good, but mediocre
+- fast quiz is okay, but a bit bland
+- truth or dare is horrible 
+
+fastquiz fireworks shouldnt go off on click to start
+truth or dare should have a background animation similar to fast Quiz
+add points to player list component
+divide main colours into light and dark, choose dark for players and title
+maybe remove multicolour, randomly generated titles or fix constant title colour refresh every second of fastquiz countdown
+add min height back to player list
+add innocent, anything and lewd options to add player menu, tie option to questions picked in truth or dare and fast quiz
+change 1st,2nd, 3rd image placeholders to something better, eg medals
 
 improve the GameRanking component, finish off the CardDeck component
 
@@ -6,12 +21,12 @@ improve the GameRanking component, finish off the CardDeck component
  react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
  cd android && ./gradlew assembleRelease
 
-
+build with:cd android && ./gradlew assembleRelease
 Duplicate Resources Error:
+delete android/app/build
 https://stackoverflow.com/questions/53239705/react-native-error-duplicate-resources-android
 rm -rf ./android/app/src/main/res/drawable-*
 rm -rf ./android/app/src/main/res/raw
-DELETE BUILD SOMETIMES WORKS
 
 node_modules/react-native/react.gradle path, add:
 doLast {
