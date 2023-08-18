@@ -1,7 +1,7 @@
 import GameRanking from "../components/GameRanking";
 import Header from "../components/Header";
 import { theme } from "../assets/colors";
-import { useRoute } from "@react-navigation/native";
+import { useNavigation, useRoute } from "@react-navigation/native";
 import { useEffect, useState, useRef } from "react";
 import truths from "../assets/truths.json";
 import dares from "../assets/dares.json";
@@ -26,6 +26,7 @@ export default function TruthOrDare({ players, setPlayers }) {
   let shuffledTruth = { question: "" };
   let shuffledDare = { question: "" };
   let shuffledPlayer = shuffledPlayers[0];
+  const navigation = useNavigation();
 
   const removeCard = (num = 0) => {
     if (num === 1)
@@ -43,6 +44,7 @@ export default function TruthOrDare({ players, setPlayers }) {
   };
 
   useEffect(() => setOption(""), [shuffledPlayers]);
+  if (!players.length) navigation.navigate("Party Animals");
 
   if (shuffledPlayers.length === 0) {
     return Promise.resolve(setShuffledPlayers(shuffle([...players]))).then(

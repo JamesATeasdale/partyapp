@@ -24,10 +24,15 @@ export default function PlayerList({ setIsAdd, setPlayers, players }) {
 
   return (
     <View
-      tw="bg-[#341651] w-11/12 rounded-b-lg border-y-8 max-h-56"
-      style={{ backgroundColor: pageTheme.fg, borderColor: pageTheme.fg }}>
+      tw="w-11/12 rounded-lg my-2 min-h-14 max-h-56"
+      style={{ backgroundColor: pageTheme.fg }}>
       <ScrollView>
         <View tw="flex-row flex-wrap justify-center">
+          {players.length === 0 && (
+            <View tw="px-2 m-1 rounded-md">
+              <Text tw="text-2xl font-bold text-white p-2">Add a Player</Text>
+            </View>
+          )}
           {players.map((player = { name: "", colour: "" }, index = 0) => (
             <Animated.View
               key={player.name}

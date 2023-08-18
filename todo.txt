@@ -1,5 +1,6 @@
 bugs:
 deleted users appear in truth or dare list for one round after being deleted
+fast quiz countdown clips the top of its box ever so slightly
 
 CHOOSE A BETTER COLOUR PALETTE:
 - welcome is good, but mediocre
@@ -14,8 +15,6 @@ maybe remove multicolour, randomly generated titles or fix constant title colour
 add min height back to player list
 add innocent, anything and lewd options to add player menu, tie option to questions picked in truth or dare and fast quiz
 change 1st,2nd, 3rd image placeholders to something better, eg medals
-
-improve the GameRanking component, finish off the CardDeck component
 
  keytool -genkey -v -keystore my-app-key.keystore -alias my-app-alias -keyalg RSA -keysize 2048 -validity 10000
  react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/

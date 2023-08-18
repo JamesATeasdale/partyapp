@@ -45,8 +45,6 @@ export default function FastQuiz({ players, setPlayers }) {
 
   console.log(counter);
 
-  useEffect(() => LottieRef.current?.play(), [shuffledPlayers]);
-
   if (shuffledPlayers.length === 0) {
     return Promise.resolve(setShuffledPlayers(shuffle([...players]))).then(
       () => (shuffledPlayer = shuffledPlayers[0])

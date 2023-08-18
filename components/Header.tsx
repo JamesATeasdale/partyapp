@@ -13,9 +13,6 @@ export default function Header() {
       onPress={() => {
         navigation.navigate("Party Animals");
       }}
-      style={{
-        backgroundColor: pageTheme.fg,
-      }}
       tw="w-11/12 mb-2 mt-2 flex-row p-2 rounded-t-lg justify-center">
       {route.name.split("").map((letter, index) => {
         return (

@@ -35,18 +35,7 @@ export default function Welcome({ players, setPlayers }) {
           setPlayers={setPlayers}
         />
       </View>
-      {players.length > 0 ? (
-        <Sets />
-      ) : (
-        <TouchableOpacity
-          onPress={() => setIsAdd(true)}
-          tw="w-11/12 h-2/6 bottom-5 absolute justify-center items-center rounded-xl"
-          style={{ backgroundColor: pageTheme.fg }}>
-          <Text tw="text-2xl text-gray-300 font-extrabold">
-            Add a Player to get started
-          </Text>
-        </TouchableOpacity>
-      )}
+      <Sets />
       {isAdd && (
         <AddPlayerForm
           setErr={setErr}

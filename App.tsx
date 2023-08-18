@@ -8,7 +8,7 @@ import FastQuiz from "./screens/FastQuiz";
 const Stack = createNativeStackNavigator();
 
 export default function App() {
-  const [players, setPlayers] = useState([]);
+  const [players, setPlayers] = useState([{ name: "malcom" }]);
 
   return (
     <NavigationContainer>
