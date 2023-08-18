@@ -2,7 +2,7 @@ import { useNavigation, useRoute } from "@react-navigation/native";
 import { Text, TouchableOpacity, View } from "react-native";
 import { theme } from "../assets/colors";
 
-export default function Sets() {
+export default function Sets({ setThem, players }) {
   const navigation = useNavigation();
   const route = useRoute();
   const pageTheme = theme(route.name);
@@ -11,14 +11,22 @@ export default function Sets() {
     <View tw="flex-col w-11/12 m-4 rounded-xl h-3/6 p-2 content-center space-y-4">
       <TouchableOpacity
         tw="bg-[#2c935f] grow basis-1/4 rounded-lg justify-center"
-        onPress={() => navigation.navigate("Truth or Dare")}>
+        onPress={() =>
+          players.length === 0
+            ? setThem(true)
+            : navigation.navigate("Truth or Dare")
+        }>
         <Text tw="text-center text-4xl font-black text-white">
           Truth Or Dare
         </Text>
       </TouchableOpacity>
       <TouchableOpacity
         tw="bg-[#e75b0e] grow basis-1/4 rounded-lg justify-center"
-        onPress={() => navigation.navigate("Fast Quiz")}>
+        onPress={() =>
+          players.length === 0
+            ? setThem(true)
+            : navigation.navigate("Fast Quiz")
+        }>
         <Text tw="text-center text-4xl font-black text-white">Fast Quiz</Text>
       </TouchableOpacity>
       <TouchableOpacity

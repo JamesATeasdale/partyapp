@@ -15,6 +15,7 @@ export default function Welcome({ players, setPlayers }) {
   const [err, setErr] = useState("");
   const [isAdd, setIsAdd] = useState(false);
   const pageTheme = theme(route.name);
+  const [them, setThem] = useState(false);
 
   return (
     <View
@@ -30,12 +31,14 @@ export default function Welcome({ players, setPlayers }) {
       <View tw="w-full items-center">
         <Header />
         <PlayerList
+          them={them}
+          setThem={setThem}
           setIsAdd={setIsAdd}
           players={players}
           setPlayers={setPlayers}
         />
       </View>
-      <Sets />
+      <Sets setThem={setThem} players={players} />
       {isAdd && (
         <AddPlayerForm
           setErr={setErr}

@@ -1,6 +1,7 @@
 bugs:
 deleted users appear in truth or dare list for one round after being deleted
 fast quiz countdown clips the top of its box ever so slightly
+fast quiz ctd when out of questions
 
 CHOOSE A BETTER COLOUR PALETTE:
 - welcome is good, but mediocre
