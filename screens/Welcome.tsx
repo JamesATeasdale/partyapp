@@ -7,15 +7,18 @@ import Header from "../components/Header";
 import { theme } from "../assets/colors";
 import { useRoute } from "@react-navigation/native";
 import LottieView from "lottie-react-native";
+import Animated, { FadeIn, FadeOut } from "react-native-reanimated";
 
 export default function Welcome({ players, setPlayers }) {
   const LottieRef = useRef(null);
-  useEffect(() => LottieRef.current?.play(), [players]);
   const route = useRoute();
   const [err, setErr] = useState("");
   const [isAdd, setIsAdd] = useState(false);
   const pageTheme = theme(route.name);
   const [them, setThem] = useState(false);
+  useEffect(() => LottieRef.current?.play(), [players]);
+
+  if (err) setTimeout(() => setErr(""), 2500);
 
   return (
     <View
@@ -48,9 +51,12 @@ export default function Welcome({ players, setPlayers }) {
         />
       )}
       {err && (
-        <Text tw="bg-red-700 w-full font-bold text-white text-center text-lg pt-0 top-0 absolute">
+        <Animated.Text
+          tw="bg-red-700 w-full font-bold text-white text-center text-lg pt-0 top-0 absolute"
+          exiting={FadeOut}
+          entering={FadeIn}>
           {err}
-        </Text>
+        </Animated.Text>
       )}
     </View>
   );

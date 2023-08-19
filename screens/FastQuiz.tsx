@@ -118,9 +118,9 @@ export default function FastQuiz({ players, setPlayers }) {
             <Text tw="text-7xl font-black text-white">{counter}</Text>
           </View>
         ) : newGame ? (
-          <View tw="basis-2/6 flex-row justify-center">
+          <View tw="basis-2/6 flex-row justify-center space-x-12 pb-2">
             <TouchableOpacity
-              tw="basis-1/2 h-full justify-center bg-white border-r-2"
+              tw="basis-1/3 justify-center bg-white rounded-full"
               onPress={() => {
                 setNewGame(!newGame);
                 setShuffledPlayers(
@@ -136,7 +136,7 @@ export default function FastQuiz({ players, setPlayers }) {
               </Animated.Text>
             </TouchableOpacity>
             <TouchableOpacity
-              tw="basis-1/2 h-full justify-center bg-white border-l-2"
+              tw="basis-1/3 justify-center bg-white rounded-full"
               onPress={() => {
                 setNewGame(!newGame);
                 LottieRef.current.play();
