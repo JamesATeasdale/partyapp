@@ -1,11 +1,4 @@
-import {
-  TouchableOpacity,
-  View,
-  Text,
-  ScrollView,
-  Alert,
-  Image,
-} from "react-native";
+import { TouchableOpacity, View, Text, ScrollView, Alert } from "react-native";
 import { useRoute } from "@react-navigation/native";
 import { theme } from "../assets/colors";
 import { useEffect } from "react";
@@ -13,11 +6,6 @@ import { useEffect } from "react";
 export default function GameRanking({ players, setPlayers }) {
   const route = useRoute();
   const pageTheme = theme(route.name);
-  const placeImage = [
-    require("../assets/crown.png"),
-    require("../assets/swords.png"),
-    require("../assets/jesterhat.png"),
-  ];
   useEffect(() => {
     players.sort((a, b) => b.score - a.score);
   }, [players]);
@@ -38,12 +26,10 @@ export default function GameRanking({ players, setPlayers }) {
     ]);
   }
 
-  const rearrange = (arr = []) => [arr[1], arr[0], arr[2]];
-
   return (
     <View tw="w-full items-center rounded-lg ">
       <View tw="w-full justify-center flex-row h-4/6">
-        {rearrange(players.slice(0, 3)).map(
+        {[players[1], players[0], players[2]].map(
           (player = { name: "", score: 0, colour: "" }, index = 0) => {
             let colour = "red";
             index === 1
@@ -92,16 +78,16 @@ export default function GameRanking({ players, setPlayers }) {
             <TouchableOpacity
               onPress={() => confirm(player.name)}
               key={player.name}
-              tw="mx-1 items-center pl-1 rounded-lg flex-row my-2 justify-center h-9"
+              tw="mx-1  pl-1 rounded-lg flex-row my-2 items-center h-14"
               style={{
                 backgroundColor: player.colour,
               }}>
-              <Text tw="text-2xl text-white font-extrabold pr-6 h-full">
+              <Text tw="text-4xl text-white pr-6 font-extrabold">
                 {player.name}
               </Text>
-              <Text tw="px-2 h-full font-black text-2xl rounded-r-md bg-white border-black">
-                {player.score}
-              </Text>
+              <View tw="px-2 h-full justify-center rounded-r-md bg-white">
+                <Text tw="font-black text-4xl">{player.score}</Text>
+              </View>
             </TouchableOpacity>
           ))}
       </ScrollView>

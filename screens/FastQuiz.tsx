@@ -15,16 +15,13 @@ export default function FastQuiz({ players, setPlayers }) {
   const LottieRef2 = useRef(null);
   const route = useRoute();
   const pageTheme = theme(route.name);
-  const [category, setCategory] = useState("na");
   const [counter, setCounter] = useState(7);
   const countRef = useRef(null);
   countRef.current = counter;
   const [shuffledPlayers, setShuffledPlayers] = useState(shuffle([...players]));
   const [shuffledQuestions, setShuffledQuestions] = useState(
-    shuffle([...fastquizquestions].filter((item) => item.category === category))
+    shuffle([...fastquizquestions])
   );
-  let shuffledQuestion = { question: "" };
-  let shuffledPlayer = shuffledPlayers[0];
 
   function timer() {
     const countInt = setInterval(
@@ -35,34 +32,36 @@ export default function FastQuiz({ players, setPlayers }) {
       1000
     );
     setCounter(7);
-    setShuffledQuestions(
-      [...shuffledQuestions].filter(
-        (item) => item.question !== shuffledQuestion.question
-      )
+    const questionsCopy = [...shuffledQuestions];
+    questionsCopy.splice(
+      shuffledQuestions.indexOf(
+        shuffledQuestions.find((cat) => cat.category === "na")
+      ),
+      1
     );
+    setShuffledQuestions(questionsCopy);
     LottieRef2.current?.play();
   }
 
-  console.log(counter);
-
   if (shuffledPlayers.length === 0) {
-    return Promise.resolve(setShuffledPlayers(shuffle([...players]))).then(
-      () => (shuffledPlayer = shuffledPlayers[0])
-    );
+    return setShuffledPlayers(shuffle([...players]));
   }
 
   if (shuffledQuestions.length === 0)
     setShuffledQuestions(shuffle([...fastquizquestions]));
+
   const intro = [
     <Text tw="text-white font-bold text-5xl text-center">
       <Text>It's </Text>
-      <Text style={{ color: shuffledPlayer.colour }}>
-        {shuffledPlayer.name}
+      <Text style={{ color: shuffledPlayers[0].colour }}>
+        {shuffledPlayers[0].name}
       </Text>
       <Text>'s time to shine</Text>
     </Text>,
-    <Text tw="text-white font-bold text-5xl text-center">
-      {shuffledPlayer.name}
+    <Text
+      tw="text-white font-bold text-5xl text-center"
+      style={{ color: shuffledPlayers[0].colour }}>
+      {shuffledPlayers[0].name}
     </Text>,
   ];
 
@@ -87,10 +86,10 @@ export default function FastQuiz({ players, setPlayers }) {
         {newGame && (
           <View tw="flex-row top-0 w-full absolute justify-between">
             <Text
-              tw=" pl-4 pt-2 text-white text-5xl basis-2/3 font-extrabold self-end"
-              style={{ color: shuffledPlayer.colour }}
+              tw=" pl-4 pt-2 text-white text-5xl basis-2/3 font-extrabold"
+              style={{ color: shuffledPlayers[0].colour }}
               numberOfLines={1}>
-              {shuffledPlayer.name}
+              {shuffledPlayers[0].name}
             </Text>
             <View tw="flex-row">
               <Text
@@ -125,8 +124,9 @@ export default function FastQuiz({ players, setPlayers }) {
           <View tw="basis-4/6 justify-center">
             <Text tw=" pt-6 px-2 text-white font-bold text-4xl text-center">
               {counter
-                ? shuffledQuestions[0].question
-                : shuffledQuestions[0].answer}
+                ? shuffledQuestions.find((cat) => cat.category === "na")
+                    .question
+                : shuffledQuestions.find((cat) => cat.category === "na").answer}
             </Text>
           </View>
         )}
@@ -143,7 +143,7 @@ export default function FastQuiz({ players, setPlayers }) {
                   setNewGame(!newGame);
                   setShuffledPlayers(
                     shuffledPlayers.filter(
-                      (player) => player.name !== shuffledPlayer.name
+                      (player) => player.name !== shuffledPlayers[0].name
                     )
                   );
                 }}>
@@ -161,7 +161,7 @@ export default function FastQuiz({ players, setPlayers }) {
                   return Promise.resolve(
                     setPlayers(
                       players.map((player) =>
-                        player.name === shuffledPlayer.name
+                        player.name === shuffledPlayers[0].name
                           ? { ...player, score: (player.score += 1) }
                           : player
                       )
@@ -169,7 +169,7 @@ export default function FastQuiz({ players, setPlayers }) {
                   ).then(() =>
                     setShuffledPlayers(
                       shuffledPlayers.filter(
-                        (player) => player.name !== shuffledPlayer.name
+                        (player) => player.name !== shuffledPlayers[0].name
                       )
                     )
                   );
