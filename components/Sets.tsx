@@ -20,8 +20,6 @@ export default function Sets({ setWarn, players }) {
     "bg-red-900",
   ];
 
-  console.log(pages.length);
-
   return (
     <View tw="h-4/6 flex-col justify-end mb-4 w-11/12">
       {pages.map((page, ind) => (

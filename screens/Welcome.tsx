@@ -58,6 +58,11 @@ export default function Welcome({ players, setPlayers }) {
           {err}
         </Animated.Text>
       )}
+      <TouchableOpacity
+        onPress={() => setIsAdd(true)}
+        tw="bottom-1 right-1 absolute h-14 w-14 bg-[#ee1b24] justify-end rounded-xl border-white border-2">
+        <Text tw="text-center text-white font-bold text-5xl">+</Text>
+      </TouchableOpacity>
     </View>
   );
 }

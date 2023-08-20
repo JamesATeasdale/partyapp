@@ -114,7 +114,8 @@ export default function SwipeableCard({
       tw="justify-center h-5/6 w-full rounded-md">
       <View
         tw="w-full h-full absolute"
-        style={{ backgroundColor: pageTheme.bg }}></View>
+        style={{ backgroundColor: pageTheme.bg }}
+      />
       <Animated.View
         {...panResponder.panHandlers}
         tw="justify-center h-full w-full rounded-md p-3"

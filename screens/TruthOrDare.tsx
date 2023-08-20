@@ -10,7 +10,6 @@ import SwipeableCard from "../components/SwipeCard";
 import shuffle from "../hooks/shuffleArray";
 import LottieView from "lottie-react-native";
 import Animated, {
-  FadeIn,
   SlideInLeft,
   SlideInRight,
   SlideOutLeft,
