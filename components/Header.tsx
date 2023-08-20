@@ -1,6 +1,6 @@
-import { Animated, TouchableOpacity, Text, View } from "react-native";
+import { TouchableOpacity, Text } from "react-native";
 import { useNavigation, useRoute } from "@react-navigation/native";
-import { ZoomIn } from "react-native-reanimated";
+import Animated, { ZoomIn } from "react-native-reanimated";
 import { multi, theme } from "../assets/colors";
 
 export default function Header() {
@@ -11,15 +11,19 @@ export default function Header() {
   return (
     <TouchableOpacity
       onPress={() => navigation.navigate("Party Animals")}
-      tw="my-4 flex-row px-6 rounded-lg justify-center">
-      <Animated.Text
-        entering={ZoomIn}
-        tw="text-white text-4xl"
-        style={{
-          fontFamily: "Caprasimo-Regular",
-        }}>
-        {route.name}
-      </Animated.Text>
+      tw="my-4 flex-row justify-center">
+      {route.name.split("").map((letter, ind) => (
+        <Animated.View entering={ZoomIn.duration((ind + 1) * 200)}>
+          <Text
+            tw="text-white text-5xl"
+            style={{
+              color: pageTheme.text,
+              fontFamily: "Caprasimo-Regular",
+            }}>
+            {letter}
+          </Text>
+        </Animated.View>
+      ))}
     </TouchableOpacity>
   );
 }

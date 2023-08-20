@@ -5,10 +5,17 @@ import { useNavigation, useRoute } from "@react-navigation/native";
 import { useEffect, useState, useRef } from "react";
 import truths from "../assets/truths.json";
 import dares from "../assets/dares.json";
-import { TouchableOpacity, Text, View } from "react-native";
+import { TouchableOpacity, Text, View, Image } from "react-native";
 import SwipeableCard from "../components/SwipeCard";
 import shuffle from "../hooks/shuffleArray";
 import LottieView from "lottie-react-native";
+import Animated, {
+  FadeIn,
+  SlideInLeft,
+  SlideInRight,
+  SlideOutLeft,
+  SlideOutRight,
+} from "react-native-reanimated";
 
 export default function TruthOrDare({ players, setPlayers }) {
   const LottieRef = useRef(null);
@@ -64,6 +71,10 @@ export default function TruthOrDare({ players, setPlayers }) {
         loop={false}
         speed={2}
       />
+      <Image
+        source={require("../assets/question-marks-background.png")}
+        tw="absolute h-full"
+      />
       <View tw="w-full h-2/6 items-center">
         <Header />
         <GameRanking players={players} setPlayers={setPlayers} />
@@ -117,29 +128,45 @@ export default function TruthOrDare({ players, setPlayers }) {
             removeCard={removeCard}
           />
         ) : (
-          <View
-            tw="h-5/6 flex-row rounded-b-md"
-            style={{
-              backgroundColor: pageTheme.bg,
-            }}>
-            <TouchableOpacity
-              onPress={() => setOption("truth")}
-              tw="basis-1/2 justify-center items-center rounded-bl-md border-r-2">
-              <Text style={{ fontSize: 280, opacity: 0.3 }} tw="absolute">
-                ?
-              </Text>
-              <Text tw="text-black font-black text-center text-6xl">Truth</Text>
-              <Text tw="text-black font-black text-center text-6xl">+1</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              onPress={() => setOption("dare")}
-              tw="basis-1/2 justify-center items-center  rounded-br-md border-l-2">
-              <Text style={{ fontSize: 280, opacity: 0.3 }} tw="absolute">
-                !
-              </Text>
-              <Text tw="text-black font-black text-center text-6xl">Dare</Text>
-              <Text tw="text-black font-black text-center text-6xl">+2</Text>
-            </TouchableOpacity>
+          <View tw="h-5/6 flex-row rounded-b-md">
+            <Animated.View
+              tw="basis-1/2 justify-center rounded-bl-md border-r-2"
+              entering={SlideInLeft}
+              exiting={SlideOutLeft}
+              style={{
+                backgroundColor: pageTheme.bg,
+              }}>
+              <TouchableOpacity
+                onPress={() => setOption("truth")}
+                tw="items-center justify-center ">
+                <Text style={{ fontSize: 280, opacity: 0.3 }} tw="absolute">
+                  ?
+                </Text>
+                <Text tw="text-black font-black text-center text-6xl">
+                  Truth
+                </Text>
+                <Text tw="text-black font-black text-center text-6xl">+1</Text>
+              </TouchableOpacity>
+            </Animated.View>
+            <Animated.View
+              tw="basis-1/2 justify-center rounded-br-md border-l-2"
+              entering={SlideInRight}
+              exiting={SlideOutRight}
+              style={{
+                backgroundColor: pageTheme.bg,
+              }}>
+              <TouchableOpacity
+                onPress={() => setOption("dare")}
+                tw="justify-center items-center">
+                <Text style={{ fontSize: 280, opacity: 0.3 }} tw="absolute">
+                  !
+                </Text>
+                <Text tw="text-black font-black text-center text-6xl">
+                  Dare
+                </Text>
+                <Text tw="text-black font-black text-center text-6xl">+2</Text>
+              </TouchableOpacity>
+            </Animated.View>
           </View>
         )}
       </View>

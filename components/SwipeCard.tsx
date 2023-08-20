@@ -2,6 +2,7 @@ import { useRoute } from "@react-navigation/native";
 import { useState } from "react";
 import { Text, Dimensions, Animated, PanResponder, View } from "react-native";
 import { theme } from "../assets/colors";
+import Reanimated, { FadeIn, FadeOut } from "react-native-reanimated";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
 
@@ -107,17 +108,25 @@ export default function SwipeableCard({
   });
 
   return (
-    <Animated.View
-      {...panResponder.panHandlers}
-      tw="justify-center h-5/6 w-full rounded-md p-3"
-      style={{
-        opacity: cardOpacity,
-        backgroundColor: shuffledPlayers[0].colour,
-        transform: [{ translateX: xPosition }, { rotate: rotateCard }],
-      }}>
-      <Text tw="text-white font-bold text-4xl text-center">
-        {item.question}
-      </Text>
-    </Animated.View>
+    <Reanimated.View
+      entering={FadeIn}
+      exiting={FadeOut}
+      tw="justify-center h-5/6 w-full rounded-md">
+      <View
+        tw="w-full h-full absolute"
+        style={{ backgroundColor: pageTheme.bg }}></View>
+      <Animated.View
+        {...panResponder.panHandlers}
+        tw="justify-center h-full w-full rounded-md p-3"
+        style={{
+          opacity: cardOpacity,
+          backgroundColor: shuffledPlayers[0].colour,
+          transform: [{ translateX: xPosition }, { rotate: rotateCard }],
+        }}>
+        <Text tw="text-white font-bold text-4xl text-center">
+          {item.question}
+        </Text>
+      </Animated.View>
+    </Reanimated.View>
   );
 }

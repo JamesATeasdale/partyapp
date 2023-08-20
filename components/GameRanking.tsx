@@ -51,7 +51,6 @@ export default function GameRanking({ players, setPlayers }) {
                   tw={"text-4xl font-extrabold rounded-t-md text-center"}
                   style={{
                     color: player.colour,
-                    backgroundColor: pageTheme.fg,
                   }}>
                   {player.name}
                 </Text>
