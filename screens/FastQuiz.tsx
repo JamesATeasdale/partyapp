@@ -72,40 +72,43 @@ export default function FastQuiz({ players, setPlayers }) {
       <View
         tw="flex-col w-11/12 h-3/6 rounded-xl mb-4"
         style={{ backgroundColor: pageTheme.fg }}>
-        <View
-          tw="basis-1/6 flex-row rounded-t-xl p-1"
-          style={{ backgroundColor: shuffledPlayer.colour }}>
-          <View tw="basis-2/3 m-2">
-            <Text tw="font-black text-gray-300 text-3xl ">
-              {shuffledPlayer.name}
-            </Text>
-          </View>
+        {newGame && (
           <View tw="flex-row right-0 absolute">
             <Text
               tw="m-1 text-xl p-2 rounded-l-xl text-gray-300 bg-gray-600"
-              style={{ backgroundColor: pageTheme.fg }}>
+              style={{ backgroundColor: pageTheme.bg }}>
               {"👎"}
             </Text>
             <Text
               tw="m-1 text-xl p-2 rounded-r-xl text-gray-300 bg-gray-600"
-              style={{ backgroundColor: pageTheme.fg }}>
+              style={{ backgroundColor: pageTheme.bg }}>
               {"👍"}
             </Text>
           </View>
-        </View>
+        )}
         {!newGame ? (
           <TouchableOpacity
-            tw="basis-5/6 justify-center"
+            tw="justify-center"
             onPress={() => {
               setNewGame(!newGame);
               timer();
             }}>
-            <Text tw=" text-white font-bold text-4xl text-center justify-center">
-              {newGame ? counter : "Click to Start"}
-            </Text>
+            <View tw="h-full items-center justify-center">
+              {newGame ? (
+                <Text>{counter}</Text>
+              ) : (
+                <Text tw="text-white font-bold text-4xl text-center">
+                  <Text>It's </Text>
+                  <Text style={{ color: shuffledPlayer.colour }}>
+                    {shuffledPlayer.name}
+                  </Text>
+                  <Text>'s time to shine</Text>
+                </Text>
+              )}
+            </View>
           </TouchableOpacity>
         ) : (
-          <View tw="basis-3/6 justify-center">
+          <View tw="basis-4/6 justify-center">
             <Text tw="text-white font-bold text-4xl text-center">
               {counter
                 ? shuffledQuestions[0].question
@@ -130,7 +133,7 @@ export default function FastQuiz({ players, setPlayers }) {
                 );
               }}>
               <Animated.Text
-                tw="text-center text-8xl text-red-700"
+                tw="text-center text-7xl text-red-700"
                 entering={ZoomIn}>
                 ✘
               </Animated.Text>
@@ -157,7 +160,7 @@ export default function FastQuiz({ players, setPlayers }) {
                 );
               }}>
               <Animated.Text
-                tw="text-center text-8xl text-green-700"
+                tw="text-center text-7xl text-green-700"
                 entering={ZoomIn}>
                 ✔
               </Animated.Text>

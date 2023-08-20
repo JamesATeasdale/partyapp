@@ -1,16 +1,14 @@
 bugs:
 deleted users appear in truth or dare list for one round after being deleted
-fast quiz countdown clips the top of its box ever so slightly
 fast quiz ctd when out of questions
 
 CHOOSE A BETTER COLOUR PALETTE:
-- welcome is good, but mediocre
 - fast quiz is okay, but a bit bland
 - truth or dare is horrible 
 
-fastquiz fireworks shouldnt go off on click to start
+addplayerform multiple in one
+
 truth or dare should have a background animation similar to fast Quiz
-add points to player list component
 divide main colours into light and dark, choose dark for players and title
 maybe remove multicolour, randomly generated titles or fix constant title colour refresh every second of fastquiz countdown
 add min height back to player list
