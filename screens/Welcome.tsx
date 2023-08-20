@@ -15,14 +15,14 @@ export default function Welcome({ players, setPlayers }) {
   const [err, setErr] = useState("");
   const [isAdd, setIsAdd] = useState(false);
   const pageTheme = theme(route.name);
-  const [them, setThem] = useState(false);
+  const [warn, setWarn] = useState(false);
   useEffect(() => LottieRef.current?.play(), [players]);
 
   if (err) setTimeout(() => setErr(""), 2500);
 
   return (
     <View
-      tw="items-center h-full justify-between"
+      tw="items-center h-full w-full justify-between"
       style={{ backgroundColor: pageTheme.bg }}>
       <LottieView
         tw="absolute h-full"
@@ -34,14 +34,14 @@ export default function Welcome({ players, setPlayers }) {
       <View tw="w-full items-center">
         <Header />
         <PlayerList
-          them={them}
-          setThem={setThem}
+          warn={warn}
+          setWarn={setWarn}
           setIsAdd={setIsAdd}
           players={players}
           setPlayers={setPlayers}
         />
       </View>
-      <Sets setThem={setThem} players={players} />
+      <Sets setWarn={setWarn} players={players} />
       {isAdd && (
         <AddPlayerForm
           setErr={setErr}

@@ -1,41 +1,38 @@
 import { useNavigation, useRoute } from "@react-navigation/native";
 import { Text, TouchableOpacity, View } from "react-native";
 import { theme } from "../assets/colors";
+import { ScrollView } from "react-native";
 
-export default function Sets({ setThem, players }) {
+export default function Sets({ setWarn, players }) {
   const navigation = useNavigation();
   const route = useRoute();
-  const pageTheme = theme(route.name);
+  const pages = [
+    "Truth or Dare",
+    "Fast Quiz",
+    "Ice Breakers",
+    "What Would You Do",
+  ];
+  const pageCol = [
+    "bg-[#2c935f]",
+    "bg-[#e75b0e]",
+    "bg-[#2caec1]",
+    "bg-red-900",
+  ];
 
   return (
-    <View tw="flex-col w-11/12 m-4 rounded-xl h-3/6 p-2 content-center space-y-4">
-      <TouchableOpacity
-        tw="bg-[#2c935f] grow basis-1/4 rounded-lg justify-center"
-        onPress={() =>
-          players.length === 0
-            ? setThem(true)
-            : navigation.navigate("Truth or Dare")
-        }>
-        <Text tw="text-center text-4xl font-black text-white">
-          Truth Or Dare
-        </Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        tw="bg-[#e75b0e] grow basis-1/4 rounded-lg justify-center"
-        onPress={() =>
-          players.length === 0
-            ? setThem(true)
-            : navigation.navigate("Fast Quiz")
-        }>
-        <Text tw="text-center text-4xl font-black text-white">Fast Quiz</Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        tw="bg-[#2caec1] grow basis-1/4 rounded-lg justify-center"
-        onPress={() => {}}>
-        <Text tw="text-center text-4xl font-black text-white">
-          Ice Breakers
-        </Text>
-      </TouchableOpacity>
+    <View tw="h-4/6 flex-col justify-end mb-4 w-11/12">
+      {pages.map((page, ind) => (
+        <TouchableOpacity
+          key={page}
+          tw={pageCol[ind] + "  my-2 basis-1/5 rounded-lg justify-center"}
+          onPress={() =>
+            players.length === 0 ? setWarn(true) : navigation.navigate(page)
+          }>
+          <Text tw="text-center text-4xl font-black text-white">
+            {pages[ind]}
+          </Text>
+        </TouchableOpacity>
+      ))}
     </View>
   );
 }

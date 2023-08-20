@@ -11,11 +11,10 @@ import Animated, {
 } from "react-native-reanimated";
 import { theme } from "../assets/colors";
 import { useRoute } from "@react-navigation/native";
-import { useEffect, useState } from "react";
 
 export default function PlayerList({
-  them,
-  setThem,
+  warn,
+  setWarn,
   setIsAdd,
   setPlayers,
   players,
@@ -38,7 +37,7 @@ export default function PlayerList({
     ]);
   }
   const progress = useDerivedValue(() => {
-    return withTiming(them ? 1 : 0, { duration: 300 });
+    return withTiming(warn ? 1 : 0, { duration: 300 });
   });
   const animatedStyle = useAnimatedStyle(() => {
     const backgroundColor = interpolateColor(
@@ -52,7 +51,7 @@ export default function PlayerList({
     };
   });
 
-  if (them) setTimeout(() => setThem(false), 300);
+  if (warn) setTimeout(() => setWarn(false), 300);
 
   return (
     <Animated.View
