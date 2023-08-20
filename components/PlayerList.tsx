@@ -55,7 +55,7 @@ export default function PlayerList({
 
   return (
     <Animated.View
-      tw="w-11/12 rounded-lg my-2 min-h-14 max-h-56"
+      tw="w-11/12 rounded-lg my-2 max-h-40"
       style={[animatedStyle]}>
       <ScrollView>
         <View tw="flex-row flex-wrap justify-center">
@@ -66,7 +66,7 @@ export default function PlayerList({
               </TouchableOpacity>
             </Animated.View>
           )}
-          {players.map((player = { name: "", colour: "" }, index = 0) => (
+          {players.map((player = { name: "", colour: "" }) => (
             <Animated.View
               key={player.name}
               entering={ZoomIn.duration(Math.floor(Math.random() * 1200))}>
@@ -77,7 +77,7 @@ export default function PlayerList({
                 }}
                 tw="px-2 m-1 rounded-md"
                 onPress={() => confirm(player.name)}>
-                <Text tw="text-2xl font-bold text-white p-2">
+                <Text tw="text-4xl font-bold text-white p-2">
                   {player.name}
                 </Text>
               </TouchableOpacity>
