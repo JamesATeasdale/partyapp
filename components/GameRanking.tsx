@@ -8,6 +8,7 @@ import {
 } from "react-native";
 import { useRoute } from "@react-navigation/native";
 import { theme } from "../assets/colors";
+import { useEffect } from "react";
 
 export default function GameRanking({ players, setPlayers }) {
   const route = useRoute();
@@ -17,6 +18,9 @@ export default function GameRanking({ players, setPlayers }) {
     require("../assets/swords.png"),
     require("../assets/jesterhat.png"),
   ];
+  useEffect(() => {
+    players.sort((a, b) => b.score - a.score);
+  }, [players]);
 
   function confirm(playername) {
     Alert.alert("Delete " + playername + "?", "", [
@@ -33,46 +37,53 @@ export default function GameRanking({ players, setPlayers }) {
       },
     ]);
   }
+
+  const rearrange = (arr = []) => [arr[1], arr[0], arr[2]];
+
   return (
-    <View
-      tw="w-11/12 h-40 self-center items-center rounded-b-lg"
-      style={{ backgroundColor: pageTheme.fg }}>
-      <View tw="mt-1 rounded-lg flex-row ">
-        {players
-          .sort((a, b) => b.score - a.score)
-          .slice(0, 3)
-          .map((player = { name: "", score: 0, colour: "" }, index = 0) => {
+    <View tw="w-full items-center rounded-lg ">
+      <View tw="w-full justify-center flex-row h-4/6">
+        {rearrange(players.slice(0, 3)).map(
+          (player = { name: "", score: 0, colour: "" }, index = 0) => {
             let colour = "red";
-            index === 0
+            index === 1
               ? (colour = "#D4AF37")
-              : index === 1
+              : !index
               ? (colour = "#C0C0C0")
               : (colour = "#CD7F32");
 
             return (
-              <TouchableOpacity // <- problem
+              <TouchableOpacity
                 onPress={() => confirm(player.name)}
                 key={player.name}
                 style={{
                   borderColor: colour,
                 }}
-                tw="basis-1/3 items-center">
-                <Image source={placeImage[index]} tw="w-4/6 h-16" />
+                tw="justify-end basis-1/3">
                 <Text
-                  tw="text-2xl font-extrabold rounded-md w-full text-center text-white"
+                  numberOfLines={1}
+                  tw={"text-4xl font-extrabold rounded-md text-center "}
                   style={{
-                    backgroundColor: player.colour,
+                    color: player.colour,
                   }}>
                   {player.name}
                 </Text>
-                <Text
-                  tw="rounded-2xl font-black text-2xl self-center text-center px-2 top-5 absolute"
-                  style={{ backgroundColor: colour }}>
-                  {player.score}
-                </Text>
+                <View
+                  style={{ backgroundColor: colour }}
+                  tw={
+                    "border-2 " +
+                    "h-" +
+                    (!index ? 3 : index === 1 ? 4 : 2) +
+                    "/6 w-full justify-end"
+                  }>
+                  <Text tw="font-black text-4xl text-center">
+                    {player.score}
+                  </Text>
+                </View>
               </TouchableOpacity>
             );
-          })}
+          }
+        )}
       </View>
       <ScrollView horizontal={true} tw="">
         {players
