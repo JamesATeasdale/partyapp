@@ -60,7 +60,7 @@ const main = { bg: "#370080", fg: "#9a4dff" };
 
 const green = { bg: "#008012", fg: "#4dff6f" };
 
-const orange = { bg: "#803900", fg: "#ff9c4d" };
+const orange = { bg: "#fe6e02", fg: "#1f2a4d" };
 
 export function theme(routeName) {
   let theme = {};

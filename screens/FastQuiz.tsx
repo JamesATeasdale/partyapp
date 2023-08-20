@@ -50,9 +50,21 @@ export default function FastQuiz({ players, setPlayers }) {
       () => (shuffledPlayer = shuffledPlayers[0])
     );
   }
+
   if (shuffledQuestions.length === 0)
     setShuffledQuestions(shuffle([...fastquizquestions]));
-  if (!shuffledQuestion.question) shuffledQuestion = shuffledQuestions[0];
+  const intro = [
+    <Text tw="text-white font-bold text-5xl text-center">
+      <Text>It's </Text>
+      <Text style={{ color: shuffledPlayer.colour }}>
+        {shuffledPlayer.name}
+      </Text>
+      <Text>'s time to shine</Text>
+    </Text>,
+    <Text tw="text-white font-bold text-5xl text-center">
+      {shuffledPlayer.name}
+    </Text>,
+  ];
 
   return (
     <View
@@ -70,20 +82,28 @@ export default function FastQuiz({ players, setPlayers }) {
         <GameRanking players={players} setPlayers={setPlayers} />
       </View>
       <View
-        tw="flex-col w-11/12 h-3/6 rounded-xl mb-4"
+        tw="flex-col w-11/12 h-3/6 rounded-xl my-4 pt-2"
         style={{ backgroundColor: pageTheme.fg }}>
         {newGame && (
-          <View tw="flex-row right-0 absolute">
+          <View tw="flex-row top-0 w-full absolute justify-between">
             <Text
-              tw="m-1 text-xl p-2 rounded-l-xl text-gray-300 bg-gray-600"
-              style={{ backgroundColor: pageTheme.bg }}>
-              {"👎"}
+              tw=" pl-4 pt-2 text-white text-5xl basis-2/3 font-extrabold self-end"
+              style={{ color: shuffledPlayer.colour }}
+              numberOfLines={1}>
+              {shuffledPlayer.name}
             </Text>
-            <Text
-              tw="m-1 text-xl p-2 rounded-r-xl text-gray-300 bg-gray-600"
-              style={{ backgroundColor: pageTheme.bg }}>
-              {"👍"}
-            </Text>
+            <View tw="flex-row">
+              <Text
+                tw="m-1 text-xl p-2 rounded-l-xl text-gray-300"
+                style={{ backgroundColor: pageTheme.bg }}>
+                {"👎"}
+              </Text>
+              <Text
+                tw="m-1 text-xl p-2 rounded-r-xl text-gray-300"
+                style={{ backgroundColor: pageTheme.bg }}>
+                {"👍"}
+              </Text>
+            </View>
           </View>
         )}
         {!newGame ? (
@@ -93,23 +113,17 @@ export default function FastQuiz({ players, setPlayers }) {
               setNewGame(!newGame);
               timer();
             }}>
-            <View tw="h-full items-center justify-center">
+            <View tw="h-full items-center justify-center px-4">
               {newGame ? (
                 <Text>{counter}</Text>
               ) : (
-                <Text tw="text-white font-bold text-4xl text-center">
-                  <Text>It's </Text>
-                  <Text style={{ color: shuffledPlayer.colour }}>
-                    {shuffledPlayer.name}
-                  </Text>
-                  <Text>'s time to shine</Text>
-                </Text>
+                intro[Math.floor(Math.random() * intro.length)]
               )}
             </View>
           </TouchableOpacity>
         ) : (
           <View tw="basis-4/6 justify-center">
-            <Text tw="text-white font-bold text-4xl text-center">
+            <Text tw=" pt-6 px-2 text-white font-bold text-4xl text-center">
               {counter
                 ? shuffledQuestions[0].question
                 : shuffledQuestions[0].answer}
@@ -120,53 +134,55 @@ export default function FastQuiz({ players, setPlayers }) {
           <View tw="basis-2/6 flex-row justify-center items-center">
             <Text tw="text-7xl font-black text-white">{counter}</Text>
           </View>
-        ) : newGame ? (
-          <View tw="basis-2/6 flex-row justify-center space-x-12 pb-2">
-            <TouchableOpacity
-              tw="basis-1/3 justify-center bg-white rounded-full"
-              onPress={() => {
-                setNewGame(!newGame);
-                setShuffledPlayers(
-                  shuffledPlayers.filter(
-                    (player) => player.name !== shuffledPlayer.name
-                  )
-                );
-              }}>
-              <Animated.Text
-                tw="text-center text-7xl text-red-700"
-                entering={ZoomIn}>
-                ✘
-              </Animated.Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              tw="basis-1/3 justify-center bg-white rounded-full"
-              onPress={() => {
-                setNewGame(!newGame);
-                LottieRef.current.play();
-                return Promise.resolve(
-                  setPlayers(
-                    players.map((player) =>
-                      player.name === shuffledPlayer.name
-                        ? { ...player, score: (player.score += 1) }
-                        : player
-                    )
-                  )
-                ).then(() =>
+        ) : (
+          newGame && (
+            <View tw="basis-2/6 flex-row justify-center space-x-12 pb-2">
+              <TouchableOpacity
+                tw="basis-1/3 justify-center bg-white rounded-full"
+                onPress={() => {
+                  setNewGame(!newGame);
                   setShuffledPlayers(
                     shuffledPlayers.filter(
                       (player) => player.name !== shuffledPlayer.name
                     )
-                  )
-                );
-              }}>
-              <Animated.Text
-                tw="text-center text-7xl text-green-700"
-                entering={ZoomIn}>
-                ✔
-              </Animated.Text>
-            </TouchableOpacity>
-          </View>
-        ) : null}
+                  );
+                }}>
+                <Animated.Text
+                  tw="text-center text-7xl text-red-700"
+                  entering={ZoomIn}>
+                  ✘
+                </Animated.Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                tw="basis-1/3 justify-center bg-white rounded-full"
+                onPress={() => {
+                  setNewGame(!newGame);
+                  LottieRef.current.play();
+                  return Promise.resolve(
+                    setPlayers(
+                      players.map((player) =>
+                        player.name === shuffledPlayer.name
+                          ? { ...player, score: (player.score += 1) }
+                          : player
+                      )
+                    )
+                  ).then(() =>
+                    setShuffledPlayers(
+                      shuffledPlayers.filter(
+                        (player) => player.name !== shuffledPlayer.name
+                      )
+                    )
+                  );
+                }}>
+                <Animated.Text
+                  tw="text-center text-7xl text-green-700"
+                  entering={ZoomIn}>
+                  ✔
+                </Animated.Text>
+              </TouchableOpacity>
+            </View>
+          )
+        )}
       </View>
     </View>
   );

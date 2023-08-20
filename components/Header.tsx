@@ -10,22 +10,21 @@ export default function Header() {
 
   return (
     <TouchableOpacity
-      onPress={() => {
-        navigation.navigate("Party Animals");
-      }}
-      tw="w-11/12 mb-2 mt-2 flex-row p-2 rounded-t-lg justify-center">
+      onPress={() => navigation.navigate("Party Animals")}
+      tw="mb-2 mt-2 flex-row px-6 rounded-lg justify-center"
+      style={{ backgroundColor: pageTheme.fg }}>
       {route.name.split("").map((letter, index) => {
         return (
-          <Animated.View key={index} entering={ZoomIn.duration(index * 200)}>
-            <Text
-              style={{
-                fontSize: 40,
-                fontFamily: "Caprasimo-Regular",
-                color: multi[Math.floor(Math.random() * multi.length)],
-              }}>
-              {letter}
-            </Text>
-          </Animated.View>
+          <Animated.Text
+            key={index}
+            entering={ZoomIn}
+            style={{
+              fontSize: 40,
+              fontFamily: "Caprasimo-Regular",
+              color: multi[Math.floor(Math.random() * multi.length)],
+            }}>
+            {letter}
+          </Animated.Text>
         );
       })}
     </TouchableOpacity>
