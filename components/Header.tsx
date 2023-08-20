@@ -11,14 +11,12 @@ export default function Header() {
   return (
     <TouchableOpacity
       onPress={() => navigation.navigate("Party Animals")}
-      tw="mb-2 mt-2 flex-row px-6 rounded-lg justify-center"
-      style={{ backgroundColor: pageTheme.fg }}>
+      tw="my-4 flex-row px-6 rounded-lg justify-center">
       <Animated.Text
         entering={ZoomIn}
+        tw="text-white text-4xl"
         style={{
-          fontSize: 40,
           fontFamily: "Caprasimo-Regular",
-          color: "black",
         }}>
         {route.name}
       </Animated.Text>

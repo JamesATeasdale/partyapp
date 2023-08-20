@@ -25,7 +25,6 @@ export default function TruthOrDare({ players, setPlayers }) {
   const [option, setOption] = useState("");
   let shuffledTruth = { question: "" };
   let shuffledDare = { question: "" };
-  let shuffledPlayer = shuffledPlayers[0];
   const navigation = useNavigation();
 
   const removeCard = (num = 0) => {
@@ -47,9 +46,7 @@ export default function TruthOrDare({ players, setPlayers }) {
   if (!players.length) navigation.navigate("Party Animals");
 
   if (shuffledPlayers.length === 0) {
-    return Promise.resolve(setShuffledPlayers(shuffle([...players]))).then(
-      () => (shuffledPlayer = shuffledPlayers[0])
-    );
+    return Promise.resolve(setShuffledPlayers(shuffle([...players])));
   }
   if (shuffledTruths.length === 0) setShuffledTruths(shuffle([...truths]));
   if (shuffledDares.length === 0) setShuffledDares(shuffle([...dares]));
@@ -72,8 +69,11 @@ export default function TruthOrDare({ players, setPlayers }) {
         <GameRanking players={players} setPlayers={setPlayers} />
       </View>
       <View
-        tw="w-11/12 h-3/6 items-center rounded-xl justify-end mb-2"
-        style={{ backgroundColor: pageTheme.fg }}>
+        tw="w-11/12 h-3/6 items-center rounded-xl justify-end mb-2  border-4"
+        style={{
+          backgroundColor: pageTheme.fg,
+          borderColor: pageTheme.fg,
+        }}>
         <View tw="flex-row top-0 w-full absolute justify-between">
           <Text
             tw=" pl-4 pt-2 text-white text-5xl basis-2/3 font-extrabold"
@@ -117,18 +117,28 @@ export default function TruthOrDare({ players, setPlayers }) {
             removeCard={removeCard}
           />
         ) : (
-          <View tw="h-5/6 flex-row">
+          <View
+            tw="h-5/6 flex-row rounded-b-md"
+            style={{
+              backgroundColor: pageTheme.bg,
+            }}>
             <TouchableOpacity
               onPress={() => setOption("truth")}
-              tw="basis-1/2 bg-black justify-center items-center rounded-bl-md">
-              <Text tw="text-white font-black text-center text-5xl">Truth</Text>
-              <Text tw="text-white font-black text-center text-5xl">+1</Text>
+              tw="basis-1/2 justify-center items-center rounded-bl-md border-r-2">
+              <Text style={{ fontSize: 280, opacity: 0.3 }} tw="absolute">
+                ?
+              </Text>
+              <Text tw="text-black font-black text-center text-6xl">Truth</Text>
+              <Text tw="text-black font-black text-center text-6xl">+1</Text>
             </TouchableOpacity>
             <TouchableOpacity
               onPress={() => setOption("dare")}
-              tw="basis-1/2 bg-white justify-center items-center  rounded-br-md">
-              <Text tw="text-black font-black text-center text-5xl">Dare</Text>
-              <Text tw="text-black font-black text-center text-5xl">+2</Text>
+              tw="basis-1/2 justify-center items-center  rounded-br-md border-l-2">
+              <Text style={{ fontSize: 280, opacity: 0.3 }} tw="absolute">
+                !
+              </Text>
+              <Text tw="text-black font-black text-center text-6xl">Dare</Text>
+              <Text tw="text-black font-black text-center text-6xl">+2</Text>
             </TouchableOpacity>
           </View>
         )}

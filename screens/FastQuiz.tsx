@@ -12,7 +12,6 @@ import Animated, { ZoomIn } from "react-native-reanimated";
 export default function FastQuiz({ players, setPlayers }) {
   const [newGame, setNewGame] = useState(false);
   const LottieRef = useRef(null);
-  const LottieRef2 = useRef(null);
   const route = useRoute();
   const pageTheme = theme(route.name);
   const [counter, setCounter] = useState(7);
@@ -35,12 +34,13 @@ export default function FastQuiz({ players, setPlayers }) {
     const questionsCopy = [...shuffledQuestions];
     questionsCopy.splice(
       shuffledQuestions.indexOf(
-        shuffledQuestions.find((cat) => cat.category === "na")
+        shuffledQuestions.find(
+          (cat) => cat.category === shuffledPlayers[0].category
+        )
       ),
       1
     );
     setShuffledQuestions(questionsCopy);
-    LottieRef2.current?.play();
   }
 
   if (shuffledPlayers.length === 0) {
@@ -51,7 +51,9 @@ export default function FastQuiz({ players, setPlayers }) {
     setShuffledQuestions(shuffle([...fastquizquestions]));
 
   const intro = [
-    <Text tw="text-white font-bold text-5xl text-center">
+    <Text
+      tw="text-white font-bold text-5xl text-center"
+      style={{ color: pageTheme.text }}>
       <Text>It's </Text>
       <Text style={{ color: shuffledPlayers[0].colour }}>
         {shuffledPlayers[0].name}
@@ -81,10 +83,10 @@ export default function FastQuiz({ players, setPlayers }) {
         <GameRanking players={players} setPlayers={setPlayers} />
       </View>
       <View
-        tw="flex-col w-11/12 h-3/6 rounded-xl my-4 pt-2"
+        tw="flex-col w-11/12 h-3/6 rounded-xl mb-4  justify-between"
         style={{ backgroundColor: pageTheme.fg }}>
         {newGame && (
-          <View tw="flex-row top-0 w-full absolute justify-between">
+          <View tw="flex-row w-full justify-between">
             <Text
               tw=" pl-4 pt-2 text-white text-5xl basis-2/3 font-extrabold"
               style={{ color: shuffledPlayers[0].colour }}
@@ -121,67 +123,69 @@ export default function FastQuiz({ players, setPlayers }) {
             </View>
           </TouchableOpacity>
         ) : (
-          <View tw="basis-4/6 justify-center">
-            <Text tw=" pt-6 px-2 text-white font-bold text-4xl text-center">
+          <View tw="h-5/6 justify-between">
+            <Text
+              tw="px-2 text-white font-bold text-4xl text-center h-4/6"
+              style={{ color: pageTheme.text }}>
               {counter
                 ? shuffledQuestions.find((cat) => cat.category === "na")
                     .question
                 : shuffledQuestions.find((cat) => cat.category === "na").answer}
             </Text>
-          </View>
-        )}
-        {counter ? (
-          <View tw="basis-2/6 flex-row justify-center items-center">
-            <Text tw="text-7xl font-black text-white">{counter}</Text>
-          </View>
-        ) : (
-          newGame && (
-            <View tw="basis-2/6 flex-row justify-center space-x-12 pb-2">
-              <TouchableOpacity
-                tw="basis-1/3 justify-center bg-white rounded-full"
-                onPress={() => {
-                  setNewGame(!newGame);
-                  setShuffledPlayers(
-                    shuffledPlayers.filter(
-                      (player) => player.name !== shuffledPlayers[0].name
-                    )
-                  );
-                }}>
-                <Animated.Text
-                  tw="text-center text-7xl text-red-700"
-                  entering={ZoomIn}>
-                  ✘
-                </Animated.Text>
-              </TouchableOpacity>
-              <TouchableOpacity
-                tw="basis-1/3 justify-center bg-white rounded-full"
-                onPress={() => {
-                  setNewGame(!newGame);
-                  LottieRef.current.play();
-                  return Promise.resolve(
-                    setPlayers(
-                      players.map((player) =>
-                        player.name === shuffledPlayers[0].name
-                          ? { ...player, score: (player.score += 1) }
-                          : player
-                      )
-                    )
-                  ).then(() =>
+            {counter ? (
+              <View tw="flex-row justify-center h-2/6">
+                <Text tw="text-8xl text-center font-black text-white">
+                  {counter}
+                </Text>
+              </View>
+            ) : (
+              <View tw="h-2/6 flex-row justify-center space-x-12 pb-2">
+                <TouchableOpacity
+                  tw="basis-1/3 justify-center bg-white rounded-full"
+                  onPress={() => {
+                    setNewGame(!newGame);
                     setShuffledPlayers(
                       shuffledPlayers.filter(
                         (player) => player.name !== shuffledPlayers[0].name
                       )
-                    )
-                  );
-                }}>
-                <Animated.Text
-                  tw="text-center text-7xl text-green-700"
-                  entering={ZoomIn}>
-                  ✔
-                </Animated.Text>
-              </TouchableOpacity>
-            </View>
-          )
+                    );
+                  }}>
+                  <Animated.Text
+                    tw="text-center text-7xl text-red-700"
+                    entering={ZoomIn}>
+                    ✘
+                  </Animated.Text>
+                </TouchableOpacity>
+                <TouchableOpacity
+                  tw="basis-1/3 justify-center bg-white rounded-full"
+                  onPress={() => {
+                    setNewGame(!newGame);
+                    LottieRef.current.play();
+                    return Promise.resolve(
+                      setPlayers(
+                        players.map((player) =>
+                          player.name === shuffledPlayers[0].name
+                            ? { ...player, score: (player.score += 1) }
+                            : player
+                        )
+                      )
+                    ).then(() =>
+                      setShuffledPlayers(
+                        shuffledPlayers.filter(
+                          (player) => player.name !== shuffledPlayers[0].name
+                        )
+                      )
+                    );
+                  }}>
+                  <Animated.Text
+                    tw="text-center text-7xl text-green-700"
+                    entering={ZoomIn}>
+                    ✔
+                  </Animated.Text>
+                </TouchableOpacity>
+              </View>
+            )}
+          </View>
         )}
       </View>
     </View>
