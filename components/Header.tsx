@@ -13,20 +13,15 @@ export default function Header() {
       onPress={() => navigation.navigate("Party Animals")}
       tw="mb-2 mt-2 flex-row px-6 rounded-lg justify-center"
       style={{ backgroundColor: pageTheme.fg }}>
-      {route.name.split("").map((letter, index) => {
-        return (
-          <Animated.Text
-            key={index}
-            entering={ZoomIn}
-            style={{
-              fontSize: 40,
-              fontFamily: "Caprasimo-Regular",
-              color: multi[Math.floor(Math.random() * multi.length)],
-            }}>
-            {letter}
-          </Animated.Text>
-        );
-      })}
+      <Animated.Text
+        entering={ZoomIn}
+        style={{
+          fontSize: 40,
+          fontFamily: "Caprasimo-Regular",
+          color: "black",
+        }}>
+        {route.name}
+      </Animated.Text>
     </TouchableOpacity>
   );
 }

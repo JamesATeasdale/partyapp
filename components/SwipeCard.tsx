@@ -13,7 +13,6 @@ export default function SwipeableCard({
   removeCard,
   shuffledPlayers,
   setShuffledPlayers,
-  shuffledPlayer,
   value,
 }) {
   const [xPosition, setXPosition] = useState(new Animated.Value(0));
@@ -69,14 +68,14 @@ export default function SwipeableCard({
           LottieRef.current?.play();
           setPlayers(
             players.map((player) =>
-              player.name === shuffledPlayer.name
+              player.name === shuffledPlayers[0].name
                 ? { ...player, score: (player.score += value) }
                 : player
             )
           );
           setShuffledPlayers(
             shuffledPlayers.filter(
-              (player) => player.name !== shuffledPlayer.name && player
+              (player) => player.name !== shuffledPlayers[0].name && player
             )
           );
           swipedDirection(swipeDirection);
@@ -97,7 +96,7 @@ export default function SwipeableCard({
         ]).start(() => {
           setShuffledPlayers(
             shuffledPlayers.filter(
-              (player) => player.name !== shuffledPlayer.name && player
+              (player) => player.name !== shuffledPlayers[0].name && player
             )
           );
           swipedDirection(swipeDirection);
@@ -113,7 +112,7 @@ export default function SwipeableCard({
       tw="justify-center h-5/6 w-full rounded-md p-3"
       style={{
         opacity: cardOpacity,
-        backgroundColor: pageTheme.fg,
+        backgroundColor: shuffledPlayers[0].colour,
         transform: [{ translateX: xPosition }, { rotate: rotateCard }],
       }}>
       <Text tw="text-white font-bold text-4xl text-center">
