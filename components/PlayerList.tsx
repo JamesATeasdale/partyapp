@@ -45,10 +45,10 @@ export default function PlayerList({
             key={player.name}
             entering={ZoomIn.duration(Math.floor(Math.random() * 1200))}>
             <TouchableOpacity
-              key={player.name}
-              tw="px-2 "
+              tw="px-2 h-full"
               onPress={() => confirm(player.name)}>
               <Text
+                numberOfLines={1}
                 tw="text-5xl font-bold text-white"
                 style={{
                   color: player.colour,

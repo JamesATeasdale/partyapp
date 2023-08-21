@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity, Image } from "react-native";
 import LottieView from "lottie-react-native";
 import GameRanking from "../components/GameRanking";
 import Header from "../components/Header";
@@ -8,6 +8,7 @@ import shuffle from "../hooks/shuffleArray";
 import fastquizquestions from "../assets/fastquizquestions.json";
 import { useEffect, useState, useRef } from "react";
 import Animated, { ZoomIn } from "react-native-reanimated";
+import CardBanner from "../components/CardBanner";
 
 export default function FastQuiz({ players, setPlayers }) {
   const [newGame, setNewGame] = useState(false);
@@ -71,6 +72,7 @@ export default function FastQuiz({ players, setPlayers }) {
     <View
       tw="h-full items-center justify-between"
       style={{ backgroundColor: pageTheme.bg }}>
+      <Image source={require("../assets/stars.png")} tw="absolute h-full" />
       <LottieView
         tw="absolute h-full w-full "
         ref={LottieRef}
@@ -83,30 +85,9 @@ export default function FastQuiz({ players, setPlayers }) {
         <GameRanking players={players} setPlayers={setPlayers} />
       </View>
       <View
-        tw="flex-col w-11/12 h-3/6 rounded-xl mb-4  justify-between"
+        tw="flex-col w-11/12 h-3/6 rounded-xl mb-4 justify-between"
         style={{ backgroundColor: pageTheme.fg }}>
-        {newGame && (
-          <View tw="flex-row w-full justify-between">
-            <Text
-              tw=" pl-4 pt-2 text-white text-5xl basis-2/3 font-extrabold"
-              style={{ color: shuffledPlayers[0].colour }}
-              numberOfLines={1}>
-              {shuffledPlayers[0].name}
-            </Text>
-            <View tw="flex-row">
-              <Text
-                tw="m-1 text-xl p-2 rounded-l-xl text-gray-300"
-                style={{ backgroundColor: pageTheme.bg }}>
-                {"👎"}
-              </Text>
-              <Text
-                tw="m-1 text-xl p-2 rounded-r-xl text-gray-300"
-                style={{ backgroundColor: pageTheme.bg }}>
-                {"👍"}
-              </Text>
-            </View>
-          </View>
-        )}
+        {newGame && <CardBanner shuffledPlayer={shuffledPlayers[0]} />}
         {!newGame ? (
           <TouchableOpacity
             tw="justify-center"

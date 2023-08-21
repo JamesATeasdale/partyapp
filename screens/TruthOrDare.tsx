@@ -15,6 +15,7 @@ import Animated, {
   SlideOutLeft,
   SlideOutRight,
 } from "react-native-reanimated";
+import CardBanner from "../components/CardBanner";
 
 export default function TruthOrDare({ players, setPlayers }) {
   const LottieRef = useRef(null);
@@ -79,31 +80,13 @@ export default function TruthOrDare({ players, setPlayers }) {
         <GameRanking players={players} setPlayers={setPlayers} />
       </View>
       <View
-        tw="w-11/12 h-3/6 items-center rounded-xl justify-end mb-2  border-4"
+        tw="flex-col w-11/12 h-3/6 rounded-xl mb-2 justify-between border-4"
         style={{
           backgroundColor: pageTheme.fg,
           borderColor: pageTheme.fg,
         }}>
-        <View tw="flex-row top-0 w-full absolute justify-between">
-          <Text
-            tw=" pl-4 pt-2 text-white text-5xl basis-2/3 font-extrabold"
-            style={{ color: shuffledPlayers[0].colour }}
-            numberOfLines={1}>
-            {shuffledPlayers[0].name}
-          </Text>
-          <View tw="flex-row">
-            <Text
-              tw="m-1 text-xl p-2 rounded-l-xl text-gray-300"
-              style={{ backgroundColor: pageTheme.bg }}>
-              {"👎"}
-            </Text>
-            <Text
-              tw="m-1 text-xl p-2 rounded-r-xl text-gray-300"
-              style={{ backgroundColor: pageTheme.bg }}>
-              {"👍"}
-            </Text>
-          </View>
-        </View>
+        <CardBanner shuffledPlayer={shuffledPlayers[0]} />
+
         {option === "truth" ? (
           <SwipeableCard
             LottieRef={LottieRef}

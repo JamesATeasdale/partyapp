@@ -15,9 +15,9 @@ export default function Header() {
       {route.name.split("").map((letter, ind) => (
         <Animated.View entering={ZoomIn.duration((ind + 1) * 200)}>
           <Text
+            numberOfLines={1}
             tw="text-white text-5xl"
             style={{
-              color: pageTheme.text,
               fontFamily: "Caprasimo-Regular",
             }}>
             {letter}

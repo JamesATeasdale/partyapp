@@ -27,7 +27,7 @@ export default function GameRanking({ players, setPlayers }) {
   }
 
   return (
-    <View tw="w-full items-center rounded-lg mt-4">
+    <View tw="w-full items-center">
       <View tw="w-full justify-center flex-row h-4/6">
         {[players[1], players[0], players[2]].map(
           (player = { name: "", score: 0, colour: "" }, index = 0) => {
@@ -71,23 +71,25 @@ export default function GameRanking({ players, setPlayers }) {
           }
         )}
       </View>
-      <ScrollView horizontal={true} tw="">
+      <ScrollView horizontal={true}>
+        <View tw="opacity-30 bg-white absolute h-4/6 w-full" />
         {players
           .slice(3)
           .map((player = { name: "", colour: "", score: 0 }, index = 0) => (
             <TouchableOpacity
               onPress={() => confirm(player.name)}
               key={player.name}
-              tw="mx-1  pl-1 rounded-lg flex-row my-2 items-center h-14"
-              style={{
-                backgroundColor: player.colour,
-              }}>
-              <Text tw="text-4xl text-white pr-6 font-extrabold">
+              tw="px-2 h-full flex-row justify-center">
+              <Text
+                tw="text-4xl text-white font-extrabold pr-2"
+                style={{
+                  color: player.colour,
+                }}>
                 {player.name}
               </Text>
-              <View tw="px-2 h-full justify-center rounded-r-md bg-white">
-                <Text tw="font-black text-4xl">{player.score}</Text>
-              </View>
+              <Text tw="font-extrabold text-white text-4xl">
+                {player.score}
+              </Text>
             </TouchableOpacity>
           ))}
       </ScrollView>
