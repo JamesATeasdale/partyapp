@@ -100,19 +100,19 @@ export default function FastQuiz({ players, setPlayers }) {
               setNewGame(!newGame);
               timer();
             }}>
+            <LottieView
+              ref={LottieRef2}
+              tw="w-full h-full absolute"
+              source={require("../assets/streamers.json")}
+              loop={false}
+              speed={2}
+            />
             <View tw="h-full items-center justify-center px-4">
               {newGame ? (
                 <Text>{counter}</Text>
               ) : (
                 <View tw="w-full h-full justify-center">
                   {intro[Math.floor(Math.random() * intro.length)]}
-                  <LottieView
-                    ref={LottieRef2}
-                    tw="w-full h-full absolute"
-                    source={require("../assets/streamers.json")}
-                    loop={false}
-                    speed={2}
-                  />
                 </View>
               )}
             </View>

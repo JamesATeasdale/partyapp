@@ -42,22 +42,22 @@ export default function GameRanking({ players, setPlayers }) {
               <TouchableOpacity
                 onPress={() => confirm(player.name)}
                 key={player.name}
-                style={{
-                  borderColor: colour,
-                }}
                 tw="justify-end basis-1/3">
-                <Text
-                  numberOfLines={1}
-                  tw={"text-4xl font-extrabold rounded-t-md text-center"}
-                  style={{
-                    color: player.colour,
-                  }}>
-                  {player.name}
-                </Text>
+                <View>
+                  <View tw=" bg-white opacity-30 w-full h-full absolute rounded-t-md" />
+                  <Text
+                    numberOfLines={1}
+                    tw={"text-4xl font-extrabold rounded-t-md text-center"}
+                    style={{
+                      color: player.colour,
+                    }}>
+                    {player.name}
+                  </Text>
+                </View>
                 <View
                   style={{ backgroundColor: colour }}
                   tw={
-                    "border-2 " +
+                    "border-t-2 " +
                     "h-" +
                     (!index ? 4 : index === 1 ? 5 : 3) +
                     "/6 w-full justify-end"

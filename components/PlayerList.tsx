@@ -31,7 +31,7 @@ export default function PlayerList({
   if (warn) setTimeout(() => setWarn(false), 300);
 
   return (
-    <ScrollView tw="w-11/12 max-h-40 my-2">
+    <ScrollView tw="w-11/12 max-h-40">
       <View
         tw="h-full w-full absolute "
         style={{ backgroundColor: pageTheme.fg, opacity: 0.5 }}

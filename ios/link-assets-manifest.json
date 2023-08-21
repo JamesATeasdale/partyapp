@@ -2,12 +2,20 @@
   "migIndex": 1,
   "data": [
     {
-      "path": "assets/fonts/Caprasimo-Regular.ttf",
+      "path": "assets/fonts/Caprasimo/Caprasimo-Regular.ttf",
       "sha1": "69635154ccd4f68233cdc59173d6d32de5241d56"
     },
     {
-      "path": "assets/fonts/OFL.txt",
+      "path": "assets/fonts/Caprasimo/OFL.txt",
       "sha1": "d9b448ceecb2ae858a8b5b7b7ef3e01610277b1d"
+    },
+    {
+      "path": "assets/fonts/Caprasimo,Itim.zip",
+      "sha1": "8952bf5c23ca7605b84685e3a764a85a3e87ec34"
+    },
+    {
+      "path": "assets/fonts/Itim-Regular.ttf",
+      "sha1": "541b4ee96a4419d10f67fcc001a739a055298e47"
     }
   ]
 }

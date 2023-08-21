@@ -121,7 +121,13 @@ export default function TruthOrDare({ players, setPlayers }) {
               <TouchableOpacity
                 onPress={() => setOption("truth")}
                 tw="items-center justify-center ">
-                <Text style={{ fontSize: 280, opacity: 0.3 }} tw="absolute">
+                <Text
+                  style={{
+                    fontSize: 280,
+                    opacity: 0.3,
+                    fontFamily: "Itim-Regular",
+                  }}
+                  tw="absolute">
                   ?
                 </Text>
                 <Text tw="text-black font-black text-center text-6xl">
@@ -140,7 +146,13 @@ export default function TruthOrDare({ players, setPlayers }) {
               <TouchableOpacity
                 onPress={() => setOption("dare")}
                 tw="justify-center items-center">
-                <Text style={{ fontSize: 280, opacity: 0.3 }} tw="absolute">
+                <Text
+                  style={{
+                    fontSize: 280,
+                    opacity: 0.3,
+                    fontFamily: "",
+                  }}
+                  tw="absolute">
                   !
                 </Text>
                 <Text tw="text-black font-black text-center text-6xl">
