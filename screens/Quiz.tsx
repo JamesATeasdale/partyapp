@@ -13,22 +13,23 @@ import Intro from "../components/newIntro";
 
 export default function FastQuiz({ players, setPlayers }) {
   const [newGame, setNewGame] = useState(false);
-  const LottieRef = useRef(null);
-  const LottieRef2 = useRef(null);
-  const route = useRoute();
-  const pageTheme = theme(route.name);
-  const [counter, setCounter] = useState(0);
-  const countRef = useRef(null);
   const [reveal, setReveal] = useState(false);
-
-  countRef.current = counter;
+  const [counter, setCounter] = useState(0);
   const [shuffledPlayers, setShuffledPlayers] = useState(shuffle([...players]));
   const [shuffledQuestions, setShuffledQuestions] = useState(
     shuffle([...fastquizquestions])
   );
-  useEffect(() => LottieRef2.current?.play(), [shuffledPlayers]);
   const [fastmode, setFastmode] = useState(false);
+  const countRef = useRef(null);
+  const LottieRef = useRef(null);
+  const LottieRef2 = useRef(null);
+  const route = useRoute();
+  const pageTheme = theme(route.name);
+  countRef.current = counter;
+
   const toggleSwitch = () => setFastmode((previousState) => !previousState);
+
+  useEffect(() => LottieRef2.current?.play(), [shuffledPlayers]);
 
   const removeQuestion = () => {
     const questionsCopy = [...shuffledQuestions];
@@ -55,16 +56,9 @@ export default function FastQuiz({ players, setPlayers }) {
     removeQuestion();
   }
 
-  if (shuffledPlayers.length === 0) {
-    return setShuffledPlayers(shuffle([...players]));
-  }
-
+  if (shuffledPlayers.length === 0) setShuffledPlayers(shuffle([...players]));
   if (shuffledQuestions.length === 0)
     setShuffledQuestions(shuffle([...fastquizquestions]));
-
-  // useEffect(() => {
-  //   setNewIntro(intro[Math.floor(Math.random() * intro.length)]);
-  // }, [shuffledPlayers[0]]);
 
   return (
     <View
@@ -105,22 +99,24 @@ export default function FastQuiz({ players, setPlayers }) {
               />
               <Intro shuffledPlayer={shuffledPlayers[0]} />
             </TouchableOpacity>
-            <View tw="flex-row w-5/6 top-4 absolute justify-between">
+            <TouchableOpacity
+              onPress={toggleSwitch}
+              tw="flex-row w-5/6 top-4 absolute justify-between">
               <Text
-                tw="text-4xl font-extrabold basis-4/6"
+                tw="text-5xl font-extrabold basis-4/6"
                 style={{ color: pageTheme.text }}>
-                Timed
+                {fastmode ? "Timed" : "Normal"}
               </Text>
               <Switch
                 tw=""
-                style={{ transform: [{ scaleX: 2 }, { scaleY: 2 }] }}
+                style={{ transform: [{ scaleX: 2.4 }, { scaleY: 2.4 }] }}
                 trackColor={{ false: "#767577", true: "#81b0ff" }}
-                thumbColor={fastmode ? "#f5dd4b" : "#f4f3f4"}
+                thumbColor={fastmode ? pageTheme.bg : pageTheme.fg}
                 ios_backgroundColor="#3e3e3e"
                 onValueChange={toggleSwitch}
                 value={fastmode}
               />
-            </View>
+            </TouchableOpacity>
           </View>
         ) : (
           <View
@@ -135,7 +131,7 @@ export default function FastQuiz({ players, setPlayers }) {
               disabled={fastmode || reveal}
               tw={!reveal && !fastmode ? "h-full" : "basis-4/6"}>
               <Text
-                tw="px-2 text-white font-bold text-4xl text-center"
+                tw="px-2 text-white font-bold text-4xl text-center pt-2"
                 style={{ color: pageTheme.text }}>
                 {(counter && fastmode) || (!fastmode && !reveal)
                   ? shuffledQuestions.find((cat) => cat.category === "na")
