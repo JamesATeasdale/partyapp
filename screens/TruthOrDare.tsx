@@ -62,18 +62,18 @@ export default function TruthOrDare({ players, setPlayers }) {
 
   return (
     <View
-      tw="h-full items-center justify-between"
+      tw="h-full w-full items-center justify-between"
       style={{ backgroundColor: pageTheme.bg }}>
       <LottieView
         tw="absolute h-full w-full"
         ref={LottieRef}
-        source={require("../assets/animation_lkb6094l.json")}
+        source={require("../assets/singlefirework.json")}
         loop={false}
-        speed={2}
+        speed={1}
       />
       <Image
-        source={require("../assets/question-marks-background.png")}
-        tw="absolute h-full"
+        tw="h-full w-full absolute opacity-60"
+        source={require("../assets/question-marks-background2.png")}
       />
       <View tw="w-full h-2/6 items-center">
         <Header />

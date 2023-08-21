@@ -13,6 +13,7 @@ import CardBanner from "../components/CardBanner";
 export default function FastQuiz({ players, setPlayers }) {
   const [newGame, setNewGame] = useState(false);
   const LottieRef = useRef(null);
+  const LottieRef2 = useRef(null);
   const route = useRoute();
   const pageTheme = theme(route.name);
   const [counter, setCounter] = useState(7);
@@ -22,6 +23,7 @@ export default function FastQuiz({ players, setPlayers }) {
   const [shuffledQuestions, setShuffledQuestions] = useState(
     shuffle([...fastquizquestions])
   );
+  useEffect(() => LottieRef2.current?.play(), [shuffledPlayers]);
 
   function timer() {
     const countInt = setInterval(
@@ -72,7 +74,10 @@ export default function FastQuiz({ players, setPlayers }) {
     <View
       tw="h-full items-center justify-between"
       style={{ backgroundColor: pageTheme.bg }}>
-      <Image source={require("../assets/stars.png")} tw="absolute h-full" />
+      <Image
+        source={require("../assets/stars.png")}
+        tw="absolute h-full w-full opacity-80"
+      />
       <LottieView
         tw="absolute h-full w-full "
         ref={LottieRef}
@@ -99,7 +104,16 @@ export default function FastQuiz({ players, setPlayers }) {
               {newGame ? (
                 <Text>{counter}</Text>
               ) : (
-                intro[Math.floor(Math.random() * intro.length)]
+                <View tw="w-full h-full justify-center">
+                  {intro[Math.floor(Math.random() * intro.length)]}
+                  <LottieView
+                    ref={LottieRef2}
+                    tw="w-full h-full absolute"
+                    source={require("../assets/streamers.json")}
+                    loop={false}
+                    speed={2}
+                  />
+                </View>
               )}
             </View>
           </TouchableOpacity>

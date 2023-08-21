@@ -25,9 +25,9 @@ export default function Welcome({ players, setPlayers }) {
       tw="items-center h-full w-full justify-between"
       style={{ backgroundColor: pageTheme.bg }}>
       <LottieView
-        tw="absolute h-full"
+        tw="absolute h-full w-full"
         ref={LottieRef}
-        source={require("../assets/animation_lkb6094l.json")}
+        source={require("../assets/balloons.json")}
         loop={false}
         speed={2}
       />

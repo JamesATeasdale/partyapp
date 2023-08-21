@@ -13,7 +13,7 @@ export default function Header() {
       onPress={() => navigation.navigate("Party Animals")}
       tw="my-4 flex-row justify-center">
       {route.name.split("").map((letter, ind) => (
-        <Animated.View entering={ZoomIn.duration((ind + 1) * 200)}>
+        <Animated.View entering={ZoomIn.duration((ind + 1) * 200)} key={ind}>
           <Text
             numberOfLines={1}
             tw="text-white text-5xl"

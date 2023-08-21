@@ -31,10 +31,14 @@ export default function PlayerList({
   if (warn) setTimeout(() => setWarn(false), 300);
 
   return (
-    <ScrollView tw="w-11/12 max-h-40 ">
+    <ScrollView tw="w-11/12 max-h-40 my-2">
+      <View
+        tw="h-full w-full absolute "
+        style={{ backgroundColor: pageTheme.fg, opacity: 0.5 }}
+      />
       <View tw="flex-row flex-wrap justify-center">
         {players.length === 0 && (
-          <Animated.View tw="px-2 m-1 rounded-md">
+          <Animated.View tw="px-2 m-1">
             <TouchableOpacity onPress={() => setIsAdd(true)}>
               <Text tw="text-2xl font-bold text-white p-2">Add a Player</Text>
             </TouchableOpacity>
