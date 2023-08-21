@@ -44,9 +44,7 @@ export default function PlayerList({
           <Animated.View
             key={player.name}
             entering={ZoomIn.duration(Math.floor(Math.random() * 1200))}>
-            <TouchableOpacity
-              tw="px-2 h-full"
-              onPress={() => confirm(player.name)}>
+            <TouchableOpacity tw="px-2" onPress={() => confirm(player.name)}>
               <Text
                 numberOfLines={1}
                 tw="text-5xl font-bold text-white"
