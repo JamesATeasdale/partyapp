@@ -66,6 +66,6 @@ export function theme(routeName) {
   let theme = {};
   if (routeName === "Party Animals") theme = main;
   else if (routeName === "Truth or Dare") theme = green;
-  else if (routeName === "Fast Quiz") theme = orange;
+  else if (routeName === "Quiz") theme = orange;
   return theme;
 }

@@ -9,7 +9,7 @@ export default function Sets({ setWarn, players }) {
   const navigation = useNavigation();
   const [pages, setPages] = useState([
     "Truth or Dare",
-    "Fast Quiz",
+    "Quiz",
     "Ice Breakers",
     "What Would You Do",
   ]);

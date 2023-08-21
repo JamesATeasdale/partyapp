@@ -3,7 +3,7 @@ import Welcome from "./screens/Welcome";
 import TruthOrDare from "./screens/TruthOrDare";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import FastQuiz from "./screens/FastQuiz";
+import Quiz from "./screens/Quiz";
 
 const Stack = createNativeStackNavigator();
 
@@ -29,8 +29,8 @@ export default function App() {
         <Stack.Screen name="Truth or Dare">
           {(props) => <TruthOrDare setPlayers={setPlayers} players={players} />}
         </Stack.Screen>
-        <Stack.Screen name="Fast Quiz">
-          {(props) => <FastQuiz setPlayers={setPlayers} players={players} />}
+        <Stack.Screen name="Quiz">
+          {(props) => <Quiz setPlayers={setPlayers} players={players} />}
         </Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
