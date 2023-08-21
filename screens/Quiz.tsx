@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, Image } from "react-native";
+import { View, Text, TouchableOpacity, Image, Switch } from "react-native";
 import LottieView from "lottie-react-native";
 import GameRanking from "../components/GameRanking";
 import Header from "../components/Header";
@@ -9,6 +9,7 @@ import fastquizquestions from "../assets/fastquizquestions.json";
 import { useEffect, useState, useRef } from "react";
 import Animated, { ZoomIn } from "react-native-reanimated";
 import CardBanner from "../components/CardBanner";
+import Intro from "../components/newIntro";
 
 export default function FastQuiz({ players, setPlayers }) {
   const [newGame, setNewGame] = useState(false);
@@ -16,24 +17,20 @@ export default function FastQuiz({ players, setPlayers }) {
   const LottieRef2 = useRef(null);
   const route = useRoute();
   const pageTheme = theme(route.name);
-  const [counter, setCounter] = useState(7);
+  const [counter, setCounter] = useState(0);
   const countRef = useRef(null);
+  const [reveal, setReveal] = useState(false);
+
   countRef.current = counter;
   const [shuffledPlayers, setShuffledPlayers] = useState(shuffle([...players]));
   const [shuffledQuestions, setShuffledQuestions] = useState(
     shuffle([...fastquizquestions])
   );
   useEffect(() => LottieRef2.current?.play(), [shuffledPlayers]);
+  const [fastmode, setFastmode] = useState(false);
+  const toggleSwitch = () => setFastmode((previousState) => !previousState);
 
-  function timer() {
-    const countInt = setInterval(
-      () =>
-        countRef.current > 0
-          ? setCounter((counter) => counter - 1)
-          : clearInterval(countInt),
-      1000
-    );
-    setCounter(7);
+  const removeQuestion = () => {
     const questionsCopy = [...shuffledQuestions];
     questionsCopy.splice(
       shuffledQuestions.indexOf(
@@ -44,6 +41,18 @@ export default function FastQuiz({ players, setPlayers }) {
       1
     );
     setShuffledQuestions(questionsCopy);
+  };
+
+  function timer() {
+    const countInt = setInterval(
+      () =>
+        countRef.current > 0
+          ? setCounter((counter) => counter - 1)
+          : clearInterval(countInt),
+      1000
+    );
+    setCounter(7);
+    removeQuestion();
   }
 
   if (shuffledPlayers.length === 0) {
@@ -53,22 +62,9 @@ export default function FastQuiz({ players, setPlayers }) {
   if (shuffledQuestions.length === 0)
     setShuffledQuestions(shuffle([...fastquizquestions]));
 
-  const intro = [
-    <Text
-      tw="text-white font-bold text-5xl text-center"
-      style={{ color: pageTheme.text }}>
-      <Text>It's </Text>
-      <Text style={{ color: shuffledPlayers[0].colour }}>
-        {shuffledPlayers[0].name}
-      </Text>
-      <Text>'s time to shine</Text>
-    </Text>,
-    <Text
-      tw="text-white font-bold text-5xl text-center"
-      style={{ color: shuffledPlayers[0].colour }}>
-      {shuffledPlayers[0].name}
-    </Text>,
-  ];
+  // useEffect(() => {
+  //   setNewIntro(intro[Math.floor(Math.random() * intro.length)]);
+  // }, [shuffledPlayers[0]]);
 
   return (
     <View
@@ -90,52 +86,83 @@ export default function FastQuiz({ players, setPlayers }) {
         <GameRanking players={players} setPlayers={setPlayers} />
       </View>
       <View
-        tw="flex-col w-11/12 h-3/6 rounded-xl mb-4 justify-between"
+        tw=" w-11/12 h-3/6 rounded-xl mb-4 justify-between"
         style={{ backgroundColor: pageTheme.fg }}>
         {!newGame ? (
-          <TouchableOpacity
-            tw="justify-center w-full h-full"
-            onPress={() => {
-              setNewGame(!newGame);
-              timer();
-            }}>
-            <LottieView
-              ref={LottieRef2}
-              tw="w-full h-full absolute"
-              source={require("../assets/streamers.json")}
-              loop={false}
-              speed={2}
-            />
-            {intro[Math.floor(Math.random() * intro.length)]}
-          </TouchableOpacity>
+          <View tw="items-center">
+            <TouchableOpacity
+              tw="justify-center w-full h-full"
+              onPress={() => {
+                setNewGame(!newGame);
+                fastmode && timer();
+              }}>
+              <LottieView
+                ref={LottieRef2}
+                tw="w-full h-full absolute"
+                source={require("../assets/streamers.json")}
+                loop={false}
+                speed={2}
+              />
+              <Intro shuffledPlayer={shuffledPlayers[0]} />
+            </TouchableOpacity>
+            <View tw="flex-row w-5/6 top-4 absolute justify-between">
+              <Text
+                tw="text-4xl font-extrabold basis-4/6"
+                style={{ color: pageTheme.text }}>
+                Timed
+              </Text>
+              <Switch
+                tw=""
+                style={{ transform: [{ scaleX: 2 }, { scaleY: 2 }] }}
+                trackColor={{ false: "#767577", true: "#81b0ff" }}
+                thumbColor={fastmode ? "#f5dd4b" : "#f4f3f4"}
+                ios_backgroundColor="#3e3e3e"
+                onValueChange={toggleSwitch}
+                value={fastmode}
+              />
+            </View>
+          </View>
         ) : (
-          <View tw="border-2 h-full justify-between">
+          <View
+            tw={
+              (!counter && fastmode) || reveal
+                ? "justify-between h-full"
+                : "h-full"
+            }>
             <CardBanner shuffledPlayer={shuffledPlayers[0]} />
-            <Text
-              tw="px-2 text-white font-bold text-4xl text-center h-4/6"
-              style={{ color: pageTheme.text }}>
-              {counter
-                ? shuffledQuestions.find((cat) => cat.category === "na")
-                    .question
-                : shuffledQuestions.find((cat) => cat.category === "na").answer}
-            </Text>
-            {counter ? (
-              <View tw="flex-row justify-center basis-2/6">
+            <TouchableOpacity
+              onPress={() => setReveal(true)}
+              disabled={fastmode || reveal}
+              tw={!reveal && !fastmode ? "h-full" : "basis-4/6"}>
+              <Text
+                tw="px-2 text-white font-bold text-4xl text-center"
+                style={{ color: pageTheme.text }}>
+                {(counter && fastmode) || (!fastmode && !reveal)
+                  ? shuffledQuestions.find((cat) => cat.category === "na")
+                      .question
+                  : shuffledQuestions.find((cat) => cat.category === "na")
+                      .answer}
+              </Text>
+            </TouchableOpacity>
+            {counter && fastmode ? (
+              <View tw="flex-row justify-center basis-2/6 ">
                 <Text tw="text-8xl text-center font-black text-white">
                   {counter}
                 </Text>
               </View>
-            ) : (
+            ) : (!counter && fastmode) || (!fastmode && reveal) ? (
               <View tw="flex-row justify-between">
                 <TouchableOpacity
                   tw="basis-1/2 justify-center bg-white border-r-2"
                   onPress={() => {
+                    setReveal(false);
                     setNewGame(!newGame);
                     setShuffledPlayers(
                       shuffledPlayers.filter(
                         (player) => player.name !== shuffledPlayers[0].name
                       )
                     );
+                    !fastmode && removeQuestion();
                   }}>
                   <Animated.Text
                     tw="text-center text-7xl text-red-700"
@@ -147,12 +174,17 @@ export default function FastQuiz({ players, setPlayers }) {
                   tw="basis-1/2 justify-center bg-white border-l-2"
                   onPress={() => {
                     setNewGame(!newGame);
+                    setReveal(false);
                     LottieRef.current.play();
+                    !fastmode && removeQuestion();
                     return Promise.resolve(
                       setPlayers(
                         players.map((player) =>
                           player.name === shuffledPlayers[0].name
-                            ? { ...player, score: (player.score += 1) }
+                            ? {
+                                ...player,
+                                score: (player.score += fastmode ? 2 : 1),
+                              }
                             : player
                         )
                       )
@@ -171,7 +203,7 @@ export default function FastQuiz({ players, setPlayers }) {
                   </Animated.Text>
                 </TouchableOpacity>
               </View>
-            )}
+            ) : null}
           </View>
         )}
       </View>
