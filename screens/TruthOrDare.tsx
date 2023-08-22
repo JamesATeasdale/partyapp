@@ -130,6 +130,7 @@ export default function TruthOrDare({ players, setPlayers }) {
                   tw="absolute">
                   ?
                 </Text>
+                <Text tw="absolute right-2 bottom-0  text-3xl">⚫</Text>
                 <Text tw="text-black font-black text-center text-6xl">
                   Truth
                 </Text>
@@ -155,6 +156,7 @@ export default function TruthOrDare({ players, setPlayers }) {
                   tw="absolute">
                   !
                 </Text>
+                <Text tw="absolute left-2 bottom-0  text-3xl">⚫</Text>
                 <Text tw="text-black font-black text-center text-6xl">
                   Dare
                 </Text>

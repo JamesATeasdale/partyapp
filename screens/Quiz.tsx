@@ -7,7 +7,12 @@ import { useRoute } from "@react-navigation/native";
 import shuffle from "../hooks/shuffleArray";
 import fastquizquestions from "../assets/fastquizquestions.json";
 import { useEffect, useState, useRef } from "react";
-import Animated, { ZoomIn } from "react-native-reanimated";
+import Animated, {
+  BounceIn,
+  BounceOut,
+  LightSpeedInLeft,
+  ZoomIn,
+} from "react-native-reanimated";
 import CardBanner from "../components/CardBanner";
 import Intro from "../components/newIntro";
 
@@ -83,22 +88,24 @@ export default function FastQuiz({ players, setPlayers }) {
         tw=" w-11/12 h-3/6 rounded-xl mb-4 justify-between"
         style={{ backgroundColor: pageTheme.fg }}>
         {!newGame ? (
-          <View tw="items-center">
-            <TouchableOpacity
-              tw="justify-center w-full h-full"
-              onPress={() => {
-                setNewGame(!newGame);
-                fastmode && timer();
-              }}>
-              <LottieView
-                ref={LottieRef2}
-                tw="w-full h-full absolute"
-                source={require("../assets/streamers.json")}
-                loop={false}
-                speed={2}
-              />
-              <Intro shuffledPlayer={shuffledPlayers[0]} />
-            </TouchableOpacity>
+          <Animated.View tw="items-center">
+            <LottieView
+              ref={LottieRef2}
+              tw="w-full h-full absolute"
+              source={require("../assets/streamers.json")}
+              loop={false}
+              speed={2}
+            />
+            <Animated.View entering={BounceIn}>
+              <TouchableOpacity
+                tw="justify-center w-full h-full"
+                onPress={() => {
+                  setNewGame(!newGame);
+                  fastmode && timer();
+                }}>
+                <Intro shuffledPlayer={shuffledPlayers[0]} />
+              </TouchableOpacity>
+            </Animated.View>
             <TouchableOpacity
               onPress={toggleSwitch}
               tw="flex-row w-5/6 top-4 absolute justify-between">
@@ -117,7 +124,7 @@ export default function FastQuiz({ players, setPlayers }) {
                 value={fastmode}
               />
             </TouchableOpacity>
-          </View>
+          </Animated.View>
         ) : (
           <View
             tw={

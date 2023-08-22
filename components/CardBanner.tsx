@@ -13,7 +13,10 @@ export default function CardBanner({ shuffledPlayer }) {
         numberOfLines={1}>
         {shuffledPlayer.name}
       </Text>
-      <Text tw="  text-white text-4xl font-extrabold" numberOfLines={1}>
+      <Text
+        tw="text-4xl font-black"
+        style={{ color: shuffledPlayer.colour }}
+        numberOfLines={1}>
         {shuffledPlayer.score}
       </Text>
       <View tw="flex-row">
