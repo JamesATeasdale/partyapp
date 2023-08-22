@@ -60,9 +60,13 @@ export default function GameRanking({ players, setPlayers }) {
                   tw={
                     "h-" +
                     (!index ? 3 : index === 1 ? 4 : 2) +
-                    "/6 w-full justify-end"
+                    "/6 w-full justify-end "
                   }>
-                  <Text tw=" font-black text-white text-2xl text-center bg-blue-900">
+                  <Text
+                    tw={
+                      "border-t-2 font-black text-white text-2xl text-center bg-blue-900 " +
+                      (index === 1 && "border-x-2")
+                    }>
                     {player.score}
                   </Text>
                 </View>
