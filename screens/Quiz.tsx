@@ -48,8 +48,6 @@ export default function FastQuiz({ players, setPlayers }) {
     );
   };
 
-  console.log(players);
-  console.log(shuffledPlayers[0]);
   const removeQuestion = () => {
     const questionsCopy = [...shuffledQuestions];
     questionsCopy.splice(
@@ -88,8 +86,8 @@ export default function FastQuiz({ players, setPlayers }) {
       tw="h-full items-center justify-between"
       style={{ backgroundColor: pageTheme.bg }}>
       <Image
-        source={require("../assets/stars.png")}
-        tw="absolute h-full w-full opacity-80"
+        source={require("../assets/question-marks-background2.png")}
+        tw="absolute h-full w-full opacity-50"
       />
       <LottieView
         tw="absolute h-full w-full "

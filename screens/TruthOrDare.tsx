@@ -10,6 +10,8 @@ import SwipeableCard from "../components/SwipeCard";
 import shuffle from "../hooks/shuffleArray";
 import LottieView from "lottie-react-native";
 import Animated, {
+  FadeIn,
+  FadeOut,
   SlideInLeft,
   SlideInRight,
   SlideOutLeft,
@@ -21,14 +23,9 @@ export default function TruthOrDare({ players, setPlayers }) {
   const LottieRef = useRef(null);
   const route = useRoute();
   const pageTheme = theme(route.name);
-  const [category, setCategory] = useState("na");
   const [shuffledPlayers, setShuffledPlayers] = useState(shuffle([...players]));
-  const [shuffledTruths, setShuffledTruths] = useState(
-    shuffle([...truths].filter((item) => item.category === category))
-  );
-  const [shuffledDares, setShuffledDares] = useState(
-    shuffle([...dares].filter((item) => item.category === category))
-  );
+  const [shuffledTruths, setShuffledTruths] = useState([]);
+  const [shuffledDares, setShuffledDares] = useState([]);
   const [option, setOption] = useState("");
   let shuffledTruth = { question: "" };
   let shuffledDare = { question: "" };
@@ -52,11 +49,10 @@ export default function TruthOrDare({ players, setPlayers }) {
   useEffect(() => setOption(""), [shuffledPlayers]);
   if (!players.length) navigation.navigate("Party Animals");
 
-  if (shuffledPlayers.length === 0) {
-    return Promise.resolve(setShuffledPlayers(shuffle([...players])));
-  }
+  if (shuffledPlayers.length === 0) setShuffledPlayers(shuffle([...players]));
   if (shuffledTruths.length === 0) setShuffledTruths(shuffle([...truths]));
   if (shuffledDares.length === 0) setShuffledDares(shuffle([...dares]));
+
   if (!shuffledTruth.question) shuffledTruth = shuffledTruths[0];
   if (!shuffledDare.question) shuffledDare = shuffledDares[0];
 
@@ -72,8 +68,8 @@ export default function TruthOrDare({ players, setPlayers }) {
         speed={1}
       />
       <Image
-        tw="h-full w-full absolute opacity-60"
-        source={require("../assets/question-marks-background2.png")}
+        tw="h-full w-full absolute opacity-40"
+        source={require("../assets/stars2.png")}
       />
       <View tw="w-full h-2/6 items-center">
         <Header />
@@ -86,7 +82,6 @@ export default function TruthOrDare({ players, setPlayers }) {
           borderColor: pageTheme.fg,
         }}>
         <CardBanner shuffledPlayer={shuffledPlayers[0]} />
-
         {option === "truth" ? (
           <SwipeableCard
             LottieRef={LottieRef}
@@ -161,6 +156,20 @@ export default function TruthOrDare({ players, setPlayers }) {
                   Dare
                 </Text>
                 <Text tw="text-black font-black text-center text-6xl">+2</Text>
+              </TouchableOpacity>
+            </Animated.View>
+            <Animated.View
+              tw="absolute items-center w-full"
+              entering={FadeIn}
+              exiting={FadeOut}>
+              <TouchableOpacity>
+                <Text tw="text-5xl pt-4">
+                  {shuffledPlayers[0].tod === "na"
+                    ? "😇"
+                    : shuffledPlayers[0].tod === "explicit"
+                    ? "😈"
+                    : "😏"}
+                </Text>
               </TouchableOpacity>
             </Animated.View>
           </View>
