@@ -7,12 +7,7 @@ import { useRoute } from "@react-navigation/native";
 import shuffle from "../hooks/shuffleArray";
 import fastquizquestions from "../assets/fastquizquestions.json";
 import { useEffect, useState, useRef } from "react";
-import Animated, {
-  BounceIn,
-  BounceOut,
-  LightSpeedInLeft,
-  ZoomIn,
-} from "react-native-reanimated";
+import Animated, { BounceIn, ZoomIn } from "react-native-reanimated";
 import CardBanner from "../components/CardBanner";
 import Intro from "../components/newIntro";
 
@@ -20,10 +15,8 @@ export default function FastQuiz({ players, setPlayers }) {
   const [newGame, setNewGame] = useState(false);
   const [reveal, setReveal] = useState(false);
   const [counter, setCounter] = useState(0);
-  const [shuffledPlayers, setShuffledPlayers] = useState(shuffle([...players]));
-  const [shuffledQuestions, setShuffledQuestions] = useState(
-    shuffle([...fastquizquestions])
-  );
+  const [shuffledPlayers, setShuffledPlayers] = useState([]);
+  const [shuffledQuestions, setShuffledQuestions] = useState([]);
   const countRef = useRef(null);
   const LottieRef = useRef(null);
   const LottieRef2 = useRef(null);

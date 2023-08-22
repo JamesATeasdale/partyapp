@@ -30,6 +30,7 @@ export default function TruthOrDare({ players, setPlayers }) {
   let shuffledTruth = { question: "" };
   let shuffledDare = { question: "" };
   const navigation = useNavigation();
+  const todToggle = ["na", "", "explicit"];
 
   const removeCard = (num = 0) => {
     if (num === 1)
@@ -125,7 +126,7 @@ export default function TruthOrDare({ players, setPlayers }) {
                   tw="absolute">
                   ?
                 </Text>
-                <Text tw="absolute right-2 text-3xl">⚫</Text>
+                <Text tw="absolute right-2 text-3xl pt-12">⚫</Text>
                 <Text tw="text-black font-black text-center text-6xl">
                   Truth
                 </Text>
@@ -151,7 +152,7 @@ export default function TruthOrDare({ players, setPlayers }) {
                   tw="absolute">
                   !
                 </Text>
-                <Text tw="absolute left-2 text-3xl">⚫</Text>
+                <Text tw="absolute left-2 text-3xl pt-12">⚫</Text>
                 <Text tw="text-black font-black text-center text-6xl">
                   Dare
                 </Text>
@@ -162,7 +163,37 @@ export default function TruthOrDare({ players, setPlayers }) {
               tw="absolute items-center w-full"
               entering={FadeIn}
               exiting={FadeOut}>
-              <TouchableOpacity>
+              <TouchableOpacity
+                onPress={() => {
+                  setPlayers(
+                    players.map((player) =>
+                      shuffledPlayers[0].name === player.name
+                        ? {
+                            ...player,
+                            tod:
+                              player.tod === "explicit"
+                                ? todToggle[0]
+                                : todToggle[todToggle.indexOf(player.tod) + 1],
+                          }
+                        : player
+                    )
+                  );
+                  setShuffledPlayers(
+                    shuffledPlayers.map((shuffledPlayer, ind) =>
+                      !ind
+                        ? {
+                            ...shuffledPlayer,
+                            tod:
+                              shuffledPlayer.tod === "explicit"
+                                ? todToggle[0]
+                                : todToggle[
+                                    todToggle.indexOf(shuffledPlayer.tod) + 1
+                                  ],
+                          }
+                        : shuffledPlayer
+                    )
+                  );
+                }}>
                 <Text tw="text-5xl pt-4">
                   {shuffledPlayers[0].tod === "na"
                     ? "😇"
