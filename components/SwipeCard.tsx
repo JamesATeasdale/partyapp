@@ -5,6 +5,7 @@ import { theme } from "../assets/colors";
 import Reanimated, { FadeIn, FadeOut } from "react-native-reanimated";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
+const cardWidthTolerance = 325;
 
 export default function SwipeableCard({
   LottieRef,
@@ -35,16 +36,16 @@ export default function SwipeableCard({
     onMoveShouldSetPanResponderCapture: (evt, gestureState) => true,
     onPanResponderMove: (evt, gestureState) => {
       xPosition.setValue(gestureState.dx);
-      if (gestureState.dx > SCREEN_WIDTH - 425) {
+      if (gestureState.dx > SCREEN_WIDTH - 525) {
         swipeDirection = "Right";
-      } else if (gestureState.dx < -SCREEN_WIDTH + 425) {
+      } else if (gestureState.dx < -SCREEN_WIDTH + 525) {
         swipeDirection = "Left";
       }
     },
     onPanResponderRelease: (evt, gestureState) => {
       if (
-        gestureState.dx < SCREEN_WIDTH - 275 &&
-        gestureState.dx > -SCREEN_WIDTH + 275
+        gestureState.dx < SCREEN_WIDTH - cardWidthTolerance &&
+        gestureState.dx > -SCREEN_WIDTH + cardWidthTolerance
       ) {
         swipedDirection("--");
         Animated.spring(xPosition, {
@@ -53,7 +54,7 @@ export default function SwipeableCard({
           bounciness: 10,
           useNativeDriver: false,
         }).start();
-      } else if (gestureState.dx > SCREEN_WIDTH - 275) {
+      } else if (gestureState.dx > SCREEN_WIDTH - cardWidthTolerance) {
         Animated.parallel([
           Animated.timing(xPosition, {
             toValue: SCREEN_WIDTH,
@@ -82,7 +83,7 @@ export default function SwipeableCard({
           swipedDirection(swipeDirection);
           removeCard(value);
         });
-      } else if (gestureState.dx < -SCREEN_WIDTH + 275) {
+      } else if (gestureState.dx < -SCREEN_WIDTH + cardWidthTolerance) {
         Animated.parallel([
           Animated.timing(xPosition, {
             toValue: -SCREEN_WIDTH,
@@ -111,7 +112,7 @@ export default function SwipeableCard({
     <Reanimated.View
       entering={FadeIn}
       exiting={FadeOut}
-      tw="justify-center h-5/6 w-full rounded-md">
+      tw="justify-center h-5/6 w-full rounded-md grow">
       <View
         tw="w-full h-full absolute"
         style={{ backgroundColor: pageTheme.bg }}

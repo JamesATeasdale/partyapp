@@ -96,9 +96,9 @@ export default function FastQuiz({ players, setPlayers }) {
               loop={false}
               speed={2}
             />
-            <Animated.View entering={BounceIn}>
+            <Animated.View entering={BounceIn} tw="w-full">
               <TouchableOpacity
-                tw="justify-center w-full h-full"
+                tw="justify-center h-full"
                 onPress={() => {
                   setNewGame(!newGame);
                   fastmode && timer();
@@ -136,7 +136,7 @@ export default function FastQuiz({ players, setPlayers }) {
             <TouchableOpacity
               onPress={() => setReveal(true)}
               disabled={fastmode || reveal}
-              tw={!reveal && !fastmode ? "h-full" : "basis-4/6"}>
+              tw={!reveal && !fastmode ? "h-full w-full" : "basis-4/6"}>
               <Text
                 tw="px-2 text-white font-bold text-4xl text-center pt-2"
                 style={{ color: pageTheme.text }}>

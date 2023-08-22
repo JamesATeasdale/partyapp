@@ -80,7 +80,7 @@ export default function TruthOrDare({ players, setPlayers }) {
         <GameRanking players={players} setPlayers={setPlayers} />
       </View>
       <View
-        tw="flex-col w-11/12 h-3/6 rounded-xl mb-2 justify-between border-4"
+        tw="w-11/12 h-3/6 rounded-xl mb-2 border-4"
         style={{
           backgroundColor: pageTheme.fg,
           borderColor: pageTheme.fg,
@@ -110,7 +110,7 @@ export default function TruthOrDare({ players, setPlayers }) {
             removeCard={removeCard}
           />
         ) : (
-          <View tw="h-5/6 flex-row rounded-b-md">
+          <View tw="grow h-5/6 flex-row rounded-b-md">
             <Animated.View
               tw="basis-1/2 justify-center rounded-bl-md border-r-2"
               entering={SlideInLeft}
@@ -120,7 +120,7 @@ export default function TruthOrDare({ players, setPlayers }) {
               }}>
               <TouchableOpacity
                 onPress={() => setOption("truth")}
-                tw="items-center justify-center ">
+                tw="items-center justify-center w-full h-full">
                 <Text
                   style={{
                     fontSize: 280,
@@ -130,7 +130,7 @@ export default function TruthOrDare({ players, setPlayers }) {
                   tw="absolute">
                   ?
                 </Text>
-                <Text tw="absolute right-2 bottom-0  text-3xl">⚫</Text>
+                <Text tw="absolute right-2 text-3xl">⚫</Text>
                 <Text tw="text-black font-black text-center text-6xl">
                   Truth
                 </Text>
@@ -146,7 +146,7 @@ export default function TruthOrDare({ players, setPlayers }) {
               }}>
               <TouchableOpacity
                 onPress={() => setOption("dare")}
-                tw="justify-center items-center">
+                tw="justify-center items-center w-full h-full">
                 <Text
                   style={{
                     fontSize: 280,
@@ -156,7 +156,7 @@ export default function TruthOrDare({ players, setPlayers }) {
                   tw="absolute">
                   !
                 </Text>
-                <Text tw="absolute left-2 bottom-0  text-3xl">⚫</Text>
+                <Text tw="absolute left-2 text-3xl">⚫</Text>
                 <Text tw="text-black font-black text-center text-6xl">
                   Dare
                 </Text>

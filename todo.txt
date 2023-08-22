@@ -15,9 +15,7 @@ text cut off on the following elements:
 TODO
 - move nsfw and fastmode to player prefs
 - make truth or dare card's swipe acceptance values even smaller
-
-addplayerform multiple in one
-move nsfw options to truth or dare
+- addplayerform multiple in one
 
 divide main colours into light and dark, choose dark for players and title
 maybe remove multicolour, randomly generated titles or fix constant title colour refresh every second of fastquiz countdown
