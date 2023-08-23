@@ -65,7 +65,11 @@ export default function GameRanking({ players, setPlayers }) {
                   <Text
                     tw={
                       "border-t-2 font-black text-white text-2xl text-center bg-blue-900 " +
-                      (index === 1 && "border-x-2")
+                      (!index
+                        ? "border-r-2"
+                        : index === 2
+                        ? "border-l-2"
+                        : "border-x-2")
                     }>
                     {player.score}
                   </Text>

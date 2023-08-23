@@ -91,10 +91,9 @@ export default function TruthOrDare({ players, setPlayers }) {
         <GameRanking players={players} setPlayers={setPlayers} />
       </View>
       <View
-        tw="w-11/12 h-3/6 rounded-xl mb-2 border-4"
+        tw="w-11/12 h-3/6 rounded-xl mb-2 items-center "
         style={{
           backgroundColor: pageTheme.fg,
-          borderColor: pageTheme.fg,
         }}>
         <CardBanner shuffledPlayer={shuffledPlayers[0]} />
         {option === "truth" ? (
@@ -122,10 +121,11 @@ export default function TruthOrDare({ players, setPlayers }) {
         ) : (
           <View tw="grow h-5/6 flex-row rounded-b-md">
             <Animated.View
-              tw="basis-1/2 justify-center rounded-bl-md border-r-2"
+              tw="basis-1/2 justify-center rounded-bl-md border-2"
               entering={SlideInLeft}
               exiting={SlideOutLeft}
               style={{
+                borderColor: pageTheme.fg,
                 backgroundColor: pageTheme.bg,
               }}>
               <TouchableOpacity
@@ -148,10 +148,11 @@ export default function TruthOrDare({ players, setPlayers }) {
               </TouchableOpacity>
             </Animated.View>
             <Animated.View
-              tw="basis-1/2 justify-center rounded-br-md border-l-2"
+              tw="basis-1/2 justify-center rounded-br-md border-2"
               entering={SlideInRight}
               exiting={SlideOutRight}
               style={{
+                borderColor: pageTheme.fg,
                 backgroundColor: pageTheme.bg,
               }}>
               <TouchableOpacity
