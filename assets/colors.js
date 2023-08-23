@@ -58,9 +58,18 @@ export const multi = [
 const main = { bg: "#370080", fg: "#9a4dff" };
 // old -> const main = { bg: "#190927", fg: "#612c94" };
 
-const green = { bg: "#57aa40", fg: "#c2e1f6" };
+const green = {
+  bg: "#57aa40",
+  fg: "#c5cb8b",
+  text: "#55094d",
+  asset: "#9a7b4f",
+};
 
-const orange = { bg: "#f25a29", fg: "#fbaf3f", text: "#004080" };
+const orange = {
+  bg: "#f25a29",
+  fg: "#fbaf3f",
+  text: "#004080",
+};
 
 export function theme(routeName) {
   let theme = {};

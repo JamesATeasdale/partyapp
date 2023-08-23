@@ -9,22 +9,22 @@ const Stack = createNativeStackNavigator();
 
 export default function App() {
   const [players, setPlayers] = useState([
-    // {
-    //   name: "aaron",
-    //   colour: "purple",
-    //   score: 0,
-    //   tod: "explicit",
-    //   fastQ: false,
-    // },
-    // { name: "reginald", colour: "red", score: 0, tod: "na", fastQ: false },
-    // { name: "sally", colour: "green", score: 0, tod: "na", fastQ: false },
-    // {
-    //   name: "mmmmmmmmm",
-    //   colour: "blue",
-    //   score: 0,
-    //   tod: "na",
-    //   fastQ: false,
-    // },
+    {
+      name: "aaron",
+      colour: "purple",
+      score: 0,
+      tod: "explicit",
+      fastQ: false,
+    },
+    { name: "reginald", colour: "red", score: 0, tod: "na", fastQ: false },
+    { name: "sally", colour: "green", score: 0, tod: "na", fastQ: false },
+    {
+      name: "mmmmmmmmm",
+      colour: "blue",
+      score: 0,
+      tod: "na",
+      fastQ: false,
+    },
   ]);
 
   return (

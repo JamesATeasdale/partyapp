@@ -42,7 +42,7 @@ export default function GameRanking({ players, setPlayers }) {
             return (
               <TouchableOpacity
                 onPress={() => confirm(player.name)}
-                key={player.name}
+                key={index}
                 tw="justify-end basis-1/3">
                 <Text
                   numberOfLines={1}

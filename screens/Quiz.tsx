@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import { theme } from "../assets/colors";
 import { useRoute } from "@react-navigation/native";
 import shuffle from "../hooks/shuffleArray";
-import fastquizquestions from "../assets/fastquizquestions.json";
+import fastquizquestions from "../assets/quiz.json";
 import { useEffect, useState, useRef } from "react";
 import Animated, { BounceIn, ZoomIn } from "react-native-reanimated";
 import CardBanner from "../components/CardBanner";
@@ -41,18 +41,8 @@ export default function FastQuiz({ players, setPlayers }) {
     );
   };
 
-  const removeQuestion = () => {
-    const questionsCopy = [...shuffledQuestions];
-    questionsCopy.splice(
-      shuffledQuestions.indexOf(
-        shuffledQuestions.find(
-          (cat) => cat.category === shuffledPlayers[0].category
-        )
-      ),
-      1
-    );
-    setShuffledQuestions(questionsCopy);
-  };
+  const removeQuestion = () =>
+    setShuffledQuestions(shuffledQuestions.slice(1, -1));
 
   function timer() {
     const countInt = setInterval(
@@ -66,7 +56,8 @@ export default function FastQuiz({ players, setPlayers }) {
   }
 
   useEffect(() => LottieRef2.current?.play(), [shuffledPlayers]);
-  useEffect(() => removeQuestion(), [!newGame]);
+  useEffect(() => removeQuestion(), [shuffledPlayers]);
+  console.log(shuffledQuestions.length);
 
   if (shuffledPlayers.length === 0) {
     return setShuffledPlayers(shuffle([...players]));
@@ -117,9 +108,9 @@ export default function FastQuiz({ players, setPlayers }) {
             </Animated.View>
             <TouchableOpacity
               onPress={toggleSwitch}
-              tw="flex-row w-full pr-8 pl-4 pt-2 absolute justify-between">
+              tw="flex-row w-full pr-8 pl-2 pt-2 absolute justify-between">
               <Text
-                tw="text-5xl font-extrabold basis-4/6"
+                tw="text-4xl font-extrabold basis-4/6"
                 style={{ color: pageTheme.text }}>
                 {shuffledPlayers[0].fastQ ? "Timed" : "Normal"}
               </Text>

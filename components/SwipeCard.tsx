@@ -2,7 +2,11 @@ import { useRoute } from "@react-navigation/native";
 import { useState } from "react";
 import { Text, Dimensions, Animated, PanResponder, View } from "react-native";
 import { theme } from "../assets/colors";
-import Reanimated, { FadeIn, FadeOut } from "react-native-reanimated";
+import Reanimated, {
+  FadeIn,
+  FadeOut,
+  FadeOutUp,
+} from "react-native-reanimated";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
 const cardWidthTolerance = 325;
@@ -16,9 +20,9 @@ export default function SwipeableCard({
   shuffledPlayers,
   setShuffledPlayers,
   value,
+  setWin,
 }) {
   const [xPosition, setXPosition] = useState(new Animated.Value(0));
-
   const route = useRoute();
   const pageTheme = theme(route.name);
   let swipeDirection = "";
@@ -68,6 +72,7 @@ export default function SwipeableCard({
           }),
         ]).start(() => {
           LottieRef.current?.play();
+          setWin(true);
           setPlayers(
             players.map((player) =>
               player.name === shuffledPlayers[0].name
@@ -114,6 +119,13 @@ export default function SwipeableCard({
       exiting={FadeOut}
       tw="justify-center h-5/6 w-full rounded-b-lg grow border-2"
       style={{ borderColor: pageTheme.fg }}>
+      {/* {swipeDirection === "Right" && (
+        <Reanimated.View
+          exiting={FadeOutUp}
+          tw="w-full h-full absolute justify-center items-center">
+          <Text tw="text-9xl">+{value}</Text>
+        </Reanimated.View>
+      )} */}
       <View
         tw="w-full h-full absolute rounded-b-lg"
         style={{ borderColor: pageTheme.fg, backgroundColor: pageTheme.bg }}
@@ -131,6 +143,13 @@ export default function SwipeableCard({
           {item.question}
         </Text>
       </Animated.View>
+      {/* {value && (
+        <Reanimated.View
+          exiting={FadeOutUp}
+          tw="w-full h-full absolute border-2 justify-end items-center">
+          <Text tw="text-9xl">+{value}</Text>
+        </Reanimated.View>
+      )} */}
     </Reanimated.View>
   );
 }

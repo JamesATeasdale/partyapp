@@ -11,11 +11,15 @@ import shuffle from "../hooks/shuffleArray";
 import LottieView from "lottie-react-native";
 import Animated, {
   FadeIn,
+  FadeInUp,
   FadeOut,
+  FadeOutUp,
   SlideInLeft,
   SlideInRight,
   SlideOutLeft,
   SlideOutRight,
+  useSharedValue,
+  withSpring,
 } from "react-native-reanimated";
 import CardBanner from "../components/CardBanner";
 
@@ -26,15 +30,21 @@ export default function TruthOrDare({ players, setPlayers }) {
   const [shuffledPlayers, setShuffledPlayers] = useState(shuffle([...players]));
   const [shuffledTruths, setShuffledTruths] = useState([]);
   const [shuffledDares, setShuffledDares] = useState([]);
+  const [delayOption, setDelayOption] = useState("truth");
   const [option, setOption] = useState("");
+  const [win, setWin] = useState(false);
   const navigation = useNavigation();
   const todToggle = ["na", "", "explicit"];
+  const offset = useSharedValue(0);
   let shuffledTruth = { question: "" };
   let shuffledDare = { question: "" };
 
   useEffect(() => {
     setOption("");
   }, [shuffledPlayers]);
+  useEffect(() => {
+    option.length > 0 && setDelayOption(option);
+  }, [option]);
   if (!players.length) navigation.navigate("Party Animals");
 
   if (shuffledPlayers.length === 0) {
@@ -48,13 +58,16 @@ export default function TruthOrDare({ players, setPlayers }) {
   }
 
   if (!shuffledTruth.question)
-    shuffledTruth = shuffledTruths.find(
-      (truth) => truth.category === shuffledPlayers[0].tod
+    shuffledTruth = shuffledTruths.find((truth) =>
+      shuffledPlayers[0].tod ? truth.category === shuffledPlayers[0].tod : truth
     );
   if (!shuffledDare.question)
-    shuffledDare = shuffledDares.find(
-      (dare) => dare.category === shuffledPlayers[0].tod
+    shuffledDare = shuffledDares.find((dare) =>
+      shuffledPlayers[0].tod ? dare.category === shuffledPlayers[0].tod : dare
     );
+  if (win) offset.value = withSpring(-120);
+  if (win) setTimeout(() => setWin(false), 2200);
+  if (!win) offset.value = 0;
 
   const removeCard = (num = 0) => {
     if (num === 1)
@@ -70,11 +83,26 @@ export default function TruthOrDare({ players, setPlayers }) {
         )
       );
   };
+  console.log(option);
+  console.log(delayOption, "delay");
 
   return (
     <View
       tw="h-full w-full items-center justify-between"
       style={{ backgroundColor: pageTheme.bg }}>
+      {!option && (
+        <Animated.View
+          tw="w-full h-4/6 absolute justify-end items-center"
+          style={{ transform: [{ translateY: offset }] }}>
+          <Text
+            tw="text-9xl text-white"
+            style={{
+              fontFamily: "Caprasimo-Regular",
+            }}>
+            +{delayOption === "truth" ? 1 : 2}
+          </Text>
+        </Animated.View>
+      )}
       <LottieView
         tw="absolute h-full w-full"
         ref={LottieRef}
@@ -91,7 +119,7 @@ export default function TruthOrDare({ players, setPlayers }) {
         <GameRanking players={players} setPlayers={setPlayers} />
       </View>
       <View
-        tw="w-11/12 h-3/6 rounded-xl mb-2 items-center "
+        tw="w-11/12 h-3/6 rounded-xl mb-4 items-center "
         style={{
           backgroundColor: pageTheme.fg,
         }}>
@@ -106,6 +134,7 @@ export default function TruthOrDare({ players, setPlayers }) {
             item={shuffledTruth}
             value={1}
             removeCard={removeCard}
+            setWin={setWin}
           />
         ) : option === "dare" ? (
           <SwipeableCard
@@ -117,6 +146,7 @@ export default function TruthOrDare({ players, setPlayers }) {
             item={shuffledDare}
             value={2}
             removeCard={removeCard}
+            setWin={setWin}
           />
         ) : (
           <View tw="grow h-5/6 flex-row rounded-b-md">
@@ -126,7 +156,7 @@ export default function TruthOrDare({ players, setPlayers }) {
               exiting={SlideOutLeft}
               style={{
                 borderColor: pageTheme.fg,
-                backgroundColor: pageTheme.bg,
+                backgroundColor: pageTheme.asset,
               }}>
               <TouchableOpacity
                 onPress={() => setOption("truth")}
@@ -141,10 +171,12 @@ export default function TruthOrDare({ players, setPlayers }) {
                   ?
                 </Text>
                 <Text tw="absolute right-2 text-3xl pt-12">⚫</Text>
-                <Text tw="text-black font-black text-center text-6xl">
+                <Text
+                  tw="font-black text-center text-6xl pb-12"
+                  style={{ color: pageTheme.text }}>
                   Truth
                 </Text>
-                <Text tw="text-black font-black text-center text-6xl">+1</Text>
+                {/* <Text tw="text-black font-black text-center text-6xl">+1</Text> */}
               </TouchableOpacity>
             </Animated.View>
             <Animated.View
@@ -153,7 +185,7 @@ export default function TruthOrDare({ players, setPlayers }) {
               exiting={SlideOutRight}
               style={{
                 borderColor: pageTheme.fg,
-                backgroundColor: pageTheme.bg,
+                backgroundColor: pageTheme.asset,
               }}>
               <TouchableOpacity
                 onPress={() => setOption("dare")}
@@ -168,10 +200,10 @@ export default function TruthOrDare({ players, setPlayers }) {
                   !
                 </Text>
                 <Text tw="absolute left-2 text-3xl pt-12">⚫</Text>
-                <Text tw="text-black font-black text-center text-6xl">
+                <Text tw="text-black font-black text-center text-6xl pb-12">
                   Dare
                 </Text>
-                <Text tw="text-black font-black text-center text-6xl">+2</Text>
+                {/* <Text tw="text-black font-black text-center text-6xl">+2</Text> */}
               </TouchableOpacity>
             </Animated.View>
             <Animated.View

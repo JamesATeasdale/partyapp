@@ -1,24 +1,10 @@
 bugs:
 deleted users appear in truth or dare list for one round after being deleted
-quiz intro card doesn't fill the entire card
-nsfw options don't work, but they're not properly implemented yet anyway
-
-
-REDESIGN:
-- fast quiz is okay, but the background is low res
-- change card setup to grow rather than basis
-
-text cut off on the following elements:
-- quiz intro card
-- playerlist
 
 TODO
-- move nsfw and fastmode to player prefs
-- make truth or dare card's swipe acceptance values even smaller
 - addplayerform multiple in one
 
-divide main colours into light and dark, choose dark for players and title
-maybe remove multicolour, randomly generated titles or fix constant title colour refresh every second of fastquiz countdown
+- divide main colours into light and dark, choose dark for players and title
 
  keytool -genkey -v -keystore my-app-key.keystore -alias my-app-alias -keyalg RSA -keysize 2048 -validity 10000
  react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
