@@ -45,6 +45,7 @@ export default function Welcome({ players, setPlayers }) {
       {isAdd && (
         <AddPlayerForm
           setErr={setErr}
+          isAdd={isAdd}
           setPlayers={setPlayers}
           players={players}
           setIsAdd={setIsAdd}
@@ -60,6 +61,7 @@ export default function Welcome({ players, setPlayers }) {
       )}
       <TouchableOpacity
         onPress={() => setIsAdd(true)}
+        style={isAdd && { display: "none" }}
         tw="bottom-1 right-1 absolute h-14 w-14 bg-[#ee1b24] justify-end rounded-xl border-white border-2">
         <Text tw="text-center text-white font-bold text-5xl">+</Text>
       </TouchableOpacity>

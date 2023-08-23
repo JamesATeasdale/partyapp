@@ -6,6 +6,7 @@ import { useRoute } from "@react-navigation/native";
 
 export default function AddPlayerForm({
   setErr,
+  isAdd,
   setIsAdd,
   players,
   setPlayers,
@@ -14,7 +15,8 @@ export default function AddPlayerForm({
     name: "",
     colour: multi[Math.floor(Math.random() * multi.length)],
     score: 0,
-    category: "na",
+    tod: "na",
+    fastQ: false,
   });
   const route = useRoute();
   const pageTheme = theme(route.name);
@@ -39,24 +41,22 @@ export default function AddPlayerForm({
           style={{ backgroundColor: pageTheme.bg }}>
           <TouchableOpacity
             tw="items-center basis-1/4 rounded-l-lg py-4 px-2"
-            onPress={() => setAddPlayer({ ...addPlayer, category: "na" })}
-            style={addPlayer.category === "na" && { backgroundColor: "red" }}>
+            onPress={() => setAddPlayer({ ...addPlayer, tod: "na" })}
+            style={addPlayer.tod === "na" && { backgroundColor: "red" }}>
             <Text tw="text-3xl">😇</Text>
             <Text tw="text-2xl text-white font-extrabold">SFW</Text>
           </TouchableOpacity>
           <TouchableOpacity
             tw="items-center basis-1/4 py-4 px-2"
-            onPress={() => setAddPlayer({ ...addPlayer, category: "" })}
-            style={addPlayer.category === "" && { backgroundColor: "red" }}>
+            onPress={() => setAddPlayer({ ...addPlayer, tod: "" })}
+            style={addPlayer.tod === "" && { backgroundColor: "red" }}>
             <Text tw="text-3xl">😏</Text>
             <Text tw="text-2xl text-white font-extrabold">Both</Text>
           </TouchableOpacity>
           <TouchableOpacity
             tw="items-center basis-1/4 rounded-r-lg py-4 px-2"
-            onPress={() => setAddPlayer({ ...addPlayer, category: "explicit" })}
-            style={
-              addPlayer.category === "explicit" && { backgroundColor: "red" }
-            }>
+            onPress={() => setAddPlayer({ ...addPlayer, tod: "explicit" })}
+            style={addPlayer.tod === "explicit" && { backgroundColor: "red" }}>
             <Text tw="text-3xl">😈</Text>
             <Text tw="text-2xl text-white font-extrabold">NSFW</Text>
           </TouchableOpacity>

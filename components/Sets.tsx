@@ -21,13 +21,13 @@ export default function Sets({ setWarn, players }) {
   ];
 
   return (
-    <View tw="h-4/6 flex-col justify-end mb-4 w-11/12">
+    <View tw="h-4/6 justify-end mb-4 w-11/12">
       {pages.map((page, ind) => (
         <Animated.View
           key={page}
           entering={SlideInLeft.duration((ind + 1) * 300)}>
           <TouchableOpacity
-            tw={pageCol[ind] + "  my-2 basis-1/5 rounded-lg justify-center"}
+            tw={pageCol[ind] + " my-2 basis-1/5 rounded-lg justify-center"}
             onPress={() =>
               players.length === 0 ? setWarn(true) : navigation.navigate(page)
             }>
