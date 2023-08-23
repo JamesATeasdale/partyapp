@@ -154,11 +154,9 @@ export default function FastQuiz({ players, setPlayers }) {
               </Text>
             </TouchableOpacity>
             {counter && shuffledPlayers[0].fastQ ? (
-              <View tw="flex-row justify-center">
-                <Text tw="text-8xl text-center font-black text-white">
-                  {counter}
-                </Text>
-              </View>
+              <Text tw="pt-2 text-7xl text-center font-black text-white">
+                {counter}
+              </Text>
             ) : (!counter && shuffledPlayers[0].fastQ) ||
               (!shuffledPlayers[0].fastQ && reveal) ? (
               <View tw="flex-row">

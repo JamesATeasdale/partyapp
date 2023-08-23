@@ -8,7 +8,7 @@ export default function CardBanner({ shuffledPlayer }) {
   return (
     <View tw="flex-row w-full justify-between items-end">
       <Text
-        tw="pl-2 text-white text-4xl basis-3/5 font-extrabold"
+        tw="pt-2 pl-2 text-white text-4xl basis-3/5 font-extrabold"
         style={{ color: shuffledPlayer.colour }}
         numberOfLines={1}>
         {shuffledPlayer.name}

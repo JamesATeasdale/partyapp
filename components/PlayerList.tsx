@@ -58,7 +58,7 @@ export default function PlayerList({
           {players.length === 0 && (
             <Animated.View tw="px-2 m-1">
               <TouchableOpacity onPress={() => setIsAdd(true)}>
-                <Text tw="text-2xl font-bold text-white p-2">Add a Player</Text>
+                <Text tw="text-4xl font-bold text-white">Add a Player</Text>
               </TouchableOpacity>
             </Animated.View>
           )}

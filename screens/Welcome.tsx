@@ -45,7 +45,6 @@ export default function Welcome({ players, setPlayers }) {
       {isAdd && (
         <AddPlayerForm
           setErr={setErr}
-          isAdd={isAdd}
           setPlayers={setPlayers}
           players={players}
           setIsAdd={setIsAdd}
