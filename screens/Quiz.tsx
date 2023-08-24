@@ -23,6 +23,7 @@ export default function FastQuiz({ players, setPlayers }) {
   const route = useRoute();
   const pageTheme = theme(route.name);
   countRef.current = counter;
+  const removeQuestion = () => setShuffledQuestions(shuffledQuestions.slice(1));
 
   const toggleSwitch = () => {
     setPlayers(
@@ -40,9 +41,6 @@ export default function FastQuiz({ players, setPlayers }) {
       )
     );
   };
-
-  const removeQuestion = () =>
-    setShuffledQuestions(shuffledQuestions.slice(1, -1));
 
   function timer() {
     const countInt = setInterval(
