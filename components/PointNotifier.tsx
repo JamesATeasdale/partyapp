@@ -5,7 +5,7 @@ import Animated, {
   withSpring,
   withTiming,
 } from "react-native-reanimated";
-import { Text } from "react-native";
+import { Text, View } from "react-native";
 import { useEffect, useState } from "react";
 
 export default function pointNotifier({ value }) {
@@ -29,10 +29,11 @@ export default function pointNotifier({ value }) {
 
   return (
     <Animated.View
-      tw="w-full h-4/6 absolute justify-end items-center"
+      tw="w-full h-full justify-end items-center"
       style={[animatedStyles]}>
+      <View tw="h-full" />
       <Text
-        tw="text-9xl text-white"
+        tw="text-9xl text-white pt-2"
         style={{
           fontFamily: "Caprasimo-Regular",
         }}>

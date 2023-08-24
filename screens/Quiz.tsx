@@ -77,10 +77,10 @@ export default function FastQuiz({ players, setPlayers }) {
         loop={false}
         speed={1}
       />
-      {!newGame && !toggle && <PointNotifier value={value} />}
       <View tw="w-full h-2/6 items-center">
         <Header />
         <GameRanking players={players} setPlayers={setPlayers} />
+        {!newGame && !toggle && <PointNotifier value={value} />}
       </View>
       <View
         tw=" w-11/12 h-3/6 rounded-xl mb-4 justify-between"

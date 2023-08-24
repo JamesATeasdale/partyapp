@@ -29,7 +29,7 @@ export default function App() {
   ]);
   useEffect(() => {
     players[0].score > 0 && setOk(true);
-  }, [players[0].score]);
+  }, [players]);
 
   return (
     <NavigationContainer>

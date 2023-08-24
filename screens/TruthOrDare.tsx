@@ -88,10 +88,10 @@ export default function TruthOrDare({ players, setPlayers }) {
         tw="h-full w-full absolute opacity-40"
         source={require("../assets/stars2.png")}
       />
-      {win && <PointNotifier value={value} />}
       <View tw="w-full h-2/6 items-center">
         <Header />
         <GameRanking players={players} setPlayers={setPlayers} />
+        {win && <PointNotifier value={value} />}
       </View>
       <View
         tw="w-11/12 h-3/6 rounded-xl mb-4 items-center "

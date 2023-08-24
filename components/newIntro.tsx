@@ -8,7 +8,7 @@ export default function Intro({ shuffledPlayer }) {
   const pageTheme = theme(route.name);
   const intro = [
     <Text
-      tw="text-white font-bold text-5xl text-center"
+      tw="pt-2 text-white font-bold text-5xl text-center"
       style={{ color: pageTheme.text }}>
       <Text>It's </Text>
       <Text style={{ color: shuffledPlayer.colour }}>
@@ -17,7 +17,7 @@ export default function Intro({ shuffledPlayer }) {
       <Text>'s time to shine</Text>
     </Text>,
     <Text
-      tw="text-white font-bold text-5xl text-center"
+      tw="pt-2 text-white font-bold text-5xl text-center"
       style={{ color: shuffledPlayer.colour }}>
       {shuffledPlayer.name}
     </Text>,
