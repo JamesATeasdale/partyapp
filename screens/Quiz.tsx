@@ -6,10 +6,11 @@ import { theme } from "../assets/colors";
 import { useRoute } from "@react-navigation/native";
 import shuffle from "../hooks/shuffleArray";
 import fastquizquestions from "../assets/quiz.json";
-import { useEffect, useState, useRef } from "react";
+import { useState, useRef } from "react";
 import Animated, { BounceIn, ZoomIn } from "react-native-reanimated";
 import CardBanner from "../components/CardBanner";
 import Intro from "../components/newIntro";
+import PointNotifier from "../components/PointNotifier";
 
 export default function FastQuiz({ players, setPlayers }) {
   const [newGame, setNewGame] = useState(false);
@@ -17,15 +18,16 @@ export default function FastQuiz({ players, setPlayers }) {
   const [counter, setCounter] = useState(0);
   const [shuffledPlayers, setShuffledPlayers] = useState([]);
   const [shuffledQuestions, setShuffledQuestions] = useState([]);
+  const [toggle, setToggle] = useState(false);
   const countRef = useRef(null);
   const LottieRef = useRef(null);
-  const LottieRef2 = useRef(null);
   const route = useRoute();
   const pageTheme = theme(route.name);
   countRef.current = counter;
   const removeQuestion = () => setShuffledQuestions(shuffledQuestions.slice(1));
 
   const toggleSwitch = () => {
+    setToggle(true);
     setPlayers(
       players.map((player) =>
         shuffledPlayers[0].name === player.name
@@ -53,10 +55,6 @@ export default function FastQuiz({ players, setPlayers }) {
     setCounter(7);
   }
 
-  useEffect(() => LottieRef2.current?.play(), [shuffledPlayers]);
-  useEffect(() => removeQuestion(), [shuffledPlayers]);
-  console.log(shuffledQuestions.length);
-
   if (shuffledPlayers.length === 0) {
     return setShuffledPlayers(shuffle([...players]));
   }
@@ -78,6 +76,9 @@ export default function FastQuiz({ players, setPlayers }) {
         loop={false}
         speed={1}
       />
+      {!newGame && !toggle && (
+        <PointNotifier value={shuffledPlayers[0].fastQ ? 2 : 1} />
+      )}
       <View tw="w-full h-2/6 items-center">
         <Header />
         <GameRanking players={players} setPlayers={setPlayers} />
@@ -86,14 +87,7 @@ export default function FastQuiz({ players, setPlayers }) {
         tw=" w-11/12 h-3/6 rounded-xl mb-4 justify-between"
         style={{ backgroundColor: pageTheme.fg }}>
         {!newGame ? (
-          <Animated.View tw="items-center">
-            <LottieView
-              ref={LottieRef2}
-              tw="w-full h-full absolute"
-              source={require("../assets/streamers.json")}
-              loop={false}
-              speed={2}
-            />
+          <Animated.View tw="items-center w-full h-full">
             <Animated.View entering={BounceIn} tw="w-full">
               <TouchableOpacity
                 tw="justify-center h-full"
@@ -152,6 +146,8 @@ export default function FastQuiz({ players, setPlayers }) {
                 <TouchableOpacity
                   tw="basis-1/2 justify-center bg-white border-r-2"
                   onPress={() => {
+                    setToggle(false);
+                    removeQuestion();
                     setReveal(false);
                     setNewGame(!newGame);
                     setShuffledPlayers(
@@ -169,6 +165,8 @@ export default function FastQuiz({ players, setPlayers }) {
                 <TouchableOpacity
                   tw="basis-1/2 justify-center bg-white border-l-2"
                   onPress={() => {
+                    setToggle(false);
+                    removeQuestion();
                     setNewGame(!newGame);
                     setReveal(false);
                     LottieRef.current.play();

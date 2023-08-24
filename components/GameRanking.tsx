@@ -28,7 +28,7 @@ export default function GameRanking({ players, setPlayers }) {
 
   return (
     <View tw="w-full items-center">
-      <View tw="opacity-30 bg-white absolute w-full h-full" />
+      <View tw="opacity-20 bg-white absolute w-full h-full" />
       <View tw="w-full justify-center flex-row basis-3/6">
         {[players[1], players[0], players[2]].map(
           (player = { name: "", score: 0, colour: "" }, index = 0) => {

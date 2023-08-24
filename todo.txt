@@ -3,6 +3,7 @@ deleted users appear in truth or dare list for one round after being deleted
 
 TODO
 - addplayerform multiple in one
+- finish quiz PointNotifier
 
 - divide main colours into light and dark, choose dark for players and title
 

@@ -149,11 +149,10 @@ export default function TruthOrDare({ players, setPlayers }) {
                   ?
                 </Text>
                 <Text
-                  tw="font-black text-center text-6xl pb-12"
+                  tw="font-black text-center text-6xl"
                   style={{ color: pageTheme.text }}>
                   Truth
                 </Text>
-                {/* <Text tw="text-black font-black text-center text-6xl">+1</Text> */}
               </TouchableOpacity>
             </Animated.View>
             <Animated.View
@@ -179,7 +178,7 @@ export default function TruthOrDare({ players, setPlayers }) {
                   tw="absolute">
                   !
                 </Text>
-                <Text tw="text-black font-black text-center text-6xl pb-12">
+                <Text tw="text-black font-black text-center text-6xl">
                   Dare
                 </Text>
               </TouchableOpacity>
