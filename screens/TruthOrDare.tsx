@@ -21,15 +21,15 @@ import CardBanner from "../components/CardBanner";
 import PointNotifier from "../components/PointNotifier";
 
 export default function TruthOrDare({ players, setPlayers }) {
-  const LottieRef = useRef(null);
-  const route = useRoute();
-  const pageTheme = theme(route.name);
+  const [win, setWin] = useState(false);
   const [shuffledPlayers, setShuffledPlayers] = useState(shuffle([...players]));
   const [shuffledTruths, setShuffledTruths] = useState([]);
   const [shuffledDares, setShuffledDares] = useState([]);
   const [value, setvalue] = useState(0);
-  const [win, setWin] = useState(false);
+  const route = useRoute();
   const navigation = useNavigation();
+  const LottieRef = useRef(null);
+  const pageTheme = theme(route.name);
   const todToggle = ["na", "", "explicit"];
   let shuffledTruth = { question: "" };
   let shuffledDare = { question: "" };

@@ -1,11 +1,11 @@
 import LottieView from "lottie-react-native";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { Text, TouchableOpacity, View } from "react-native";
 import Animated, { BounceIn, FadeOut } from "react-native-reanimated";
 
 export default function playersScreen({ players, ok, setOk }) {
   const LottieRef = useRef(null);
-  LottieRef.current?.play();
+  useEffect(() => LottieRef.current?.play(), [players]);
 
   return (
     <Animated.View
@@ -13,7 +13,7 @@ export default function playersScreen({ players, ok, setOk }) {
       exiting={FadeOut}>
       <View tw="opacity-40 bg-black w-full h-full absolute" />
       <Text
-        tw="text-6xl font-black text-white pt-2"
+        tw="text-6xl font-black text-white p-2"
         style={{
           fontFamily: "Caprasimo-Regular",
         }}>

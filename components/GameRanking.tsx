@@ -6,9 +6,6 @@ import { useEffect } from "react";
 export default function GameRanking({ players, setPlayers }) {
   const route = useRoute();
   const pageTheme = theme(route.name);
-  useEffect(() => {
-    players.sort((a, b) => b.score - a.score);
-  }, [players]);
 
   function confirm(playername) {
     Alert.alert("Delete " + playername + "?", "", [

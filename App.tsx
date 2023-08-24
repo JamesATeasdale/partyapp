@@ -10,26 +10,31 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   const [ok, setOk] = useState(false);
   const [players, setPlayers] = useState([
-    {
-      name: "aaron",
-      colour: "purple",
-      score: 0,
-      tod: "explicit",
-      fastQ: false,
-    },
-    { name: "reginald", colour: "red", score: 0, tod: "na", fastQ: false },
-    { name: "sally", colour: "green", score: 0, tod: "na", fastQ: false },
-    {
-      name: "mmmmmmmmm",
-      colour: "blue",
-      score: 0,
-      tod: "na",
-      fastQ: false,
-    },
+    // {
+    //   name: "aaron",
+    //   colour: "purple",
+    //   score: 0,
+    //   tod: "explicit",
+    //   fastQ: false,
+    // },
+    // { name: "reginald", colour: "red", score: 0, tod: "na", fastQ: false },
+    // { name: "sally", colour: "green", score: 0, tod: "na", fastQ: false },
+    // {
+    //   name: "mmmmmmmmm",
+    //   colour: "blue",
+    //   score: 0,
+    //   tod: "na",
+    //   fastQ: false,
+    // },
   ]);
+
   useEffect(() => {
-    players[0].score > 0 && setOk(true);
+    players.length && players[0].score > 0 && setOk(true);
   }, [players]);
+  if (players.length) {
+    if (players[0].score !== players.sort((a, b) => b.score - a.score)[0].score)
+      setPlayers(players.sort((a, b) => b.score - a.score));
+  }
 
   return (
     <NavigationContainer>

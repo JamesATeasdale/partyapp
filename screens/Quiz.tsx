@@ -13,12 +13,12 @@ import Intro from "../components/newIntro";
 import PointNotifier from "../components/PointNotifier";
 
 export default function FastQuiz({ players, setPlayers }) {
+  const [win, setWin] = useState(false);
   const [newGame, setNewGame] = useState(false);
   const [reveal, setReveal] = useState(false);
   const [counter, setCounter] = useState(0);
   const [shuffledPlayers, setShuffledPlayers] = useState([]);
   const [shuffledQuestions, setShuffledQuestions] = useState([]);
-  const [toggle, setToggle] = useState(true);
   const [value, setValue] = useState(0);
   const countRef = useRef(null);
   const LottieRef = useRef(null);
@@ -28,7 +28,7 @@ export default function FastQuiz({ players, setPlayers }) {
   const removeQuestion = () => setShuffledQuestions(shuffledQuestions.slice(1));
 
   const toggleSwitch = () => {
-    setToggle(true);
+    setWin(false);
     setPlayers(
       players.map((player) =>
         shuffledPlayers[0].name === player.name
@@ -80,7 +80,7 @@ export default function FastQuiz({ players, setPlayers }) {
       <View tw="w-full h-2/6 items-center">
         <Header />
         <GameRanking players={players} setPlayers={setPlayers} />
-        {!newGame && !toggle && <PointNotifier value={value} />}
+        {win && <PointNotifier value={value} />}
       </View>
       <View
         tw=" w-11/12 h-3/6 rounded-xl mb-4 justify-between"
@@ -91,6 +91,7 @@ export default function FastQuiz({ players, setPlayers }) {
               <TouchableOpacity
                 tw="justify-center h-full"
                 onPress={() => {
+                  setWin(false);
                   setNewGame(!newGame);
                   shuffledPlayers[0].fastQ && timer();
                 }}>
@@ -145,7 +146,7 @@ export default function FastQuiz({ players, setPlayers }) {
                 <TouchableOpacity
                   tw="basis-1/2 justify-center bg-white border-r-2"
                   onPress={() => {
-                    setToggle(false);
+                    setWin(false);
                     removeQuestion();
                     setReveal(false);
                     setNewGame(!newGame);
@@ -164,7 +165,7 @@ export default function FastQuiz({ players, setPlayers }) {
                 <TouchableOpacity
                   tw="basis-1/2 justify-center bg-white border-l-2"
                   onPress={() => {
-                    setToggle(false);
+                    setWin(true);
                     setValue(shuffledPlayers[0].fastQ ? 2 : 1);
                     removeQuestion();
                     setNewGame(!newGame);
