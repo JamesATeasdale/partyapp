@@ -8,7 +8,7 @@ import Quiz from "./screens/Quiz";
 const Stack = createNativeStackNavigator();
 
 export default function App() {
-  const [ok, setOk] = useState(true);
+  const [ok, setOk] = useState(false);
   const [players, setPlayers] = useState([
     {
       name: "aaron",
@@ -27,7 +27,9 @@ export default function App() {
       fastQ: false,
     },
   ]);
-  useEffect(() => setOk(true), [players[0].score]);
+  useEffect(() => {
+    players[0].score > 0 && setOk(true);
+  }, [players[0].score]);
 
   return (
     <NavigationContainer>
