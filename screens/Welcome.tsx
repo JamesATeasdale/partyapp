@@ -8,8 +8,9 @@ import { theme } from "../assets/colors";
 import { useRoute } from "@react-navigation/native";
 import LottieView from "lottie-react-native";
 import Animated, { FadeIn, FadeOut } from "react-native-reanimated";
+import WinnerScreen from "../components/WinnerScreen";
 
-export default function Welcome({ players, setPlayers }) {
+export default function Welcome({ players, setPlayers, ok, setOk }) {
   const LottieRef = useRef(null);
   const route = useRoute();
   const [err, setErr] = useState("");
@@ -64,6 +65,7 @@ export default function Welcome({ players, setPlayers }) {
         tw="bottom-1 right-1 absolute h-14 w-14 bg-[#ee1b24] justify-end rounded-xl border-white border-2">
         <Text tw="text-center text-white font-bold text-5xl">+</Text>
       </TouchableOpacity>
+      {ok && <WinnerScreen winner={players[0]} ok={ok} setOk={setOk} />}
     </View>
   );
 }

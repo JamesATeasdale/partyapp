@@ -8,6 +8,7 @@ import Quiz from "./screens/Quiz";
 const Stack = createNativeStackNavigator();
 
 export default function App() {
+  const [ok, setOk] = useState(true);
   const [players, setPlayers] = useState([
     {
       name: "aaron",
@@ -26,6 +27,7 @@ export default function App() {
       fastQ: false,
     },
   ]);
+  useEffect(() => setOk(true), [players[0].score]);
 
   return (
     <NavigationContainer>
@@ -36,7 +38,14 @@ export default function App() {
           animation: "fade",
         }}>
         <Stack.Screen name="Party Animals">
-          {(props) => <Welcome setPlayers={setPlayers} players={players} />}
+          {(props) => (
+            <Welcome
+              setPlayers={setPlayers}
+              players={players}
+              ok={ok}
+              setOk={setOk}
+            />
+          )}
         </Stack.Screen>
         <Stack.Screen name="Truth or Dare">
           {(props) => <TruthOrDare setPlayers={setPlayers} players={players} />}

@@ -18,7 +18,8 @@ export default function FastQuiz({ players, setPlayers }) {
   const [counter, setCounter] = useState(0);
   const [shuffledPlayers, setShuffledPlayers] = useState([]);
   const [shuffledQuestions, setShuffledQuestions] = useState([]);
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
+  const [value, setValue] = useState(0);
   const countRef = useRef(null);
   const LottieRef = useRef(null);
   const route = useRoute();
@@ -76,9 +77,7 @@ export default function FastQuiz({ players, setPlayers }) {
         loop={false}
         speed={1}
       />
-      {!newGame && !toggle && (
-        <PointNotifier value={shuffledPlayers[0].fastQ ? 2 : 1} />
-      )}
+      {!newGame && !toggle && <PointNotifier value={value} />}
       <View tw="w-full h-2/6 items-center">
         <Header />
         <GameRanking players={players} setPlayers={setPlayers} />
@@ -166,6 +165,7 @@ export default function FastQuiz({ players, setPlayers }) {
                   tw="basis-1/2 justify-center bg-white border-l-2"
                   onPress={() => {
                     setToggle(false);
+                    setValue(shuffledPlayers[0].fastQ ? 2 : 1);
                     removeQuestion();
                     setNewGame(!newGame);
                     setReveal(false);
