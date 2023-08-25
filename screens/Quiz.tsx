@@ -103,7 +103,7 @@ export default function FastQuiz({ players, setPlayers }) {
               tw="flex-row w-full pr-8 pl-2 pt-2 absolute justify-between">
               <Text
                 tw="text-4xl font-extrabold basis-4/6"
-                style={{ color: pageTheme.text }}>
+                style={{ color: pageTheme.text, fontFamily: "Itim-Regular" }}>
                 {shuffledPlayers[0].fastQ ? "Timed" : "Normal"}
               </Text>
               <Switch
@@ -127,7 +127,7 @@ export default function FastQuiz({ players, setPlayers }) {
               tw="grow justify-center">
               <Text
                 tw="px-2 text-white font-bold text-4xl text-center pt-2"
-                style={{ color: pageTheme.text }}>
+                style={{ color: pageTheme.text, fontFamily: "Itim-Regular" }}>
                 {(counter && shuffledPlayers[0].fastQ) ||
                 (!shuffledPlayers[0].fastQ && !reveal)
                   ? shuffledQuestions.find((cat) => cat.category === "na")
@@ -193,6 +193,9 @@ export default function FastQuiz({ players, setPlayers }) {
                     );
                   }}>
                   <Animated.Text
+                    style={{
+                      fontFamily: "Itim-Regular",
+                    }}
                     tw="text-center text-7xl text-green-700 p-4"
                     entering={ZoomIn}>
                     ✔

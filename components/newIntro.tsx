@@ -9,7 +9,7 @@ export default function Intro({ shuffledPlayer }) {
   const intro = [
     <Text
       tw="pt-2 text-white font-bold text-5xl text-center"
-      style={{ color: pageTheme.text }}>
+      style={{ color: pageTheme.text, fontFamily: "Itim-Regular" }}>
       <Text>It's </Text>
       <Text style={{ color: shuffledPlayer.colour }}>
         {shuffledPlayer.name}
@@ -18,7 +18,7 @@ export default function Intro({ shuffledPlayer }) {
     </Text>,
     <Text
       tw="pt-2 text-white font-bold text-5xl text-center"
-      style={{ color: shuffledPlayer.colour }}>
+      style={{ color: shuffledPlayer.colour, fontFamily: "Itim-Regular" }}>
       {shuffledPlayer.name}
     </Text>,
   ];

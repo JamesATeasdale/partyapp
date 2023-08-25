@@ -58,7 +58,13 @@ export default function PlayerList({
           {players.length === 0 && (
             <Animated.View tw="px-2 m-1">
               <TouchableOpacity onPress={() => setIsAdd(true)}>
-                <Text tw="text-4xl font-bold text-white">Add a Player</Text>
+                <Text
+                  tw="text-4xl font-bold text-white"
+                  style={{
+                    fontFamily: "Itim-Regular",
+                  }}>
+                  Add a Player
+                </Text>
               </TouchableOpacity>
             </Animated.View>
           )}
@@ -72,6 +78,7 @@ export default function PlayerList({
                   tw="text-4xl font-bold text-white py-2"
                   style={{
                     color: player.colour,
+                    fontFamily: "Itim-Regular",
                   }}>
                   {player.name}
                 </Text>

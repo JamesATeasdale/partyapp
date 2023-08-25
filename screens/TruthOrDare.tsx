@@ -150,7 +150,7 @@ export default function TruthOrDare({ players, setPlayers }) {
                 </Text>
                 <Text
                   tw="font-black text-center text-6xl"
-                  style={{ color: pageTheme.text }}>
+                  style={{ color: pageTheme.text, fontFamily: "Itim-Regular" }}>
                   Truth
                 </Text>
               </TouchableOpacity>
@@ -173,14 +173,14 @@ export default function TruthOrDare({ players, setPlayers }) {
                   style={{
                     fontSize: 280,
                     opacity: 0.3,
-                    fontFamily: "",
+                    fontFamily: "Itim-Regular",
                   }}
                   tw="absolute">
                   !
                 </Text>
                 <Text
                   tw="text-black font-black text-center text-6xl"
-                  style={{ color: pageTheme.text }}>
+                  style={{ color: pageTheme.text, fontFamily: "Itim-Regular" }}>
                   Dare
                 </Text>
               </TouchableOpacity>

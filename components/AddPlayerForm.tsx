@@ -29,7 +29,13 @@ export default function AddPlayerForm({
       <View
         tw=" w-11/12 absolute items-center space-y-8 py-6 rounded-lg"
         style={{ backgroundColor: pageTheme.fg }}>
-        <Text tw="text-5xl font-extrabold text-white">Enter a Name:</Text>
+        <Text
+          style={{
+            fontFamily: "Itim-Regular",
+          }}
+          tw="text-5xl font-extrabold text-white">
+          Enter a Name:
+        </Text>
         <TextInput
           maxLength={12}
           autoFocus={true}
@@ -65,7 +71,13 @@ export default function AddPlayerForm({
           <TouchableOpacity
             tw=" bg-white pt-2 px-6 rounded-md"
             onPress={() => setIsAdd(false)}>
-            <Text tw="font-bold text-5xl">Exit</Text>
+            <Text
+              tw="font-bold text-5xl"
+              style={{
+                fontFamily: "Itim-Regular",
+              }}>
+              Exit
+            </Text>
           </TouchableOpacity>
           <TouchableOpacity
             tw="bg-white pt-2 px-6 rounded-md"
@@ -80,7 +92,13 @@ export default function AddPlayerForm({
                 setIsAdd(false);
               }
             }}>
-            <Text tw="font-bold text-5xl">Add</Text>
+            <Text
+              tw="font-bold text-5xl"
+              style={{
+                fontFamily: "Itim-Regular",
+              }}>
+              Add
+            </Text>
           </TouchableOpacity>
         </View>
       </View>

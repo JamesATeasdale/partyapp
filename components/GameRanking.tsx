@@ -25,7 +25,6 @@ export default function GameRanking({ players, setPlayers }) {
 
   return (
     <View tw="w-full items-center">
-      <View tw="opacity-20 bg-white absolute w-full h-full" />
       <View tw="w-full justify-center flex-row basis-3/6">
         {[players[1], players[0], players[2]].map(
           (player = { name: "", score: 0, colour: "" }, index = 0) => {
@@ -74,7 +73,7 @@ export default function GameRanking({ players, setPlayers }) {
           }
         )}
       </View>
-      <ScrollView horizontal={true}>
+      <ScrollView horizontal={true} tw="w-full bg-gray-400">
         {players
           .slice(3)
           .map((player = { name: "", colour: "", score: 0 }, index = 0) => (
@@ -83,7 +82,7 @@ export default function GameRanking({ players, setPlayers }) {
               key={player.name}
               tw="px-2 h-full flex-row justify-center">
               <Text
-                tw="text-4xl text-white font-extrabold pr-2"
+                tw="text-3xl text-white font-extrabold pr-2"
                 style={{
                   color: player.colour,
                 }}>

@@ -30,7 +30,7 @@ export default function Sets({ setWarn, players }) {
             }>
             <Text
               tw="text-center text-4xl font-black text-white"
-              style={{ color: pageCol[ind].text }}>
+              style={{ color: pageCol[ind].text, fontFamily: "Itim-Regular" }}>
               {pages[ind]}
             </Text>
           </TouchableOpacity>

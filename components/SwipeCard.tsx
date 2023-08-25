@@ -119,13 +119,6 @@ export default function SwipeableCard({
       exiting={FadeOut}
       tw="justify-center h-5/6 w-full rounded-b-lg grow border-2"
       style={{ borderColor: pageTheme.fg }}>
-      {/* {swipeDirection === "Right" && (
-        <Reanimated.View
-          exiting={FadeOutUp}
-          tw="w-full h-full absolute justify-center items-center">
-          <Text tw="text-9xl">+{value}</Text>
-        </Reanimated.View>
-      )} */}
       <View
         tw="w-full h-full absolute rounded-b-lg"
         style={{ borderColor: pageTheme.fg, backgroundColor: pageTheme.bg }}
@@ -139,17 +132,14 @@ export default function SwipeableCard({
           backgroundColor: shuffledPlayers[0].colour,
           transform: [{ translateX: xPosition }, { rotate: rotateCard }],
         }}>
-        <Text tw="text-white font-bold text-4xl text-center">
+        <Text
+          tw="text-white font-bold text-4xl text-center"
+          style={{
+            fontFamily: "Itim-Regular",
+          }}>
           {item.question}
         </Text>
       </Animated.View>
-      {/* {value && (
-        <Reanimated.View
-          exiting={FadeOutUp}
-          tw="w-full h-full absolute border-2 justify-end items-center">
-          <Text tw="text-9xl">+{value}</Text>
-        </Reanimated.View>
-      )} */}
     </Reanimated.View>
   );
 }
