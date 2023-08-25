@@ -1,24 +1,20 @@
 import { useNavigation, useRoute } from "@react-navigation/native";
 import { Text, TouchableOpacity, View } from "react-native";
-import { theme } from "../assets/colors";
+import { theme } from "../assets/colours";
 import { ScrollView } from "react-native";
 import Animated, { SlideInLeft } from "react-native-reanimated";
 import { useEffect, useState } from "react";
+import colours from "../assets/colours";
 
 export default function Sets({ setWarn, players }) {
   const navigation = useNavigation();
   const [pages, setPages] = useState([
     "Truth or Dare",
     "Quiz",
-    "Ice Breakers",
+    "Would You Rather",
     "What Would You Do",
   ]);
-  const pageCol = [
-    "bg-[#2c935f]",
-    "bg-[#e75b0e]",
-    "bg-[#2caec1]",
-    "bg-red-900",
-  ];
+  const pageCol = [colours.green, colours.orange, colours.blue, colours.pink];
 
   return (
     <View tw="h-4/6 justify-end mb-4 w-11/12">
@@ -27,11 +23,14 @@ export default function Sets({ setWarn, players }) {
           key={page}
           entering={SlideInLeft.duration((ind + 1) * 300)}>
           <TouchableOpacity
-            tw={pageCol[ind] + " my-2 basis-1/5 rounded-lg justify-center"}
+            style={{ backgroundColor: pageCol[ind].asset }}
+            tw="my-2 basis-1/5 rounded-lg justify-center"
             onPress={() =>
               players.length === 0 ? setWarn(true) : navigation.navigate(page)
             }>
-            <Text tw="text-center text-4xl font-black text-white">
+            <Text
+              tw="text-center text-4xl font-black text-white"
+              style={{ color: pageCol[ind].text }}>
               {pages[ind]}
             </Text>
           </TouchableOpacity>

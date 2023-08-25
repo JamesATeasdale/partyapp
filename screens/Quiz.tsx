@@ -2,7 +2,7 @@ import { View, Text, TouchableOpacity, Image, Switch } from "react-native";
 import LottieView from "lottie-react-native";
 import GameRanking from "../components/GameRanking";
 import Header from "../components/Header";
-import { theme } from "../assets/colors";
+import { theme } from "../assets/colours";
 import { useRoute } from "@react-navigation/native";
 import shuffle from "../hooks/shuffleArray";
 import fastquizquestions from "../assets/quiz.json";

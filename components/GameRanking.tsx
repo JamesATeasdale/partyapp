@@ -1,6 +1,6 @@
 import { TouchableOpacity, View, Text, ScrollView, Alert } from "react-native";
 import { useRoute } from "@react-navigation/native";
-import { theme } from "../assets/colors";
+import { theme } from "../assets/colours";
 import { useEffect } from "react";
 
 export default function GameRanking({ players, setPlayers }) {
@@ -43,9 +43,7 @@ export default function GameRanking({ players, setPlayers }) {
                 tw="justify-end basis-1/3">
                 <Text
                   numberOfLines={1}
-                  tw={
-                    "text-3xl underline font-extrabold rounded-t-md text-center"
-                  }
+                  tw={"text-3xl font-extrabold rounded-t-md text-center"}
                   style={{
                     color: player.colour,
                     backgroundColor: colour,
@@ -61,7 +59,7 @@ export default function GameRanking({ players, setPlayers }) {
                   }>
                   <Text
                     tw={
-                      "border-t-2 font-black text-white text-2xl text-center bg-blue-900 " +
+                      "font-black text-white text-2xl text-center bg-blue-900 " +
                       (!index
                         ? "border-r-2"
                         : index === 2

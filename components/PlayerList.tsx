@@ -6,7 +6,7 @@ import Animated, {
   useDerivedValue,
   withTiming,
 } from "react-native-reanimated";
-import { theme } from "../assets/colors";
+import { theme } from "../assets/colours";
 import { useRoute } from "@react-navigation/native";
 
 export default function PlayerList({
@@ -69,7 +69,7 @@ export default function PlayerList({
               <TouchableOpacity tw="px-2" onPress={() => confirm(player.name)}>
                 <Text
                   numberOfLines={1}
-                  tw="text-5xl font-bold text-white"
+                  tw="text-4xl font-bold text-white py-2"
                   style={{
                     color: player.colour,
                   }}>

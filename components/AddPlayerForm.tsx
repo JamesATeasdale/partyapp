@@ -1,7 +1,7 @@
 import { View, Text, TextInput, TouchableOpacity, Alert } from "react-native";
 import Animated, { FadeIn, FadeOut } from "react-native-reanimated";
 import { useState } from "react";
-import { multi, theme } from "../assets/colors";
+import { multi, theme } from "../assets/colours";
 import { useRoute } from "@react-navigation/native";
 
 export default function AddPlayerForm({

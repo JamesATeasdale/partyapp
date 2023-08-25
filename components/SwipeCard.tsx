@@ -1,7 +1,7 @@
 import { useRoute } from "@react-navigation/native";
 import { useState } from "react";
 import { Text, Dimensions, Animated, PanResponder, View } from "react-native";
-import { theme } from "../assets/colors";
+import { theme } from "../assets/colours";
 import Reanimated, {
   FadeIn,
   FadeOut,

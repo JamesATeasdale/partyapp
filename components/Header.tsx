@@ -1,7 +1,7 @@
 import { TouchableOpacity, Text } from "react-native";
 import { useNavigation, useRoute } from "@react-navigation/native";
 import Animated, { ZoomIn } from "react-native-reanimated";
-import { multi, theme } from "../assets/colors";
+import { multi, theme } from "../assets/colours";
 
 export default function Header() {
   const navigation = useNavigation();

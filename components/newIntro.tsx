@@ -1,5 +1,5 @@
 import { Text } from "react-native";
-import { theme } from "../assets/colors";
+import { theme } from "../assets/colours";
 import { useRoute } from "@react-navigation/native";
 import { useEffect, useState } from "react";
 

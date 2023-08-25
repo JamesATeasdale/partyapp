@@ -4,7 +4,7 @@ import { useEffect, useState, useRef } from "react";
 import Sets from "../components/Sets";
 import AddPlayerForm from "../components/AddPlayerForm";
 import Header from "../components/Header";
-import { theme } from "../assets/colors";
+import { theme } from "../assets/colours";
 import { useRoute } from "@react-navigation/native";
 import LottieView from "lottie-react-native";
 import Animated, { FadeIn, FadeOut } from "react-native-reanimated";

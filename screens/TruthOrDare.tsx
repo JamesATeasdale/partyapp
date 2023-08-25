@@ -1,6 +1,6 @@
 import GameRanking from "../components/GameRanking";
 import Header from "../components/Header";
-import { theme } from "../assets/colors";
+import { theme } from "../assets/colours";
 import { useNavigation, useRoute } from "@react-navigation/native";
 import { useEffect, useState, useRef } from "react";
 import truths from "../assets/truths.json";
@@ -178,7 +178,9 @@ export default function TruthOrDare({ players, setPlayers }) {
                   tw="absolute">
                   !
                 </Text>
-                <Text tw="text-black font-black text-center text-6xl">
+                <Text
+                  tw="text-black font-black text-center text-6xl"
+                  style={{ color: pageTheme.text }}>
                   Dare
                 </Text>
               </TouchableOpacity>
