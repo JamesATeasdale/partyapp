@@ -16,15 +16,31 @@ export default function App() {
       score: 0,
       tod: "explicit",
       fastQ: false,
+      quiz: ["animals"],
     },
-    { name: "reginald", colour: "red", score: 0, tod: "na", fastQ: false },
-    { name: "sally", colour: "green", score: 0, tod: "na", fastQ: false },
+    {
+      name: "reginald",
+      colour: "red",
+      score: 0,
+      tod: "na",
+      fastQ: false,
+      quiz: ["music"],
+    },
+    {
+      name: "sally",
+      colour: "green",
+      score: 0,
+      tod: "na",
+      fastQ: false,
+      quiz: ["science"],
+    },
     {
       name: "mmmmmmmmm",
       colour: "blue",
       score: 0,
       tod: "na",
       fastQ: false,
+      quiz: ["geography"],
     },
   ]);
 

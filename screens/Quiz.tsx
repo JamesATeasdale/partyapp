@@ -26,6 +26,7 @@ export default function FastQuiz({ players, setPlayers }) {
   const pageTheme = theme(route.name);
   countRef.current = counter;
   const removeQuestion = () => setShuffledQuestions(shuffledQuestions.slice(1));
+  let shuffledQuestion = { question: "", answer: "" };
 
   const toggleSwitch = () => {
     setWin(false);
@@ -61,6 +62,12 @@ export default function FastQuiz({ players, setPlayers }) {
   }
   if (shuffledQuestions.length === 0)
     setShuffledQuestions(shuffle([...fastquizquestions]));
+
+  if (!shuffledQuestion.question)
+    shuffledQuestion = shuffledQuestions.find(
+      (ques) => shuffledPlayers[0].quiz.includes(ques.category) && ques
+    );
+  console.log(shuffledQuestion);
 
   return (
     <View
@@ -124,16 +131,14 @@ export default function FastQuiz({ players, setPlayers }) {
             <TouchableOpacity
               onPress={() => setReveal(true)}
               disabled={shuffledPlayers[0].fastQ || reveal}
-              tw="grow justify-center">
+              tw="grow justify-center px-3">
               <Text
-                tw="px-2 text-white font-bold text-4xl text-center pt-2"
+                tw="font-bold text-3xl text-center pt-2"
                 style={{ color: pageTheme.text, fontFamily: "Itim-Regular" }}>
                 {(counter && shuffledPlayers[0].fastQ) ||
                 (!shuffledPlayers[0].fastQ && !reveal)
-                  ? shuffledQuestions.find((cat) => cat.category === "na")
-                      .question
-                  : shuffledQuestions.find((cat) => cat.category === "na")
-                      .answer}
+                  ? shuffledQuestion.question
+                  : shuffledQuestion.answer}
               </Text>
             </TouchableOpacity>
             {counter && shuffledPlayers[0].fastQ ? (

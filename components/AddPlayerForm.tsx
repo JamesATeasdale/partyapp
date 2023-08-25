@@ -1,15 +1,7 @@
-import {
-  View,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  Alert,
-  KeyboardAvoidingView,
-  Keyboard,
-} from "react-native";
+import { View, Text, TextInput, TouchableOpacity } from "react-native";
 import Animated, { FadeIn, FadeOut } from "react-native-reanimated";
-import { useEffect, useState } from "react";
-import colours, { multi, theme } from "../assets/colours";
+import { useState } from "react";
+import { multi, theme } from "../assets/colours";
 import { useRoute } from "@react-navigation/native";
 
 export default function AddPlayerForm({
@@ -24,7 +16,7 @@ export default function AddPlayerForm({
     score: 0,
     tod: "na",
     fastQ: false,
-    quiz: ["General"],
+    quiz: ["na"],
   });
   const route = useRoute();
   const pageTheme = theme(route.name);
@@ -37,6 +29,17 @@ export default function AddPlayerForm({
     "Animals",
     "Music",
   ];
+
+  const quizCatsReal = [
+    "na",
+    "moviesandtv",
+    "science",
+    "geography",
+    "technology",
+    "animals",
+    "music",
+  ];
+
   const quizCatsBG = [
     "red",
     "blue",
@@ -47,6 +50,7 @@ export default function AddPlayerForm({
     "black",
   ];
   const todCat = ["na", "", "explicit"];
+  console.log(addPlayer.quiz);
 
   return (
     <Animated.View
@@ -97,7 +101,7 @@ export default function AddPlayerForm({
           ))}
         </View>
         <View tw="flex-row flex-wrap w-full justify-center">
-          {quizCats.map((category, i) => (
+          {quizCatsReal.map((category, i) => (
             <TouchableOpacity
               onPress={() =>
                 addPlayer.quiz.includes(category) && addPlayer.quiz.length > 1
@@ -120,7 +124,7 @@ export default function AddPlayerForm({
                   }
                 }
                 tw="p-2 text-2xl text-white bg-gray-400 font-extrabold m-1">
-                {category}
+                {quizCats[i]}
               </Text>
             </TouchableOpacity>
           ))}
