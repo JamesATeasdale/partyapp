@@ -3,15 +3,7 @@ deleted users appear in truth or dare list for one round after being deleted
 
 TODO
 - addplayerform multiple in one
-- finish quiz PointNotifier
-Quiz categories:
-Background of these are gray until pressed
-- music
-- movies
-- animals
-- science
-- geography 
-- technology
+- add more technology questions
 
 
 - divide main colours into light and dark, choose dark for players and title

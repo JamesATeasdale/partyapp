@@ -50,7 +50,6 @@ export default function AddPlayerForm({
     "black",
   ];
   const todCat = ["na", "", "explicit"];
-  console.log(addPlayer.quiz);
 
   return (
     <Animated.View

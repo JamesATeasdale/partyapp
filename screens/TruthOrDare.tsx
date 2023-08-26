@@ -127,7 +127,7 @@ export default function TruthOrDare({ players, setPlayers }) {
           <View tw="grow h-5/6 flex-row rounded-b-md">
             <Animated.View
               tw="basis-1/2 justify-center rounded-bl-md border-2"
-              entering={SlideInLeft}
+              entering={SlideInLeft.duration(600)}
               exiting={SlideOutLeft}
               style={{
                 borderColor: pageTheme.fg,
@@ -157,7 +157,7 @@ export default function TruthOrDare({ players, setPlayers }) {
             </Animated.View>
             <Animated.View
               tw="basis-1/2 justify-center rounded-br-md border-2"
-              entering={SlideInRight}
+              entering={SlideInRight.duration(600)}
               exiting={SlideOutRight}
               style={{
                 borderColor: pageTheme.fg,
