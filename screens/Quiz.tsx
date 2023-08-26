@@ -21,7 +21,6 @@ export default function FastQuiz({ players, setPlayers }) {
   const [shuffledQuestions, setShuffledQuestions] = useState([]);
   const [value, setValue] = useState(0);
   const countRef = useRef(null);
-  const LottieRef = useRef(null);
   const route = useRoute();
   const pageTheme = theme(route.name);
   countRef.current = counter;
@@ -76,13 +75,6 @@ export default function FastQuiz({ players, setPlayers }) {
       <Image
         source={require("../assets/question-marks-background2.png")}
         tw="absolute h-full w-full opacity-50"
-      />
-      <LottieView
-        tw="absolute h-full w-full "
-        ref={LottieRef}
-        source={require("../assets/fireworks.json")}
-        loop={false}
-        speed={1}
       />
       <View tw="w-full h-2/6 items-center">
         <Header />
@@ -175,7 +167,6 @@ export default function FastQuiz({ players, setPlayers }) {
                     removeQuestion();
                     setNewGame(!newGame);
                     setReveal(false);
-                    LottieRef.current.play();
                     return Promise.resolve(
                       setPlayers(
                         players.map((player) =>

@@ -1524,7 +1524,7 @@
     "answer": "August 1, 1981"
   },
   {
-    "question": "Which of these R&B artists did the title track for the movie \u201cGhostbusters\u201d?",
+    "question": "Which R&B artist did the title track for the movie \u201cGhostbusters\u201d?",
     "likes": 0,
     "category": "music",
     "answer": "Ray Parker, Jr."
@@ -6300,7 +6300,7 @@
     "answer": "Olympia"
   },
   {
-    "question": "Which of these African countries list \u201cSpanish\u201d as an official language?",
+    "question": "Which African countries list \u201cSpanish\u201d as an official language?",
     "likes": 0,
     "category": "geography",
     "answer": "Equatorial Guinea"
@@ -6316,12 +6316,6 @@
     "likes": 0,
     "category": "geography",
     "answer": "Brazil."
-  },
-  {
-    "question": "Which of these countries is NOT located in Africa?",
-    "likes": 0,
-    "category": "geography",
-    "answer": "Suriname"
   },
   {
     "question": "What African country has Portuguese as its official language?",
@@ -6576,7 +6570,7 @@
     "answer": "Istanbul (in Turkey) is located both on the Asian and European continent(s)."
   },
   {
-    "question": "Which of the following continents is intersected by the Equator?",
+    "question": "Which continents are intersected by the Equator?",
     "likes": 0,
     "category": "geography",
     "answer": "South America, Africa and Asia."

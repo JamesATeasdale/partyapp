@@ -44,7 +44,7 @@ export default function playersScreen({ players, ok, setOk }) {
       <LottieView
         ref={LottieRef}
         tw="w-full h-full absolute"
-        source={require("../assets/streamers.json")}
+        source={require("../assets/fireworks.json")}
         loop={false}
         speed={2}
       />
