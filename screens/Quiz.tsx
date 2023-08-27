@@ -84,13 +84,13 @@ export default function Quiz({ players, setPlayers }) {
       /> */}
 
       <Animated.Image
-        tw="h-full w-full absolute"
+        tw="h-full absolute"
         entering={SlideInLeft.duration(800)}
         source={require("../assets/jaggedleft.png")}
       />
       <Animated.Image
         entering={SlideInRight.duration(800)}
-        tw="h-full w-full absolute"
+        tw="h-full absolute"
         source={require("../assets/jaggedright.png")}
       />
       <View tw="w-full h-2/6 items-center">

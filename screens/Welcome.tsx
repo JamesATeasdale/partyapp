@@ -33,20 +33,18 @@ export default function Welcome({ players, setPlayers, ok, setOk }) {
       <View
         tw="items-center h-full w-full justify-between"
         style={{ backgroundColor: pageTheme.bg }}>
-        <View tw="w-full h-full absolute">
-          <Animated.Image
-            entering={SlideInUp.duration(800)}
-            exiting={SlideOutUp.duration(800)}
-            tw="absolute"
-            source={require("../assets/wave.png")}
-          />
-          <Animated.Image
-            entering={SlideInUp.duration(1000)}
-            exiting={SlideOutUp.duration(1000)}
-            tw="absolute"
-            source={require("../assets/wave2.png")}
-          />
-        </View>
+        <Animated.Image
+          entering={SlideInUp.duration(800)}
+          exiting={SlideOutUp.duration(800)}
+          tw="absolute h-full"
+          source={require("../assets/wave.png")}
+        />
+        <Animated.Image
+          entering={SlideInUp.duration(1000)}
+          exiting={SlideOutUp.duration(1000)}
+          tw="absolute h-full"
+          source={require("../assets/wave2.png")}
+        />
         <LottieView
           tw="absolute h-full w-full"
           ref={LottieRef}

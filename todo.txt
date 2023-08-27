@@ -2,11 +2,8 @@ bugs:
 deleted users appear in truth or dare list for one round after being deleted
 
 TODO
-- addplayerform multiple in one
 - add more technology questions
 
-
-- divide main colours into light and dark, choose dark for players and title
 
  keytool -genkey -v -keystore my-app-key.keystore -alias my-app-alias -keyalg RSA -keysize 2048 -validity 10000
  react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/

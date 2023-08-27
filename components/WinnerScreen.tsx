@@ -46,7 +46,7 @@ export default function playersScreen({ players, ok, setOk }) {
         tw="w-full h-full absolute"
         source={require("../assets/fireworks.json")}
         loop={false}
-        speed={2}
+        speed={1}
       />
       <TouchableOpacity
         tw="w-full h-full absolute"
