@@ -133,7 +133,7 @@ export default function AddPlayerForm({
             tw=" bg-white pt-2 px-6 rounded-md"
             onPress={() => setIsAdd(false)}>
             <Text
-              tw="font-bold text-5xl"
+              tw="font-bold p-2 text-5xl"
               style={{
                 fontFamily: "Itim-Regular",
               }}>
@@ -154,7 +154,7 @@ export default function AddPlayerForm({
               }
             }}>
             <Text
-              tw="font-bold text-5xl"
+              tw="font-bold p-2 text-5xl"
               style={{
                 fontFamily: "Itim-Regular",
               }}>

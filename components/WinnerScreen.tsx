@@ -25,7 +25,7 @@ export default function playersScreen({ players, ok, setOk }) {
           <View tw="w-5/6 py-2 justify-between" key={player.name}>
             <View tw="absolute h-full w-full bg-black opacity-80 rounded-lg" />
             <Text
-              tw="text-6xl font-black text-center"
+              tw="text-6xl pt-2 font-black text-center"
               style={{
                 fontFamily: "Caprasimo-Regular",
                 color: player.colour,
@@ -36,7 +36,7 @@ export default function playersScreen({ players, ok, setOk }) {
               style={{
                 fontFamily: "Caprasimo-Regular",
               }}
-              tw="text-center text-9xl font-black text-white">
+              tw="text-center pt-2 text-9xl font-black text-white">
               {player.score}
             </Text>
           </View>

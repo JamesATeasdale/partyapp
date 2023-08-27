@@ -14,7 +14,7 @@ export default function Header() {
       tw="my-4 flex-row justify-center">
       {route.name.split("").map((letter, ind) => (
         <Animated.View
-          entering={BounceInUp.duration((ind + 1) * 200)}
+          entering={BounceInUp.duration(ind * 100 + 600)}
           key={ind}>
           <Text
             numberOfLines={1}

@@ -11,7 +11,6 @@ export default function Sets({ setWarn, players }) {
   const [pages, setPages] = useState([
     "Truth or Dare",
     "Quiz",
-    "Would You Rather",
     "What Would You Do",
   ]);
   const pageCol = [colours.green, colours.orange, colours.blue, colours.pink];

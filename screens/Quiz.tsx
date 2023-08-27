@@ -19,7 +19,7 @@ import CardBanner from "../components/CardBanner";
 import Intro from "../components/newIntro";
 import PointNotifier from "../components/PointNotifier";
 
-export default function FastQuiz({ players, setPlayers }) {
+export default function Quiz({ players, setPlayers }) {
   const [win, setWin] = useState(false);
   const [newGame, setNewGame] = useState(false);
   const [reveal, setReveal] = useState(false);

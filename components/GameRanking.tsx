@@ -53,17 +53,19 @@ export default function GameRanking({ players, setPlayers }) {
                   style={{ backgroundColor: colour }}
                   tw={
                     "h-" +
-                    (!index ? 3 : index === 1 ? 4 : 2) +
+                    (!index ? 4 : index === 1 ? 5 : 3) +
                     "/6 w-full justify-end "
                   }>
                   <Text
+                    style={{ color: pageTheme.text }}
                     tw={
-                      "font-black text-white text-2xl text-center bg-blue-900 " +
-                      (!index
-                        ? "border-r-2"
-                        : index === 2
-                        ? "border-l-2"
-                        : "border-x-2")
+                      "font-black text-5xl text-center pt-2"
+                      // "font-black text-white text-2xl text-center bg-blue-900 " +
+                      // (!index
+                      //   ? "border-r-2"
+                      //   : index === 2
+                      //   ? "border-l-2"
+                      //   : "border-x-2")
                     }>
                     {player.score}
                   </Text>
@@ -73,7 +75,7 @@ export default function GameRanking({ players, setPlayers }) {
           }
         )}
       </View>
-      <ScrollView horizontal={true} tw="w-full bg-gray-400">
+      <ScrollView horizontal={true} tw="w-full bg-gray-200">
         {players
           .slice(3)
           .map((player = { name: "", colour: "", score: 0 }, index = 0) => (
@@ -82,13 +84,15 @@ export default function GameRanking({ players, setPlayers }) {
               key={player.name}
               tw="px-2 h-full flex-row justify-center">
               <Text
-                tw="text-3xl text-white font-extrabold pr-2"
+                tw="text-3xl font-extrabold pr-2"
                 style={{
                   color: player.colour,
                 }}>
                 {player.name}
               </Text>
-              <Text tw="font-extrabold text-white text-4xl">
+              <Text
+                tw="font-extrabold text-4xl"
+                style={{ color: pageTheme.text }}>
                 {player.score}
               </Text>
             </TouchableOpacity>
