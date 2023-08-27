@@ -31,8 +31,11 @@ export default function Quiz({ players, setPlayers }) {
   const route = useRoute();
   const pageTheme = theme(route.name);
   countRef.current = counter;
-  const removeQuestion = () => setShuffledQuestions(shuffledQuestions.slice(1));
   let shuffledQuestion = { question: "", answer: "" };
+  const removeQuestion = () =>
+    setShuffledQuestions(
+      shuffledQuestions.filter((shuffledQ) => shuffledQ !== shuffledQuestion)
+    );
 
   const toggleSwitch = () => {
     setWin(false);
@@ -73,6 +76,7 @@ export default function Quiz({ players, setPlayers }) {
     shuffledQuestion = shuffledQuestions.find(
       (ques) => shuffledPlayers[0].quiz.includes(ques.category) && ques
     );
+  console.log(shuffledQuestions.length);
 
   return (
     <View

@@ -3,6 +3,8 @@ deleted users appear in truth or dare list for one round after being deleted
 
 TODO
 - add more technology questions
+- change the colour of the quiz's background opacity components
+- pad truth or dare text
 
 
  keytool -genkey -v -keystore my-app-key.keystore -alias my-app-alias -keyalg RSA -keysize 2048 -validity 10000
