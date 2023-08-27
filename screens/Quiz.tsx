@@ -7,7 +7,14 @@ import { useRoute } from "@react-navigation/native";
 import shuffle from "../hooks/shuffleArray";
 import fastquizquestions from "../assets/quiz.json";
 import { useState, useRef } from "react";
-import Animated, { BounceIn, ZoomIn } from "react-native-reanimated";
+import Animated, {
+  BounceIn,
+  SlideInDown,
+  SlideInLeft,
+  SlideInRight,
+  SlideInUp,
+  ZoomIn,
+} from "react-native-reanimated";
 import CardBanner from "../components/CardBanner";
 import Intro from "../components/newIntro";
 import PointNotifier from "../components/PointNotifier";
@@ -66,15 +73,25 @@ export default function FastQuiz({ players, setPlayers }) {
     shuffledQuestion = shuffledQuestions.find(
       (ques) => shuffledPlayers[0].quiz.includes(ques.category) && ques
     );
-  console.log(shuffledQuestion);
 
   return (
     <View
       tw="h-full items-center justify-between"
       style={{ backgroundColor: pageTheme.bg }}>
-      <Image
+      {/* <Image
         source={require("../assets/question-marks-background2.png")}
         tw="absolute h-full w-full opacity-50"
+      /> */}
+
+      <Animated.Image
+        tw="h-full w-full absolute"
+        entering={SlideInLeft.duration(800)}
+        source={require("../assets/jaggedleft.png")}
+      />
+      <Animated.Image
+        entering={SlideInRight.duration(800)}
+        tw="h-full w-full absolute"
+        source={require("../assets/jaggedright.png")}
       />
       <View tw="w-full h-2/6 items-center">
         <Header />

@@ -16,7 +16,7 @@ export const multi = [
   "#000000",
 ];
 
-const purple = { bg: "#370080", fg: "#9a4dff" };
+const purple = { bg: "#370080", fg: "#9a4dff", text: "white" };
 
 const green = {
   bg: "#90c26e",
