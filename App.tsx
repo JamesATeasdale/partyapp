@@ -10,38 +10,38 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   const [ok, setOk] = useState(false);
   const [players, setPlayers] = useState([
-    // {
-    //   name: "aaron",
-    //   colour: "purple",
-    //   score: 0,
-    //   tod: "explicit",
-    //   fastQ: false,
-    //   quiz: ["animals"],
-    // },
-    // {
-    //   name: "reginald",
-    //   colour: "red",
-    //   score: 0,
-    //   tod: "na",
-    //   fastQ: false,
-    //   quiz: ["music"],
-    // },
-    // {
-    //   name: "sally",
-    //   colour: "green",
-    //   score: 0,
-    //   tod: "na",
-    //   fastQ: false,
-    //   quiz: ["science"],
-    // },
-    // {
-    //   name: "mmmmmmmmm",
-    //   colour: "blue",
-    //   score: 0,
-    //   tod: "na",
-    //   fastQ: false,
-    //   quiz: ["geography"],
-    // },
+    {
+      name: "aaron",
+      colour: "purple",
+      score: 0,
+      tod: "explicit",
+      fastQ: false,
+      quiz: ["animals"],
+    },
+    {
+      name: "reginald",
+      colour: "red",
+      score: 0,
+      tod: "na",
+      fastQ: false,
+      quiz: ["music"],
+    },
+    {
+      name: "sally",
+      colour: "green",
+      score: 0,
+      tod: "na",
+      fastQ: false,
+      quiz: ["science"],
+    },
+    {
+      name: "mmmmmmmmm",
+      colour: "blue",
+      score: 0,
+      tod: "na",
+      fastQ: false,
+      quiz: ["geography"],
+    },
   ]);
 
   useEffect(() => {
