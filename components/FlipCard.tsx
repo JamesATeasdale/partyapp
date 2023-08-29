@@ -60,12 +60,13 @@ export default function FlipCard({
         spin.value = spin.value ? 0 : 1;
       }}
       disabled={shuffledPlayers[0].fastQ || reveal}
-      tw="items-center px-3 h-full">
+      tw="items-center h-5/6 w-11/12 rounded-lg"
+      style={{ backgroundColor: pageTheme.bg }}>
       <Animated.View
-        tw="items-center justify-center absolute h-5/6 rounded-lg w-full"
-        style={[Styles.front, rStyle, { backgroundColor: pageTheme.bg }]}>
+        tw="absolute h-full rounded-lg w-full border-4"
+        style={[Styles.front, rStyle, { backgroundColor: "#c0c0c0" }]}>
         <Text
-          tw="text-4xl grow w- font-extrabold text-center"
+          tw="text-3xl grow font-extrabold text-center"
           style={{ color: pageTheme.text }}>
           {shuffledQuestion.question}
         </Text>
@@ -76,17 +77,17 @@ export default function FlipCard({
         </Text>
       </Animated.View>
       <Animated.View
-        style={[Styles.back, bStyle, { backgroundColor: pageTheme.bg }]}
-        tw="items-center justify-center absolute h-5/6 rounded-lg w-full">
+        style={[Styles.back, bStyle, { backgroundColor: "#c0c0c0" }]}
+        tw="absolute h-full rounded-lg w-full items-center border-4">
         <Text
-          tw="text-4xl grow font-extrabold"
+          tw="text-3xl grow font-extrabold text-center"
           style={{ color: pageTheme.text }}>
           {shuffledQuestion.answer}
         </Text>
-        <View tw="flex-row">
+        <View tw="flex-row justify-between space-x-1">
           <TouchableOpacity
             disabled={!reveal}
-            tw="basis-1/2 justify-center bg-white border-r-2"
+            tw="grow justify-center bg-white rounded-tr-md rounded-bl-md"
             onPress={() => {
               spin.value = spin.value ? 0 : 1;
               setWin(false);
@@ -100,13 +101,13 @@ export default function FlipCard({
               );
             }}>
             <Animated.Text
-              tw="text-center text-7xl text-red-700 p-4"
+              tw="text-center text-6xl text-red-700 py-2"
               entering={ZoomIn}>
               ✘
             </Animated.Text>
           </TouchableOpacity>
           <TouchableOpacity
-            tw="basis-1/2 justify-center bg-white border-l-2"
+            tw="grow justify-center bg-white rounded-tl-md rounded-br-md"
             disabled={!reveal}
             onPress={() => {
               spin.value = spin.value ? 0 : 1;
@@ -140,7 +141,7 @@ export default function FlipCard({
               style={{
                 fontFamily: "Itim-Regular",
               }}
-              tw="text-center text-7xl text-green-700 p-4"
+              tw="text-center text-6xl text-green-700 py-2 "
               entering={ZoomIn}>
               ✔
             </Animated.Text>

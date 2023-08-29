@@ -42,7 +42,7 @@ export default function GameRanking({ players, setPlayers }) {
                 tw="justify-end basis-1/3">
                 <Text
                   numberOfLines={1}
-                  tw={"text-3xl font-extrabold rounded-t-md text-center"}
+                  tw={"text-3xl font-extrabold rounded-t-sm text-center"}
                   style={{
                     color: player.colour,
                     backgroundColor: colour,

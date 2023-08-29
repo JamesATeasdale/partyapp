@@ -1,7 +1,7 @@
 import LottieView from "lottie-react-native";
 import { useEffect, useRef } from "react";
 import { Text, TouchableOpacity, View } from "react-native";
-import Animated, { BounceIn, FadeOut } from "react-native-reanimated";
+import Animated, { FadeOut } from "react-native-reanimated";
 
 export default function playersScreen({ players, ok, setOk }) {
   const LottieRef = useRef(null);
@@ -19,6 +19,13 @@ export default function playersScreen({ players, ok, setOk }) {
         }}>
         WINNER!
       </Text>
+      <LottieView
+        ref={LottieRef}
+        tw="w-full h-full absolute"
+        source={require("../assets/fireworks.json")}
+        loop={false}
+        speed={1}
+      />
       {players
         .filter((player) => player.score === players[0].score && player)
         .map((player) => (
@@ -41,13 +48,6 @@ export default function playersScreen({ players, ok, setOk }) {
             </Text>
           </View>
         ))}
-      <LottieView
-        ref={LottieRef}
-        tw="w-full h-full absolute"
-        source={require("../assets/fireworks.json")}
-        loop={false}
-        speed={1}
-      />
       <TouchableOpacity
         tw="w-full h-full absolute"
         onPress={() => setOk(false)}
