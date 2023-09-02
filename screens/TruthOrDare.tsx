@@ -22,7 +22,7 @@ import PointNotifier from "../components/PointNotifier";
 
 export default function TruthOrDare({ players, setPlayers }) {
   const [win, setWin] = useState(false);
-  const [shuffledPlayers, setShuffledPlayers] = useState(shuffle([...players]));
+  const [shuffledPlayers, setShuffledPlayers] = useState([]);
   const [shuffledTruths, setShuffledTruths] = useState([]);
   const [shuffledDares, setShuffledDares] = useState([]);
   const [value, setvalue] = useState(0);
@@ -40,15 +40,13 @@ export default function TruthOrDare({ players, setPlayers }) {
 
   if (!players.length) navigation.navigate("Party Animals");
 
-  if (shuffledPlayers.length === 0) {
+  if (shuffledPlayers.length === 0)
     return setShuffledPlayers(shuffle([...players]));
-  }
-  if (shuffledTruths.length === 0) {
+
+  if (shuffledTruths.length === 0)
     return setShuffledTruths(shuffle([...truths]));
-  }
-  if (shuffledDares.length === 0) {
-    return setShuffledDares(shuffle([...dares]));
-  }
+
+  if (shuffledDares.length === 0) return setShuffledDares(shuffle([...dares]));
 
   if (!shuffledTruth.question)
     shuffledTruth = shuffledTruths.find((truth) =>

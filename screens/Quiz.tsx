@@ -62,9 +62,9 @@ export default function Quiz({ players, setPlayers }) {
     setCounter(7);
   }
 
-  if (shuffledPlayers.length === 0) {
+  if (shuffledPlayers.length === 0)
     return setShuffledPlayers(shuffle([...players]));
-  }
+
   if (shuffledQuestions.length === 0)
     setShuffledQuestions(shuffle([...fastquizquestions]));
 
