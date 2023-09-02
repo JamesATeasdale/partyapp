@@ -39,9 +39,9 @@ const blue = {
   asset: "#00b2ca",
 };
 const pink = {
-  bg: "#fea3aa",
-  fg: "#f5b0c2",
-  text: "#585858",
+  bg: "#b8d8e3",
+  fg: "#fee1dd",
+  text: "#535878",
   asset: "#f4bfa8",
 };
 
@@ -49,6 +49,7 @@ export function theme(routeName) {
   if (routeName === "Party Animals") return purple;
   else if (routeName === "Truth or Dare") return green;
   else if (routeName === "Quiz") return orange;
+  else if (routeName === "Casual") return pink;
   return pink;
 }
 export default colours = { orange, green, blue, pink };

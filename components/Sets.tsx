@@ -8,11 +8,7 @@ import colours from "../assets/colours";
 
 export default function Sets({ setWarn, players }) {
   const navigation = useNavigation();
-  const [pages, setPages] = useState([
-    "Truth or Dare",
-    "Quiz",
-    "What Would You Do",
-  ]);
+  const [pages, setPages] = useState(["Truth or Dare", "Quiz", "Casual"]);
   const pageCol = [colours.green, colours.orange, colours.blue, colours.pink];
 
   return (
