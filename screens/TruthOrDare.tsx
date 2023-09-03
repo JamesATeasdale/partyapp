@@ -8,7 +8,6 @@ import dares from "../assets/dares.json";
 import { TouchableOpacity, Text, View, Image } from "react-native";
 import SwipeableCard from "../components/SwipeCard";
 import shuffle from "../hooks/shuffleArray";
-import LottieView from "lottie-react-native";
 import Animated, {
   FadeIn,
   FadeOut,
@@ -19,6 +18,11 @@ import Animated, {
 } from "react-native-reanimated";
 import CardBanner from "../components/CardBanner";
 import PointNotifier from "../components/PointNotifier";
+import {
+  BannerAdSize,
+  GAMBannerAd,
+  TestIds,
+} from "react-native-google-mobile-ads";
 
 export default function TruthOrDare({ players, setPlayers }) {
   const [win, setWin] = useState(false);
@@ -75,21 +79,16 @@ export default function TruthOrDare({ players, setPlayers }) {
     <View
       tw="h-full w-full items-center justify-between"
       style={{ backgroundColor: pageTheme.bg }}>
-      <LottieView
-        tw="absolute h-full w-full"
-        ref={LottieRef}
-        source={require("../assets/singlefirework.json")}
-        loop={false}
-        speed={1}
-      />
-      <Image
-        tw="h-full w-full absolute opacity-40"
-        source={require("../assets/stars2.png")}
+      <GAMBannerAd
+        unitId={TestIds.BANNER}
+        sizes={[BannerAdSize.FULL_BANNER]}
+        requestOptions={{
+          requestNonPersonalizedAdsOnly: true,
+        }}
       />
       <View tw="w-full h-2/6 items-center">
         <Header />
         <GameRanking players={players} setPlayers={setPlayers} />
-        {win && <PointNotifier value={value} />}
       </View>
       <View
         tw="w-11/12 h-3/6 rounded-xl mb-4 items-center "
@@ -141,14 +140,14 @@ export default function TruthOrDare({ players, setPlayers }) {
                   style={{
                     fontSize: 280,
                     opacity: 0.3,
-                    fontFamily: "Itim-Regular",
+                    fontFamily: "fun",
                   }}
                   tw="absolute">
                   ?
                 </Text>
                 <Text
-                  tw="font-black text-center text-6xl"
-                  style={{ color: pageTheme.text, fontFamily: "Itim-Regular" }}>
+                  tw=" text-center text-6xl pt-3"
+                  style={{ color: pageTheme.text, fontFamily: "fun" }}>
                   Truth
                 </Text>
               </TouchableOpacity>
@@ -171,14 +170,17 @@ export default function TruthOrDare({ players, setPlayers }) {
                   style={{
                     fontSize: 280,
                     opacity: 0.3,
-                    fontFamily: "Itim-Regular",
+                    fontFamily: "fun",
                   }}
                   tw="absolute">
                   !
                 </Text>
                 <Text
-                  tw="text-black font-black text-center text-6xl"
-                  style={{ color: pageTheme.text, fontFamily: "Itim-Regular" }}>
+                  tw="text-black text-center text-6xl pt-3"
+                  style={{
+                    color: pageTheme.text,
+                    fontFamily: "fun",
+                  }}>
                   Dare
                 </Text>
               </TouchableOpacity>
@@ -230,6 +232,7 @@ export default function TruthOrDare({ players, setPlayers }) {
           </View>
         )}
       </View>
+      {win && <PointNotifier value={value} />}
     </View>
   );
 }

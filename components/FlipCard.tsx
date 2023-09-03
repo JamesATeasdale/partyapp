@@ -66,13 +66,13 @@ export default function FlipCard({
         tw="absolute h-full rounded-lg w-full border-4"
         style={[Styles.front, rStyle, { backgroundColor: "#c0c0c0" }]}>
         <Text
-          tw="text-3xl grow font-extrabold text-center"
-          style={{ color: pageTheme.text }}>
+          tw="text-3xl grow text-center pt-2"
+          style={{ color: pageTheme.text, fontFamily: "fun" }}>
           {shuffledQuestion.question}
         </Text>
         <Text
-          tw="pt-2 text-7xl text-center font-black text-white"
-          style={{ color: pageTheme.text }}>
+          tw="pt-2 text-6xl pt-2 text-center text-white"
+          style={{ color: pageTheme.text, fontFamily: "header" }}>
           {counter && shuffledPlayers[0].fastQ ? counter : ""}
         </Text>
       </Animated.View>
@@ -80,8 +80,8 @@ export default function FlipCard({
         style={[Styles.back, bStyle, { backgroundColor: "#c0c0c0" }]}
         tw="absolute h-full rounded-lg w-full items-center border-4">
         <Text
-          tw="text-3xl grow font-extrabold text-center"
-          style={{ color: pageTheme.text }}>
+          tw="text-3xl pt-2 grow text-center"
+          style={{ color: pageTheme.text, fontFamily: "fun" }}>
           {shuffledQuestion.answer}
         </Text>
         <View tw="flex-row justify-between space-x-1">

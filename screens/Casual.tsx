@@ -8,6 +8,13 @@ import shuffle from "../hooks/shuffleArray";
 import { useRef, useState } from "react";
 import LottieView from "lottie-react-native";
 import Animated, { FadeIn, FadeOut } from "react-native-reanimated";
+import { getBatteryLevel } from "react-native-device-info";
+import {
+  BannerAdSize,
+  GAMBannerAd,
+  TestIds,
+} from "react-native-google-mobile-ads";
+// import { getBatteryLevel } from "react-native-device-info";
 
 export default function Casual({ players }) {
   const [shuffledPlayers, setShuffledPlayers] = useState([
@@ -31,12 +38,21 @@ export default function Casual({ players }) {
   if (shuffledPlayers.length <= 1) return setShuffledPlayers(shuffle(players));
   if (!transition) setTimeout(() => setTransition(!transition), 800);
 
+  console.log(getBatteryLevel());
+
   return (
     <Animated.View
       entering={FadeIn.duration(800)}
       exiting={FadeOut.duration(800)}
       tw="w-full h-full justify-between items-center"
       style={{ backgroundColor: pageTheme.bg }}>
+      <GAMBannerAd
+        unitId={TestIds.BANNER}
+        sizes={[BannerAdSize.FULL_BANNER]}
+        requestOptions={{
+          requestNonPersonalizedAdsOnly: true,
+        }}
+      />
       <TouchableOpacity
         tw="h-2/6 w-full absolute"
         onPress={() => (!speed ? setSpeed(0.3) : setSpeed(0))}>
@@ -58,8 +74,8 @@ export default function Casual({ players }) {
             setTransition(false);
           }}>
           <Text
-            tw="text-4xl m-2 font-black text-center"
-            style={{ color: pageTheme.text }}>
+            tw="text-4xl m-2 text-center"
+            style={{ color: pageTheme.text, fontFamily: "header" }}>
             {option}
           </Text>
         </TouchableOpacity>
@@ -79,8 +95,11 @@ export default function Casual({ players }) {
                     {shuffledPlayers[0].name && (
                       <Text
                         numberOfLines={1}
-                        tw="text-4xl font-black text-center"
-                        style={{ color: shuffledPlayers[0].colour }}>
+                        tw="text-4xl pt-2 text-center"
+                        style={{
+                          color: shuffledPlayers[0].colour,
+                          fontFamily: "fun",
+                        }}>
                         {shuffledPlayers[0].name},
                       </Text>
                     )}
@@ -97,8 +116,8 @@ export default function Casual({ players }) {
                     tw="justify-center grow w-full">
                     {options[option][0].question && (
                       <Text
-                        tw="text-3xl font-black text-center px-2"
-                        style={{ color: pageTheme.text }}>
+                        tw="text-3xl text-center px-2 pt-2"
+                        style={{ color: pageTheme.text, fontFamily: "fun" }}>
                         {options[option][0].question.toLowerCase()}
                       </Text>
                     )}
@@ -114,16 +133,18 @@ export default function Casual({ players }) {
                     .slice(0, -1)
                     .map((opt) => (
                       <TouchableOpacity
+                        key={opt}
                         tw="p-2"
                         onPress={() => {
                           setTransition(false);
                           setOption(opt);
                         }}>
                         <Text
-                          tw="text-4xl py-2 px-4 font-black rounded-lg"
+                          tw="text-4xl py-2 px-4 rounded-lg"
                           style={{
                             backgroundColor: pageTheme.fg,
                             color: pageTheme.text,
+                            fontFamily: "text",
                           }}>
                           {opt}
                         </Text>

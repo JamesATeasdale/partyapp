@@ -63,15 +63,18 @@ export default function AddPlayerForm({
         <View tw="flex-row w-11/12">
           <Text
             style={{
-              fontFamily: "Itim-Regular",
+              fontFamily: "header",
             }}
-            tw="text-3xl basis-2/6 font-extrabold text-white">
+            tw="text-3xl basis-2/6 text-white">
             Name:
           </Text>
           <TextInput
+            style={{
+              fontFamily: "text",
+            }}
             maxLength={12}
             autoFocus={true}
-            tw="bg-white grow text-3xl font-extrabold"
+            tw="bg-white grow text-3xl"
             onChangeText={(text) => setAddPlayer({ ...addPlayer, name: text })}
           />
         </View>
@@ -82,6 +85,7 @@ export default function AddPlayerForm({
           }}>
           {todCat.map((cat) => (
             <TouchableOpacity
+              key={cat}
               tw={
                 "items-center basis-1/3 grow p-2 " +
                 (cat === "na"
@@ -93,7 +97,7 @@ export default function AddPlayerForm({
               <Text tw="text-3xl">
                 {cat === "na" ? "😇" : cat === "explicit" ? "😈" : "😏"}
               </Text>
-              <Text tw="text-xl text-white font-extrabold">
+              <Text tw="text-xl text-white pt-1" style={{ fontFamily: "fun" }}>
                 {cat === "na" ? "SFW" : cat === "explicit" ? "NSFW" : "ANY"}
               </Text>
             </TouchableOpacity>
@@ -102,6 +106,7 @@ export default function AddPlayerForm({
         <View tw="flex-row flex-wrap w-full justify-center">
           {quizCatsReal.map((category, i) => (
             <TouchableOpacity
+              key={category}
               onPress={() =>
                 addPlayer.quiz.includes(category) && addPlayer.quiz.length > 1
                   ? setAddPlayer({
@@ -118,11 +123,14 @@ export default function AddPlayerForm({
               }>
               <Text
                 style={
-                  addPlayer.quiz.includes(category) && {
-                    backgroundColor: quizCatsBG[i],
-                  }
+                  addPlayer.quiz.includes(category)
+                    ? {
+                        fontFamily: "fun",
+                        backgroundColor: quizCatsBG[i],
+                      }
+                    : { fontFamily: "fun" }
                 }
-                tw="p-2 text-2xl text-white bg-gray-400 font-extrabold m-1">
+                tw="p-2 text-xl text-white bg-gray-400 m-1">
                 {quizCats[i]}
               </Text>
             </TouchableOpacity>
@@ -130,18 +138,18 @@ export default function AddPlayerForm({
         </View>
         <View tw="flex-row w-11/12 justify-between rounded-md">
           <TouchableOpacity
-            tw=" bg-white pt-2 px-6 rounded-md"
+            tw="basis-2/5 bg-white pt-2  rounded-md justify-center"
             onPress={() => setIsAdd(false)}>
             <Text
-              tw="font-bold p-2 text-5xl"
+              tw="pt-4 w-full text-center text-5xl"
               style={{
-                fontFamily: "Itim-Regular",
+                fontFamily: "fun",
               }}>
               Exit
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
-            tw="bg-white pt-2 px-6 rounded-md"
+            tw="basis-2/5 bg-white pt-2  rounded-md justify-center"
             onPress={() => {
               if (players.find((player) => player.name === addPlayer.name))
                 setErr("Player already exists");
@@ -154,9 +162,9 @@ export default function AddPlayerForm({
               }
             }}>
             <Text
-              tw="font-bold p-2 text-5xl"
+              tw="pt-4 w-full text-center text-5xl"
               style={{
-                fontFamily: "Itim-Regular",
+                fontFamily: "fun",
               }}>
               Add
             </Text>

@@ -1,18 +1,15 @@
-import { useNavigation, useRoute } from "@react-navigation/native";
+import { useNavigation } from "@react-navigation/native";
 import { Text, TouchableOpacity, View } from "react-native";
-import { theme } from "../assets/colours";
-import { ScrollView } from "react-native";
 import Animated, { SlideInLeft } from "react-native-reanimated";
-import { useEffect, useState } from "react";
 import colours from "../assets/colours";
 
 export default function Sets({ setWarn, players }) {
   const navigation = useNavigation();
-  const [pages, setPages] = useState(["Truth or Dare", "Quiz", "Casual"]);
+  const pages = ["Truth or Dare", "Quiz", "Casual"];
   const pageCol = [colours.green, colours.orange, colours.blue, colours.pink];
 
   return (
-    <View tw="h-4/6 justify-end mb-4 w-11/12">
+    <View tw="h-3/6 justify-end pb-4 w-11/12">
       {pages.map((page, ind) => (
         <Animated.View
           key={page}
@@ -24,8 +21,11 @@ export default function Sets({ setWarn, players }) {
               players.length === 0 ? setWarn(true) : navigation.navigate(page)
             }>
             <Text
-              tw="text-center text-4xl font-black text-white"
-              style={{ color: pageCol[ind].text, fontFamily: "Itim-Regular" }}>
+              tw="text-center text-4xl pt-3"
+              style={{
+                color: pageCol[ind].text,
+                fontFamily: "fun",
+              }}>
               {pages[ind]}
             </Text>
           </TouchableOpacity>

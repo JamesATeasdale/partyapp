@@ -5,7 +5,17 @@
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "android": {
+      "package": "com.anonymous.partyapp"
+    },
+    "ios": {
+      "bundleIdentifier": "com.anonymous.partyapp"
+    }
   },
-  "name": "partyapp"
+  "name": "partyapp",
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-8610592308440347~9585618151",
+    "ios_app_id": "ca-app-pub-8610592308440347~2353995392"
+  }
 }

@@ -12,12 +12,10 @@ import LottieView from "lottie-react-native";
 export default function pointNotifier({ value }) {
   const offset = useSharedValue(0);
   const [delayValue, setDelayValue] = useState(0);
-  const LottieRef = useRef(null);
 
   useEffect(() => {
     value > 0 && setDelayValue(value);
   }, [value > 0]);
-  useEffect(() => LottieRef.current?.play(), [LottieRef]);
 
   if (value) offset.value = withSpring(-120);
   const animatedStyles = useAnimatedStyle(() => {
@@ -31,24 +29,27 @@ export default function pointNotifier({ value }) {
   });
 
   return (
-    <Animated.View
-      tw="w-full h-full justify-end items-center"
-      style={[animatedStyles]}>
-      <LottieView
-        ref={LottieRef}
-        source={require("../assets/singlepartypopper.json")}
-        tw="h-full w-full absolute"
-        loop={false}
-        speed={1}
-      />
-      <View tw="h-full" />
-      <Text
-        tw="text-9xl text-white pt-2"
-        style={{
-          fontFamily: "Caprasimo-Regular",
-        }}>
-        +{delayValue}
-      </Text>
-    </Animated.View>
+    delayValue > 0 && (
+      <View
+        tw="w-full h-full justify-end items-center absolute"
+        pointerEvents="none">
+        <LottieView
+          source={require("../assets/singlefirework.json")}
+          tw="h-2/6 w-full absolute bottom-0"
+          loop={false}
+          autoPlay={true}
+          speed={1}
+        />
+        <Animated.View style={[animatedStyles]}>
+          <Text
+            tw="text-9xl text-white pt-2"
+            style={{
+              fontFamily: "Caprasimo-Regular",
+            }}>
+            +{delayValue}
+          </Text>
+        </Animated.View>
+      </View>
+    )
   );
 }

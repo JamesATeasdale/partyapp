@@ -1,10 +1,13 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Welcome from "./screens/Welcome";
 import TruthOrDare from "./screens/TruthOrDare";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Quiz from "./screens/Quiz";
 import Casual from "./screens/Casual";
+import { useFonts } from "expo-font";
+import * as SplashScreen from "expo-splash-screen";
+import { View } from "react-native";
 
 const Stack = createNativeStackNavigator();
 
@@ -44,13 +47,21 @@ export default function App() {
       quiz: ["geography"],
     },
   ]);
-
   useEffect(() => {
     players.length && players[0].score > 0 && setOk(true);
   }, [players]);
   if (players.length) {
     if (players[0].score !== players.sort((a, b) => b.score - a.score)[0].score)
       setPlayers(players.sort((a, b) => b.score - a.score));
+  }
+  const [fontsLoaded] = useFonts({
+    fun: require("./assets/fonts/Laila-Bold.ttf"),
+    text: require("./assets/fonts/Itim-Regular.ttf"),
+    header: require("./assets/fonts/Caprasimo-Regular.ttf"),
+  });
+
+  if (!fontsLoaded) {
+    return null;
   }
 
   return (

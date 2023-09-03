@@ -133,9 +133,9 @@ export default function SwipeableCard({
           transform: [{ translateX: xPosition }, { rotate: rotateCard }],
         }}>
         <Text
-          tw="text-white font-bold text-4xl text-center"
+          tw="text-white text-4xl text-center"
           style={{
-            fontFamily: "Itim-Regular",
+            fontFamily: "text",
           }}>
           {item.question}
         </Text>

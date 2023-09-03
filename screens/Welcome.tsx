@@ -15,6 +15,11 @@ import Animated, {
   SlideOutUp,
 } from "react-native-reanimated";
 import WinnerScreen from "../components/WinnerScreen";
+import {
+  TestIds,
+  BannerAdSize,
+  GAMBannerAd,
+} from "react-native-google-mobile-ads";
 
 export default function Welcome({ players, setPlayers, ok, setOk }) {
   const LottieRef = useRef(null);
@@ -39,6 +44,7 @@ export default function Welcome({ players, setPlayers, ok, setOk }) {
           tw="absolute h-full"
           source={require("../assets/wave.png")}
         />
+
         <Animated.Image
           entering={SlideInUp.duration(1000)}
           exiting={SlideOutUp.duration(1000)}
@@ -82,8 +88,8 @@ export default function Welcome({ players, setPlayers, ok, setOk }) {
         <TouchableOpacity
           onPress={() => setIsAdd(true)}
           style={isAdd && { display: "none" }}
-          tw="bottom-1 right-1 absolute h-14 w-14 bg-[#ee1b24] justify-end rounded-xl border-white border-2">
-          <Text tw="text-center text-white font-bold text-5xl">+</Text>
+          tw="bottom-1 right-1 absolute bg-[#ee1b24] rounded-xl p-2 px-4 justify-center">
+          <Text tw=" text-center text-white font-bold text-5xl">+</Text>
         </TouchableOpacity>
         {ok && <WinnerScreen players={players} ok={ok} setOk={setOk} />}
       </View>

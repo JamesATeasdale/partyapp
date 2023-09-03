@@ -308,7 +308,11 @@
     "likes": 0,
     "category": "na"
   },
-  { "question": "Tell me about your first kiss", "likes": 0, "category": "na" },
+  {
+    "question": "What was your first kiss like?",
+    "likes": 0,
+    "category": "na"
+  },
   {
     "question": "What was the most inappropriate time you farted?",
     "likes": 0,
@@ -660,11 +664,6 @@
     "category": "explicit"
   },
   {
-    "question": "Tell me a time you were rejected, and describe it in detail for at least five minutes!",
-    "likes": 0,
-    "category": "na"
-  },
-  {
     "question": "What is the meanest thing you\u2019ve ever done to somebody?",
     "likes": 0,
     "category": "na"
@@ -701,11 +700,6 @@
   },
   {
     "question": "What is the grossest thing you\u2019ve overheard someone do?",
-    "likes": 0,
-    "category": "na"
-  },
-  {
-    "question": "Tell me something you don\u2019t like about me.",
     "likes": 0,
     "category": "na"
   },
@@ -767,11 +761,6 @@
   { "question": "Do you believe in ghosts?", "likes": 0, "category": "na" },
   {
     "question": "Have you ever been pulled over by the cops?",
-    "likes": 0,
-    "category": "na"
-  },
-  {
-    "question": "Tell me about a time you fake-cried or only pretended to be regretful to get out of trouble.",
     "likes": 0,
     "category": "na"
   },
@@ -942,11 +931,6 @@
   },
   {
     "question": "Have you ever crept on or stalked someone on Facebook or Instagram?",
-    "likes": 0,
-    "category": "na"
-  },
-  {
-    "question": "What would you buy me if I gave you $50?",
     "likes": 0,
     "category": "na"
   },
@@ -1141,11 +1125,6 @@
   },
   {
     "question": "If you had to be stranded on a deserted island with a celebrity, who would you choose?",
-    "likes": 0,
-    "category": "na"
-  },
-  {
-    "question": "Tell me about the last time you got embarrassed.",
     "likes": 0,
     "category": "na"
   },
@@ -1862,11 +1841,6 @@
     "category": "explicit"
   },
   {
-    "question": "Have you ever had a sexy dream about me? Tell me what it was like.",
-    "likes": 0,
-    "category": "explicit"
-  },
-  {
     "question": "How many people have you kissed?",
     "likes": 0,
     "category": "explicit"
@@ -1888,11 +1862,6 @@
   },
   {
     "question": "What\u2019s something I do in bed that turns you on a lot?",
-    "likes": 0,
-    "category": "explicit"
-  },
-  {
-    "question": "What\u2019s something in bed that you would like me to try?",
     "likes": 0,
     "category": "explicit"
   },
@@ -1933,11 +1902,6 @@
   },
   {
     "question": "What\u2019s the record amount of times you\u2019ve had sex in one day?",
-    "likes": 0,
-    "category": "explicit"
-  },
-  {
-    "question": "Do you like to be the dominant one in bed? Or do you prefer me to be?",
     "likes": 0,
     "category": "explicit"
   },

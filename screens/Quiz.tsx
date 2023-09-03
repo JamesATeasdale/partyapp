@@ -15,6 +15,11 @@ import CardBanner from "../components/CardBanner";
 import Intro from "../components/newIntro";
 import PointNotifier from "../components/PointNotifier";
 import FlipCard from "../components/FlipCard";
+import {
+  BannerAdSize,
+  GAMBannerAd,
+  TestIds,
+} from "react-native-google-mobile-ads";
 
 export default function Quiz({ players, setPlayers }) {
   const [win, setWin] = useState(false);
@@ -87,13 +92,19 @@ export default function Quiz({ players, setPlayers }) {
         tw="h-full absolute"
         source={require("../assets/jaggedright.png")}
       />
+      <GAMBannerAd
+        unitId={TestIds.BANNER}
+        sizes={[BannerAdSize.FULL_BANNER]}
+        requestOptions={{
+          requestNonPersonalizedAdsOnly: true,
+        }}
+      />
       <View tw="w-full h-2/6 items-center">
         <Header />
         <GameRanking players={players} setPlayers={setPlayers} />
-        {win && <PointNotifier value={value} />}
       </View>
       <View
-        tw=" w-11/12 h-3/6 rounded-xl mb-4 justify-between"
+        tw="w-11/12 h-3/6 rounded-xl mb-4 justify-between"
         style={{ backgroundColor: pageTheme.fg }}>
         {!newGame ? (
           <Animated.View tw="items-center w-full h-full">
@@ -112,8 +123,8 @@ export default function Quiz({ players, setPlayers }) {
               onPress={toggleSwitch}
               tw="flex-row w-full pr-8 pl-2 pt-2 absolute justify-between">
               <Text
-                tw="text-4xl font-extrabold basis-4/6"
-                style={{ color: pageTheme.text, fontFamily: "Itim-Regular" }}>
+                tw="text-4xl pt-2 basis-4/6"
+                style={{ color: pageTheme.text, fontFamily: "fun" }}>
                 {shuffledPlayers[0].fastQ ? "Timed" : "Normal"}
               </Text>
               <Switch
@@ -147,6 +158,7 @@ export default function Quiz({ players, setPlayers }) {
           </View>
         )}
       </View>
+      {win && <PointNotifier value={value} />}
     </View>
   );
 }

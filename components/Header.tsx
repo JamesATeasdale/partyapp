@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <TouchableOpacity
       onPress={() => navigation.navigate("Party Animals")}
-      tw="my-4 flex-row justify-center">
+      tw="mb-4 flex-row">
       {route.name.split("").map((letter, ind) => (
         <Animated.View
           entering={BounceInUp.duration(ind * 100 + 600)}
@@ -21,7 +21,7 @@ export default function Header() {
             tw="text-5xl"
             style={{
               color: pageTheme.text,
-              fontFamily: "Caprasimo-Regular",
+              fontFamily: "header",
             }}>
             {letter}
           </Text>
