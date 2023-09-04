@@ -1773,11 +1773,7 @@
     "category": "na"
   },
   { "question": "what is your spirit animal?", "likes": 0, "category": "na" },
-  {
-    "question": "who is your celebrity crush?",
-    "likes": 0,
-    "category": "na"
-  },
+  { "question": "who is your celebrity crush?", "likes": 0, "category": "na" },
   {
     "question": "where\u2019s the weirdest place you\u2019ve ever slept?",
     "likes": 0,
@@ -1808,21 +1804,13 @@
     "likes": 0,
     "category": "na"
   },
-  {
-    "question": "whom do you secretly admire?",
-    "likes": 0,
-    "category": "na"
-  },
+  { "question": "whom do you secretly admire?", "likes": 0, "category": "na" },
   {
     "question": "what do you want people you meet for the first time to think about you?",
     "likes": 0,
     "category": "na"
   },
-  {
-    "question": "what makes you feel powerful?",
-    "likes": 0,
-    "category": "na"
-  },
+  { "question": "what makes you feel powerful?", "likes": 0, "category": "na" },
   {
     "question": "if you could tell your university-aged self something, what would it be?",
     "likes": 0,
@@ -1838,11 +1826,7 @@
     "likes": 0,
     "category": "na"
   },
-  {
-    "question": "how do you evaluate success?",
-    "likes": 0,
-    "category": "na"
-  },
+  { "question": "how do you evaluate success?", "likes": 0, "category": "na" },
   {
     "question": "what weird food combinations do you really enjoy?",
     "likes": 0,
@@ -1868,11 +1852,7 @@
     "likes": 0,
     "category": "na"
   },
-  {
-    "question": "what is your most-used emoji?",
-    "likes": 0,
-    "category": "na"
-  },
+  { "question": "what is your most-used emoji?", "likes": 0, "category": "na" },
   {
     "question": "if you were stranded on a desert island what\u2019s one thing you would bring with you?",
     "likes": 0,
@@ -1888,5 +1868,597 @@
     "likes": 0,
     "category": "na"
   },
-  { "question": "do you collect anything?", "likes": 0, "category": "na" }
+  { "question": "do you collect anything?", "likes": 0, "category": "na" },
+  {
+    "question": "What\u2019s your favorite quality about yourself? Least favorite?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is something that makes you feel unstoppable?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What three words would you use to describe yourself?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Would you call yourself brave?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "When do you feel the safest?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s your favorite childhood memory?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s your biggest life regret so far?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s something you\u2019re really bad at?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What do you look for when finding new friends?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Does your family have any big traditions?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Do you have any \u201ccharacters\u201d in your family?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s your favorite nickname someone has given you and how did you get it?",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "Are you a good gift giver?", "likes": 0, "category": "na" },
+  {
+    "question": "Who do you admire most and why?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Do you believe in astrology? Why or why not?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever had a spiritual experience?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s the quickest way someone can lose your trust?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Where is one place you\u2019ve always dreamed of going?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Is it easy for you to accept help from people?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "If money were no object, what\u2019s the first thing you would buy?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Do you live by any particular mantra?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "If you started a business, what would it be?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "How would you spend your last day on earth?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Do you consider yourself introspective?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Do you enjoy being somewhere no one else knows you?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is your number one goal in life?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "How do you hope people describe you?",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "Have you ever been in love?", "likes": 0, "category": "na" },
+  {
+    "question": "Do you want your own family someday?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "How do you define beauty in another person?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Do you think dreams have deeper meanings?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Do you often give people second chances?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What do you think happens to us after death?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What do you think makes someone a good person?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What are you most grateful for in life?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Where do you go for fresh inspiration?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever experienced deja vu?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is something that gives you hope?",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "Describe your perfect day.", "likes": 0, "category": "na" },
+  {
+    "question": "What\u2019s a movie you could watch every day?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Do you have a favorite memory?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s your favorite sport to watch?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What types of books do you like to read?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s your dream career?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Which unconventional animal do you wish you could have as a pet?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is your all-time favorite food?",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "What do you daydream about?", "likes": 0, "category": "na" },
+  {
+    "question": "Do you have a morning routine?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s the most relaxing part of your day?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What are you most excited about for the future?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What do you think the ultimate theme party would be?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s on the top of your bucket list?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What do you think the worst job out there is?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "If you have the opportunity to know the future, would you want to know?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Where is the most beautiful place you have ever seen in person?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s your favorite kind of weather?",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "Coffee or tea?", "likes": 0, "category": "na" },
+  {
+    "question": "Do you like cities or remote places better?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Would you survive a zombie apocalypse?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Do you have a favorite type of exercise?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Which phone app do you use the most?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Do you prefer cooking dinner or going out?",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "Do you believe in ghosts?", "likes": 0, "category": "na" },
+  {
+    "question": "Are you good at solving puzzles?",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "Do you sing in the shower?", "likes": 0, "category": "na" },
+  {
+    "question": "Are you double jointed in any way?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s the first thing you do in the morning?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is something that makes you really angry?",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "Do you have a biggest fear?", "likes": 0, "category": "na" },
+  {
+    "question": "How do you express your love for someone?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What does friendship mean to you?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is something you consider too serious to joke about?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What does spirituality mean to you?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever had an epiphany?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Have you ever told a lie that you regretted?",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "What are you most proud of?", "likes": 0, "category": "na" },
+  {
+    "question": "What\u2019s your least favorite emotion?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "If you had the opportunity to redesign society, what would you change?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What impresses you the most?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s your least favorite part about being you?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "How do you react to anger from others?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s a dealbreaker for you in a relationship?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What do you think it means to be healthy?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What do you love most about life?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Do you tend to trust people easily?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is something you have never truly wrapped your head around?",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "Are you proud of yourself?", "likes": 0, "category": "na" },
+  {
+    "question": "What do you consider your core values?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Do you think you have a true calling?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Do you hold grudges or do you let go of things easily?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s something that makes you envious?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What brings you the most joy?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s something that makes you feel overwhelmed?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Do you often listen to your intuition?",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "Do you like small talk?", "likes": 0, "category": "na" },
+  {
+    "question": "Do you consider yourself a people pleaser?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s the toughest conversation you\u2019ve ever had to have?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s your biggest insecurity?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is one thing you think most people have and never appreciate enough?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s the best gift you\u2019ve ever received?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Where is the fanciest place you\u2019ve ever been?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s more important in life: excitement or stability?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "If you could jump into a pool of anything, what would it be full of?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s the best wi-fi name you\u2019ve seen?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Who is your most embarrassing celebrity crush?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s the most creative insult you can think of right now?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is the most annoying musical instrument?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What is the weirdest thing in your home?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s the worst name you could give a pet?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What do you think people will be nostalgic for in 500 years?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Who would you elect the president of the internet?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Who are two people you would love to see box each other?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s the weirdest gift you\u2019ve given?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Who is the biggest drama queen in your family?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s the worst pick-up line?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What would be the funniest superpower?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Do you think dad jokes are played out?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "Which celebrity would you choose as a mentor?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What dessert would you compare your best friend to?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s the wildest online purchase you\u2019ve ever made?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "If different fruits could talk, which would sound the funniest?",
+    "likes": 0,
+    "category": "na"
+  },
+  { "question": "Is a burger a sandwich?", "likes": 0, "category": "na" },
+  {
+    "question": "You have to choose one: eyelashes or eyebrows?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "If your phone could talk, what\u2019s the most embarrassing thing it would reveal about you?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "If raindrops weren\u2019t a thing, what would you want to fall from the sky?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What\u2019s the silliest way you\u2019ve ever gotten an injury?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What do you think your pet\u2019s voice would sound like if they could talk?",
+    "likes": 0,
+    "category": "na"
+  },
+  {
+    "question": "What do you think the worst bio is for a dating app?",
+    "likes": 0,
+    "category": "na"
+  }
 ]

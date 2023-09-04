@@ -4,8 +4,10 @@ import { useRoute } from "@react-navigation/native";
 import { theme } from "../assets/colours";
 import whatif from "../assets/whatif.json";
 import icebreakers from "../assets/icebreakers.json";
+import mostlikely from "../assets/mostlikely.json";
+import neverhaveiever from "../assets/neverhaveiever.json";
 import shuffle from "../hooks/shuffleArray";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import LottieView from "lottie-react-native";
 import Animated, { FadeIn, FadeOut } from "react-native-reanimated";
 import { getBatteryLevel } from "react-native-device-info";
@@ -14,7 +16,6 @@ import {
   GAMBannerAd,
   TestIds,
 } from "react-native-google-mobile-ads";
-// import { getBatteryLevel } from "react-native-device-info";
 
 export default function Casual({ players }) {
   const [shuffledPlayers, setShuffledPlayers] = useState([
@@ -23,6 +24,8 @@ export default function Casual({ players }) {
   const [options, setOptions] = useState({
     "What If": [{ question: "" }],
     "Ice Breakers": [{ question: "" }],
+    "Most Likely": [{ question: "" }],
+    "Never Have I Ever": [{ question: "" }],
     "Select a set": [{ question: "" }],
   });
   const [option, setOption] = useState("Select a set");
@@ -30,15 +33,23 @@ export default function Casual({ players }) {
   const [speed, setSpeed] = useState(0);
   const route = useRoute();
   const pageTheme = theme(route.name);
+  useEffect(() => {
+    getBatteryLevel().then((data) => console.log(data));
+  }, []);
 
   if (option === "What If" && options[option].length <= 1)
     return setOptions({ ...options, "What If": shuffle(whatif) });
+  if (option === "Never Have I Ever" && options[option].length <= 1)
+    return setOptions({
+      ...options,
+      "Never Have I Ever": shuffle(neverhaveiever),
+    });
   if (option === "Ice Breakers" && options[option].length <= 1)
     return setOptions({ ...options, "Ice Breakers": shuffle(icebreakers) });
+  if (option === "Most Likely" && options[option].length <= 1)
+    return setOptions({ ...options, "Most Likely": shuffle(mostlikely) });
   if (shuffledPlayers.length <= 1) return setShuffledPlayers(shuffle(players));
   if (!transition) setTimeout(() => setTransition(!transition), 800);
-
-  console.log(getBatteryLevel());
 
   return (
     <Animated.View
@@ -58,7 +69,7 @@ export default function Casual({ players }) {
         onPress={() => (!speed ? setSpeed(0.3) : setSpeed(0))}>
         <LottieView
           tw="w-full h-full"
-          source={require("../assets/clouds1.json")}
+          source={require("../assets/Lottie/clouds1.json")}
           autoPlay={true}
           loop={true}
           speed={speed}

@@ -23,6 +23,7 @@ import {
   GAMBannerAd,
   TestIds,
 } from "react-native-google-mobile-ads";
+import AddPlayerForm from "../components/AddPlayerForm";
 
 export default function TruthOrDare({ players, setPlayers }) {
   const [win, setWin] = useState(false);
@@ -37,6 +38,8 @@ export default function TruthOrDare({ players, setPlayers }) {
   const todToggle = ["na", "", "explicit"];
   let shuffledTruth = { question: "" };
   let shuffledDare = { question: "" };
+  const [ok, setOk] = useState({ name: "" });
+  const [err, setErr] = useState("");
 
   useEffect(() => {
     setvalue(0);
@@ -88,7 +91,7 @@ export default function TruthOrDare({ players, setPlayers }) {
       />
       <View tw="w-full h-2/6 items-center">
         <Header />
-        <GameRanking players={players} setPlayers={setPlayers} />
+        <GameRanking setOk={setOk} players={players} setPlayers={setPlayers} />
       </View>
       <View
         tw="w-11/12 h-3/6 rounded-xl mb-4 items-center "
@@ -140,14 +143,14 @@ export default function TruthOrDare({ players, setPlayers }) {
                   style={{
                     fontSize: 280,
                     opacity: 0.3,
-                    fontFamily: "fun",
+                    fontFamily: "Itim-Regular",
                   }}
                   tw="absolute">
                   ?
                 </Text>
                 <Text
-                  tw=" text-center text-6xl pt-3"
-                  style={{ color: pageTheme.text, fontFamily: "fun" }}>
+                  tw="font-black text-center text-6xl"
+                  style={{ color: pageTheme.text, fontFamily: "Itim-Regular" }}>
                   Truth
                 </Text>
               </TouchableOpacity>
@@ -170,17 +173,14 @@ export default function TruthOrDare({ players, setPlayers }) {
                   style={{
                     fontSize: 280,
                     opacity: 0.3,
-                    fontFamily: "fun",
+                    fontFamily: "Itim-Regular",
                   }}
                   tw="absolute">
                   !
                 </Text>
                 <Text
-                  tw="text-black text-center text-6xl pt-3"
-                  style={{
-                    color: pageTheme.text,
-                    fontFamily: "fun",
-                  }}>
+                  tw="text-black font-black text-center text-6xl"
+                  style={{ color: pageTheme.text, fontFamily: "Itim-Regular" }}>
                   Dare
                 </Text>
               </TouchableOpacity>
@@ -233,6 +233,16 @@ export default function TruthOrDare({ players, setPlayers }) {
         )}
       </View>
       {win && <PointNotifier value={value} />}
+      {ok.name && (
+        <AddPlayerForm
+          setErr={setErr}
+          setPlayers={setPlayers}
+          players={players}
+          setOk={setOk}
+          ok={ok}
+          isAdd={false}
+        />
+      )}
     </View>
   );
 }

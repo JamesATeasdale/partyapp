@@ -10,7 +10,6 @@ import LottieView from "lottie-react-native";
 import Animated, {
   FadeIn,
   FadeOut,
-  SlideInDown,
   SlideInUp,
   SlideOutUp,
 } from "react-native-reanimated";
@@ -36,25 +35,25 @@ export default function Welcome({ players, setPlayers, ok, setOk }) {
   return (
     isFocused && (
       <View
-        tw="items-center h-full w-full justify-between"
+        tw="items-center h-full w-full justify-between pt-4"
         style={{ backgroundColor: pageTheme.bg }}>
         <Animated.Image
           entering={SlideInUp.duration(800)}
           exiting={SlideOutUp.duration(800)}
           tw="absolute h-full"
-          source={require("../assets/wave.png")}
+          source={require("../assets/Images/wave.png")}
         />
 
         <Animated.Image
           entering={SlideInUp.duration(1000)}
           exiting={SlideOutUp.duration(1000)}
           tw="absolute h-full"
-          source={require("../assets/wave2.png")}
+          source={require("../assets/Images/wave2.png")}
         />
         <LottieView
           tw="absolute h-full w-full"
           ref={LottieRef}
-          source={require("../assets/balloons.json")}
+          source={require("../assets/Lottie/balloons.json")}
           loop={false}
           speed={2}
         />
@@ -69,12 +68,14 @@ export default function Welcome({ players, setPlayers, ok, setOk }) {
           />
         </View>
         <Sets setWarn={setWarn} players={players} />
-        {isAdd && (
+        {ok.name && (
           <AddPlayerForm
             setErr={setErr}
             setPlayers={setPlayers}
             players={players}
-            setIsAdd={setIsAdd}
+            setOk={setOk}
+            ok={ok}
+            isAdd={true}
           />
         )}
         {err && (
@@ -86,12 +87,12 @@ export default function Welcome({ players, setPlayers, ok, setOk }) {
           </Animated.Text>
         )}
         <TouchableOpacity
-          onPress={() => setIsAdd(true)}
+          onPress={() => setOk({ name: "test" })}
           style={isAdd && { display: "none" }}
           tw="bottom-1 right-1 absolute bg-[#ee1b24] rounded-xl p-2 px-4 justify-center">
           <Text tw=" text-center text-white font-bold text-5xl">+</Text>
         </TouchableOpacity>
-        {ok && <WinnerScreen players={players} ok={ok} setOk={setOk} />}
+        {false && <WinnerScreen players={players} ok={ok} setOk={setOk} />}
       </View>
     )
   );

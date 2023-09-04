@@ -85,12 +85,12 @@ export default function Quiz({ players, setPlayers }) {
       <Animated.Image
         tw="h-full absolute"
         entering={SlideInLeft.duration(800)}
-        source={require("../assets/jaggedleft.png")}
+        source={require("../assets/Images/jaggedleft.png")}
       />
       <Animated.Image
         entering={SlideInRight.duration(800)}
         tw="h-full absolute"
-        source={require("../assets/jaggedright.png")}
+        source={require("../assets/Images/jaggedright.png")}
       />
       <GAMBannerAd
         unitId={TestIds.BANNER}

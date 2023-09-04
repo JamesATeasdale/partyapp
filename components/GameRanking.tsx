@@ -1,11 +1,15 @@
 import { TouchableOpacity, View, Text, ScrollView, Alert } from "react-native";
 import { useRoute } from "@react-navigation/native";
 import { theme } from "../assets/colours";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import WinnerScreen from "./WinnerScreen";
+import AddPlayerForm from "./AddPlayerForm";
 
-export default function GameRanking({ players, setPlayers }) {
+export default function GameRanking({ setOk, players, setPlayers }) {
   const route = useRoute();
   const pageTheme = theme(route.name);
+
+  const [chosen, setChosen] = useState({ name: "" });
 
   function confirm(playername) {
     Alert.alert("Delete " + playername + "?", "", [
@@ -73,7 +77,7 @@ export default function GameRanking({ players, setPlayers }) {
           .slice(3)
           .map((player = { name: "", colour: "", score: 0 }, index = 0) => (
             <TouchableOpacity
-              onPress={() => confirm(player.name)}
+              onPress={() => setOk(player)}
               key={player.name}
               tw="px-2 h-full flex-row justify-center">
               <Text

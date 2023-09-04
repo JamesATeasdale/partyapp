@@ -117,15 +117,15 @@ export default function SwipeableCard({
     <Reanimated.View
       entering={FadeIn}
       exiting={FadeOut}
-      tw="justify-center h-5/6 w-full rounded-b-lg grow border-2"
+      tw="justify-center h-5/6 w-full rounded-lg grow border-2"
       style={{ borderColor: pageTheme.fg }}>
       <View
-        tw="w-full h-full absolute rounded-b-lg"
+        tw="w-full h-full absolute rounded-lg"
         style={{ borderColor: pageTheme.fg, backgroundColor: pageTheme.bg }}
       />
       <Animated.View
         {...panResponder.panHandlers}
-        tw="justify-center h-full w-full rounded-b-lg p-3"
+        tw="justify-center h-full w-full rounded-lg p-3"
         style={{
           opacity: cardOpacity,
           borderColor: pageTheme.fg,

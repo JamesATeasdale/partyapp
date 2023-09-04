@@ -4,20 +4,26 @@ import { useState } from "react";
 import { multi, theme } from "../assets/colours";
 import { useRoute } from "@react-navigation/native";
 
-export default function AddPlayerForm({
+export default function playerForm({
   setErr,
-  setIsAdd,
+  setOk,
   players,
   setPlayers,
+  ok,
+  isAdd,
 }) {
-  const [addPlayer, setAddPlayer] = useState({
-    name: "",
-    colour: multi[Math.floor(Math.random() * multi.length)],
-    score: 0,
-    tod: "na",
-    fastQ: false,
-    quiz: ["na"],
-  });
+  const [player, setPlayer] = useState(
+    !isAdd
+      ? { ...ok }
+      : {
+          name: "",
+          colour: multi[Math.floor(Math.random() * multi.length)],
+          score: 0,
+          tod: "na",
+          fastQ: false,
+          quiz: ["General"],
+        }
+  );
   const route = useRoute();
   const pageTheme = theme(route.name);
   const quizCats = [
@@ -25,31 +31,13 @@ export default function AddPlayerForm({
     "Movies & TV",
     "Science",
     "Geography",
-    "Technology",
     "Animals",
     "Music",
   ];
 
-  const quizCatsReal = [
-    "na",
-    "moviesandtv",
-    "science",
-    "geography",
-    "technology",
-    "animals",
-    "music",
-  ];
-
-  const quizCatsBG = [
-    "red",
-    "blue",
-    "green",
-    "purple",
-    "orange",
-    "brown",
-    "black",
-  ];
+  const quizCatsBG = ["red", "blue", "green", "purple", "orange", "brown"];
   const todCat = ["na", "", "explicit"];
+  console.log(player);
 
   return (
     <Animated.View
@@ -63,20 +51,34 @@ export default function AddPlayerForm({
         <View tw="flex-row w-11/12">
           <Text
             style={{
-              fontFamily: "header",
-            }}
-            tw="text-3xl basis-2/6 text-white">
-            Name:
-          </Text>
-          <TextInput
-            style={{
               fontFamily: "text",
             }}
-            maxLength={12}
-            autoFocus={true}
-            tw="bg-white grow text-3xl"
-            onChangeText={(text) => setAddPlayer({ ...addPlayer, name: text })}
-          />
+            tw="text-4xl basis-2/6 text-gray-600">
+            Name:
+          </Text>
+          {isAdd ? (
+            <TextInput
+              style={{
+                fontFamily: "text",
+                color: player.colour,
+              }}
+              maxLength={12}
+              value={player.name}
+              autoFocus={true}
+              tw="bg-white grow basis-4/6 text-3xl"
+              onChangeText={(text) => setPlayer({ ...player, name: text })}
+            />
+          ) : (
+            <Text
+              tw="basis-4/6 text-white grow text-4xl"
+              numberOfLines={1}
+              style={{
+                fontFamily: "text",
+                color: player.colour,
+              }}>
+              {player.name}
+            </Text>
+          )}
         </View>
         <View
           tw="flex-row items-center w-11/12 justify-between rounded-lg"
@@ -92,8 +94,8 @@ export default function AddPlayerForm({
                   ? "rounded-l-lg"
                   : cat === "explicit" && "rounded-r-lg")
               }
-              onPress={() => setAddPlayer({ ...addPlayer, tod: cat })}
-              style={addPlayer.tod === cat && { backgroundColor: "red" }}>
+              onPress={() => setPlayer({ ...player, tod: cat })}
+              style={player.tod === cat && { backgroundColor: "red" }}>
               <Text tw="text-3xl">
                 {cat === "na" ? "😇" : cat === "explicit" ? "😈" : "😏"}
               </Text>
@@ -104,34 +106,32 @@ export default function AddPlayerForm({
           ))}
         </View>
         <View tw="flex-row flex-wrap w-full justify-center">
-          {quizCatsReal.map((category, i) => (
+          {quizCats.map((category) => (
             <TouchableOpacity
               key={category}
               onPress={() =>
-                addPlayer.quiz.includes(category) && addPlayer.quiz.length > 1
-                  ? setAddPlayer({
-                      ...addPlayer,
-                      quiz: [
-                        ...addPlayer.quiz.filter((cat) => category !== cat),
-                      ],
+                player.quiz.includes(category) && player.quiz.length > 1
+                  ? setPlayer({
+                      ...player,
+                      quiz: [...player.quiz.filter((cat) => category !== cat)],
                     })
-                  : !addPlayer.quiz.includes(category) &&
-                    setAddPlayer({
-                      ...addPlayer,
-                      quiz: [...addPlayer.quiz, category],
+                  : !player.quiz.includes(category) &&
+                    setPlayer({
+                      ...player,
+                      quiz: [...player.quiz, category],
                     })
               }>
               <Text
                 style={
-                  addPlayer.quiz.includes(category)
+                  player.quiz.includes(category)
                     ? {
                         fontFamily: "fun",
-                        backgroundColor: quizCatsBG[i],
+                        backgroundColor: quizCatsBG[quizCats.indexOf(category)],
                       }
                     : { fontFamily: "fun" }
                 }
                 tw="p-2 text-xl text-white bg-gray-400 m-1">
-                {quizCats[i]}
+                {category}
               </Text>
             </TouchableOpacity>
           ))}
@@ -139,7 +139,7 @@ export default function AddPlayerForm({
         <View tw="flex-row w-11/12 justify-between rounded-md">
           <TouchableOpacity
             tw="basis-2/5 bg-white pt-2  rounded-md justify-center"
-            onPress={() => setIsAdd(false)}>
+            onPress={() => setOk({ name: "" })}>
             <Text
               tw="pt-4 w-full text-center text-5xl"
               style={{
@@ -151,14 +151,24 @@ export default function AddPlayerForm({
           <TouchableOpacity
             tw="basis-2/5 bg-white pt-2  rounded-md justify-center"
             onPress={() => {
-              if (players.find((player) => player.name === addPlayer.name))
+              if (players.find((playr) => playr.name === player.name) && isAdd)
                 setErr("Player already exists");
-              else if (players.length > 16) setErr("Too Many Players");
-              else if (addPlayer.name.length < 3) setErr("Too Short");
+              else if (
+                players.find((playr) => playr.name === player.name) &&
+                !isAdd
+              ) {
+                setPlayers(
+                  [...players].map((playr) =>
+                    playr.name === player.name ? player : playr
+                  )
+                );
+                setOk({ name: "" });
+              } else if (players.length > 16) setErr("Too Many Players");
+              else if (player.name.length < 3) setErr("Too Short");
               else {
-                setPlayers([...players, addPlayer]);
+                setPlayers([...players, player]);
                 setErr("");
-                setIsAdd(false);
+                setOk({ name: "" });
               }
             }}>
             <Text
