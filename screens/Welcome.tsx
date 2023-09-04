@@ -20,7 +20,15 @@ import {
   GAMBannerAd,
 } from "react-native-google-mobile-ads";
 
-export default function Welcome({ players, setPlayers, ok, setOk }) {
+export default function Welcome({
+  players,
+  setPlayers,
+  winners,
+  setWinners,
+  changePlayer,
+  playerForm,
+  setPlayerForm,
+}) {
   const LottieRef = useRef(null);
   const route = useRoute();
   const [err, setErr] = useState("");
@@ -68,15 +76,22 @@ export default function Welcome({ players, setPlayers, ok, setOk }) {
           />
         </View>
         <Sets setWarn={setWarn} players={players} />
-        {ok.name && (
+        {playerForm ? (
           <AddPlayerForm
             setErr={setErr}
+            setPlayerForm={setPlayerForm}
             setPlayers={setPlayers}
             players={players}
-            setOk={setOk}
-            ok={ok}
+            changePlayer={changePlayer}
             isAdd={true}
           />
+        ) : (
+          <TouchableOpacity
+            onPress={() => setPlayerForm(true)}
+            style={isAdd && { display: "none" }}
+            tw="bottom-1 right-1 absolute bg-[#ee1b24] rounded-xl p-2 px-4 justify-center">
+            <Text tw=" text-center text-white font-bold text-5xl">+</Text>
+          </TouchableOpacity>
         )}
         {err && (
           <Animated.Text
@@ -86,13 +101,8 @@ export default function Welcome({ players, setPlayers, ok, setOk }) {
             {err}
           </Animated.Text>
         )}
-        <TouchableOpacity
-          onPress={() => setOk({ name: "test" })}
-          style={isAdd && { display: "none" }}
-          tw="bottom-1 right-1 absolute bg-[#ee1b24] rounded-xl p-2 px-4 justify-center">
-          <Text tw=" text-center text-white font-bold text-5xl">+</Text>
-        </TouchableOpacity>
-        {false && <WinnerScreen players={players} ok={ok} setOk={setOk} />}
+
+        {winners && <WinnerScreen players={players} setWinners={setWinners} />}
       </View>
     )
   );

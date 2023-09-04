@@ -7,7 +7,7 @@ import icebreakers from "../assets/icebreakers.json";
 import mostlikely from "../assets/mostlikely.json";
 import neverhaveiever from "../assets/neverhaveiever.json";
 import shuffle from "../hooks/shuffleArray";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import LottieView from "lottie-react-native";
 import Animated, { FadeIn, FadeOut } from "react-native-reanimated";
 import { getBatteryLevel } from "react-native-device-info";
@@ -48,7 +48,8 @@ export default function Casual({ players }) {
     return setOptions({ ...options, "Ice Breakers": shuffle(icebreakers) });
   if (option === "Most Likely" && options[option].length <= 1)
     return setOptions({ ...options, "Most Likely": shuffle(mostlikely) });
-  if (shuffledPlayers.length <= 1) return setShuffledPlayers(shuffle(players));
+  if (shuffledPlayers.length <= 1 || !players.includes(shuffledPlayers[0]))
+    setShuffledPlayers(shuffle(players));
   if (!transition) setTimeout(() => setTransition(!transition), 800);
 
   return (

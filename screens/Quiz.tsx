@@ -20,14 +20,23 @@ import {
   GAMBannerAd,
   TestIds,
 } from "react-native-google-mobile-ads";
+import AddPlayerForm from "../components/AddPlayerForm";
 
-export default function Quiz({ players, setPlayers }) {
+export default function Quiz({
+  players,
+  setPlayers,
+  changePlayer,
+  setChangePlayer,
+  playerForm,
+  setPlayerForm,
+}) {
   const [win, setWin] = useState(false);
   const [newGame, setNewGame] = useState(false);
   const [counter, setCounter] = useState(0);
   const [shuffledPlayers, setShuffledPlayers] = useState([]);
   const [shuffledQuestions, setShuffledQuestions] = useState([]);
   const [value, setValue] = useState(0);
+  const [err, setErr] = useState("");
   const countRef = useRef(null);
   const route = useRoute();
   const pageTheme = theme(route.name);
@@ -67,7 +76,7 @@ export default function Quiz({ players, setPlayers }) {
     setCounter(7);
   }
 
-  if (shuffledPlayers.length === 0)
+  if (shuffledPlayers.length === 0 || !players.includes(shuffledPlayers[0]))
     return setShuffledPlayers(shuffle([...players]));
 
   if (shuffledQuestions.length === 0)
@@ -101,7 +110,11 @@ export default function Quiz({ players, setPlayers }) {
       />
       <View tw="w-full h-2/6 items-center">
         <Header />
-        <GameRanking players={players} setPlayers={setPlayers} />
+        <GameRanking
+          setPlayerForm={setPlayerForm}
+          setChangePlayer={setChangePlayer}
+          players={players}
+        />
       </View>
       <View
         tw="w-11/12 h-3/6 rounded-xl mb-4 justify-between"
@@ -158,6 +171,16 @@ export default function Quiz({ players, setPlayers }) {
           </View>
         )}
       </View>
+      {playerForm && (
+        <AddPlayerForm
+          setErr={setErr}
+          setPlayers={setPlayers}
+          players={players}
+          setPlayerForm={setPlayerForm}
+          isAdd={false}
+          changePlayer={changePlayer}
+        />
+      )}
       {win && <PointNotifier value={value} />}
     </View>
   );

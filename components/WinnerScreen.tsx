@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import { Text, TouchableOpacity, View } from "react-native";
 import Animated, { FadeOut } from "react-native-reanimated";
 
-export default function playersScreen({ players, ok, setOk }) {
+export default function playersScreen({ players, setWinners }) {
   const LottieRef = useRef(null);
   useEffect(() => LottieRef.current?.play(), [players]);
 
@@ -50,7 +50,7 @@ export default function playersScreen({ players, ok, setOk }) {
         ))}
       <TouchableOpacity
         tw="w-full h-full absolute"
-        onPress={() => setOk(false)}
+        onPress={() => setWinners(false)}
       />
     </Animated.View>
   );

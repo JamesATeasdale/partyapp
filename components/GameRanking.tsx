@@ -1,31 +1,14 @@
 import { TouchableOpacity, View, Text, ScrollView, Alert } from "react-native";
 import { useRoute } from "@react-navigation/native";
 import { theme } from "../assets/colours";
-import { useEffect, useState } from "react";
-import WinnerScreen from "./WinnerScreen";
-import AddPlayerForm from "./AddPlayerForm";
 
-export default function GameRanking({ setOk, players, setPlayers }) {
+export default function GameRanking({
+  setChangePlayer,
+  players,
+  setPlayerForm,
+}) {
   const route = useRoute();
   const pageTheme = theme(route.name);
-
-  const [chosen, setChosen] = useState({ name: "" });
-
-  function confirm(playername) {
-    Alert.alert("Delete " + playername + "?", "", [
-      {
-        text: "Cancel",
-        style: "cancel",
-      },
-      {
-        text: "Confirm",
-        onPress: () =>
-          setPlayers(
-            [...players].filter((player) => player.name !== playername)
-          ),
-      },
-    ]);
-  }
 
   return (
     <View tw="w-full items-center">
@@ -41,7 +24,10 @@ export default function GameRanking({ setOk, players, setPlayers }) {
 
             return (
               <TouchableOpacity
-                onPress={() => confirm(player.name)}
+                onPress={() => {
+                  setPlayerForm(true);
+                  setChangePlayer(player);
+                }}
                 key={index}
                 tw="justify-end basis-1/3 rounded-t-sm">
                 <Text
@@ -77,7 +63,10 @@ export default function GameRanking({ setOk, players, setPlayers }) {
           .slice(3)
           .map((player = { name: "", colour: "", score: 0 }, index = 0) => (
             <TouchableOpacity
-              onPress={() => setOk(player)}
+              onPress={() => {
+                setPlayerForm(true);
+                setChangePlayer(player);
+              }}
               key={player.name}
               tw="px-2 h-full flex-row justify-center">
               <Text

@@ -1,4 +1,4 @@
-import { View, Text, TextInput, TouchableOpacity } from "react-native";
+import { View, Text, TextInput, TouchableOpacity, Alert } from "react-native";
 import Animated, { FadeIn, FadeOut } from "react-native-reanimated";
 import { useState } from "react";
 import { multi, theme } from "../assets/colours";
@@ -6,15 +6,15 @@ import { useRoute } from "@react-navigation/native";
 
 export default function playerForm({
   setErr,
-  setOk,
   players,
   setPlayers,
-  ok,
+  changePlayer,
   isAdd,
+  setPlayerForm,
 }) {
   const [player, setPlayer] = useState(
     !isAdd
-      ? { ...ok }
+      ? { ...changePlayer }
       : {
           name: "",
           colour: multi[Math.floor(Math.random() * multi.length)],
@@ -34,6 +34,24 @@ export default function playerForm({
     "Animals",
     "Music",
   ];
+
+  function confirm(playername) {
+    Alert.alert("Delete " + playername + "?", "", [
+      {
+        text: "Cancel",
+        style: "cancel",
+      },
+      {
+        text: "Confirm",
+        onPress: () => {
+          setPlayers(
+            [...players].filter((player) => player.name !== playername)
+          );
+          setPlayerForm(false);
+        },
+      },
+    ]);
+  }
 
   const quizCatsBG = ["red", "blue", "green", "purple", "orange", "brown"];
   const todCat = ["na", "", "explicit"];
@@ -136,12 +154,17 @@ export default function playerForm({
             </TouchableOpacity>
           ))}
         </View>
+        <TouchableOpacity onPress={() => confirm(player.name)}>
+          <Text tw="bg-red-600 text-4xl py-2 px-3 rounded-lg text-white">
+            DELETE
+          </Text>
+        </TouchableOpacity>
         <View tw="flex-row w-11/12 justify-between rounded-md">
           <TouchableOpacity
-            tw="basis-2/5 bg-white pt-2  rounded-md justify-center"
-            onPress={() => setOk({ name: "" })}>
+            tw="basis-2/5 bg-white  rounded-md justify-center"
+            onPress={() => setPlayerForm(false)}>
             <Text
-              tw="pt-4 w-full text-center text-5xl"
+              tw="pt-4 w-full text-center text-3xl"
               style={{
                 fontFamily: "fun",
               }}>
@@ -149,7 +172,7 @@ export default function playerForm({
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
-            tw="basis-2/5 bg-white pt-2  rounded-md justify-center"
+            tw="basis-2/5 bg-white rounded-md justify-center"
             onPress={() => {
               if (players.find((playr) => playr.name === player.name) && isAdd)
                 setErr("Player already exists");
@@ -162,21 +185,21 @@ export default function playerForm({
                     playr.name === player.name ? player : playr
                   )
                 );
-                setOk({ name: "" });
+                setPlayerForm(false);
               } else if (players.length > 16) setErr("Too Many Players");
               else if (player.name.length < 3) setErr("Too Short");
               else {
                 setPlayers([...players, player]);
                 setErr("");
-                setOk({ name: "" });
+                setPlayerForm(false);
               }
             }}>
             <Text
-              tw="pt-4 w-full text-center text-5xl"
+              tw="pt-4 w-full text-center text-3xl"
               style={{
                 fontFamily: "fun",
               }}>
-              Add
+              {isAdd ? "Add" : "Change"}
             </Text>
           </TouchableOpacity>
         </View>

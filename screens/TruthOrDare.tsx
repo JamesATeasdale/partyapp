@@ -25,7 +25,12 @@ import {
 } from "react-native-google-mobile-ads";
 import AddPlayerForm from "../components/AddPlayerForm";
 
-export default function TruthOrDare({ players, setPlayers }) {
+export default function TruthOrDare({
+  players,
+  setPlayers,
+  playerForm,
+  setPlayerForm,
+}) {
   const [win, setWin] = useState(false);
   const [shuffledPlayers, setShuffledPlayers] = useState([]);
   const [shuffledTruths, setShuffledTruths] = useState([]);
@@ -38,7 +43,7 @@ export default function TruthOrDare({ players, setPlayers }) {
   const todToggle = ["na", "", "explicit"];
   let shuffledTruth = { question: "" };
   let shuffledDare = { question: "" };
-  const [ok, setOk] = useState({ name: "" });
+  const [changePlayer, setChangePlayer] = useState({ name: "" });
   const [err, setErr] = useState("");
 
   useEffect(() => {
@@ -47,7 +52,7 @@ export default function TruthOrDare({ players, setPlayers }) {
 
   if (!players.length) navigation.navigate("Party Animals");
 
-  if (shuffledPlayers.length === 0)
+  if (shuffledPlayers.length === 0 || !players.includes(shuffledPlayers[0]))
     return setShuffledPlayers(shuffle([...players]));
 
   if (shuffledTruths.length === 0)
@@ -91,14 +96,32 @@ export default function TruthOrDare({ players, setPlayers }) {
       />
       <View tw="w-full h-2/6 items-center">
         <Header />
-        <GameRanking setOk={setOk} players={players} setPlayers={setPlayers} />
+        <GameRanking
+          setChangePlayer={setChangePlayer}
+          players={players}
+          setPlayerForm={setPlayerForm}
+        />
       </View>
       <View
-        tw="w-11/12 h-3/6 rounded-xl mb-4 items-center "
+        tw="w-11/12 mb-2 pt-2 flex-row rounded-lg justify-between"
+        style={{ backgroundColor: pageTheme.fg }}>
+        <Text
+          numberOfLines={1}
+          style={{ fontFamily: "text", color: shuffledPlayers[0].colour }}
+          tw="text-5xl pl-2">
+          {shuffledPlayers[0].name}
+        </Text>
+        <Text
+          style={{ fontFamily: "header", color: pageTheme.text }}
+          tw="text-5xl  pr-2">
+          {shuffledPlayers[0].score}
+        </Text>
+      </View>
+      <View
+        tw="w-11/12 h-3/6  rounded-xl mb-4 items-center "
         style={{
           backgroundColor: pageTheme.fg,
         }}>
-        <CardBanner shuffledPlayer={shuffledPlayers[0]} />
         {value === 1 ? (
           <SwipeableCard
             LottieRef={LottieRef}
@@ -124,7 +147,7 @@ export default function TruthOrDare({ players, setPlayers }) {
             setWin={setWin}
           />
         ) : (
-          <View tw="grow h-5/6 flex-row rounded-b-md">
+          <View tw="grow flex-row rounded-b-md">
             <Animated.View
               tw="basis-1/2 justify-center rounded-bl-md border-2"
               entering={SlideInLeft.duration(600)}
@@ -138,7 +161,7 @@ export default function TruthOrDare({ players, setPlayers }) {
                   setvalue(1);
                   setWin(false);
                 }}
-                tw="items-center justify-center w-full h-full">
+                tw="items-center justify-center w-full ">
                 <Text
                   style={{
                     fontSize: 280,
@@ -149,8 +172,8 @@ export default function TruthOrDare({ players, setPlayers }) {
                   ?
                 </Text>
                 <Text
-                  tw="font-black text-center text-6xl"
-                  style={{ color: pageTheme.text, fontFamily: "Itim-Regular" }}>
+                  tw=" text-center text-5xl"
+                  style={{ color: pageTheme.text, fontFamily: "header" }}>
                   Truth
                 </Text>
               </TouchableOpacity>
@@ -168,7 +191,7 @@ export default function TruthOrDare({ players, setPlayers }) {
                   setWin(false);
                   setvalue(2);
                 }}
-                tw="justify-center items-center w-full h-full">
+                tw="justify-center items-center grow w-full">
                 <Text
                   style={{
                     fontSize: 280,
@@ -179,8 +202,8 @@ export default function TruthOrDare({ players, setPlayers }) {
                   !
                 </Text>
                 <Text
-                  tw="text-black font-black text-center text-6xl"
-                  style={{ color: pageTheme.text, fontFamily: "Itim-Regular" }}>
+                  tw="text-black text-center text-5xl"
+                  style={{ color: pageTheme.text, fontFamily: "header" }}>
                   Dare
                 </Text>
               </TouchableOpacity>
@@ -233,13 +256,13 @@ export default function TruthOrDare({ players, setPlayers }) {
         )}
       </View>
       {win && <PointNotifier value={value} />}
-      {ok.name && (
+      {playerForm && (
         <AddPlayerForm
+          setPlayerForm={setPlayerForm}
           setErr={setErr}
           setPlayers={setPlayers}
           players={players}
-          setOk={setOk}
-          ok={ok}
+          changePlayer={changePlayer}
           isAdd={false}
         />
       )}

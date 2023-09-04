@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Welcome from "./screens/Welcome";
 import TruthOrDare from "./screens/TruthOrDare";
 import { NavigationContainer } from "@react-navigation/native";
@@ -6,63 +6,65 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Quiz from "./screens/Quiz";
 import Casual from "./screens/Casual";
 import { useFonts } from "expo-font";
-import * as SplashScreen from "expo-splash-screen";
-import { View } from "react-native";
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
-  const [ok, setOk] = useState(false);
-  const [players, setPlayers] = useState([
-    {
-      name: "aaron",
-      colour: "purple",
-      score: 0,
-      tod: "explicit",
-      fastQ: false,
-      quiz: ["animals"],
-    },
-    {
-      name: "reginald",
-      colour: "red",
-      score: 0,
-      tod: "na",
-      fastQ: false,
-      quiz: ["music"],
-    },
-    {
-      name: "sally",
-      colour: "green",
-      score: 0,
-      tod: "na",
-      fastQ: false,
-      quiz: ["science"],
-    },
-    {
-      name: "mmmmmmmmm",
-      colour: "blue",
-      score: 0,
-      tod: "na",
-      fastQ: false,
-      quiz: ["geography"],
-    },
-  ]);
+  const [changePlayer, setChangePlayer] = useState({ name: "" });
+  const [winners, setWinners] = useState(false);
+  const [playerForm, setPlayerForm] = useState(false);
+  const [highScore, setHighScore] = useState(5);
+  const [players, setPlayers] = useState(
+    [
+      {
+        name: "aaron",
+        colour: "purple",
+        score: 11,
+        tod: "explicit",
+        fastQ: false,
+        quiz: ["Animals"],
+      },
+      {
+        name: "reginald",
+        colour: "red",
+        score: 0,
+        tod: "na",
+        fastQ: false,
+        quiz: ["Music"],
+      },
+      {
+        name: "sally",
+        colour: "green",
+        score: 0,
+        tod: "na",
+        fastQ: false,
+        quiz: ["Science"],
+      },
+      {
+        name: "mmmmmmmmm",
+        colour: "blue",
+        score: 0,
+        tod: "na",
+        fastQ: false,
+        quiz: ["Geography"],
+      },
+    ].sort((a, b) => b.score - a.score)
+  );
+
   useEffect(() => {
-    players.length && players[0].score > 0 && setOk(true);
+    if (players.length && players[0].score > highScore + 2) {
+      setWinners(true);
+      setHighScore(players[0].score);
+    }
   }, [players]);
-  if (players.length) {
-    if (players[0].score !== players.sort((a, b) => b.score - a.score)[0].score)
-      setPlayers(players.sort((a, b) => b.score - a.score));
-  }
+
   const [fontsLoaded] = useFonts({
     fun: require("./assets/fonts/Laila-Bold.ttf"),
     text: require("./assets/fonts/Itim-Regular.ttf"),
     header: require("./assets/fonts/Caprasimo-Regular.ttf"),
   });
 
-  if (!fontsLoaded) {
-    return null;
-  }
+  if (!fontsLoaded) return null;
 
   return (
     <NavigationContainer>
@@ -75,18 +77,37 @@ export default function App() {
         <Stack.Screen name="Party Animals">
           {(props) => (
             <Welcome
-              setPlayers={setPlayers}
+              setPlayerForm={setPlayerForm}
+              playerForm={playerForm}
+              changePlayer={changePlayer}
               players={players}
-              ok={ok}
-              setOk={setOk}
+              setPlayers={setPlayers}
+              winners={winners}
+              setWinners={setWinners}
             />
           )}
         </Stack.Screen>
         <Stack.Screen name="Truth or Dare">
-          {(props) => <TruthOrDare setPlayers={setPlayers} players={players} />}
+          {(props) => (
+            <TruthOrDare
+              setPlayerForm={setPlayerForm}
+              playerForm={playerForm}
+              setPlayers={setPlayers}
+              players={players}
+            />
+          )}
         </Stack.Screen>
         <Stack.Screen name="Quiz">
-          {(props) => <Quiz setPlayers={setPlayers} players={players} />}
+          {(props) => (
+            <Quiz
+              setPlayerForm={setPlayerForm}
+              playerForm={playerForm}
+              changePlayer={changePlayer}
+              setChangePlayer={setChangePlayer}
+              setPlayers={setPlayers}
+              players={players}
+            />
+          )}
         </Stack.Screen>
         <Stack.Screen name="Casual">
           {(props) => <Casual setPlayers={setPlayers} players={players} />}
