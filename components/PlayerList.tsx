@@ -13,7 +13,7 @@ import { useRoute } from "@react-navigation/native";
 export default function PlayerList({
   warn,
   setWarn,
-  setIsAdd,
+  setPlayerForm,
   setPlayers,
   players,
 }) {
@@ -64,7 +64,7 @@ export default function PlayerList({
         <View tw="flex-row flex-wrap justify-center">
           {players.length === 0 && (
             <Animated.View tw="px-2 m-1">
-              <TouchableOpacity onPress={() => setIsAdd(true)}>
+              <TouchableOpacity onPress={() => setPlayerForm(true)}>
                 <Text
                   tw="text-4xl text-white"
                   style={{

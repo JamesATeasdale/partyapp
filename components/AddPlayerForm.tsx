@@ -55,7 +55,6 @@ export default function playerForm({
 
   const quizCatsBG = ["red", "blue", "green", "purple", "orange", "brown"];
   const todCat = ["na", "", "explicit"];
-  console.log(player);
 
   return (
     <Animated.View

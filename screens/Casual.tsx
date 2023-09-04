@@ -23,6 +23,7 @@ export default function Casual({
   setPlayers,
   playAnims,
   setPlayAnims,
+  speed,
 }) {
   const [shuffledPlayers, setShuffledPlayers] = useState([
     { name: "", colour: "" },
@@ -35,14 +36,8 @@ export default function Casual({
   });
   const [option, setOption] = useState("Select a set");
   const [transition, setTransition] = useState(false);
-  const [speed, setSpeed] = useState(0);
   const route = useRoute();
   const pageTheme = theme(route.name);
-  useEffect(() => {
-    getBatteryLevel().then((perc) =>
-      perc > 0.3 && playAnims ? setSpeed(0.3) : setSpeed(0)
-    );
-  }, [playAnims]);
 
   if (option === "What If" && options[option].length <= 1)
     return setOptions({ ...options, "What If": shuffle(whatif) });

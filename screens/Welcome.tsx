@@ -70,7 +70,7 @@ export default function Welcome({
           <PlayerList
             warn={warn}
             setWarn={setWarn}
-            setIsAdd={setIsAdd}
+            setPlayerForm={setPlayerForm}
             players={players}
             setPlayers={setPlayers}
           />
