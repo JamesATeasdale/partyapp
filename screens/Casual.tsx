@@ -16,8 +16,14 @@ import {
   GAMBannerAd,
   TestIds,
 } from "react-native-google-mobile-ads";
+import PlayerList from "../components/PlayerList";
 
-export default function Casual({ players }) {
+export default function Casual({
+  players,
+  setPlayers,
+  playAnims,
+  setPlayAnims,
+}) {
   const [shuffledPlayers, setShuffledPlayers] = useState([
     { name: "", colour: "" },
   ]);
@@ -26,7 +32,6 @@ export default function Casual({ players }) {
     "Ice Breakers": [{ question: "" }],
     "Most Likely": [{ question: "" }],
     "Never Have I Ever": [{ question: "" }],
-    "Select a set": [{ question: "" }],
   });
   const [option, setOption] = useState("Select a set");
   const [transition, setTransition] = useState(false);
@@ -34,8 +39,10 @@ export default function Casual({ players }) {
   const route = useRoute();
   const pageTheme = theme(route.name);
   useEffect(() => {
-    getBatteryLevel().then((data) => console.log(data));
-  }, []);
+    getBatteryLevel().then((perc) =>
+      perc > 0.3 && playAnims ? setSpeed(0.3) : setSpeed(0)
+    );
+  }, [playAnims]);
 
   if (option === "What If" && options[option].length <= 1)
     return setOptions({ ...options, "What If": shuffle(whatif) });
@@ -58,16 +65,9 @@ export default function Casual({ players }) {
       exiting={FadeOut.duration(800)}
       tw="w-full h-full justify-between items-center"
       style={{ backgroundColor: pageTheme.bg }}>
-      <GAMBannerAd
-        unitId={TestIds.BANNER}
-        sizes={[BannerAdSize.FULL_BANNER]}
-        requestOptions={{
-          requestNonPersonalizedAdsOnly: true,
-        }}
-      />
       <TouchableOpacity
         tw="h-2/6 w-full absolute"
-        onPress={() => (!speed ? setSpeed(0.3) : setSpeed(0))}>
+        onPress={() => setPlayAnims(!playAnims)}>
         <LottieView
           tw="w-full h-full"
           source={require("../assets/Lottie/clouds1.json")}
@@ -76,28 +76,52 @@ export default function Casual({ players }) {
           speed={speed}
         />
       </TouchableOpacity>
-      <Header />
-      <View tw="h-4/6 w-11/12 justify-end mb-4">
+      <View tw="w-full h-2/6 ">
+        <GAMBannerAd
+          unitId={TestIds.BANNER}
+          sizes={[BannerAdSize.FULL_BANNER]}
+        />
+        <Header />
+        <PlayerList
+          warn={undefined}
+          setWarn={undefined}
+          setIsAdd={undefined}
+          setPlayers={setPlayers}
+          players={players}
+        />
+      </View>
+      <View tw="h-3/6 w-11/12 justify-end mb-4">
         <TouchableOpacity
-          tw="mb-2 rounded-lg"
+          tw="mb-2 h-1/6 rounded-lg items-center justify-center p-2"
           style={{ backgroundColor: pageTheme.fg }}
           onPress={() => {
-            setOption("Select a set");
+            setOption("");
             setTransition(false);
           }}>
-          <Text
-            tw="text-4xl m-2 text-center"
-            style={{ color: pageTheme.text, fontFamily: "header" }}>
-            {option}
-          </Text>
+          {option
+            ? transition && (
+                <Animated.Text
+                  entering={FadeIn.duration(800)}
+                  exiting={FadeOut.duration(800)}
+                  tw="text-4xl"
+                  style={{ color: pageTheme.text, fontFamily: "header" }}>
+                  {option}
+                </Animated.Text>
+              )
+            : transition && (
+                <Animated.Text
+                  entering={FadeIn.duration(800)}
+                  exiting={FadeOut.duration(800)}
+                  tw="text-4xl"
+                  style={{ color: pageTheme.text, fontFamily: "header" }}>
+                  Select a Set
+                </Animated.Text>
+              )}
         </TouchableOpacity>
         <Animated.View
-          tw={
-            "h-4/6 rounded-lg items-center p-2 " +
-            (options[option][0].question ? "justify-between" : "justify-center")
-          }
+          tw={"h-5/6 rounded-lg items-center p-2 justify-center"}
           style={{ backgroundColor: pageTheme.asset }}>
-          {options[option][0].question
+          {Object.keys(options).includes(option)
             ? transition && (
                 <Animated.View
                   tw="w-full h-full items-center"
@@ -141,27 +165,25 @@ export default function Casual({ players }) {
                   entering={FadeIn.duration(800)}
                   exiting={FadeOut.duration(800)}
                   tw="w-full justify-center items-center flex-row flex-wrap">
-                  {Object.keys(options)
-                    .slice(0, -1)
-                    .map((opt) => (
-                      <TouchableOpacity
-                        key={opt}
-                        tw="p-2"
-                        onPress={() => {
-                          setTransition(false);
-                          setOption(opt);
+                  {Object.keys(options).map((opt) => (
+                    <TouchableOpacity
+                      key={opt}
+                      tw="p-2"
+                      onPress={() => {
+                        setTransition(false);
+                        setOption(opt);
+                      }}>
+                      <Text
+                        tw="text-4xl py-2 px-4 rounded-lg"
+                        style={{
+                          backgroundColor: pageTheme.fg,
+                          color: pageTheme.text,
+                          fontFamily: "text",
                         }}>
-                        <Text
-                          tw="text-4xl py-2 px-4 rounded-lg"
-                          style={{
-                            backgroundColor: pageTheme.fg,
-                            color: pageTheme.text,
-                            fontFamily: "text",
-                          }}>
-                          {opt}
-                        </Text>
-                      </TouchableOpacity>
-                    ))}
+                        {opt}
+                      </Text>
+                    </TouchableOpacity>
+                  ))}
                 </Animated.View>
               )}
         </Animated.View>

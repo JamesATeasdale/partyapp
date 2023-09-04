@@ -101,17 +101,20 @@ export default function Quiz({
         tw="h-full absolute"
         source={require("../assets/Images/jaggedright.png")}
       />
-      <GAMBannerAd unitId={TestIds.BANNER} sizes={[BannerAdSize.FULL_BANNER]} />
-      <View tw="w-full h-2/6 items-center">
+      <View tw="w-full h-2/6">
+        <GAMBannerAd
+          unitId={TestIds.BANNER}
+          sizes={[BannerAdSize.FULL_BANNER]}
+        />
         <Header />
         <GameRanking
-          setPlayerForm={setPlayerForm}
           setChangePlayer={setChangePlayer}
           players={players}
+          setPlayerForm={setPlayerForm}
         />
       </View>
       <View
-        tw="w-11/12 h-3/6 rounded-xl mb-4 justify-between"
+        tw="h-3/6 mb-4 w-11/12 rounded-xl justify-between"
         style={{ backgroundColor: pageTheme.fg }}>
         {!newGame ? (
           <Animated.View tw="items-center w-full h-full">

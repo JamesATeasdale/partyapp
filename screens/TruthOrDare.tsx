@@ -85,8 +85,11 @@ export default function TruthOrDare({
     <View
       tw="h-full w-full items-center justify-between"
       style={{ backgroundColor: pageTheme.bg }}>
-      <GAMBannerAd unitId={TestIds.BANNER} sizes={[BannerAdSize.FULL_BANNER]} />
-      <View tw="w-full h-2/6 items-center">
+      <View tw="w-full h-2/6">
+        <GAMBannerAd
+          unitId={TestIds.BANNER}
+          sizes={[BannerAdSize.FULL_BANNER]}
+        />
         <Header />
         <GameRanking
           setChangePlayer={setChangePlayer}
@@ -94,7 +97,7 @@ export default function TruthOrDare({
           setPlayerForm={setPlayerForm}
         />
       </View>
-      <View tw="w-11/12 items-center grow mb-4">
+      <View tw="h-3/6 w-11/12 items-center mb-4">
         <View
           tw=" flex-row rounded-lg mb-2 p-1 w-full justify-between"
           style={{ backgroundColor: pageTheme.fg }}>

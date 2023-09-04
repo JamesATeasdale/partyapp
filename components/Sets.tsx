@@ -15,16 +15,16 @@ export default function Sets({ setWarn, players }) {
           key={page}
           entering={SlideInLeft.duration((ind + 1) * 300)}>
           <TouchableOpacity
-            style={{ backgroundColor: pageCol[ind].asset }}
-            tw="my-2 basis-1/5 rounded-lg justify-center"
+            style={{ backgroundColor: pageCol[ind].bg }}
+            tw="my-2 basis-1/3 rounded-lg justify-center items-center"
             onPress={() =>
               players.length === 0 ? setWarn(true) : navigation.navigate(page)
             }>
             <Text
-              tw="text-center text-4xl pt-3"
+              tw="text-center text-5xl"
               style={{
                 color: pageCol[ind].text,
-                fontFamily: "fun",
+                fontFamily: "text",
               }}>
               {pages[ind]}
             </Text>

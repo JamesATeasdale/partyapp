@@ -1,6 +1,7 @@
 import { Text, View, ScrollView, TouchableOpacity, Alert } from "react-native";
 import Animated, {
   ZoomIn,
+  interpolate,
   interpolateColor,
   useAnimatedStyle,
   useDerivedValue,
@@ -42,17 +43,23 @@ export default function PlayerList({
       [0, 1],
       [pageTheme.fg, "red"]
     );
+    const opacity = interpolate(progress.value, [0, 1], [0.3, 1]);
 
     return {
       backgroundColor,
+      opacity,
     };
   });
 
   if (warn) setTimeout(() => setWarn(false), 300);
 
   return (
-    <Animated.View tw="w-11/12 rounded-lg max-h-40" style={[animatedStyle]}>
-      <ScrollView tw="w-full my-2">
+    <View tw="w-full items-center">
+      <Animated.View
+        tw="w-11/12 h-full absolute justify-center items-center rounded-lg max-h-40"
+        style={[animatedStyle]}
+      />
+      <ScrollView tw="w-11/12 my-2">
         <View tw="h-full w-full absolute " />
         <View tw="flex-row flex-wrap justify-center">
           {players.length === 0 && (
@@ -87,6 +94,6 @@ export default function PlayerList({
           ))}
         </View>
       </ScrollView>
-    </Animated.View>
+    </View>
   );
 }

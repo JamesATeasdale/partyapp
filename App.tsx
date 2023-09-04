@@ -14,6 +14,7 @@ export default function App() {
   const [winners, setWinners] = useState(false);
   const [playerForm, setPlayerForm] = useState(false);
   const [highScore, setHighScore] = useState(5);
+  const [playAnims, setPlayAnims] = useState(true);
   const [players, setPlayers] = useState(
     [
       {
@@ -94,6 +95,8 @@ export default function App() {
               playerForm={playerForm}
               setPlayers={setPlayers}
               players={players}
+              playAnims={playAnims}
+              setPlayAnims={setPlayAnims}
             />
           )}
         </Stack.Screen>
@@ -106,11 +109,20 @@ export default function App() {
               setChangePlayer={setChangePlayer}
               setPlayers={setPlayers}
               players={players}
+              playAnims={playAnims}
+              setPlayAnims={setPlayAnims}
             />
           )}
         </Stack.Screen>
         <Stack.Screen name="Casual">
-          {(props) => <Casual setPlayers={setPlayers} players={players} />}
+          {(props) => (
+            <Casual
+              setPlayers={setPlayers}
+              players={players}
+              playAnims={playAnims}
+              setPlayAnims={setPlayAnims}
+            />
+          )}
         </Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>

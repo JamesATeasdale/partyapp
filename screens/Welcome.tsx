@@ -43,7 +43,7 @@ export default function Welcome({
   return (
     isFocused && (
       <View
-        tw="items-center h-full w-full justify-between pt-4"
+        tw="items-center h-full w-full justify-between"
         style={{ backgroundColor: pageTheme.bg }}>
         <Animated.Image
           entering={SlideInUp.duration(800)}
@@ -65,7 +65,7 @@ export default function Welcome({
           loop={false}
           speed={2}
         />
-        <View tw="w-full items-center">
+        <View tw="w-full pt-4">
           <Header />
           <PlayerList
             warn={warn}
