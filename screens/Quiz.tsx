@@ -101,13 +101,7 @@ export default function Quiz({
         tw="h-full absolute"
         source={require("../assets/Images/jaggedright.png")}
       />
-      <GAMBannerAd
-        unitId={TestIds.BANNER}
-        sizes={[BannerAdSize.FULL_BANNER]}
-        requestOptions={{
-          requestNonPersonalizedAdsOnly: true,
-        }}
-      />
+      <GAMBannerAd unitId={TestIds.BANNER} sizes={[BannerAdSize.FULL_BANNER]} />
       <View tw="w-full h-2/6 items-center">
         <Header />
         <GameRanking

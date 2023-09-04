@@ -46,9 +46,7 @@ export default function TruthOrDare({
   const [changePlayer, setChangePlayer] = useState({ name: "" });
   const [err, setErr] = useState("");
 
-  useEffect(() => {
-    setvalue(0);
-  }, [shuffledPlayers]);
+  useEffect(() => setvalue(0), [shuffledPlayers]);
 
   if (!players.length) navigation.navigate("Party Animals");
 
@@ -87,13 +85,7 @@ export default function TruthOrDare({
     <View
       tw="h-full w-full items-center justify-between"
       style={{ backgroundColor: pageTheme.bg }}>
-      <GAMBannerAd
-        unitId={TestIds.BANNER}
-        sizes={[BannerAdSize.FULL_BANNER]}
-        requestOptions={{
-          requestNonPersonalizedAdsOnly: true,
-        }}
-      />
+      <GAMBannerAd unitId={TestIds.BANNER} sizes={[BannerAdSize.FULL_BANNER]} />
       <View tw="w-full h-2/6 items-center">
         <Header />
         <GameRanking
@@ -102,170 +94,175 @@ export default function TruthOrDare({
           setPlayerForm={setPlayerForm}
         />
       </View>
-      <View
-        tw="w-11/12 mb-2 pt-2 flex-row rounded-lg justify-between"
-        style={{ backgroundColor: pageTheme.fg }}>
-        <Text
-          numberOfLines={1}
-          style={{ fontFamily: "text", color: shuffledPlayers[0].colour }}
-          tw="text-5xl pl-2">
-          {shuffledPlayers[0].name}
-        </Text>
-        <Text
-          style={{ fontFamily: "header", color: pageTheme.text }}
-          tw="text-5xl  pr-2">
-          {shuffledPlayers[0].score}
-        </Text>
-      </View>
-      <View
-        tw="w-11/12 h-3/6  rounded-xl mb-4 items-center "
-        style={{
-          backgroundColor: pageTheme.fg,
-        }}>
-        {value === 1 ? (
-          <SwipeableCard
-            LottieRef={LottieRef}
-            setPlayers={setPlayers}
-            players={players}
-            shuffledPlayers={shuffledPlayers}
-            setShuffledPlayers={setShuffledPlayers}
-            item={shuffledTruth}
-            value={value}
-            removeCard={removeCard}
-            setWin={setWin}
-          />
-        ) : value === 2 ? (
-          <SwipeableCard
-            LottieRef={LottieRef}
-            setPlayers={setPlayers}
-            players={players}
-            shuffledPlayers={shuffledPlayers}
-            setShuffledPlayers={setShuffledPlayers}
-            item={shuffledDare}
-            value={value}
-            removeCard={removeCard}
-            setWin={setWin}
-          />
-        ) : (
-          <View tw="grow flex-row rounded-b-md">
-            <Animated.View
-              tw="basis-1/2 justify-center rounded-bl-md border-2"
-              entering={SlideInLeft.duration(600)}
-              exiting={SlideOutLeft}
-              style={{
-                borderColor: pageTheme.fg,
-                backgroundColor: pageTheme.asset,
-              }}>
-              <TouchableOpacity
-                onPress={() => {
-                  setvalue(1);
-                  setWin(false);
-                }}
-                tw="items-center justify-center w-full ">
-                <Text
-                  style={{
-                    fontSize: 280,
-                    opacity: 0.3,
-                    fontFamily: "Itim-Regular",
-                  }}
-                  tw="absolute">
-                  ?
-                </Text>
-                <Text
-                  tw=" text-center text-5xl"
-                  style={{ color: pageTheme.text, fontFamily: "header" }}>
-                  Truth
-                </Text>
-              </TouchableOpacity>
-            </Animated.View>
-            <Animated.View
-              tw="basis-1/2 justify-center rounded-br-md border-2"
-              entering={SlideInRight.duration(600)}
-              exiting={SlideOutRight}
-              style={{
-                borderColor: pageTheme.fg,
-                backgroundColor: pageTheme.asset,
-              }}>
-              <TouchableOpacity
-                onPress={() => {
-                  setWin(false);
-                  setvalue(2);
-                }}
-                tw="justify-center items-center grow w-full">
-                <Text
-                  style={{
-                    fontSize: 280,
-                    opacity: 0.3,
-                    fontFamily: "Itim-Regular",
-                  }}
-                  tw="absolute">
-                  !
-                </Text>
-                <Text
-                  tw="text-black text-center text-5xl"
-                  style={{ color: pageTheme.text, fontFamily: "header" }}>
-                  Dare
-                </Text>
-              </TouchableOpacity>
-            </Animated.View>
-            <Animated.View
-              tw="absolute items-center w-full"
-              entering={FadeIn}
-              exiting={FadeOut}>
-              <TouchableOpacity
-                onPress={() => {
-                  setPlayers(
-                    players.map((player) =>
-                      shuffledPlayers[0].name === player.name
-                        ? {
-                            ...player,
-                            tod:
-                              player.tod === "explicit"
-                                ? todToggle[0]
-                                : todToggle[todToggle.indexOf(player.tod) + 1],
-                          }
-                        : player
-                    )
-                  );
-                  setShuffledPlayers(
-                    shuffledPlayers.map((shuffledPlayer, ind) =>
-                      !ind
-                        ? {
-                            ...shuffledPlayer,
-                            tod:
-                              shuffledPlayer.tod === "explicit"
-                                ? todToggle[0]
-                                : todToggle[
-                                    todToggle.indexOf(shuffledPlayer.tod) + 1
-                                  ],
-                          }
-                        : shuffledPlayer
-                    )
-                  );
+      <View tw="w-11/12 items-center grow mb-4">
+        <View
+          tw=" flex-row rounded-lg mb-2 p-1 w-full justify-between"
+          style={{ backgroundColor: pageTheme.fg }}>
+          <Text
+            numberOfLines={1}
+            style={{ fontFamily: "header", color: shuffledPlayers[0].colour }}
+            tw=" w-5/6 text-5xl pl-2">
+            {shuffledPlayers[0].name}
+          </Text>
+          <Text
+            style={{ fontFamily: "header", color: pageTheme.text }}
+            tw="text-5xl pr-2">
+            {shuffledPlayers[0].score}
+          </Text>
+        </View>
+        <View
+          tw="rounded-xl items-center w-full grow"
+          style={{
+            backgroundColor: pageTheme.fg,
+          }}>
+          {value === 1 ? (
+            <SwipeableCard
+              LottieRef={LottieRef}
+              setPlayers={setPlayers}
+              players={players}
+              shuffledPlayers={shuffledPlayers}
+              setShuffledPlayers={setShuffledPlayers}
+              item={shuffledTruth}
+              value={value}
+              removeCard={removeCard}
+              setWin={setWin}
+            />
+          ) : value === 2 ? (
+            <SwipeableCard
+              LottieRef={LottieRef}
+              setPlayers={setPlayers}
+              players={players}
+              shuffledPlayers={shuffledPlayers}
+              setShuffledPlayers={setShuffledPlayers}
+              item={shuffledDare}
+              value={value}
+              removeCard={removeCard}
+              setWin={setWin}
+            />
+          ) : (
+            <View tw="flex-row grow rounded-md">
+              <Animated.View
+                tw="basis-1/2 justify-center rounded-l-md border-r-2"
+                entering={SlideInLeft.duration(600)}
+                exiting={SlideOutLeft}
+                style={{
+                  borderColor: pageTheme.fg,
+                  backgroundColor: pageTheme.asset,
                 }}>
-                <Text tw="text-5xl pt-4">
-                  {shuffledPlayers[0].tod === "na"
-                    ? "😇"
-                    : shuffledPlayers[0].tod === "explicit"
-                    ? "😈"
-                    : "😏"}
-                </Text>
-              </TouchableOpacity>
-            </Animated.View>
-          </View>
+                <TouchableOpacity
+                  onPress={() => {
+                    setvalue(1);
+                    setWin(false);
+                  }}
+                  tw="items-center justify-center w-full ">
+                  <Text
+                    style={{
+                      fontSize: 280,
+                      opacity: 0.3,
+                      fontFamily: "Itim-Regular",
+                    }}
+                    tw="absolute">
+                    ?
+                  </Text>
+                  <Text
+                    tw=" text-center text-5xl"
+                    style={{ color: pageTheme.text, fontFamily: "header" }}>
+                    Truth
+                  </Text>
+                </TouchableOpacity>
+              </Animated.View>
+              <Animated.View
+                tw="basis-1/2 justify-center rounded-r-md border-l-2"
+                entering={SlideInRight.duration(600)}
+                exiting={SlideOutRight}
+                style={{
+                  borderColor: pageTheme.fg,
+                  backgroundColor: pageTheme.asset,
+                }}>
+                <TouchableOpacity
+                  onPress={() => {
+                    setWin(false);
+                    setvalue(2);
+                  }}
+                  tw="justify-center items-center  w-full">
+                  <Text
+                    style={{
+                      fontSize: 280,
+                      opacity: 0.3,
+                      fontFamily: "Itim-Regular",
+                    }}
+                    tw="absolute">
+                    !
+                  </Text>
+                  <Text
+                    tw="text-black text-center text-5xl"
+                    style={{ color: pageTheme.text, fontFamily: "header" }}>
+                    Dare
+                  </Text>
+                </TouchableOpacity>
+              </Animated.View>
+              <Animated.View
+                tw="absolute items-center w-full"
+                entering={FadeIn}
+                exiting={FadeOut}>
+                <TouchableOpacity
+                  tw=" w-full items-center"
+                  onPress={() => {
+                    setPlayers(
+                      players.map((player) =>
+                        shuffledPlayers[0].name === player.name
+                          ? {
+                              ...player,
+                              tod:
+                                player.tod === "explicit"
+                                  ? todToggle[0]
+                                  : todToggle[
+                                      todToggle.indexOf(player.tod) + 1
+                                    ],
+                            }
+                          : player
+                      )
+                    );
+                    setShuffledPlayers(
+                      shuffledPlayers.map((shuffledPlayer, ind) =>
+                        !ind
+                          ? {
+                              ...shuffledPlayer,
+                              tod:
+                                shuffledPlayer.tod === "explicit"
+                                  ? todToggle[0]
+                                  : todToggle[
+                                      todToggle.indexOf(shuffledPlayer.tod) + 1
+                                    ],
+                            }
+                          : shuffledPlayer
+                      )
+                    );
+                  }}>
+                  <Text tw="text-5xl pt-4">
+                    {shuffledPlayers[0].tod === "na"
+                      ? "😇"
+                      : shuffledPlayers[0].tod === "explicit"
+                      ? "😈"
+                      : "😏"}
+                  </Text>
+                </TouchableOpacity>
+              </Animated.View>
+            </View>
+          )}
+        </View>
+        {win && <PointNotifier value={value} />}
+        {playerForm && (
+          <AddPlayerForm
+            setPlayerForm={setPlayerForm}
+            setErr={setErr}
+            setPlayers={setPlayers}
+            players={players}
+            changePlayer={changePlayer}
+            isAdd={false}
+          />
         )}
       </View>
-      {win && <PointNotifier value={value} />}
-      {playerForm && (
-        <AddPlayerForm
-          setPlayerForm={setPlayerForm}
-          setErr={setErr}
-          setPlayers={setPlayers}
-          players={players}
-          changePlayer={changePlayer}
-          isAdd={false}
-        />
-      )}
     </View>
   );
 }

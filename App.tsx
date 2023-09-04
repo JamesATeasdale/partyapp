@@ -59,7 +59,7 @@ export default function App() {
   }, [players]);
 
   const [fontsLoaded] = useFonts({
-    fun: require("./assets/fonts/Laila-Bold.ttf"),
+    // fun: require("./assets/fonts/Laila-Bold.ttf"),
     text: require("./assets/fonts/Itim-Regular.ttf"),
     header: require("./assets/fonts/Caprasimo-Regular.ttf"),
   });

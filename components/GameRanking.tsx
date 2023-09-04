@@ -58,7 +58,10 @@ export default function GameRanking({
           }
         )}
       </View>
-      <ScrollView horizontal={true} tw="w-full bg-gray-200">
+      <ScrollView
+        horizontal={true}
+        tw="w-full"
+        style={{ backgroundColor: pageTheme.fg }}>
         {players
           .slice(3)
           .map((player = { name: "", colour: "", score: 0 }, index = 0) => (
