@@ -14,11 +14,6 @@ import Animated, {
   SlideOutUp,
 } from "react-native-reanimated";
 import WinnerScreen from "../components/WinnerScreen";
-import {
-  TestIds,
-  BannerAdSize,
-  GAMBannerAd,
-} from "react-native-google-mobile-ads";
 
 export default function Welcome({
   players,
@@ -32,7 +27,6 @@ export default function Welcome({
   const LottieRef = useRef(null);
   const route = useRoute();
   const [err, setErr] = useState("");
-  const [isAdd, setIsAdd] = useState(false);
   const pageTheme = theme(route.name);
   const [warn, setWarn] = useState(false);
   const isFocused = useIsFocused();
@@ -51,7 +45,6 @@ export default function Welcome({
           tw="absolute h-full"
           source={require("../assets/Images/wave.png")}
         />
-
         <Animated.Image
           entering={SlideInUp.duration(1000)}
           exiting={SlideOutUp.duration(1000)}
@@ -88,7 +81,6 @@ export default function Welcome({
         ) : (
           <TouchableOpacity
             onPress={() => setPlayerForm(true)}
-            style={isAdd && { display: "none" }}
             tw="bottom-1 right-1 absolute bg-[#ee1b24] rounded-xl p-2 px-4 justify-center">
             <Text tw=" text-center text-white font-bold text-5xl">+</Text>
           </TouchableOpacity>

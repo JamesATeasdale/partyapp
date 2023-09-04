@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
 import Welcome from "./screens/Welcome";
 import TruthOrDare from "./screens/TruthOrDare";
-import { NavigationContainer } from "@react-navigation/native";
+import { NavigationContainer, useRoute } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Quiz from "./screens/Quiz";
 import Casual from "./screens/Casual";
 import { useFonts } from "expo-font";
 import { getBatteryLevel } from "react-native-device-info";
+import { GAMInterstitialAd, TestIds } from "react-native-google-mobile-ads";
+import adplayer from "./hooks/adplayer";
 
 const Stack = createNativeStackNavigator();
 
@@ -67,7 +69,6 @@ export default function App() {
   }, [players]);
 
   const [fontsLoaded] = useFonts({
-    // fun: require("./assets/fonts/Laila-Bold.ttf"),
     text: require("./assets/fonts/Itim-Regular.ttf"),
     header: require("./assets/fonts/Caprasimo-Regular.ttf"),
   });
@@ -77,6 +78,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator
+        screenListeners={{ state: (e) => adplayer() }}
         initialRouteName="Party Animals"
         screenOptions={{
           headerShown: false,

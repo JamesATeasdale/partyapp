@@ -10,7 +10,6 @@ import shuffle from "../hooks/shuffleArray";
 import { useEffect, useState } from "react";
 import LottieView from "lottie-react-native";
 import Animated, { FadeIn, FadeOut } from "react-native-reanimated";
-import { getBatteryLevel } from "react-native-device-info";
 import {
   BannerAdSize,
   GAMBannerAd,
