@@ -1,5 +1,5 @@
 import { useRoute } from "@react-navigation/native";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { TouchableOpacity, View, Text, StyleSheet } from "react-native";
 import Animated, {
   ZoomIn,
@@ -13,20 +13,32 @@ import { theme } from "../assets/colours";
 export default function FlipCard({
   shuffledPlayers,
   setShuffledPlayers,
-  counter,
   shuffledQuestion,
   setWin,
   removeQuestion,
   setNewGame,
   players,
   setPlayers,
-  setValue,
-  newGame,
+  fastQ,
 }) {
   const [reveal, setReveal] = useState(false);
-  const spin = useSharedValue<number>(0);
+  const [start, setStart] = useState(true);
+  const spin = useSharedValue(0);
   const route = useRoute();
   const pageTheme = theme(route.name);
+  const [counter, setCounter] = useState(fastQ);
+  const countRef = useRef(null);
+  countRef.current = counter;
+
+  function timer() {
+    const countInt = setInterval(
+      () =>
+        countRef.current > 0
+          ? setCounter((counter) => counter - 1)
+          : clearInterval(countInt),
+      1000
+    );
+  }
 
   const rStyle = useAnimatedStyle(() => {
     const spinVal = interpolate(spin.value, [0, 1], [0, 180]);
@@ -49,9 +61,13 @@ export default function FlipCard({
       ],
     };
   }, []);
-  if (newGame && !counter && shuffledPlayers[0].fastQ && !reveal) {
+  if (!counter && fastQ > 0 && !reveal) {
     setReveal(true);
     spin.value = spin.value ? 0 : 1;
+  }
+  if (counter && fastQ > 0 && !reveal && start) {
+    setStart(false);
+    timer();
   }
   return (
     <TouchableOpacity
@@ -59,7 +75,7 @@ export default function FlipCard({
         setReveal(true);
         spin.value = spin.value ? 0 : 1;
       }}
-      disabled={shuffledPlayers[0].fastQ || reveal}
+      disabled={fastQ > 0}
       tw="items-center h-5/6 w-11/12 rounded-lg"
       style={{ backgroundColor: pageTheme.bg }}>
       <Animated.View
@@ -89,14 +105,23 @@ export default function FlipCard({
             disabled={!reveal}
             tw="grow justify-center bg-white rounded-tr-md rounded-bl-md"
             onPress={() => {
-              spin.value = spin.value ? 0 : 1;
-              setWin(false);
+              setWin(0);
               removeQuestion();
               setReveal(false);
               setNewGame(false);
               setShuffledPlayers(
                 shuffledPlayers.filter(
                   (player) => player.name !== shuffledPlayers[0].name
+                )
+              );
+              setPlayers(
+                players.map((player) =>
+                  player.name === shuffledPlayers[0].name
+                    ? {
+                        ...player,
+                        fastQ: fastQ,
+                      }
+                    : player
                 )
               );
             }}>
@@ -110,30 +135,24 @@ export default function FlipCard({
             tw="grow justify-center bg-white rounded-tl-md rounded-br-md"
             disabled={!reveal}
             onPress={() => {
-              spin.value = spin.value ? 0 : 1;
-              setWin(true);
-              setValue(shuffledPlayers[0].fastQ ? 2 : 1);
-              removeQuestion();
-              setNewGame(false);
               setReveal(false);
-              return Promise.resolve(
-                setPlayers(
-                  players.map((player) =>
-                    player.name === shuffledPlayers[0].name
-                      ? {
-                          ...player,
-                          score: (player.score += shuffledPlayers[0].fastQ
-                            ? 2
-                            : 1),
-                        }
-                      : player
-                  )
+              setNewGame(false);
+              setWin(fastQ ? 5 - fastQ / 4 : 1);
+              removeQuestion();
+              setPlayers(
+                players.map((player) =>
+                  player.name === shuffledPlayers[0].name
+                    ? {
+                        ...player,
+                        score: (player.score += fastQ ? 5 - fastQ / 4 : 1),
+                        fastQ: fastQ,
+                      }
+                    : player
                 )
-              ).then(() =>
-                setShuffledPlayers(
-                  shuffledPlayers.filter(
-                    (player) => player.name !== shuffledPlayers[0].name
-                  )
+              );
+              setShuffledPlayers(
+                shuffledPlayers.filter(
+                  (player) => player.name !== shuffledPlayers[0].name
                 )
               );
             }}>

@@ -9,6 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@react-native-assets/slider": "^7.0.3",
     "@react-native-community/cli": "^11.3.7",
     "@react-native-community/masked-view": "^0.1.11",
     "@types/react": "~18.0.27",

@@ -26,7 +26,7 @@ export default function App() {
         colour: "purple",
         score: 11,
         tod: "explicit",
-        fastQ: false,
+        fastQ: 1,
         quiz: ["Animals"],
       },
       {
@@ -34,7 +34,7 @@ export default function App() {
         colour: "red",
         score: 0,
         tod: "na",
-        fastQ: false,
+        fastQ: 3,
         quiz: ["Music"],
       },
       {
@@ -42,7 +42,7 @@ export default function App() {
         colour: "green",
         score: 0,
         tod: "na",
-        fastQ: false,
+        fastQ: 9,
         quiz: ["Science"],
       },
       {
@@ -50,7 +50,7 @@ export default function App() {
         colour: "blue",
         score: 0,
         tod: "na",
-        fastQ: false,
+        fastQ: 8,
         quiz: ["Geography"],
       },
     ].sort((a, b) => b.score - a.score)

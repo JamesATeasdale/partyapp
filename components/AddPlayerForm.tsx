@@ -20,7 +20,7 @@ export default function playerForm({
           colour: multi[Math.floor(Math.random() * multi.length)],
           score: 0,
           tod: "na",
-          fastQ: false,
+          fastQ: 0,
           quiz: ["General"],
         }
   );

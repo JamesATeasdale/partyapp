@@ -5,9 +5,10 @@ import { theme } from "../assets/colours";
 import { useRoute } from "@react-navigation/native";
 import shuffle from "../hooks/shuffleArray";
 import fastquizquestions from "../assets/quiz.json";
-import { useState, useRef } from "react";
+import { useState, useEffect } from "react";
 import Animated, {
   BounceIn,
+  FadeIn,
   SlideInLeft,
   SlideInRight,
 } from "react-native-reanimated";
@@ -21,6 +22,7 @@ import {
   TestIds,
 } from "react-native-google-mobile-ads";
 import AddPlayerForm from "../components/AddPlayerForm";
+import Slider from "@react-native-assets/slider";
 
 export default function Quiz({
   players,
@@ -30,59 +32,30 @@ export default function Quiz({
   playerForm,
   setPlayerForm,
 }) {
-  const [win, setWin] = useState(false);
+  const [win, setWin] = useState(0);
   const [newGame, setNewGame] = useState(false);
-  const [counter, setCounter] = useState(0);
-  const [shuffledPlayers, setShuffledPlayers] = useState([]);
+  const [shuffledPlayers, setShuffledPlayers] = useState(shuffle([...players]));
   const [shuffledQuestions, setShuffledQuestions] = useState([]);
-  const [value, setValue] = useState(0);
   const [err, setErr] = useState("");
-  const countRef = useRef(null);
+  const [fastQ, setFastQ] = useState(0);
   const route = useRoute();
   const pageTheme = theme(route.name);
-  countRef.current = counter;
   let shuffledQuestion = { question: "", answer: "" };
   const removeQuestion = () =>
     setShuffledQuestions(
       shuffledQuestions.filter((shuffledQ) => shuffledQ !== shuffledQuestion)
     );
 
-  const toggleSwitch = () => {
-    setWin(false);
-    setPlayers(
-      players.map((player) =>
-        shuffledPlayers[0].name === player.name
-          ? { ...player, fastQ: !player.fastQ }
-          : player
-      )
-    );
-    setShuffledPlayers(
-      shuffledPlayers.map((shuffledPlayer, ind) =>
-        !ind
-          ? { ...shuffledPlayer, fastQ: !shuffledPlayer.fastQ }
-          : shuffledPlayer
-      )
-    );
-  };
-
-  function timer() {
-    const countInt = setInterval(
-      () =>
-        countRef.current > 0
-          ? setCounter((counter) => counter - 1)
-          : clearInterval(countInt),
-      1000
-    );
-    setCounter(7);
-  }
+  useEffect(() => setFastQ(shuffledPlayers[0].fastQ), [shuffledPlayers]);
+  console.log(shuffledPlayers);
 
   if (shuffledPlayers.length === 0 || !players.includes(shuffledPlayers[0]))
-    return setShuffledPlayers(shuffle([...players]));
+    setShuffledPlayers(shuffle([...players]));
 
   if (shuffledQuestions.length === 0)
     setShuffledQuestions(shuffle([...fastquizquestions]));
 
-  if (!shuffledQuestion.question)
+  if (!shuffledQuestion.question && shuffledPlayers.length)
     shuffledQuestion = shuffledQuestions.find(
       (ques) => shuffledPlayers[0].quiz.includes(ques.category) && ques
     );
@@ -117,37 +90,39 @@ export default function Quiz({
         tw="h-3/6 mb-4 w-11/12 rounded-xl justify-between"
         style={{ backgroundColor: pageTheme.fg }}>
         {!newGame ? (
-          <Animated.View tw="items-center w-full h-full">
-            <Animated.View entering={BounceIn} tw="w-full">
+          <Animated.View
+            entering={FadeIn.duration(1200)}
+            tw="items-center w-full h-full">
+            <View tw="w-5/6 justify-between pt-4">
+              <Slider
+                minimumTrackTintColor={pageTheme.text}
+                maximumTrackTintColor={"gray"}
+                trackHeight={12}
+                minimumValue={0}
+                maximumValue={12}
+                slideOnTap={true}
+                thumbTintColor={pageTheme.bg}
+                thumbSize={48}
+                onValueChange={setFastQ}
+                value={fastQ}
+                step={4}
+              />
+              <Text
+                tw="w-full text-center text-6xl pt-2"
+                style={{ color: pageTheme.text, fontFamily: "text" }}>
+                {fastQ}
+              </Text>
+            </View>
+            <Animated.View tw="grow w-full justify-center">
               <TouchableOpacity
-                tw="justify-center h-full"
+                tw="justify-center grow"
                 onPress={() => {
-                  setWin(false);
+                  setWin(0);
                   setNewGame(!newGame);
-                  shuffledPlayers[0].fastQ && timer();
                 }}>
                 <Intro shuffledPlayer={shuffledPlayers[0]} />
               </TouchableOpacity>
             </Animated.View>
-            <TouchableOpacity
-              onPress={toggleSwitch}
-              tw="flex-row w-full pr-8 pl-2 pt-2 absolute justify-between">
-              <Text
-                tw="text-4xl pt-2 basis-4/6"
-                style={{ color: pageTheme.text, fontFamily: "fun" }}>
-                {shuffledPlayers[0].fastQ ? "Timed" : "Normal"}
-              </Text>
-              <Switch
-                style={{ transform: [{ scaleX: 2.4 }, { scaleY: 2.4 }] }}
-                trackColor={{ false: "#767577", true: "#81b0ff" }}
-                thumbColor={
-                  shuffledPlayers[0].fastQ ? pageTheme.bg : pageTheme.fg
-                }
-                ios_backgroundColor="#3e3e3e"
-                onValueChange={toggleSwitch}
-                value={shuffledPlayers[0].fastQ}
-              />
-            </TouchableOpacity>
           </Animated.View>
         ) : (
           <View tw="h-full w-full items-center">
@@ -155,15 +130,13 @@ export default function Quiz({
             <FlipCard
               shuffledPlayers={shuffledPlayers}
               setShuffledPlayers={setShuffledPlayers}
-              counter={counter}
+              fastQ={fastQ}
               shuffledQuestion={shuffledQuestion}
               setWin={setWin}
               removeQuestion={removeQuestion}
-              newGame={newGame}
               setNewGame={setNewGame}
               players={players}
               setPlayers={setPlayers}
-              setValue={setValue}
             />
           </View>
         )}
@@ -178,7 +151,7 @@ export default function Quiz({
           changePlayer={changePlayer}
         />
       )}
-      {win && <PointNotifier value={value} />}
+      {win > 0 && <PointNotifier value={win} />}
     </View>
   );
 }
