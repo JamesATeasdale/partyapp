@@ -5610,18 +5610,6 @@
     "answer": "Mariana Trench"
   },
   {
-    "question": "In terms of computing, what does CPU stand for?",
-    "likes": 0,
-    "category": "technology",
-    "answer": "Central Processing Unit"
-  },
-  {
-    "question": "Along with whom did Bill Gates found Microsoft?",
-    "likes": 0,
-    "category": "technology",
-    "answer": "Paul Allen"
-  },
-  {
     "question": "What do you call molten rock before it has erupted?",
     "likes": 0,
     "category": "Science",
@@ -5704,12 +5692,6 @@
     "likes": 0,
     "category": "Science",
     "answer": "-40 degrees"
-  },
-  {
-    "question": "In terms of engineering software, what does CAD stand for?",
-    "likes": 0,
-    "category": "technology",
-    "answer": "Computer-Aided Design"
   },
   {
     "question": "Apatosaurus is also widely known by what other name?",
@@ -6892,5 +6874,6833 @@
     "likes": 0,
     "category": "General",
     "answer": "Vodka"
+  },
+  {
+    "question": "What is the flattest country on Earth?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Maldives"
+  },
+  {
+    "question": "What percentage of the world's water do rivers and lakes hold?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "1%"
+  },
+  {
+    "question": "What is the largest island in The Mediterranean?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Sicily"
+  },
+  {
+    "question": "Which countries does the Congo River flow through?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Cameroon, the Republic of the Congo, the Democratic Republic of the Congo, the Central African Republic, Equatorial Guinea, and Gabon"
+  },
+  {
+    "question": "Which US state is the Grand Canyon located in?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Arizona"
+  },
+  {
+    "question": "Mount Vinson is located where?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Antarctica"
+  },
+  {
+    "question": "What body of water separates the UK from The Isle of Wight?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Solent"
+  },
+  {
+    "question": "The Caspian sea borders which countries?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Kazakhstan, Iran, Azerbaijan, Russia, Turkmenistan"
+  },
+  {
+    "question": "What is the most current active volcano in Hawaii?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "K\u012blauea"
+  },
+  {
+    "question": "For an area to be considered a desert, what volume of rain must it receive a year?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Less than 25cm per year"
+  },
+  {
+    "question": "Where is Chapultepec Castle located?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Mexico City, Mexico"
+  },
+  {
+    "question": "What are the seven wonders of the natural world?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Mount Everest, Aurora Borealis, Harbour of Rio De Janeiro, Grand Canyon, Great Barrier Reef, Victoria Falls, Par\u00edcutin"
+  },
+  {
+    "question": "Where was the Statue of Liberty created?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "France"
+  },
+  {
+    "question": "What's the tallest building in the world?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Burj Khalifa in Dubai"
+  },
+  {
+    "question": "How long is the Great Wall of China?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "21,196 km"
+  },
+  {
+    "question": "On which river does the Taj Mahal stand on the banks of?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Yamuna River in Agra, India"
+  },
+  {
+    "question": "In which century is Machu Picchu said to have been created?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "14th century"
+  },
+  {
+    "question": "The Angel of The North is in which UK town?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Gateshead"
+  },
+  {
+    "question": "In which US city would you find a famous giant wall of gum?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Seattle, Washington"
+  },
+  {
+    "question": "Where is the Blue Mosque located?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Istanbul, Turkey"
+  },
+  {
+    "question": "How many counties are there in England?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "83"
+  },
+  {
+    "question": "What's the longest river in the UK?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The River Severn at 354km"
+  },
+  {
+    "question": "In which country is the Blencathra hill located?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "England"
+  },
+  {
+    "question": "Which three UK counties have the longest coastlines?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Cornwall (1,086km), Essex (905km) and Devon (819km)"
+  },
+  {
+    "question": "In which county is Stonehenge located?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Wiltshire"
+  },
+  {
+    "question": "How many UK cities start with the letter 'C'?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Nine - Cambridge, Canterbury, Cardiff, Carlisle, Chelmsford, Chester, Chichester, Colchester, Coventry"
+  },
+  {
+    "question": "What is the population of the city of Belfast?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "345,418"
+  },
+  {
+    "question": "Which is the most southerly of the Channel Islands?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Jersey"
+  },
+  {
+    "question": "Where does the River Thames, start and end?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The River Thames' source is in Gloucestershire, and ends at the Thames Estuary in Essex"
+  },
+  {
+    "question": "What mountain range is known as the \"spine\" of England?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Pennines"
+  },
+  {
+    "question": "What countries do the Himalayan Mountains cover?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "India, Pakistan, China, Bhutan, Nepal, Afghanistan, Myanmar"
+  },
+  {
+    "question": "What is the capital city of Uruguay?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Montevideo"
+  },
+  {
+    "question": "The White Sea is located next to which country?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Russia"
+  },
+  {
+    "question": "Which current active volcano is the eldest?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Mount Etna"
+  },
+  {
+    "question": "How many countries are there in Africa?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "54"
+  },
+  {
+    "question": "What continent is the only one to span all four hemispheres?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Africa"
+  },
+  {
+    "question": "Which country has the longest coastline?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Canada"
+  },
+  {
+    "question": "Where is the source of the Mekong River located?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Mount Guozongmucha"
+  },
+  {
+    "question": "Which country has the longest coastline in the world?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Canada"
+  },
+  {
+    "question": "What is the capital of Malta?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Valetta"
+  },
+  {
+    "question": "Which country is the newest in the world to be recognised by the UN?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "South Sudan (2011)"
+  },
+  {
+    "question": "In which UK city would you find the river Clyde?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Glasgow"
+  },
+  {
+    "question": "What is the oldest recorded town in the UK?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Colchester"
+  },
+  {
+    "question": "If you travelled to the city of Volgograd, which country would be in?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Russia"
+  },
+  {
+    "question": "What is the name of the largest river to flow through Paris?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Seine"
+  },
+  {
+    "question": "What did Ceylon change its name to in 1972?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Sri Lanka"
+  },
+  {
+    "question": "What is the most populous city in the US state of Illinois?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Chicago"
+  },
+  {
+    "question": "What is the highest mountain in Britain?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Ben Nevis"
+  },
+  {
+    "question": "The world's first national park was established in 1872 in which country?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "USA, Yellowstone"
+  },
+  {
+    "question": "What is the capital of Peru?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Lima"
+  },
+  {
+    "question": "Mount Vesuvius casts a shadow over which modern Italian city?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Naples"
+  },
+  {
+    "question": "There are three US states with just four letters in their name: can you name them?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Utah, Iowa, Ohio"
+  },
+  {
+    "question": "What is the currency of Sweden?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Swedish Krona"
+  },
+  {
+    "question": "To which country do the Canary Islands belong?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Spain"
+  },
+  {
+    "question": "What is the capital of Canada?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Ottawa"
+  },
+  {
+    "question": "How many states are there in Australia?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Six \u2013 New South Wales, Victoria, Queensland, Western Australia, Tasmania, South Australia"
+  },
+  {
+    "question": "Which African country has the largest population?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Nigeria (more than 211 million)"
+  },
+  {
+    "question": "Constantinople and Byzantium are former names of which major city?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Istanbul"
+  },
+  {
+    "question": "What is the longest river in the UK?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "River Severn"
+  },
+  {
+    "question": "How many boroughs are there in New York City?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Five \u2013 The Bronx, Brooklyn, Manhattan, Queens, and Staten Island"
+  },
+  {
+    "question": "In which city would you find La Sagrada Familia?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Barcelona"
+  },
+  {
+    "question": "What is the largest desert in the world?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Antarctica"
+  },
+  {
+    "question": "What is the highest peak in Africa?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Mount Kilimanjaro"
+  },
+  {
+    "question": "In which US state would you find Fort Knox?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Kentucky"
+  },
+  {
+    "question": "The Strait of Gibraltar separates the Iberian Peninsular from which African country?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Morocco"
+  },
+  {
+    "question": "Which London Underground line is represented as green on the tube map?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The District Line"
+  },
+  {
+    "question": "In which European city would you find Manneken Pis \u2013 a statue of a small boy urinating into a fountain?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Brussels"
+  },
+  {
+    "question": "How many countries still have the shilling as currency?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Four - Kenya, Uganda, Tanzania and Somalia"
+  },
+  {
+    "question": "What is the name of the microstate located between Spain and France?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Andorra"
+  },
+  {
+    "question": "On the London Tube network, which is the only station to begin with the letter 'I'?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Ickenham"
+  },
+  {
+    "question": "To the nearest billion, how large is the world's population?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "8 billion (We are believed to have reached this point in November)"
+  },
+  {
+    "question": "Dracula famously lived in the historical region of Transylvania - but in what country would you now find his castle?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Romania"
+  },
+  {
+    "question": "Which planet is considered to be Earth's closest neighbour?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Mercury"
+  },
+  {
+    "question": "Which country has the most castles in the world?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Germany"
+  },
+  {
+    "question": "What is the biggest island in the world?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Greenland"
+  },
+  {
+    "question": "What is the capital of Estonia?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Tallinn"
+  },
+  {
+    "question": "In which country would you find Machu Picchu?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Peru"
+  },
+  {
+    "question": "Which animal appears on the flag of Sri Lanka?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Lion"
+  },
+  {
+    "question": "Which European country uses .es at their end of their internet addresses?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Spain"
+  },
+  {
+    "question": "Which city currently has the highest population in the world?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Tokyo"
+  },
+  {
+    "question": "Which three countries does Mexico share a land border with?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "USA, Belize and Guatemala"
+  },
+  {
+    "question": "Astana is the capital city of which country?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Kazakhstan"
+  },
+  {
+    "question": "What percentage of the River Nile is located in Egypt?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "22 per cent"
+  },
+  {
+    "question": "Which continent is in all four hemispheres?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Africa"
+  },
+  {
+    "question": "Which country has the most pyramids in the world?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Sudan"
+  },
+  {
+    "question": "How many large islands make up Hawaii?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Eight"
+  },
+  {
+    "question": "In which US state would you find Harvard University?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Massachusetts"
+  },
+  {
+    "question": "Which river flows through Glasgow?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "River Clyde"
+  },
+  {
+    "question": "What are the names of the five oceans of the world? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Atlantic, Pacific, Indian, Arctic, and the Antarctic"
+  },
+  {
+    "question": "What is the name of the river that flows through the Brazil rainforest? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Amazon"
+  },
+  {
+    "question": "Which country is also called The Netherlands? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Holland"
+  },
+  {
+    "question": "What is the coldest place on Earth? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Eastern Antarctic Plateau"
+  },
+  {
+    "question": "What is the largest desert in the world? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Antarctic Desert"
+  },
+  {
+    "question": "How many large islands makeup Hawaii? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Eight"
+  },
+  {
+    "question": "What country has the largest population in the world? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "China"
+  },
+  {
+    "question": "Where is the largest volcano on Earth located? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Hawaii"
+  },
+  {
+    "question": "What is the world\u2019s largest island? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Greenland"
+  },
+  {
+    "question": "In which U.S. state is Niagara Falls located? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "New York"
+  },
+  {
+    "question": "What is the name of the highest uninterrupted waterfall in the world? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Angel Falls"
+  },
+  {
+    "question": "What is the longest river in the UK? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "River Severn"
+  },
+  {
+    "question": "What is the name of the largest river to flow through Paris? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Seine"
+  },
+  {
+    "question": "What is the name of the smallest country in the world? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Vatican City"
+  },
+  {
+    "question": "In which country would you find the city of Dresden? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Germany"
+  },
+  {
+    "question": "What African country has the largest population? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Nigeria (190 million)"
+  },
+  {
+    "question": "How many time zones does Australia have? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Three"
+  },
+  {
+    "question": "What is the official currency of India? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Indian rupee"
+  },
+  {
+    "question": "What is the name of the longest river in Africa? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Nile River"
+  },
+  {
+    "question": "What is the name of the largest country in the world? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Russia"
+  },
+  {
+    "question": "What country are the Great Pyramids of Giza located in? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Egypt"
+  },
+  {
+    "question": "What country lies above Mexico? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The United States of America"
+  },
+  {
+    "question": "How many States does the United States consist of? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "50"
+  },
+  {
+    "question": "What is the only country that borders the United Kingdom? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Ireland"
+  },
+  {
+    "question": "In which U.S. state can the world\u2019s tallest trees be found? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "California"
+  },
+  {
+    "question": "How many countries still have shilling as currency? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Four \u2013 Kenya, Uganda, Tanzania, and Somalia"
+  },
+  {
+    "question": "What is the largest U.S. state by area? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Alaska"
+  },
+  {
+    "question": "How many states does the Mississippi River run through? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "31"
+  },
+  {
+    "question": "What is the world\u2019s shortest river? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Roe River"
+  },
+  {
+    "question": "To what country do the Canary Islands belong? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Spain"
+  },
+  {
+    "question": "What is the name of the only sea that doesn\u2019t have a coastline? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Sargasso Sea"
+  },
+  {
+    "question": "What is the highest man-made structure ever built? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Burj Khalifa in Dubai"
+  },
+  {
+    "question": "Which lake has a famous mythical creature named after it? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Loch Ness"
+  },
+  {
+    "question": "What country is home to Mount Everest? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Nepal"
+  },
+  {
+    "question": "What was the original capital of the U.S.? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "New York City"
+  },
+  {
+    "question": "What is the state capital of New York? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Albany"
+  },
+  {
+    "question": "Which is the only state with a one-syllable name? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Maine"
+  },
+  {
+    "question": "What are the names of the five oceans of the world? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Atlantic, Pacific, Indian, Arctic, and the Antarctic"
+  },
+  {
+    "question": "What is the name of the river that flows through the Brazil rainforest? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Amazon"
+  },
+  {
+    "question": "Which country is also called The Netherlands? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Holland"
+  },
+  {
+    "question": "What is the coldest place on Earth? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Eastern Antarctic Plateau"
+  },
+  {
+    "question": "What is the largest desert in the world? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Antarctic Desert"
+  },
+  {
+    "question": "How many large islands makeup Hawaii? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Eight"
+  },
+  {
+    "question": "What country has the largest population in the world? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "China"
+  },
+  {
+    "question": "Where is the largest volcano on Earth located? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Hawaii"
+  },
+  {
+    "question": "What is the world\u2019s largest island? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Greenland"
+  },
+  {
+    "question": "In which U.S. state is Niagara Falls located? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "New York"
+  },
+  {
+    "question": "What is the name of the highest uninterrupted waterfall in the world? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Angel Falls"
+  },
+  {
+    "question": "What is the longest river in the UK? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "River Severn"
+  },
+  {
+    "question": "What is the name of the largest river to flow through Paris? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Seine"
+  },
+  {
+    "question": "What is the name of the smallest country in the world? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Vatican City"
+  },
+  {
+    "question": "In which country would you find the city of Dresden? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Germany"
+  },
+  {
+    "question": "What is the capital of Canada? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Ottawa"
+  },
+  {
+    "question": "What country has the most natural lakes? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Canada"
+  },
+  {
+    "question": "What African country has the largest population? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Nigeria (190 million)"
+  },
+  {
+    "question": "How many time zones does Australia have? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Three"
+  },
+  {
+    "question": "What is the official currency of India? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Indian rupee"
+  },
+  {
+    "question": "What is the name of the longest river in Africa? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Nile River"
+  },
+  {
+    "question": "What is the name of the largest country in the world? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Russia"
+  },
+  {
+    "question": "What country are the Great Pyramids of Giza located in? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Egypt"
+  },
+  {
+    "question": "What country lies above Mexico? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The United States of America"
+  },
+  {
+    "question": "How many States does the United States consist of? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "50"
+  },
+  {
+    "question": "What is the only country that borders the United Kingdom? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Ireland"
+  },
+  {
+    "question": "In which U.S. state can the world\u2019s tallest trees be found? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "California"
+  },
+  {
+    "question": "How many countries still have shilling as currency? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Four \u2013 Kenya, Uganda, Tanzania, and Somalia"
+  },
+  {
+    "question": "What is the largest U.S. state by area? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Alaska"
+  },
+  {
+    "question": "How many states does the Mississippi River run through? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "31"
+  },
+  {
+    "question": "What is the name of the tallest mountain in Canada? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Mount Logan"
+  },
+  {
+    "question": "What is the largest capital city in North America? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Mexico City"
+  },
+  {
+    "question": "What is the world\u2019s shortest river? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Roe River"
+  },
+  {
+    "question": "To what country do the Canary Islands belong? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Spain"
+  },
+  {
+    "question": "What two countries border directly north of Hungary? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Slovakia and Ukraine"
+  },
+  {
+    "question": "What is the name of the second-tallest mountain in the world? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "K2"
+  },
+  {
+    "question": "The world\u2019s first national park was established in 1872 in which country?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "USA, Yellowstone"
+  },
+  {
+    "question": "Which city is the world\u2019s most densely populated? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Manila, Philippines"
+  },
+  {
+    "question": "What is the name of the only sea that doesn\u2019t have a coastline? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Sargasso Sea"
+  },
+  {
+    "question": "What is the highest man-made structure ever built? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Burj Khalifa in Dubai"
+  },
+  {
+    "question": "Which lake has a famous mythical creature named after it? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Loch Ness"
+  },
+  {
+    "question": "What country is home to Mount Everest? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Nepal"
+  },
+  {
+    "question": "What was the original capital of the U.S.? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "New York City"
+  },
+  {
+    "question": "What is the state capital of New York? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Albany"
+  },
+  {
+    "question": "Which is the only state with a one-syllable name? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Maine"
+  },
+  {
+    "question": "What is the name of the rectangular park in New York that is a famous landmark? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Central Park"
+  },
+  {
+    "question": "What iconic bridge is located next to the Tower of London? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Tower Bridge"
+  },
+  {
+    "question": "The Nazca Lines are in which country? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Peru"
+  },
+  {
+    "question": "What is the name of the Benedictine Monastery in Normandy, built in the 8th century and sits in a bay of the same name? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Mont Saint-Michel"
+  },
+  {
+    "question": "The Bund is a landmark in which city? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Shanghai"
+  },
+  {
+    "question": "The Great Sphinx sits guard over what other famous landmarks? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Pyramids"
+  },
+  {
+    "question": "In what country would you find the Wadi Rum? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Jordan"
+  },
+  {
+    "question": "A famous suburb in Los Angeles, what is the name of the giant sign that spells out this area? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Hollywood"
+  },
+  {
+    "question": "La Sagrada Familia is a famous landmark of Spain. In which city is it located? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Barcelona"
+  },
+  {
+    "question": "What is the name of the castle that inspired Walt Disney to create Cinderella\u2019s Castle in the 1950 movie? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Neuschwanstein Castle"
+  },
+  {
+    "question": "The Matterhorn is a famous landmark located in which country? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Switzerland"
+  },
+  {
+    "question": "In which landmark would you find the Mona Lisa? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "La Louvre"
+  },
+  {
+    "question": "Pulpit Rock is an amazing sight, above the Fjords of which country? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Norway"
+  },
+  {
+    "question": "Gulfoss is the most famous landmark and waterfall in which country? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Iceland"
+  },
+  {
+    "question": "Which German landmark was pulled down, to scenes of mass celebration, in November 1991? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Berlin Wall"
+  },
+  {
+    "question": "What is the capital of Australia? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Canberra"
+  },
+  {
+    "question": "Baku is the capital of what country? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Azerbaijan"
+  },
+  {
+    "question": "If I\u2019m looking at the Trevi Fountain, which capital city am I in? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Rome, Italy"
+  },
+  {
+    "question": "WAW is the airport code for the airport in which capital city? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Warsaw, Poland"
+  },
+  {
+    "question": "If I\u2019m visiting the capital of Belarus, which city am I in? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Minsk"
+  },
+  {
+    "question": "The Sultan Qaboos Grand Mosque is found in which capital city? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Muscat, Oman"
+  },
+  {
+    "question": "Camden and Brixton are areas of which capital? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "London, England"
+  },
+  {
+    "question": "Which capital city appears in the title of a 2014 film, starring Ralph Fiennes and directed by Wes Anderson? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Grand Budapest Hotel"
+  },
+  {
+    "question": "What is the capital of Cambodia? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Phnom Penh"
+  },
+  {
+    "question": "Which of these is the capital of Costa Rica: San Cristobel, San Jose, or San Sebastien? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "San Jose"
+  },
+  {
+    "question": "Vaduz is the capital of which country? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Liechtenstein"
+  },
+  {
+    "question": "What is the capital of India? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "New Delhi"
+  },
+  {
+    "question": "What is the capital city of Togo? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Lom\u00e9"
+  },
+  {
+    "question": "What is the capital city of New Zealand? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Wellington"
+  },
+  {
+    "question": "What is the capital of South Korea? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Seoul"
+  },
+  {
+    "question": "How much of the Earth\u2019s surface is covered by the ocean? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "71% "
+  },
+  {
+    "question": "How many oceans does the Equator run through? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "3 oceans \u2013 the Atlantic Ocean, Pacific Ocean, and Indian Ocean!"
+  },
+  {
+    "question": "Which ocean does the Amazon River run into? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Atlantic Ocean"
+  },
+  {
+    "question": "True or false, more than 70% of African countries border the sea? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "True. Only 16 out of Africa\u2019s 55 countries are landlocked, meaning 71% of countries border the sea!"
+  },
+  {
+    "question": "True or false, the longest mountain range in the world is under the ocean? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "True. The Mid-Oceanic Ridge stretches across the ocean floor along tectonic plate boundaries, reaching roughly 65 thousand km."
+  },
+  {
+    "question": "As a percentage, how much of our oceans have been explored? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Only 5% of our oceans have been explored."
+  },
+  {
+    "question": "How long is an average flight across the Atlantic Ocean, from London to New York? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Almost 8 hours on average. "
+  },
+  {
+    "question": "True or false, the Pacific Ocean is bigger than the moon? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "True. At roughly 63.8 million square miles, the Pacific Ocean is roughly 4 times as large as the moon in surface area. "
+  },
+  {
+    "question": "What is the name of the tallest mountain in the world?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Mount Everest"
+  },
+  {
+    "question": "Which country has the largest population in the world?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "India"
+  },
+  {
+    "question": "What are the names of the seven continents of the world?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Asia, Africa, North America, South America, Antarctica, Europe, Australia"
+  },
+  {
+    "question": "What is the name of the river that flows through the Brazilian rainforest?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Amazon"
+  },
+  {
+    "question": "Which country is also called The Netherlands?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Holland"
+  },
+  {
+    "question": "What is the coldest place on Earth?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Antarctica"
+  },
+  {
+    "question": "What is the name of the largest airport in the United States of America?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Denver International Airport"
+  },
+  {
+    "question": "Which continent is Cambodia located in?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Asia"
+  },
+  {
+    "question": "What country is known to have the best quality tap water?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Switzerland"
+  },
+  {
+    "question": "In what ocean is the Bermuda Triangle located?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Atlantic Ocean"
+  },
+  {
+    "question": "What city is known as the Glass Capital of the World?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Toledo"
+  },
+  {
+    "question": "How many stars are on the Australian flag?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "6"
+  },
+  {
+    "question": "Off of which coast is the Great Barrier Reef located?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Queensland"
+  },
+  {
+    "question": "How many countries are there in Africa?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "54"
+  },
+  {
+    "question": "Which country is home to the most volcanos?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Indonesia"
+  },
+  {
+    "question": "What is the name of the largest waterfall in the world?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Victoria Falls"
+  },
+  {
+    "question": "What are citizens of Sudan called?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Sudanese"
+  },
+  {
+    "question": "In which country is the Leaning Tower of Pisa located?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Italy"
+  },
+  {
+    "question": "What is Belgium\u2019s nickname?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Cockpit of Europe"
+  },
+  {
+    "question": "What country has pyramids older than Egypt?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Sudan"
+  },
+  {
+    "question": "What are the names of the five oceans of the world? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Atlantic, Pacific, Indian, Arctic, and the Antarctic"
+  },
+  {
+    "question": "What is the name of the river that flows through the Brazil rainforest? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Amazon"
+  },
+  {
+    "question": "Which country is also called The Netherlands? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Holland"
+  },
+  {
+    "question": "What is the coldest place on Earth? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Eastern Antarctic Plateau"
+  },
+  {
+    "question": "What is the largest desert in the world? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Antarctic Desert"
+  },
+  {
+    "question": "How many large islands makeup Hawaii? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Eight"
+  },
+  {
+    "question": "What country has the largest population in the world? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "China"
+  },
+  {
+    "question": "Where is the largest volcano on Earth located? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Hawaii"
+  },
+  {
+    "question": "What is the world\u2019s largest island? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Greenland"
+  },
+  {
+    "question": "In which U.S. state is Niagara Falls located? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "New York"
+  },
+  {
+    "question": "What is the name of the highest uninterrupted waterfall in the world? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Angel Falls"
+  },
+  {
+    "question": "What is the longest river in the UK? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "River Severn"
+  },
+  {
+    "question": "What is the name of the largest river to flow through Paris? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Seine"
+  },
+  {
+    "question": "What is the name of the smallest country in the world? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Vatican City"
+  },
+  {
+    "question": "In which country would you find the city of Dresden? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Germany"
+  },
+  {
+    "question": "What African country has the largest population? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Nigeria (190 million)"
+  },
+  {
+    "question": "How many time zones does Australia have? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Three"
+  },
+  {
+    "question": "What is the official currency of India? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Indian rupee"
+  },
+  {
+    "question": "What is the name of the longest river in Africa? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Nile River"
+  },
+  {
+    "question": "What is the name of the largest country in the world? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Russia"
+  },
+  {
+    "question": "What country are the Great Pyramids of Giza located in? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Egypt"
+  },
+  {
+    "question": "What country lies above Mexico? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The United States of America"
+  },
+  {
+    "question": "How many States does the United States consist of? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "50"
+  },
+  {
+    "question": "What is the only country that borders the United Kingdom? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Ireland"
+  },
+  {
+    "question": "In which U.S. state can the world\u2019s tallest trees be found? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "California"
+  },
+  {
+    "question": "How many countries still have shilling as currency? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Four \u2013 Kenya, Uganda, Tanzania, and Somalia"
+  },
+  {
+    "question": "What is the largest U.S. state by area? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Alaska"
+  },
+  {
+    "question": "How many states does the Mississippi River run through? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "31"
+  },
+  {
+    "question": "What is the world\u2019s shortest river? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Roe River"
+  },
+  {
+    "question": "To what country do the Canary Islands belong? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Spain"
+  },
+  {
+    "question": "What is the name of the only sea that doesn\u2019t have a coastline? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Sargasso Sea"
+  },
+  {
+    "question": "What is the highest man-made structure ever built? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Burj Khalifa in Dubai"
+  },
+  {
+    "question": "Which lake has a famous mythical creature named after it? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Loch Ness"
+  },
+  {
+    "question": "What country is home to Mount Everest? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Nepal"
+  },
+  {
+    "question": "What was the original capital of the U.S.? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "New York City"
+  },
+  {
+    "question": "What is the state capital of New York? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Albany"
+  },
+  {
+    "question": "Which is the only state with a one-syllable name? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Maine"
+  },
+  {
+    "question": "What are the names of the five oceans of the world? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Atlantic, Pacific, Indian, Arctic, and the Antarctic"
+  },
+  {
+    "question": "What is the name of the river that flows through the Brazil rainforest? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Amazon"
+  },
+  {
+    "question": "Which country is also called The Netherlands? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Holland"
+  },
+  {
+    "question": "What is the coldest place on Earth? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Eastern Antarctic Plateau"
+  },
+  {
+    "question": "What is the largest desert in the world? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Antarctic Desert"
+  },
+  {
+    "question": "How many large islands makeup Hawaii? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Eight"
+  },
+  {
+    "question": "What country has the largest population in the world? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "China"
+  },
+  {
+    "question": "Where is the largest volcano on Earth located? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Hawaii"
+  },
+  {
+    "question": "What is the world\u2019s largest island? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Greenland"
+  },
+  {
+    "question": "In which U.S. state is Niagara Falls located? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "New York"
+  },
+  {
+    "question": "What is the name of the highest uninterrupted waterfall in the world? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Angel Falls"
+  },
+  {
+    "question": "What is the longest river in the UK? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "River Severn"
+  },
+  {
+    "question": "What is the name of the largest river to flow through Paris? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Seine"
+  },
+  {
+    "question": "What is the name of the smallest country in the world? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Vatican City"
+  },
+  {
+    "question": "In which country would you find the city of Dresden? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Germany"
+  },
+  {
+    "question": "What is the capital of Canada? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Ottawa"
+  },
+  {
+    "question": "What country has the most natural lakes? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Canada"
+  },
+  {
+    "question": "What African country has the largest population? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Nigeria (190 million)"
+  },
+  {
+    "question": "How many time zones does Australia have? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Three"
+  },
+  {
+    "question": "What is the official currency of India? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Indian rupee"
+  },
+  {
+    "question": "What is the name of the longest river in Africa? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Nile River"
+  },
+  {
+    "question": "What is the name of the largest country in the world? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Russia"
+  },
+  {
+    "question": "What country are the Great Pyramids of Giza located in? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Egypt"
+  },
+  {
+    "question": "What country lies above Mexico? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The United States of America"
+  },
+  {
+    "question": "How many States does the United States consist of? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "50"
+  },
+  {
+    "question": "What is the only country that borders the United Kingdom? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Ireland"
+  },
+  {
+    "question": "In which U.S. state can the world\u2019s tallest trees be found? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "California"
+  },
+  {
+    "question": "How many countries still have shilling as currency? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Four \u2013 Kenya, Uganda, Tanzania, and Somalia"
+  },
+  {
+    "question": "What is the largest U.S. state by area? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Alaska"
+  },
+  {
+    "question": "How many states does the Mississippi River run through? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "31"
+  },
+  {
+    "question": "What is the name of the tallest mountain in Canada? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Mount Logan"
+  },
+  {
+    "question": "What is the largest capital city in North America? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Mexico City"
+  },
+  {
+    "question": "What is the world\u2019s shortest river? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Roe River"
+  },
+  {
+    "question": "To what country do the Canary Islands belong? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Spain"
+  },
+  {
+    "question": "What two countries border directly north of Hungary? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Slovakia and Ukraine"
+  },
+  {
+    "question": "What is the name of the second-tallest mountain in the world? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "K2"
+  },
+  {
+    "question": "The world\u2019s first national park was established in 1872 in which country?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "USA, Yellowstone"
+  },
+  {
+    "question": "Which city is the world\u2019s most densely populated? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Manila, Philippines"
+  },
+  {
+    "question": "What is the name of the only sea that doesn\u2019t have a coastline? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Sargasso Sea"
+  },
+  {
+    "question": "What is the highest man-made structure ever built? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Burj Khalifa in Dubai"
+  },
+  {
+    "question": "Which lake has a famous mythical creature named after it? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Loch Ness"
+  },
+  {
+    "question": "What country is home to Mount Everest? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Nepal"
+  },
+  {
+    "question": "What was the original capital of the U.S.? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "New York City"
+  },
+  {
+    "question": "What is the state capital of New York? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Albany"
+  },
+  {
+    "question": "Which is the only state with a one-syllable name? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Maine"
+  },
+  {
+    "question": "What is the name of the rectangular park in New York that is a famous landmark? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Central Park"
+  },
+  {
+    "question": "What iconic bridge is located next to the Tower of London? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Tower Bridge"
+  },
+  {
+    "question": "The Nazca Lines are in which country? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Peru"
+  },
+  {
+    "question": "What is the name of the Benedictine Monastery in Normandy, built in the 8th century and sits in a bay of the same name? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Mont Saint-Michel"
+  },
+  {
+    "question": "The Bund is a landmark in which city? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Shanghai"
+  },
+  {
+    "question": "The Great Sphinx sits guard over what other famous landmarks? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Pyramids"
+  },
+  {
+    "question": "In what country would you find the Wadi Rum? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Jordan"
+  },
+  {
+    "question": "A famous suburb in Los Angeles, what is the name of the giant sign that spells out this area? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Hollywood"
+  },
+  {
+    "question": "La Sagrada Familia is a famous landmark of Spain. In which city is it located? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Barcelona"
+  },
+  {
+    "question": "What is the name of the castle that inspired Walt Disney to create Cinderella\u2019s Castle in the 1950 movie? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Neuschwanstein Castle"
+  },
+  {
+    "question": "The Matterhorn is a famous landmark located in which country? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Switzerland"
+  },
+  {
+    "question": "In which landmark would you find the Mona Lisa? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "La Louvre"
+  },
+  {
+    "question": "Pulpit Rock is an amazing sight, above the Fjords of which country? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Norway"
+  },
+  {
+    "question": "Gulfoss is the most famous landmark and waterfall in which country? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Iceland"
+  },
+  {
+    "question": "Which German landmark was pulled down, to scenes of mass celebration, in November 1991? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Berlin Wall"
+  },
+  {
+    "question": "What is the capital of Australia? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Canberra"
+  },
+  {
+    "question": "Baku is the capital of what country? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Azerbaijan"
+  },
+  {
+    "question": "If I\u2019m looking at the Trevi Fountain, which capital city am I in? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Rome, Italy"
+  },
+  {
+    "question": "WAW is the airport code for the airport in which capital city? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Warsaw, Poland"
+  },
+  {
+    "question": "If I\u2019m visiting the capital of Belarus, which city am I in? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Minsk"
+  },
+  {
+    "question": "The Sultan Qaboos Grand Mosque is found in which capital city? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Muscat, Oman"
+  },
+  {
+    "question": "Camden and Brixton are areas of which capital? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "London, England"
+  },
+  {
+    "question": "Which capital city appears in the title of a 2014 film, starring Ralph Fiennes and directed by Wes Anderson? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Grand Budapest Hotel"
+  },
+  {
+    "question": "What is the capital of Cambodia? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Phnom Penh"
+  },
+  {
+    "question": "Which of these is the capital of Costa Rica: San Cristobel, San Jose, or San Sebastien? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "San Jose"
+  },
+  {
+    "question": "Vaduz is the capital of which country? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Liechtenstein"
+  },
+  {
+    "question": "What is the capital of India? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "New Delhi"
+  },
+  {
+    "question": "What is the capital city of Togo? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Lom\u00e9"
+  },
+  {
+    "question": "What is the capital city of New Zealand? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Wellington"
+  },
+  {
+    "question": "What is the capital of South Korea? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Seoul"
+  },
+  {
+    "question": "How much of the Earth\u2019s surface is covered by the ocean? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "71% "
+  },
+  {
+    "question": "How many oceans does the Equator run through? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "3 oceans \u2013 the Atlantic Ocean, Pacific Ocean, and Indian Ocean!"
+  },
+  {
+    "question": "Which ocean does the Amazon River run into? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Atlantic Ocean"
+  },
+  {
+    "question": "True or false, more than 70% of African countries border the sea? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "True. Only 16 out of Africa\u2019s 55 countries are landlocked, meaning 71% of countries border the sea!"
+  },
+  {
+    "question": "True or false, the longest mountain range in the world is under the ocean? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "True. The Mid-Oceanic Ridge stretches across the ocean floor along tectonic plate boundaries, reaching roughly 65 thousand km."
+  },
+  {
+    "question": "As a percentage, how much of our oceans have been explored? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Only 5% of our oceans have been explored."
+  },
+  {
+    "question": "How long is an average flight across the Atlantic Ocean, from London to New York? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Almost 8 hours on average. "
+  },
+  {
+    "question": "True or false, the Pacific Ocean is bigger than the moon? ",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "True. At roughly 63.8 million square miles, the Pacific Ocean is roughly 4 times as large as the moon in surface area. "
+  },
+  {
+    "question": "How many countries are there?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "195 countries"
+  },
+  {
+    "question": "In which state can you find the Grand Canyon?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Arizona"
+  },
+  {
+    "question": "Which country is made up of 7,000 islands?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "The Philippines"
+  },
+  {
+    "question": "What is the most populous city in the world?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Tokyo, Japan"
+  },
+  {
+    "question": "Which country has the most pyramids?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Sudan"
+  },
+  {
+    "question": "Where is the world's largest underground lake?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Namibia "
+  },
+  {
+    "question": "In which ocean is the Bermuda Triangle located?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Atlantic Ocean"
+  },
+  {
+    "question": "How many countries does Africa have?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "54"
+  },
+  {
+    "question": "How many people live in New Zealand?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Roughly 5 million"
+  },
+  {
+    "question": "What is the smallest country in the world?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Vatican City"
+  },
+  {
+    "question": "What is the capital of Senegal?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Dakar "
+  },
+  {
+    "question": "What is the highest point on Earth: Mount Kilimanjaro, Denali, or Mount Everest?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Mount Everest"
+  },
+  {
+    "question": "Which ocean is between North America and Africa: Indian, Arctic, Pacific, or Atlantic?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Atlantic"
+  },
+  {
+    "question": "Which river flows from Minneapolis to Memphis to New Orleans: the Missouri, Mississippi, or Nile?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Mississippi"
+  },
+  {
+    "question": "How many countries are in North America: 3, 23, or 12?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "23"
+  },
+  {
+    "question": "What country lies roughly 90 miles southeast of Florida: Cuba, Mexico, or Panama?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Cuba"
+  },
+  {
+    "question": "What is a flat, elevated landform that rises sharply above adjacent land on at least one side: plain, mountain, or plateau?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Plateau"
+  },
+  {
+    "question": "What's the correct postal abbreviation for Mississippi: MI or MS?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "MS"
+  },
+  {
+    "question": "Where is Guyana: South America, Africa, or Asia?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "South America"
+  },
+  {
+    "question": "What mountain range is along the east side of the United States: Appalachian, Rocky, or Sierra Nevada?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Appalachian"
+  },
+  {
+    "question": "What's the capital of Tennessee: Nashville, Memphis, or Knoxville?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Nashville"
+  },
+  {
+    "question": "Where is Malta: South America, Africa, or Europe?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Europe"
+  },
+  {
+    "question": "Which of these cities has the largest population: Delhi, New York City, or Shanghai?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Delhi"
+  },
+  {
+    "question": "What's the capital of New Hampshire: Concord, Manchester, or Derry?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Concord"
+  },
+  {
+    "question": "The prime meridian is the line at 0\u00ba longitude or 0\u00ba latitude?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "0\u00ba longitude"
+  },
+  {
+    "question": "What's the capital of the United Kingdom: London, Bristol, or Manchester?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "London"
+  },
+  {
+    "question": "What's the capital of Pennsylvania: Harrisburg, Philadelphia, or Pittsburgh?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Harrisburg"
+  },
+  {
+    "question": "What's the capital of Canada: Toronto, Ottawa, or Winnipeg?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Ottawa"
+  },
+  {
+    "question": "Which lake is not one of the Great Lakes: Superior, Huron, or Champlain?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Champlain"
+  },
+  {
+    "question": "What's the capital of Italy: Venice, Milan, or Rome?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Rome"
+  },
+  {
+    "question": "What measures distance north or south of the equator: latitude or longitude?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Latitude"
+  },
+  {
+    "question": "What's the capital of France: Lyon, Paris, or Bordeaux?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Paris"
+  },
+  {
+    "question": "What's the capital of Ireland: Dublin, Belfast, or Galway?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Dublin"
+  },
+  {
+    "question": "Where is Indonesia: Asia, Africa, or Europe?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Asia"
+  },
+  {
+    "question": "What's the capital of Germany: Hamburg, Frankfurt, or Berlin?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Berlin"
+  },
+  {
+    "question": "What's the capital of Russia: St. Petersburg, Moscow, or Kazan?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Moscow"
+  },
+  {
+    "question": "What's the capital of Romania: Craiova, Oradea, or Bucharest?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Bucharest"
+  },
+  {
+    "question": "What's the capital of Portugal: Porto, Lisbon, or Braga?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Lisbon"
+  },
+  {
+    "question": "Which of these countries has the smallest population: France, United Kingdom, or Spain?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Spain"
+  },
+  {
+    "question": "What's the capital of Sweden: Stockholm, Malm\u00f6, or Gothenburg?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Stockholm"
+  },
+  {
+    "question": "What's the capital of Belgium: Brussels, Bruges, or Ghent?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Brussels"
+  },
+  {
+    "question": "What's the capital of Poland: Warsaw, Krak\u00f3w, or Wroc\u0142aw?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Warsaw"
+  },
+  {
+    "question": "What's the capital of the Netherlands: Amsterdam, Rotterdam, or Utrecht?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Amsterdam"
+  },
+  {
+    "question": "What's the capital of Lithuania: Vilnius, Kaunas, or Trakai?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Vilnius"
+  },
+  {
+    "question": "What's the capital of Hungary: Budapest, Gy\u0151r, or Eger?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Budapest"
+  },
+  {
+    "question": "Which river is longer: the Nile River, Yangtze River, or Congo River?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Nile River"
+  },
+  {
+    "question": "What's the capital of Switzerland: Bern, Z\u00fcrich, or Geneva?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Bern"
+  },
+  {
+    "question": "What's the capital of Iceland: Akranes, Reykjav\u00edk, or Selfoss?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Reykjav\u00edk"
+  },
+  {
+    "question": "What is the currency in India: rupee, dirham, or yen?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Rupee"
+  },
+  {
+    "question": "What's the capital of Ukraine: Odesa, Lviv, or Kyiv?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Kyiv"
+  },
+  {
+    "question": "What's the capital of Colombia: Bogot\u00e1, Cali, or Medell\u00edn?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Bogot\u00e1"
+  },
+  {
+    "question": "What's the capital of Turkey: Ankara, Adana, or Istanbul?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Ankara"
+  },
+  {
+    "question": "What's the capital of Slovenia: Maribor, Ljubljana, or Piran?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Ljubljana"
+  },
+  {
+    "question": "What's the capital of Norway: Oslo, Bergen, or Trondheim?",
+    "likes": 0,
+    "category": "Geography",
+    "answer": "Oslo"
+  },
+  {
+    "question": "How many legs does a lobster have?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "10\n"
+  },
+  {
+    "question": "Able to hold its breath for more than 2 hours, the Curvier Beaked is a type of what?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Whale\n"
+  },
+  {
+    "question": "How many hearts does an octopus have?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "3\n"
+  },
+  {
+    "question": "In which river would you find the blind dolphin?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Indus\n"
+  },
+  {
+    "question": "Where would you find the heart of a shrimp?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "In its head\n"
+  },
+  {
+    "question": "What type of fish is the fastest in the ocean, having been clocked at speeds of 68mph?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Sailfish\n"
+  },
+  {
+    "question": "What is the smallest fish in the world?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Dwarf Pigmy Goby\n"
+  },
+  {
+    "question": "How many arms does a giant squid have?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "10 (8 arms and 2 tentacles but those are also arms)\n"
+  },
+  {
+    "question": "What type of fish is Nemo?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Clown fish\n"
+  },
+  {
+    "question": "What is the biggest fish in the world?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Whale shark\n"
+  },
+  {
+    "question": "What is the smallest mammal in the world?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Bumblebee bat\n"
+  },
+  {
+    "question": "Which land mammal, native to central and south America, has a tongue that stretches to two feet in length?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Anteater\n"
+  },
+  {
+    "question": "What is the largest bird in the world?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Ostrich\n"
+  },
+  {
+    "question": "What is the smallest bird in the world?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Bee Hummingbird\n"
+  },
+  {
+    "question": "What animal is known for the great migration across the African plains?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Wildebeest\n"
+  },
+  {
+    "question": "Famous for being part of the biblical plagues, and infamous for stripping crops in vast swarms, what insect belongs to the family Acrididae?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Locust\n"
+  },
+  {
+    "question": "What is the largest mammal in the world?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "The blue whale\n"
+  },
+  {
+    "question": "In which country would you find the largest meeting of elephants in the world, known as The Gathering?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Sri Lanka\n"
+  },
+  {
+    "question": "Name the largest primate on the planet.\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Gorilla\n"
+  },
+  {
+    "question": "Which marine animal has the largest brain?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Sperm whale\n"
+  },
+  {
+    "question": "With a maximum speed of over 240 mph, what is the fastest bird?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Peregrine Falcon\n"
+  },
+  {
+    "question": "How many wings does a mosquito have?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "2\n"
+  },
+  {
+    "question": "What animal has a wingspan of around 10ft, can live to the ripe old age of 20 and are protected by the Queen of England?            \n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Swan\n"
+  },
+  {
+    "question": "What is the collective name given to a group of crows?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A murder\n"
+  },
+  {
+    "question": "Pegasus was a flying type of which animal?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Horse\n"
+  },
+  {
+    "question": "Appearing on the national coat of arms of Bolivia, Peru, Chile, Ecuador and Colombia, what is the common name for the vultur gryphus?       \n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Andean Condor\n"
+  },
+  {
+    "question": "With the endearing name, the flying fox, what type of animal is it?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Bat\n"
+  },
+  {
+    "question": "What bird is mythically said to deliver babies?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Stork\n"
+  },
+  {
+    "question": "What is the specific name for the largest flying bird (by wingspan) on the planet?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Wandering Albatross\n"
+  },
+  {
+    "question": "What is the collective name for a group of butterflies? (Clue: it\u2019s also slang for having a bet)\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A flutter\n"
+  },
+  {
+    "question": "There are only 2 egg laying mammals in the world, name them.\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Platypus and Echidna\n"
+  },
+  {
+    "question": "Which animal is protected by law in Rome?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Cat\n"
+  },
+  {
+    "question": "What is the scientific name given to apes?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Hominoidea\n"
+  },
+  {
+    "question": "What is the name of the common breed of cat that has no hair?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Sphynx (but also accept Bambino, Donskoy, Peterbald, Ukrainian Levkoy, Elf or Dwelf)\n"
+  },
+  {
+    "question": "How long can a snail sleep for?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "3 years\n"
+  },
+  {
+    "question": "Which animal has fingerprints that are so similar to humans, that they have been confused during a crime scene investigation?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Koala\n"
+  },
+  {
+    "question": "Name the 4 mammals that apparently can\u2019t jump?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Elephant, hippos, rhinos and sloths\n"
+  },
+  {
+    "question": "There is only one species of warm-blooded fish on earth \u2013 what is its name?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Opah\n"
+  },
+  {
+    "question": "What type of animal is a mandrill?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Monkey\n"
+  },
+  {
+    "question": "What is the national animal of Scotland?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Unicorn\n"
+  },
+  {
+    "question": "Famous for being cuddly but not great at breeding, what animal is best seen in Chengdu China?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Giant Panda\n"
+  },
+  {
+    "question": "What animals are known as the Big 5 in Africa?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Lion, Elephant, Rhino, Buffalo and Leopard\n"
+  },
+  {
+    "question": "What is the only mammal that can fly?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Bat\n"
+  },
+  {
+    "question": "In which island nation would you come across the Lemur?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Madagascar\n"
+  },
+  {
+    "question": "What is the largest member of the cat family (not an interbred species)?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Tiger\n"
+  },
+  {
+    "question": "Zoophobia is the fear of what? \n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Animals\n"
+  },
+  {
+    "question": "What bird beats its wings between 60 and 80 times per second?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Hummingbird\n"
+  },
+  {
+    "question": "Where would you find a polar bear \u2013 Arctic or Antarctica?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Arctic\n"
+  },
+  {
+    "question": "What is a rhino\u2019s horn made out of?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Hair\n"
+  },
+  {
+    "question": "True or false? Sharks have been around longer than dinosaurs?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "True\n"
+  },
+  {
+    "question": "Grumpy Cat, made famous by the internet meme, was how old when she passed away?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "7 years old\n"
+  },
+  {
+    "question": "What was the name of Mickey Mouse\u2019s dog?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Pluto\n"
+  },
+  {
+    "question": "What was the name of the Lion in the Chronicles of Narnia? \n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Aslan\n"
+  },
+  {
+    "question": "What is the name of The Simpsons\u2019 dog?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Santa\u2019s Little Helper\n"
+  },
+  {
+    "question": "In the comic strip by Jim Davis what is the name of the animal owned by Jon Arbuckle?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Garfield\n"
+  },
+  {
+    "question": "In the Disney and Pixar film Toy Story, there is a toy that is also a dog. What\u2019s his name?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Slinky\n"
+  },
+  {
+    "question": "Growing up, which Beatle had a cat called Elvis?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "John Lennon\n"
+  },
+  {
+    "question": "The world record for the oldest living dog, is held by a dog named Bluey \u2013 but how old was the record-setting woof when he passed?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "29 years old\n"
+  },
+  {
+    "question": "What type of dog was Lassie?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Collie (or Rough Collie)\n"
+  },
+  {
+    "question": "Related to a famous reading device, what is the name of a group of kittens?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Kindle\n"
+  },
+  {
+    "question": "It is estimated that 3% of the glaciers in Antarctica are made up of the urine of which animal?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Penguin\n"
+  },
+  {
+    "question": "What type of bear has a bite that is said to be strong enough to break a bowling ball?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Grizzly\n"
+  },
+  {
+    "question": "What animal is the closest living relative to the T-Rex?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Chicken\n"
+  },
+  {
+    "question": "What is the collective name for a group of owls?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Parliament\n"
+  },
+  {
+    "question": "Which cute little marine creature hold hands with their friends to keep themselves from drifting apart while sleeping?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Sea otters\n"
+  },
+  {
+    "question": "In 1986 what type of animal, named Clay Henry, was surprisingly elected mayor of Lajitas in Texas?  \n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A goat\n"
+  },
+  {
+    "question": "In which country do macaques use coins in vending machines to buy snacks?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Japan\n"
+  },
+  {
+    "question": "What animal\u2019s poop is generally cube shaped?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Wombat\n"
+  },
+  {
+    "question": "What colour is hippo sweat?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Pink\n"
+  },
+  {
+    "question": "Which country do French Poodles come from?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Germany\n"
+  },
+  {
+    "question": "What animal has breeds including Jersey, Texas Longhorn and Belgian Blue?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Cow\n"
+  },
+  {
+    "question": "What kind of animal is the main character in the book titled Babe by Dick King-Smith?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A pig\n"
+  },
+  {
+    "question": "What hardworking type of animal in George Orwell\u2019s Animal Farm is Boxer?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Horse\n"
+  },
+  {
+    "question": "What farm animal shares its name with a country that is often said to border both Europe and Asia?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Turkey\n"
+  },
+  {
+    "question": "Lionel Messi and Cristiano Ronaldo are often called the greatest of all time \u2013 but what farm animal connects them?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Goat (Greatest Of All Time)\n"
+  },
+  {
+    "question": "Belonging to the Camelidae family, which also includes camels, which animal has two breeds \u2013 Huacaya and the Suri?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Alpacas\n"
+  },
+  {
+    "question": "What is the farm animal that becomes the best friend of Shrek?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Donkey\n"
+  },
+  {
+    "question": "With breeds that include Zwartbles, Corriedale and Merino, what is the name of this farm animal?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Sheep\n"
+  },
+  {
+    "question": "Out for a score of zero in cricket is also known as what farm animal?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Duck\n"
+  },
+  {
+    "question": "Which farm animal was originally domesticated in Southern China around 6,000 BC?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Chickens\n"
+  },
+  {
+    "question": "I have stripes and belong to the genus Equus, what animal am I?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Zebra\n"
+  },
+  {
+    "question": "A popular household pet, with around 75 million of us in the US alone, what animal am I?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Dog\n"
+  },
+  {
+    "question": "The larval stage of amphibians, able to grow into frogs and salamanders, what am I?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A tadpole\n"
+  },
+  {
+    "question": "The national emblem of South Africa and often quoted as the second fastest land animal, what animal am I?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Springbok\n"
+  },
+  {
+    "question": "Now extinct but originally found on Mauritius, what animal am I?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Dodo\n"
+  },
+  {
+    "question": "Made globally famous by the SEGA video game Sonic, what animal am I?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Hedgehog\n"
+  },
+  {
+    "question": "Originally domesticated by the Incas more than 3,000 years ago, but now a household pet, what animal am I?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A guinea pig\n"
+  },
+  {
+    "question": "My name can be roughly translated from ancient Greek to mean river horse, what animal am I?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Hippopotamus\n"
+  },
+  {
+    "question": "A predator by nature, and the national emblem of the United States of America, what animal am I?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A bald eagle\n"
+  },
+  {
+    "question": "Living mainly in trees, and apparently the slowest animal on the planet, I can take up to 2 weeks to digest my food. What animal am I?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Sloth\n"
+  },
+  {
+    "question": "In what mountain range would you find the snow leopard?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "The Himalayas\n"
+  },
+  {
+    "question": "Often referred to as the largest living organism, what is the common name for the area off the coast of Australia?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "The Great Barrier Reef\n"
+  },
+  {
+    "question": "What is the largest lizard in the world?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Komodo Dragon\n"
+  },
+  {
+    "question": "Name the largest land mammal that currently inhabits the planet.\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "African Elephant\n"
+  },
+  {
+    "question": "Mus musculus is the Latin name for what common animal?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "The common house mouse\n"
+  },
+  {
+    "question": "What kind of animal is a doe?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Deer\n"
+  },
+  {
+    "question": "On what continent would you find the only giraffes in the wild?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Africa\n"
+  },
+  {
+    "question": "What is the only animal to sleep on its back?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Humans\n"
+  },
+  {
+    "question": "9.What flightless bird is the emblem of New Zealand?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Kiwi\n"
+  },
+  {
+    "question": "True or false? Crocodiles have roamed the earth for around 200 million years.\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "True\n"
+  },
+  {
+    "question": "Which mammal is known to have the most powerful bite in the world?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Hippopotamus\n"
+  },
+  {
+    "question": "What object does a male penguin often gift to a female penguin to win her over?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A pebble\n"
+  },
+  {
+    "question": "How long is an elephant pregnant before it gives birth?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "22 months\n"
+  },
+  {
+    "question": "What are the only two mammals known to lay eggs?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "The anteater and the duck-billed platypus\n"
+  },
+  {
+    "question": "Why are flamingos pink?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Because of their diet of algae, shrimps, and crustaceans\n"
+  },
+  {
+    "question": "A dog sweats through which part of its body?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Its paws\n"
+  },
+  {
+    "question": "What is the size of a newborn kangaroo?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "One inch\n"
+  },
+  {
+    "question": "How far away can a wolf smell its prey?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Almost two miles\n"
+  },
+  {
+    "question": "Which animal is known to spend 90% of its day sleeping?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Koalas\n"
+  },
+  {
+    "question": "What color is the tongue of a giraffe?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": " Purple\n"
+  },
+  {
+    "question": "Which animal\u2019s stripes are on their skin as well as their fur?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Tiger\n"
+  },
+  {
+    "question": " Which animal\u2019s poop is known to take the shape of cubes?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Wombat\n"
+  },
+  {
+    "question": "Under their white fur, what color is a polar bear\u2019s skin?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Black\n"
+  },
+  {
+    "question": "How many compartments are in a cow\u2019s stomach?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Four\n"
+  },
+  {
+    "question": "How long does it take a sloth to digest a meal?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Two weeks\n"
+  },
+  {
+    "question": "What is the name of the fastest land animal?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Cheetah\n"
+  },
+  {
+    "question": "A baby goat is called what?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Kid\n"
+  },
+  {
+    "question": "What\u2019s the only mammal that\u2019s able to fly?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Bat\n"
+  },
+  {
+    "question": "What\u2019s a group of kittens called?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Kindle\n"
+  },
+  {
+    "question": "What are the horns of a rhinoceros made of?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Hair\n"
+  },
+  {
+    "question": "How many humps does a Bactrian camel have?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Two\n"
+  },
+  {
+    "question": "What name is given to a female deer?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Doe\n"
+  },
+  {
+    "question": "How do sea otters keep from drifting apart while they sleep?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "They hold hands\n"
+  },
+  {
+    "question": "What animal is known by the nickname \"sea cow\"?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Manatee\n"
+  },
+  {
+    "question": "What animal is said to have nine lives?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Cat\n"
+  },
+  {
+    "question": "What is the only mammal that can\u2019t jump?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Elephant\n"
+  },
+  {
+    "question": "What animal is the largest mammal in the world?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Blue Whale\n"
+  },
+  {
+    "question": "What animal eats mainly bamboo?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Panda\n"
+  },
+  {
+    "question": "What animal is known to be \"man\u2019s best friend\"?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Dog\n"
+  },
+  {
+    "question": "Which animal can stand on its tail?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Kangaroo\n"
+  },
+  {
+    "question": "Which animal is the tallest in the world?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Giraffe\n"
+  },
+  {
+    "question": "How far can a skunk spray?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "10 feet\n"
+  },
+  {
+    "question": "What animal is covered in quills?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Porcupine\n"
+  },
+  {
+    "question": "A Pomsky is a mixture of what two dog breeds?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Pomeranian and Siberian Husky\n"
+  },
+  {
+    "question": "What kind of turtle can\u2019t retract into its shell?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Sea turtle\n"
+  },
+  {
+    "question": "What kind of animal is a Komodo dragon?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A lizard\n"
+  },
+  {
+    "question": "What does a snake shed a few times a year?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Its skin\n"
+  },
+  {
+    "question": "Which animal can move its eyes independently?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": " A chameleon\n"
+  },
+  {
+    "question": "What animal breathes out of its butt?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Turtles\n"
+  },
+  {
+    "question": "How many layers of skin does a chameleon have?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Four\n"
+  },
+  {
+    "question": "What do snakes use to smell?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Their tongue\n"
+  },
+  {
+    "question": "The King Cobra is also called what?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "The Hamadryad\n"
+  },
+  {
+    "question": "Where does a tortoise lay its eggs?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "In a hole in the ground\n"
+  },
+  {
+    "question": "What feature is visibly different between alligators and crocodiles?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Their snout\n"
+  },
+  {
+    "question": "Are most reptiles cold-blooded or warm-blooded?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Cold-blooded\n"
+  },
+  {
+    "question": "What\u2019s the name of the largest snake in the world?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Anaconda\n"
+  },
+  {
+    "question": "What type of reptiles are leatherbacks and ridleys?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Turtles\n"
+  },
+  {
+    "question": "What reptile is known for the ability to change its body color?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Chameleon\n"
+  },
+  {
+    "question": "What type of reptile can detach its tail when it's in danger and then regrow it?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Lizard\n"
+  },
+  {
+    "question": "The top of the turtle's shell is called what?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Carapace\n"
+  },
+  {
+    "question": "Why do poison dart frogs often have very brightly colored skin?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "To warn predators that they are dangerous\n"
+  },
+  {
+    "question": "Nearly all amphibians undergo a significant change from infancy to adulthood called what?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Metamorphosis\n"
+  },
+  {
+    "question": "Why do frogs croak?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "To attract a mate\n"
+  },
+  {
+    "question": "What covers tree frogs' toes to help them climb and hang upside down?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Sticky mucus\n"
+  },
+  {
+    "question": "What's the maximum amount of time Alaskan Wood Frogs can survive being frozen?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Seven months\n"
+  },
+  {
+    "question": "The larvae stage of a frog is called what?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Tadpole\n"
+  },
+  {
+    "question": "What\u2019s the largest type of frog?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Goliath Frog\n"
+  },
+  {
+    "question": "Do frogs lay eggs?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Yes\n"
+  },
+  {
+    "question": "Do Axolotls live in the water or on land?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "In the water\n"
+  },
+  {
+    "question": "Which amphibian has a tail?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Salamanders\n"
+  },
+  {
+    "question": "How many groups of amphibians are there?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Three\n"
+  },
+  {
+    "question": "A wart-covered amphibian with leathery skin is a what?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Toad\n"
+  },
+  {
+    "question": "What\u2019s the name of the frog that has translucent skin so that you can see its internal organs, bones, and muscles through its skin?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A glass frog\n"
+  },
+  {
+    "question": "The Dusky Gopher Frog is also referred to as?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "The Mississippi Gopher Frog\n"
+  },
+  {
+    "question": "If you see a dancing frog, it\u2019s likely to be . . .\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Trying to impress a mate\n"
+  },
+  {
+    "question": "What\u2019s a group of frogs called?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "An army, a colony, or a knot\n"
+  },
+  {
+    "question": "Are frogs more active during the day or at night?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "At night\n"
+  },
+  {
+    "question": "How far can frogs jump?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "They can jump over 20 times their own body length.\n"
+  },
+  {
+    "question": "What\u2019s the most poisonous frog on Earth?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "The Golden Dart Frog\n"
+  },
+  {
+    "question": "What do you call a frog\u2019s ears?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Tympanums\n"
+  },
+  {
+    "question": "Where are a cricket\u2019s ears located?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "On their legs\n"
+  },
+  {
+    "question": "Which butterfly migrates?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Monarchs\n"
+  },
+  {
+    "question": "How much weight can ants lift?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "5,000 times their own body weight\n"
+  },
+  {
+    "question": "What color is an Elephant Hawk-Moth?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Pink\n"
+  },
+  {
+    "question": "How are an insect\u2019s eyes different from human eyes?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "They are made up of thousands of tiny lenses.\n"
+  },
+  {
+    "question": "How many eyes do caterpillars have?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "12\n"
+  },
+  {
+    "question": "What\u2019s the largest group of insects?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Beetles\n"
+  },
+  {
+    "question": "What\u2019s a newly hatched butterfly called?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Caterpillar\n"
+  },
+  {
+    "question": "How many legs do cockroaches have?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Six\n"
+  },
+  {
+    "question": "Fireflies are also known by what name?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Lightning bug\n"
+  },
+  {
+    "question": "How long does the average Housefly live for?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "28 days\n"
+  },
+  {
+    "question": "What is the only insect that can turn its head?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Praying mantis\n"
+  },
+  {
+    "question": "Which type of insect produces a special kind of fabric?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Silkworm Moth\n"
+  },
+  {
+    "question": "How many times do a bee\u2019s wings beat per second?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "190 times a second\n"
+  },
+  {
+    "question": "How long have dragonflies been on Earth?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "300 million years\n"
+  },
+  {
+    "question": "What is the loudest insect in the world?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Cicada\n"
+  },
+  {
+    "question": "What insect was the first living creature to be sent into space?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Fruit Fly\n"
+  },
+  {
+    "question": "How much weight can a Horned Dung Beetle pull?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "1,141 times its own body weight\n"
+  },
+  {
+    "question": "How many different species of ladybugs are there?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "5,000\n"
+  },
+  {
+    "question": "How fast can Dracula Ants move?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "90 meters per second\n"
+  },
+  {
+    "question": "How many babies can a German Cockroach produce in one year?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "30,000\n"
+  },
+  {
+    "question": "What is the smallest known insect?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Fairyfly\n"
+  },
+  {
+    "question": "What are the three body parts of an insect called?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "The head, thorax, and abdomen\n"
+  },
+  {
+    "question": "Which ant has the most painful sting?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Bullet Ant\n"
+  },
+  {
+    "question": "How many stages of metamorphosis do most insects go through?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Four\n"
+  },
+  {
+    "question": "How do some female dragonflies avoid mating with undesirable males?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "They play dead.\n"
+  },
+  {
+    "question": "What part of its body does a butterfly taste with?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Its feet\n"
+  },
+  {
+    "question": "How many flowers do honey bees have to visit in order to make one pound of honey?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "2 million\n"
+  },
+  {
+    "question": "Why do crickets rub their wings together?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "To attract a mate\n"
+  },
+  {
+    "question": "What is a group of cats called?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A clowder\n"
+  },
+  {
+    "question": "Which has the thickest fur of any mammal?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Sea otter\n"
+  },
+  {
+    "question": "The age of a lion can be determined by its\u2026?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Nose\n"
+  },
+  {
+    "question": "What is the only mammal capable of true flight?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Bats\n"
+  },
+  {
+    "question": "A newborn kangaroo is about the size of a\u2026?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Lima bean\n"
+  },
+  {
+    "question": "What is the smallest mammal in the world?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Bumblebee bat\n"
+  },
+  {
+    "question": "What animal has the highest blood pressure?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Giraffe\n"
+  },
+  {
+    "question": "How far away can a wolf smell its prey?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Almost two miles\n"
+  },
+  {
+    "question": "What mammal has the most powerful bite?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Hippopotamus\n"
+  },
+  {
+    "question": "Where is the only place on their body dogs have sweat glands?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "The pads of their paws\n"
+  },
+  {
+    "question": "What is a female fox called?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Vixen\n"
+  },
+  {
+    "question": "How many teeth can a crocodile have over its lifetime?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Up to 4,000\n"
+  },
+  {
+    "question": "What creature has a tongue that can measure the length of its body?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Chameleon\n"
+  },
+  {
+    "question": "What is a group of parrots called?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A pandemonium\n"
+  },
+  {
+    "question": "What type of farm animal can sunburn?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Pig\n"
+  },
+  {
+    "question": "What is a male duck called?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Drake\n"
+  },
+  {
+    "question": "What is the closest living relative to the T-rex?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Chicken\n"
+  },
+  {
+    "question": "What male sea creature gives birth to its young?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Seahorse\n"
+  },
+  {
+    "question": "Which sea creature can change its gender?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Oyster\n"
+  },
+  {
+    "question": "What is the deadliest creature in the world?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Mosquito\n"
+  },
+  {
+    "question": "Where do sea otters store extra food on their bodies?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A pocket of skin in their armpits\n"
+  },
+  {
+    "question": "What four common species of animals die soon after giving birth?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Octopus, squid, salmon, and common mayfly\n"
+  },
+  {
+    "question": "What type of fish mate for life?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Angelfish\n"
+  },
+  {
+    "question": "Where on the body are a crab\u2019s taste buds?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Its feet\n"
+  },
+  {
+    "question": "Which animal baby can gain up to 250 pounds per day?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Blue whale\n"
+  },
+  {
+    "question": "What is a baby hedgehog called?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Hoglet\n"
+  },
+  {
+    "question": "What percentage of baby animals are raised by both parents?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Three percent\n"
+  },
+  {
+    "question": "People from which country brought domestic cats to the United States?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "England\n"
+  },
+  {
+    "question": "What are the only two mammals that lay eggs?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Spiny anteater and duck-billed platypus\n"
+  },
+  {
+    "question": "How many legs does a lobster have?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "10\n"
+  },
+  {
+    "question": "What animal produces mohair?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Angora goat\n"
+  },
+  {
+    "question": "What is a male swan called?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Cob\n"
+  },
+  {
+    "question": "Which large mammal has a tail so strong it can stand on it and lift its hind legs off the ground?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Kangaroo\n"
+  },
+  {
+    "question": "What do you call a group of crows?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A murder\n"
+  },
+  {
+    "question": "What is the fastest sea animal?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Sailfish\n"
+  },
+  {
+    "question": "What is a polar bear\u2019s skin color?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Black\n"
+  },
+  {
+    "question": "What are the only two mammals that lay eggs?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Duck-billed platypus and spiny anteater\n"
+  },
+  {
+    "question": "What are 12 or more cows called?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A flink\n"
+  },
+  {
+    "question": "What is a female donkey called?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Jenny\n"
+  },
+  {
+    "question": "What is the only big cat that doesn\u2019t roar?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Cheetah\n"
+  },
+  {
+    "question": "What is a group of badgers called?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A cete\n"
+  },
+  {
+    "question": "What animal has the thickest fur of any mammal?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Sea otter\n"
+  },
+  {
+    "question": "What type of animal is a Portuguese Man O War?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Jellyfish\n"
+  },
+  {
+    "question": "Belted Galloway and Belgian Blue are breeds of which animal?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Cow\n"
+  },
+  {
+    "question": "Which bird\u2019s eye is bigger than its brain?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Ostrich\n"
+  },
+  {
+    "question": "How many species of sea urchin are there?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "950\n"
+  },
+  {
+    "question": "What is a group of camels called?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A caravan\n"
+  },
+  {
+    "question": "Which aquatic mammal has the most extended lifespan?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Bowhead whale\n"
+  },
+  {
+    "question": "Which bird is considered the fastest?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Peregrine falcon\n"
+  },
+  {
+    "question": "How many heart chambers does a cockroach have?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "12\n"
+  },
+  {
+    "question": "What animal lays the largest egg?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Ostrich\n"
+  },
+  {
+    "question": "What is thought to be the oldest breed of dog?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Basenji\n"
+  },
+  {
+    "question": "How many species of ants exist on Earth?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "10,000+\n"
+  },
+  {
+    "question": "What does a male penguin often gift its female counterpart to win her over?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A pebble\n"
+  },
+  {
+    "question": "Why are flamingos pink?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Their diet is rich in algae, shrimp, and crustaceans\n"
+  },
+  {
+    "question": "What color is a giraffe\u2019s tongue?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Purple\n"
+  },
+  {
+    "question": "What animal has stripes on its skin as well as its fur?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Tiger\n"
+  },
+  {
+    "question": "How do sea otters keep from drifting apart while they sleep?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "They hold hands\n"
+  },
+  {
+    "question": "What kind of turtle can\u2019t retract into its shell?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Sea turtle\n"
+  },
+  {
+    "question": "What does a snake use to taste and smell?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "The roof of its mouth\n"
+  },
+  {
+    "question": "What is the main reason frogs croak?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "To attract a mate\n"
+  },
+  {
+    "question": "Where are a cricket\u2019s ears located?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "On the tibia of its forelegs\n"
+  },
+  {
+    "question": "What is the only insect that can turn its head 180 degrees?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Praying mantis\n"
+  },
+  {
+    "question": "What\u2019s the loudest insect in the world?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Cicada\n"
+  },
+  {
+    "question": "How many flowers do honey bees have to visit to produce one pound of honey?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Two million\n"
+  },
+  {
+    "question": "What animals have teeth that never stop growing?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Rabbits, squirrels, and rodents\n"
+  },
+  {
+    "question": "What sea creature has the ability to clone itself?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Jellyfish\n"
+  },
+  {
+    "question": "What color is a hippo\u2019s sweat?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Pink\n"
+  },
+  {
+    "question": "Which crustacean can growl when intimidating its enemies?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Ghost crab\n"
+  },
+  {
+    "question": "Which animal in a pride does the majority of the hunting?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "The lioness\n"
+  },
+  {
+    "question": "Which animal is known to plant thousands of trees across the world?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Squirrel\n"
+  },
+  {
+    "question": "Which animal is known for spending 90 percent of its day sleeping?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Koala bear\n"
+  },
+  {
+    "question": "What shape do the tails of mating dragonflies make?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A heart\n"
+  },
+  {
+    "question": "How many facial expressions can a horse make?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "17\n"
+  },
+  {
+    "question": "What animal squirts blood from its eyes as a defensive mechanism?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Horned lizard\n"
+  },
+  {
+    "question": "What color are flamingos when they\u2019re born?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Gray\n"
+  },
+  {
+    "question": "What animal is known for having 32 brains?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Leech\n"
+  },
+  {
+    "question": "Which animal has rectangular pupils?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Goat\n"
+  },
+  {
+    "question": "What do you call the underside of a horse\u2019s hoof?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A frog\n"
+  },
+  {
+    "question": "What percentage of their lives do cats spend sleeping?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "70 percent\n"
+  },
+  {
+    "question": "What\u2019s the sole food source for koala bears?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Eucalyptus\n"
+  },
+  {
+    "question": "What item do toucans toss back and forth using their beaks during their mating ritual?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A piece of fruit\n"
+  },
+  {
+    "question": "Which animal has the strongest sense of smell?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "African elephant\n"
+  },
+  {
+    "question": "What possession do otters hold onto their entire lives?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A pebble\n"
+  },
+  {
+    "question": "Which sea creature can be broken into five pieces and still survive?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Starfish\n"
+  },
+  {
+    "question": "What\u2019s the main way cats show they trust someone?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "By headbutting\n"
+  },
+  {
+    "question": "What animal can only eat when its head is upside down?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Flamingo\n"
+  },
+  {
+    "question": "How do honeybees communicate to one another that they\u2019ve found the best pollen?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "By dancing\n"
+  },
+  {
+    "question": "Where are the only two places in the world where lions live in the wild?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Africa and India\n"
+  },
+  {
+    "question": "Which aquatic animal is the most poisonous in the world?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Pufferfish\n"
+  },
+  {
+    "question": "What is a group of hedgehogs called?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A prickle or an array\n"
+  },
+  {
+    "question": "Which animal evades predators by running in zigzag patterns?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Hartebeest\n"
+  },
+  {
+    "question": "What color is a polar bear\u2019s hair?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Clear, though it appears white because it\u2019s hollow and reflects light\n"
+  },
+  {
+    "question": "What do humpback whales use to attract prey?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Bubbles\n"
+  },
+  {
+    "question": "How many toes do sheep have on each foot?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Two\n"
+  },
+  {
+    "question": "Which bird is a symbol for peace?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "The dove\n"
+  },
+  {
+    "question": "What is a group of pigs called?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A drift\n"
+  },
+  {
+    "question": "What is a male turkey called?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A gobbler\n"
+  },
+  {
+    "question": "How many teats does a cow have?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Four\n"
+  },
+  {
+    "question": "Which animal has a sense of hearing about four times as sensitive as humans?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Dog\n"
+  },
+  {
+    "question": "1. About what size is a newborn panda?irth, about as much as a stick of butter\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Baby pandas weigh about 100 grams at b\n"
+  },
+  {
+    "question": "How long do seahorses mate for?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "For life\n"
+  },
+  {
+    "question": "Which gender are all clownfish born?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Male\n"
+  },
+  {
+    "question": "Where are the majority of a butterfly's taste buds located?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "On their feet\n"
+  },
+  {
+    "question": "How long can a Gal\u00e1pagos Tortoise go without water?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "One year\n"
+  },
+  {
+    "question": "What is the slowest animal in the world?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Three-toed sloths\n"
+  },
+  {
+    "question": "How many years can a snail sleep for?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Three\n"
+  },
+  {
+    "question": "Which mammal has no vocal cords?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Giraffe\n"
+  },
+  {
+    "question": "How many eyes does a honeybee have?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Five\n"
+  },
+  {
+    "question": "What is a female donkey called?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Jenny\n"
+  },
+  {
+    "question": "How many hearts does an octopus have?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Three\n"
+  },
+  {
+    "question": "What type of animal is a Flemish Giant?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Rabbit\n"
+  },
+  {
+    "question": "Where is a shrimp's heart located?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "In its head\n"
+  },
+  {
+    "question": "Which animal has cube-shaped poop?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Wombat\n"
+  },
+  {
+    "question": "What is a rhino's horn made out of?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Keratin\n"
+  },
+  {
+    "question": "What is the tallest species of penguin?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Emperor Penguins\n"
+  },
+  {
+    "question": "Which animal has the largest eyes in the animal kingdom?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Colossal squid\n"
+  },
+  {
+    "question": "How long does it take for a sloth to digest its food?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "30 days\n"
+  },
+  {
+    "question": "How many compartments does a cow\u2019s stomach have?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Four\n"
+  },
+  {
+    "question": "How many bones does a shark have?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "None\n"
+  },
+  {
+    "question": "What do you call a group of kangaroos?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A troop\n"
+  },
+  {
+    "question": "What is the heaviest species of monkey?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Mandrill\n"
+  },
+  {
+    "question": "What type of animal is a fer-de-lance?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Snake\n"
+  },
+  {
+    "question": "What color is the beak of a mature mute swan?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Orange\n"
+  },
+  {
+    "question": "What's the first thing a caterpillar eats after it hatches?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Its own shell\n"
+  },
+  {
+    "question": "The trumpeter swan \u2014 North America's largest water fowl \u2014 weighs about how many pounds?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Nearly 30 pounds\n"
+  },
+  {
+    "question": "What is the largest herbivore in North America?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "American Bison\n"
+  },
+  {
+    "question": "What is the smallest bird in the world?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Bee hummingbird \n"
+  },
+  {
+    "question": "What is the only mammal that can fly?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Bats\n"
+  },
+  {
+    "question": "Which animal is referred to as the \"king of the jungle\"?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Lion\n"
+  },
+  {
+    "question": "Walrus can eat about how many clams in one day?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "5,000 clams\n"
+  },
+  {
+    "question": "What is a group of crows called?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A murder\n"
+  },
+  {
+    "question": "Which marsupial can't walk backwards?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Kangaroo\n"
+  },
+  {
+    "question": "What is the fastest animal on land?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Cheetah\n"
+  },
+  {
+    "question": "What is a baby rabbit called?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A kit\n"
+  },
+  {
+    "question": "Ants warn each other of danger by doing what?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Releasing pheromones \n"
+  },
+  {
+    "question": "What is the largest animal on earth?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Blue whale\n"
+  },
+  {
+    "question": "What is the smallest mammal in the world?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Bumblebee bat\n"
+  },
+  {
+    "question": "What type of animal is a seahorse?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Fish\n"
+  },
+  {
+    "question": "How high can penguins jump?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Nine feet\n"
+  },
+  {
+    "question": "What is the largest bird in the world?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Ostrich \n"
+  },
+  {
+    "question": "Why do otters hold hands in water?eping\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "So they don't drift apart when sle\n"
+  },
+  {
+    "question": "What is a group of flamingos called?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A flamboyance\n"
+  },
+  {
+    "question": "What is the fastest animal in water?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Sailfish\n"
+  },
+  {
+    "question": "What happens if a lizard loses its tail?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "It grows back\n"
+  },
+  {
+    "question": "How many degrees can owls rotate their heads?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "270 degrees\n"
+  },
+  {
+    "question": "What shape are goats' pupils?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Rectangular\n"
+  },
+  {
+    "question": "Aside from honeybees, which insect can recognize human faces?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Wasps\n"
+  },
+  {
+    "question": "Which animal is invisible when seen in infrared cameras?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Polar bears\n"
+  },
+  {
+    "question": "How can elephants communicate but humans can't hear it?quiet for humans to pick up.\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "They use infrasound (between 1\u201320 Hertz), which is too \n"
+  },
+  {
+    "question": "A blue whale's tongue can weigh as much as which animal?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "An elephant\n"
+  },
+  {
+    "question": "What is the only non-primate with fingerprints?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Koalas\n"
+  },
+  {
+    "question": "What is a group of owls called?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A parliament\n"
+  },
+  {
+    "question": "How long are chameleon's tongues?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "About twice its body length\n"
+  },
+  {
+    "question": "How many animals can give birth as males?sh)\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Three (seahorses, sea dragons, and pipefi\n"
+  },
+  {
+    "question": "How many mammals can lay eggs?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Five\n"
+  },
+  {
+    "question": "What is a group of hedgehogs called?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A prickle\n"
+  },
+  {
+    "question": "How fast can a hummingbird's heart beat?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "1,200 times per minute\n"
+  },
+  {
+    "question": "For how many years have sharks roamed the earth?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "450 million\n"
+  },
+  {
+    "question": "What's the fastest animal by flight?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Peregrine falcon\n"
+  },
+  {
+    "question": "What is the rarest leopard in the world?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Amur leopard\n"
+  },
+  {
+    "question": "What is a group of ferrets called?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A business\n"
+  },
+  {
+    "question": "Which mammal has the lowest heart rate?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Blue whale\n"
+  },
+  {
+    "question": "What type of animal is a crocodile?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Reptile\n"
+  },
+  {
+    "question": "What is the most venomous snake in the world?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Western taipan \n"
+  },
+  {
+    "question": "Which animal has the most legs?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "The millipede\n"
+  },
+  {
+    "question": "Which undersea creature has no teeth?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Humpback whale\n"
+  },
+  {
+    "question": "What key does a housefly hum in?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "They fly in the key of F\n"
+  },
+  {
+    "question": "Which land animal can't jump?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Elephant\n"
+  },
+  {
+    "question": "Can animals with whiskers shed them naturally?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Yes\n"
+  },
+  {
+    "question": "Which organ do ants lack?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Lungs\n"
+  },
+  {
+    "question": "How many times does a woodpecker peck per second?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "20 times\n"
+  },
+  {
+    "question": "Which animal has the highest blood pressure?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Giraffe\n"
+  },
+  {
+    "question": "Which animal doesn't need to sleep?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Bullfrog\n"
+  },
+  {
+    "question": "Which mammal has the longest lifespan?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Bowhead whale\n"
+  },
+  {
+    "question": "How many toes do cats typically have?both back paws)\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "18 (five on both front paws, four on \n"
+  },
+  {
+    "question": "Which animal has the strongest bite force in the animal kingdom?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Saltwater crocodile\n"
+  },
+  {
+    "question": "The arctic tern has the longest migration journey of any animal \u2014 how many miles does it travel in a year?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Roughly 20,000 miles\n"
+  },
+  {
+    "question": "How many miles per hour can cheetahs run?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Up to 70mph\n"
+  },
+  {
+    "question": "What's the average lifespan of a wild turkey?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "3.5\u20135 years\n"
+  },
+  {
+    "question": "How many inches is the leg span of the world's largest tarantula, the Goliath bird-eating tarantula?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "11 inches\n"
+  },
+  {
+    "question": "What color is a polar bear's skin?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Black\n"
+  },
+  {
+    "question": "What is a group of rhinos called?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A crash\n"
+  },
+  {
+    "question": "What is the largest rodent in the world?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Capybara \n"
+  },
+  {
+    "question": "Binturongs (bearcats) are said to smell like which popular food?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Popcorn \n"
+  },
+  {
+    "question": "How much can a Komodo dragon, the largest lizard in the world, weigh?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Over 300 pounds\n"
+  },
+  {
+    "question": "How much bamboo does a giant panda eat in a day?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Up to 84 pounds\n"
+  },
+  {
+    "question": "Which marine animal lacks a blubber layer?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Sea otters\n"
+  },
+  {
+    "question": "What do you call a group of zebras?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A dazzle\n"
+  },
+  {
+    "question": "What is the most poisonous animal in the world?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Golden poison frog\n"
+  },
+  {
+    "question": "What is the only bird that can fly backwards?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Hummingbird\n"
+  },
+  {
+    "question": "Which animal moves so slowly that algae can actually grow on its back?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Sloths\n"
+  },
+  {
+    "question": "Which sea animal is known for its 10-foot tusk?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Narwhal\n"
+  },
+  {
+    "question": "How long can camels go without water?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Over a week\n"
+  },
+  {
+    "question": "How many feet can king cobras grow to be?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Up to 18 feet\n"
+  },
+  {
+    "question": "How long is the lifespan of a housefly?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "A month\n"
+  },
+  {
+    "question": "A praying mantis can rotate its head how many degrees?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "180 degrees\n"
+  },
+  {
+    "question": "Where is the only place Tasmanian devils are found?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Tasmania, Australia\n"
+  },
+  {
+    "question": "The toxin from one pufferfish can kill how many humans?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "30\n"
+  },
+  {
+    "question": "Which sea creature is known to produce songs that travel for miles?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Humpback whale\n"
+  },
+  {
+    "question": "What is a group of pandas called?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "An embarrassment \n"
+  },
+  {
+    "question": "What is the loudest animal in the world?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Sperm whale\n"
+  },
+  {
+    "question": "Which animal's front teeth never stop growing?\n",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "Squirrel\n"
+  },
+  {
+    "question": "How many hours a day on average do koalas sleep?",
+    "likes": 0,
+    "category": "Animals",
+    "answer": "20 hours"
+  },
+  {
+    "question": "What does DNA stand for?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Deoxyribonucleic acid\n"
+  },
+  {
+    "question": "How many bones are in the human body?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "206\n"
+  },
+  {
+    "question": "The concept of gravity was discovered by which famous physicist?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Sir Isaac Newton\n"
+  },
+  {
+    "question": "What is the hardest natural substance on Earth?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Diamond\n"
+  },
+  {
+    "question": "Which is the main gas that makes up the Earth's atmosphere?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Nitrogen\n"
+  },
+  {
+    "question": "Humans and chimpanzees share roughly how much DNA?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "98 per cent\n"
+  },
+  {
+    "question": "What is the most abundant gas in the Earth's atmosphere?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Nitrogen\n"
+  },
+  {
+    "question": "Roughly how long does it take for the sun's light to reach Earth - 8 minutes, 8 hours or 8 days?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "8 minutes\n"
+  },
+  {
+    "question": "Which famous British physicist wrote A Brief History of Time?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Stephen Hawking\n"
+  },
+  {
+    "question": "At what temperature are Celsius and Fahrenheit equal?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "-40\n"
+  },
+  {
+    "question": "What modern-day country was Marie Curie born in?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Poland\n"
+  },
+  {
+    "question": "What is the biggest planet in our solar system?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Jupiter\n"
+  },
+  {
+    "question": "What name is given for the number of protons found in the nucleus of an atom?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Atomic number\n"
+  },
+  {
+    "question": "How many vertebrae does the average human possess?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "33\n"
+  },
+  {
+    "question": "What was the name of the first man-made satellite launched by the Soviet Union in 1957?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Sputnik 1\n"
+  },
+  {
+    "question": "Which oath of ethics taken by doctors is named after an Ancient Greek physician?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Hippocratic Oath\n"
+  },
+  {
+    "question": "What is a material that will not carry an electrical charge called?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Insulator\n"
+  },
+  {
+    "question": "Which Apollo moon mission was the first to carry a lunar rover?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Apollo 15\n"
+  },
+  {
+    "question": "How many teeth does an adult human have?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "32\n"
+  },
+  {
+    "question": "What is the study of mushrooms called?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Mycology\n"
+  },
+  {
+    "question": "How many brains and how many hearts does an octopus have?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "9 brains, 3 hearts\n"
+  },
+  {
+    "question": "What is the only letter not to appear on the periodic table?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "J\n"
+  },
+  {
+    "question": "What is the fastest land animal in the world?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Cheetah\n"
+  },
+  {
+    "question": "What is the only even prime number?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "2\n"
+  },
+  {
+    "question": "What do the letters in the word laser stand for?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Light Amplification by Stimulated Emission of Radiation\n"
+  },
+  {
+    "question": "What is the perimeter of a circle called?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The circumference\n"
+  },
+  {
+    "question": "Sound travels faster in air than in water: true or false?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "False\n"
+  },
+  {
+    "question": "Which of the world's oceans in the deepest?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The Pacific\n"
+  },
+  {
+    "question": "What was the name of the first artificial satellite to enter space?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Sputnik 1\n"
+  },
+  {
+    "question": "Who is credited with the creation of the World Wide Web?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Tim Berners-Lee\n"
+  },
+  {
+    "question": "Lightning hotter than the surface of the sun: true or false?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "True\n"
+  },
+  {
+    "question": "Where in the human body can the smallest bone be found?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The ear\n"
+  },
+  {
+    "question": "How many bones do sharks have?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Zero\n"
+  },
+  {
+    "question": "What is sphenopalatine ganglioneuralgia the scientific term for?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Brain freeze\n"
+  },
+  {
+    "question": "What does USB stand for?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Universal Serial Bus\n"
+  },
+  {
+    "question": "What is the largest desert on Earth?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Antartica\n"
+  },
+  {
+    "question": "In which year were the first collisions achieved in the Large Hadron Collider?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "2010\n"
+  },
+  {
+    "question": "What is the heaviest organ in the human body?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The liver\n"
+  },
+  {
+    "question": "What is the rarest blood type in humans?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "AB Negative\n"
+  },
+  {
+    "question": "In which year was Pluto reclassified as a Dwarf Planet?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "2006\n"
+  },
+  {
+    "question": "What is the biggest animal in the world?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The Antarctic blue whale\n"
+  },
+  {
+    "question": "What is the only active volcano on mainland Europe called?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Mount Vesuvius\n"
+  },
+  {
+    "question": "What is desquamation the scientific term for?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Peeling skin\n"
+  },
+  {
+    "question": "How many days on Earth does it take for Venus to rotate once on its axis?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "243\n"
+  },
+  {
+    "question": "How many states of matter are there?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "4 - solid, liquid, gas and plasma\n"
+  },
+  {
+    "question": "What does a Geiger Counter measure?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Radiation\n"
+  },
+  {
+    "question": "What are natural satellites colloquially known as?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Moons\n"
+  },
+  {
+    "question": "In which year did the Apollo 13 space mission take place?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "1970\n"
+  },
+  {
+    "question": "What metal is the best conductor of electricity?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Silver\n"
+  },
+  {
+    "question": "What was the first vaccine to be developed against a contagious disease?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The smallpox vaccine\n"
+  },
+  {
+    "question": "Who is regarded as the man who invented the telephone?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": " Alexander Graham Bell\n"
+  },
+  {
+    "question": "This planet spins the fastest, completing one whole rotation in just 10 hours. Which planet is it?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": " Jupiter\n"
+  },
+  {
+    "question": "True or false: sound travels faster in the air than in water.\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": " False\n"
+  },
+  {
+    "question": "What is the hardest natural substance on Earth?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": " Diamond.\n"
+  },
+  {
+    "question": "How many teeth does an adult human have?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": " 32\n"
+  },
+  {
+    "question": "This animal was the first ever to be launched into space. She was strapped into the Soviet Sputnik 2 spacecraft which was sent out into outer space on November 3, 1957. What was her name?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": " Laika\n"
+  },
+  {
+    "question": "True or false: your hair and your nails are made from the same material.\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": " True\n"
+  },
+  {
+    "question": "Who was the first woman in space?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": " Valentina Tereshkova\n"
+  },
+  {
+    "question": "What is the scientific word for push or pull?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": " Force\n"
+  },
+  {
+    "question": "Where on the human body are the most sweat glands?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": " Bottom of the feet\n"
+  },
+  {
+    "question": "Roughly how long does it take for the sun\u2019s light to reach Earth: 8 minutes, 8 hours, or 8 days?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": " 8 minutes\n"
+  },
+  {
+    "question": "What colour catches the eye first?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": " Yellow\n"
+  },
+  {
+    "question": "What is the only bone in the human body that isn\u2019t attached to another bone?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": " Hyoid bone\n"
+  },
+  {
+    "question": "Animals that are active during dawn and dusk are called what type of animals?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": " Crepuscular\n"
+  },
+  {
+    "question": "At what temperature are Celsius and Fahrenheit equal?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": " -40.\n"
+  },
+  {
+    "question": "What are the four primary precious metals?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": " Gold, silver, platinum, and palladium\n"
+  },
+  {
+    "question": "Space travellers from the United States are called astronauts. From Russia, they\u2019re called cosmonauts. Where are taikonauts from?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": " China\n"
+  },
+  {
+    "question": "What part of the human body is the axilla?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": " The armpit\n"
+  },
+  {
+    "question": "Which freezes faster, hot water or cold water?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": " Hot water freezes faster than cold, known as the Mpemba effect.\n"
+  },
+  {
+    "question": "How does fat leave your body when you lose weight?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": " Through your sweat, urine, and breath.\n"
+  },
+  {
+    "question": "This part of the brain deals with hearing and language.\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": " Temporal lobe\n"
+  },
+  {
+    "question": "This jungle animal, when in groups, is referred to as an ambush. What kind of animal is this?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": " Tigers\n"
+  },
+  {
+    "question": "What colour has the longest wavelength in the visible spectrum?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": " Red\n"
+  },
+  {
+    "question": "What is the name of the biggest part of the human brain?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": " The cerebrum\n"
+  },
+  {
+    "question": "The deepest point in all of the world\u2019s oceans is named what?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": " Mariana Trench\n"
+  },
+  {
+    "question": "What islands were extensively studied by Charles Darwin?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": " Galapagos Islands\n"
+  },
+  {
+    "question": "The concept of gravity was discovered by which famous physicist?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": " Sir Isaac Newton. And speaking of gravity, did you know that there are normal things astronauts can\u2019t do in space?\n"
+  },
+  {
+    "question": "How many colors are in the rainbow?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Seven.\n"
+  },
+  {
+    "question": "True or False? Electrons are smaller than atoms.\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "True.\n"
+  },
+  {
+    "question": "What is the name of the tallest grass on earth?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Bamboo.\n"
+  },
+  {
+    "question": "Which is the most abundant element in the universe?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Hydrogen.\n"
+  },
+  {
+    "question": "What is the hardest natural substance on Earth?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Diamond.\n"
+  },
+  {
+    "question": "What is the study of mushrooms called?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Mycology. And if mushrooms could talk, here\u2019s what they\u2019d tell you.\n"
+  },
+  {
+    "question": "Can an airplane go in reverse?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Yes.\n"
+  },
+  {
+    "question": "Does sound travel faster in the air or in water?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Water.\n"
+  },
+  {
+    "question": "Which oath of ethics taken by doctors is named after an Ancient Greek physician?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The Hippocratic Oath.\n"
+  },
+  {
+    "question": "What is the largest desert in the world?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "It\u2019s not the Sahara, but actually Antarctica!\n"
+  },
+  {
+    "question": "True or False? Lasers work by focusing on sound waves.\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "False. \u201cLaser\u201d is actually an acronym that stands for Light Amplification by Stimulated Emission of Radiation. Lasers concentrate light waves, not sound waves.\n"
+  },
+  {
+    "question": "What does DNA stand for?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Deoxyribonucleic acid.\n"
+  },
+  {
+    "question": "Do diamonds last forever?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "No. Diamonds do not last forever. They\u2019ll eventually degrade to graphite, though the process takes over a billion years.\n"
+  },
+  {
+    "question": "What is a material that will not carry an electrical charge called?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "An insulator.\n"
+  },
+  {
+    "question": "Will there be an impact on your height if you go to space?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Yes. You will be taller because you\u2019ll no longer be subjected to gravity. And did you know that outer space actually has a smell?\n"
+  },
+  {
+    "question": "At what temperature are Celsius and Fahrenheit equal?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "-40.\n"
+  },
+  {
+    "question": "Roughly how long does it take for the sun\u2019s light to reach Earth: 8 minutes, 8 hours or 8 days?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "8 minutes.\n"
+  },
+  {
+    "question": "How do airplanes stay in the air?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Planes stay in the air because of the shape of their wings. Air moving over the wing gets forced downwards, which pushes the wing up. This push is stronger than gravity, and so makes the plane fly. There\u2019s also a reason why airplane windows are round.\n"
+  },
+  {
+    "question": "What is chalk made of?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "It comes from limestone, which formed from the shells of tiny marine animals.\n"
+  },
+  {
+    "question": "Which freezes faster, hot water or cold water?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Hot water freezes faster than cold, known as the Mpemba effect.\n"
+  },
+  {
+    "question": "On what continent will you not find bees?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Antarctica.\n"
+  },
+  {
+    "question": "What is the only rock that floats?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Pumice. It forms from the froth at the top of lava flow, which cools very rapidly.\n"
+  },
+  {
+    "question": "True or False? Chameleons change colors only to blend into their environment.\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "False. Chameleons also change colors for other reasons, like to regulate body temperature, when feeling aggression, and when feeling excited.\n"
+  },
+  {
+    "question": "Can lightning strike the same place twice?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "If you answered no to this science trivia question, you\u2019re wrong. It is actually more likely that lightning will strike the same place twice.\n"
+  },
+  {
+    "question": "True or false? Shark cartilage can cure cancer.\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Unfortunately, many still believe that shark cartilage can cure cancer, leading to the killing of sharks. That\u2019s false, and scientists now have proof that there are sharks with cancerous tumors themselves.\n"
+  },
+  {
+    "question": "How long is the memory of a goldfish?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Most people would say that goldfish only have a three-second memory. However, their memories actually last for several days.\n"
+  },
+  {
+    "question": "What mountain peak is farthest from the center of the Earth?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The peak of Chimborazo in Ecuador is the farthest from the center of the earth.\n"
+  },
+  {
+    "question": "How many bones do sharks have in their bodies?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Zero! Instead, they have powerful, flexible cartilage. Sharks are fascinating, if a bit misunderstood.\n"
+  },
+  {
+    "question": "Can gold be created from other elements?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Yes. It is possible to create gold from other elements, but it\u2019s so complicated and expensive that it would cost you more to make it than to buy it.\n"
+  },
+  {
+    "question": "What is the heaviest organ in the human body?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The liver.\n"
+  },
+  {
+    "question": "How does fat leave your body when you lose weight?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Through your sweat, urine, and breath.\n"
+  },
+  {
+    "question": "From which body part does the majority of your body heat escape?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "This is a trick science trivia question. Most people think the answer is your head, but you lose heat evenly throughout your body.\n"
+  },
+  {
+    "question": "How many senses do humans have?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Thought the answer was five? You actually have more\u2014many neurologists identify nine or more senses. Fun fact: There are also things dogs can smell that humans can\u2019t.\n"
+  },
+  {
+    "question": "Which blood type is the rarest in humans?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "AB negative.\n"
+  },
+  {
+    "question": "How many teeth does an adult human have?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "32.\n"
+  },
+  {
+    "question": "How many bones are in the human body?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "206.\n"
+  },
+  {
+    "question": "What part of the human body serves the purpose of maintaining balance?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The ears.\n"
+  },
+  {
+    "question": "Who has more hair follicles, blondes or brunettes?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Blondes.\n"
+  },
+  {
+    "question": "What color is the blood inside your body?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Dark red. Although your veins appear blue, human blood contains hemoglobin and hemoglobin is a red protein, so the blood in your body is dark red.\n"
+  },
+  {
+    "question": "What is the only planet that spins clockwise?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Venus.\n"
+  },
+  {
+    "question": "Can humans see the Great Wall of China from space?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "No. Unless you\u2019re in low orbit \u201cunder a specific set of weather and lighting conditions,\u201d according to Scientific American. Unfortunately, the Great Wall\u2019s composition of clay and stone simply blends in too much to the surrounding landscape for anyone to make it out with an unaided eye from orbit.\n"
+  },
+  {
+    "question": "Is Pluto a planet?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "No. Pluto used to be identified as a planet in our solar system, but it is now classified as a dwarf planet. See more facts you\u2019ve always believed that are actually false.\n"
+  },
+  {
+    "question": "What was the name of the first man-made satellite launched by the Soviet Union in 1957?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Sputnik 1.\n"
+  },
+  {
+    "question": "What is the biggest planet in our solar system?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Jupiter.\n"
+  },
+  {
+    "question": "Which planet is closest to the sun?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Mercury.\n"
+  },
+  {
+    "question": "True or False? All radioactive material is man-made.\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "False. The sun and stars emit cosmic radiation that interacts with the earth\u2019s atmosphere. There\u2019s also naturally radioactive material in soil, water, and vegetation.\n"
+  },
+  {
+    "question": "Is the earth flat or round?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Humans have known that the earth is round since the time of Ancient Greece.\n"
+  },
+  {
+    "question": "True or False? The center of the earth is very hot.\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "True. The temperature of Earth\u2019s core is almost 11,000 degrees Fahrenheit\u2014as hot as the surface of the sun.\n"
+  },
+  {
+    "question": "What phenomena keep the planets in orbit around the sun?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Gravity.\n"
+  },
+  {
+    "question": "What is the largest star in the solar system?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The sun.\n"
+  },
+  {
+    "question": "Would you weigh more or less on Mars?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Less. A person who weighs 200 pounds on Earth would weigh just 76 pounds on Mars.\n"
+  },
+  {
+    "question": "Who was the first person to walk on the Moon?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Neil Armstrong. He landed on July 20, 1969, with Edwin \u201cBuzz\u201d Aldrin.\n"
+  },
+  {
+    "question": "What causes a solar eclipse?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The moon moves between the sun and Earth, casting a shadow on Earth.\n"
+  },
+  {
+    "question": "How long does a solar eclipse last?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "About seven and a half minutes.\n"
+  },
+  {
+    "question": "What color is the sun?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Though the sun looks white when we look at it, it\u2019s actually a mixture of all colors.\n"
+  },
+  {
+    "question": "What color is the sunset on Mars?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Blue.\n"
+  },
+  {
+    "question": "What planet is closest to the sun?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Mercury.\n"
+  },
+  {
+    "question": "What is the smallest planet in the solar system?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Also Mercury!\n"
+  },
+  {
+    "question": "What planet is farthest from the sun?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Neptune.\n"
+  },
+  {
+    "question": "What is the largest planet?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Jupiter.\n"
+  },
+  {
+    "question": "What is the hottest planet in the solar system?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Venus.\n"
+  },
+  {
+    "question": "Is Pluto still a planet?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "No, Pluto was declassified as a planet back in 2006.\n"
+  },
+  {
+    "question": "What is the largest bone in the human body?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The femur, also known as the thigh bone.\n"
+  },
+  {
+    "question": "What is the smallest bone in the human body?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The stapes bone, also known as the stirrup bone. It\u2019s located inside your ear.\n"
+  },
+  {
+    "question": "What kind of blood type is known as the universal donor?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "O negative.\n"
+  },
+  {
+    "question": "What is the largest organ in the human body?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The skin.\n"
+  },
+  {
+    "question": "What do white blood cells do?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "White blood cells protect you against illness and disease. \u201cImmunity Cells\u201d are another name for these components.\n"
+  },
+  {
+    "question": "Mitosis is the process a single cell uses to divide into two new identical cells. What do we call each set of cells?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Parent cells and daughter cells.\n"
+  },
+  {
+    "question": "Which animal can change direction midair?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The cheetah. They are the only type of cat able to do so.\n"
+  },
+  {
+    "question": "What is the largest land animal alive today?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The African Elephant. These gigantic creatures can weigh as much as 7 tons!\n"
+  },
+  {
+    "question": "How many oceans contain sharks?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "All of them. And that\u2019s not all! Some are also found in rivers and freshwater lakes.\n"
+  },
+  {
+    "question": "What can sharks sense that humans cannot?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Electricity. They do this using organs called ampullae of Lorenzini.\n"
+  },
+  {
+    "question": "How many limbs does an octopus have?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Eight. These tentacles are divided up between six \u201carms\u201d and two \u201clegs.\u201d\n"
+  },
+  {
+    "question": "What kind of animal is an Orca?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "A whale.\n"
+  },
+  {
+    "question": "How many sets of wings do bees have?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Two.\n"
+  },
+  {
+    "question": "What are animals called who only eat plants?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Herbivores.\n"
+  },
+  {
+    "question": "What process do bats use to locate their prey?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Echolocation.\n"
+  },
+  {
+    "question": "Why do some tigers have white coats?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "It\u2019s a genetic mutation. White tigers carry a gene that inhibits the production of red and yellow pigments in white tigers, though it does not appear to alter black.\n"
+  },
+  {
+    "question": "What is the smallest unit of matter?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "An atom.\n"
+  },
+  {
+    "question": "What is Isaac Newton known for?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Legend has it that Newton discovered gravity when he saw a falling apple while thinking about the forces of nature.\n"
+  },
+  {
+    "question": "\u201cFor every action, there is an equal and opposite reaction\u201d is an example of one of these.\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Newton\u2019s Laws.\n"
+  },
+  {
+    "question": "What is considered room temperature?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "72 degrees Fahrenheit.\n"
+  },
+  {
+    "question": "How many states of matter are there?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Four. Solid, liquid, gas, and plasma.\n"
+  },
+  {
+    "question": "What word can you use to describe when a solid turns into a liquid?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Melting.\n"
+  },
+  {
+    "question": "Electron pairs, when shared between two atoms, help create what kind of bond?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "A covalent bond.\n"
+  },
+  {
+    "question": "What Greek letter is used to represent density (mass per unit volume)?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "A lowercase rho (\u03c1).\n"
+  },
+  {
+    "question": "What metal is found at the center of the Earth?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Iron. This is very different from the Earth\u2019s crust and mantle, which are rich in minerals.\n"
+  },
+  {
+    "question": "What is the tallest mountain in the world?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Mount Everest. The mountain peak reaches 29,029 feet at its summit.\n"
+  },
+  {
+    "question": "How do scientists measure the severity of an earthquake?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "They use something called the Richter Scale. The measure has been in use since 1935.\n"
+  },
+  {
+    "question": "What was Earth\u2019s supercontinent called?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Pangea. The area split into two landmasses some 135 million years ago due to a phenomenon known as \u201ccontinental drift.\u201d\n"
+  },
+  {
+    "question": "How many continents are there in the world?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Seven: Africa, Antarctica, Asia, Australia/Oceania, Europe, North America, and South America.\n"
+  },
+  {
+    "question": "Which city in Italy is famous for its canals?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Venice. In total, the city contains 150 canals.\n"
+  },
+  {
+    "question": "How many elements are listed in the periodic table?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "118.\n"
+  },
+  {
+    "question": "What does a \u201cGeiger Counter\u201d measure?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Radiation.\n"
+  },
+  {
+    "question": "Which inventor proved that lightning is a form of electricity?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Benjamin Franklin. Though, he wasn\u2019t the first one to come to this conclusion. French naturalist Thomas-Francois Dalibard actually confirmed the hypothesis one month before Franklin!\n"
+  },
+  {
+    "question": "What kind of energy does that sun create?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Nuclear energy.\n"
+  },
+  {
+    "question": "What two elements is water made of?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Hydrogen and Oxygen.\n"
+  },
+  {
+    "question": "What reaction releases energy into its surroundings?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Exothermic reaction.\n"
+  },
+  {
+    "question": "What word do scientists use to describe a unit of measure that is also the name of an animal?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "A mole.\n"
+  },
+  {
+    "question": "Would you weigh more or less on Mars?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Less. A person who weighs 200 pounds on Earth would weigh just 76 pounds on Mars.\n"
+  },
+  {
+    "question": "Who was the first person to walk on the Moon?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Neil Armstrong. He landed on July 20, 1969, with Edwin \u201cBuzz\u201d Aldrin.\n"
+  },
+  {
+    "question": "What causes a solar eclipse?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The moon moves between the sun and Earth, casting a shadow on Earth.\n"
+  },
+  {
+    "question": "What causes the moon to shine?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The moon\u2019s surface reflects light from the Sun.\n"
+  },
+  {
+    "question": "What was the first planet discovered with the aid of a telescope?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Uranus.\n"
+  },
+  {
+    "question": "Between which two planets does the asteroid belt lie?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Mars and Jupiter.\n"
+  },
+  {
+    "question": "What is the only planet in our solar system less dense than water?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Saturn.\n"
+  },
+  {
+    "question": "What is the nearest planet to the sun?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Mercury.\n"
+  },
+  {
+    "question": "What is the largest planet in the solar system?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Jupiter.\n"
+  },
+  {
+    "question": "What is the hottest planet in the solar system?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Venus\n"
+  },
+  {
+    "question": "The most recognized model of how the universe began is known as the?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The Big Bang.\n"
+  },
+  {
+    "question": "What color is the sunset on Mars?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Blue.\n"
+  },
+  {
+    "question": "What do white blood cells do?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "White blood cells protect you against illness and disease. \u201cImmunity Cells\u201d are another name for these components.\n"
+  },
+  {
+    "question": "What is the rarest blood type?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "AB4 negative.\n"
+  },
+  {
+    "question": "What part of the plant conducts photosynthesis?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The leaf.\n"
+  },
+  {
+    "question": "What is the largest known animal that walks on land?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The elephant.\n"
+  },
+  {
+    "question": "What is the largest known animal overall?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The blue whale.\n"
+  },
+  {
+    "question": "What kind of blood type is known as the universal donor?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "O1 negative.\n"
+  },
+  {
+    "question": "What is the largest organ in the human body?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The skin.\n"
+  },
+  {
+    "question": "What tissues connect the muscles to the bones?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The tendons.\n"
+  },
+  {
+    "question": "Animals that eat both plants and meat are called what?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Omnivores.\n"
+  },
+  {
+    "question": "What is the largest bone in the human body?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The femur, also known as the thigh bone.\n"
+  },
+  {
+    "question": "Diabetes develops as the result of a problem with which specific organ in the body?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The pancreas.\n"
+  },
+  {
+    "question": "True or false \u2013 lightning is hotter than the sun.\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "True.\n"
+  },
+  {
+    "question": "What is the smallest unit of matter?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "An atom.\n"
+  },
+  {
+    "question": "How many states of matter are there?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Four: solid, liquid, gas, and plasma.\n"
+  },
+  {
+    "question": "What word can you use to describe when a solid turns into a liquid?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Melting.\n"
+  },
+  {
+    "question": "What is a geiger counter used to measure?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Radiation levels.\n"
+  },
+  {
+    "question": "A magnifying glass is what type of lens?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Convex.\n"
+  },
+  {
+    "question": "Electric resistance is typically measured in what units?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Ohms.\n"
+  },
+  {
+    "question": "\u201cFor every action, there is an equal and opposite reaction\u201d is an example of one of these.\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Newton\u2019s Laws.\n"
+  },
+  {
+    "question": "What is the center of an atom called?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The nucleus.\n"
+  },
+  {
+    "question": "Who split the atom?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Ernest Rutherford.\n"
+  },
+  {
+    "question": "When a gas changes into a liquid, it is called what?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Condensation.\n"
+  },
+  {
+    "question": "The wire inside an electric bulb is known as what?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Filament.\n"
+  },
+  {
+    "question": "Who first proposed the concept of contact lenses?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Leonardo da Vinci.\n"
+  },
+  {
+    "question": "What is the chemical symbol for lead?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Pb.\n"
+  },
+  {
+    "question": "What element is a diamond composed of?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Carbon.\n"
+  },
+  {
+    "question": "How many elements are listed in the periodic table?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "118.\n"
+  },
+  {
+    "question": "What two elements is water made of?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Hydrogen and oxygen.\n"
+  },
+  {
+    "question": "What is the sun mostly made up of?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Hydrogen.\n"
+  },
+  {
+    "question": "What inorganic molecule is produced by lightning?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Ozone.\n"
+  },
+  {
+    "question": "Bronze is an alloy consisting primarily of what two elements?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Copper and tin.\n"
+  },
+  {
+    "question": "What reaction releases energy into its surroundings?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Exothermic reaction.\n"
+  },
+  {
+    "question": "What word do scientists use to describe a unit of measure that is also the name of an animal?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "A mole.\n"
+  },
+  {
+    "question": "In 1953, the United States of America conducted its first and only nuclear artillery test. Where was the test held?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Nevada.\n"
+  },
+  {
+    "question": "Most of a penny is made from what type of metal?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Zinc\n"
+  },
+  {
+    "question": "How long does it take for light from the Sun to reach the Earth?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "8 minutes and 20 seconds. Some scientists have speculated that faster travel might be possible, but so far there\u2019s no experiment to prove this.\n"
+  },
+  {
+    "question": "What is the only rock that floats?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Pumice. It\u2019s created from lava.\n"
+  },
+  {
+    "question": "Where can you find the oldest living tree on Earth, which has an age of approximately 4,843 years?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Methuselah can be currently visited in California.\n"
+  },
+  {
+    "question": "Where is the largest known meteorite crater on Earth?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The Vredefort Ring in South Africa, with a 299 km diameter.\n"
+  },
+  {
+    "question": "What is the basic cause of Aurora?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Charged particles from solar wind.\n"
+  },
+  {
+    "question": "What is the age of the Sun?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "5 Billion years.\n"
+  },
+  {
+    "question": "Is Obsidian an igneous, sedimentary or metamorphic rock?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Igneous.\n"
+  },
+  {
+    "question": "What is the cause of Tsunami?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Tsunami is caused by the displacement of water due to earthquake or landslide under se\n"
+  },
+  {
+    "question": "Name the longest living structure on earth?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The greater barrier reef, Australia.\n"
+  },
+  {
+    "question": "Which is most dangerous among bees, snakes, house flies, or sharks when attributed to human deaths?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "House flies.\n"
+  },
+  {
+    "question": "Which animal\u2019s tail is so strong that it can lift the animal\u2019s hind legs off the ground while standing on it.\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The kangaroo.\n"
+  },
+  {
+    "question": "What is the scientific name for the elephant\u2019s trunk?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Proboscis, which also means nose.\n"
+  },
+  {
+    "question": "What animal is the T-Rex\u2019s closest living relative?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The chicken.\n"
+  },
+  {
+    "question": "What is the name of colored part of human eyes which controls the light passing through the pupil?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The iris, not to be confused with the flower of the same name.\n"
+  },
+  {
+    "question": "What is the name of the substance that gives the skin and hair their pigmentation? (Hint: sunbathing affects the amounts of this substance)\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Melanin.\n"
+  },
+  {
+    "question": "What are the bottom-located chambers of the heart known as?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The ventricles.\n"
+  },
+  {
+    "question": "Of which substance are the nails made out of?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Keratin.\n"
+  },
+  {
+    "question": "What is the inner most part of the bones known as?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The bone marrow.\n"
+  },
+  {
+    "question": "What islands were extensively studied by the now-famous Charles Darwin?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The Galapagos Islands.\n"
+  },
+  {
+    "question": "What does AIDS stand for?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "AIDS stands for Acquired Immunodeficiency Syndrome.\n"
+  },
+  {
+    "question": "In purely scientific terms, how long is an eon?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "An eon lasts for one billion years.\n"
+  },
+  {
+    "question": "If you put an insect and a plant in airtight container, what can you expect to happen?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "They use and release different types of air, so they should continue to live.\n"
+  },
+  {
+    "question": "What is the shape of a regular human\u2019s DNA?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Double helix.\n"
+  },
+  {
+    "question": "What is white gold?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "White gold is an alloy of gold and white metal such as palladium or silver.\n"
+  },
+  {
+    "question": "What is the fool\u2019s gold?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The crystals of iron pyrite.\n"
+  },
+  {
+    "question": "Does the sun also rotate?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Yes, but only once around 27 days.\n"
+  },
+  {
+    "question": "Roughly what is the composition of the sun?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "About 70 percent hydrogen, 28 percent helium, and 2 percent other mass.\n"
+  },
+  {
+    "question": "What is the function of a manometer?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Measuring the pressure of closed systems.\n"
+  },
+  {
+    "question": "What is the amount of salt in an average human body?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "250 grams.\n"
+  },
+  {
+    "question": "What is the percentage of fire-related deaths caused by smoke inhalation rather than burns?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "80%.\n"
+  },
+  {
+    "question": "The stirrup, the smallest bone in humans, is found in which part of the body?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The ear\n"
+  },
+  {
+    "question": "An ohm is a unit that measures what?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Electrical resistance\n"
+  },
+  {
+    "question": " Which four planets of the Solar System have rings?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Jupiter, Saturn, Uranus, Neptune\n"
+  },
+  {
+    "question": "The name of which type of rock derives from the Latin for\u2018\ufb01re\u2019?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Igneous\n"
+  },
+  {
+    "question": "Someone with anosmia is lacking what?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The sense of smell\n"
+  },
+  {
+    "question": "Which acid is also known as aqua fortis?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Nitric Acid\n"
+  },
+  {
+    "question": "In 2013, Mark Cahill became the \ufb01rst Briton to undergo which pioneering medical operation?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "A hand transplant\n"
+  },
+  {
+    "question": "What was the name of the \ufb01rst Space Shuttle?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Columbia\n"
+  },
+  {
+    "question": "True or false \u2014 more than a quarter of the bones in the human body are in the hands?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "True\n"
+  },
+  {
+    "question": "The \ufb01rst creature to be launched into space was called Laika. What type of animal was Laika?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "A dog\n"
+  },
+  {
+    "question": "In which decade was the world\u2019s first successful heart transplant carried out?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "1960\u2019s\n"
+  },
+  {
+    "question": "Rickets is caused by a deficiency of which vitamin?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Vitamin D\n"
+  },
+  {
+    "question": "The mobile-phone operating system Android was developed by which company?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Google\n"
+  },
+  {
+    "question": "The 19th century naturalist Charles Darwin was born in which English Midlands town?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Shrewsbury\n"
+  },
+  {
+    "question": "In 2013, which country launched \u2018Mangalyaan\u2019, a spacecraft that will orbit Mars?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "India\n"
+  },
+  {
+    "question": "Geothermal power is generated using heat energy from what?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Rocks in the Earth\u2019s crust\n"
+  },
+  {
+    "question": "What is the most abundant metal in the earth\u2019s crust?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Aluminium\n"
+  },
+  {
+    "question": "In underwater navigation, what does the acronym \u2018Sonar\u2019 stand for?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "SOund Navigation And Ranging\n"
+  },
+  {
+    "question": "Halley\u2019s comet is visible from earth every how many years?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "73.3 years\n"
+  },
+  {
+    "question": "How many eyes does a caterpillar have?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Twelve\n"
+  },
+  {
+    "question": "What word is given to the part of a fraction above the line?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Numerator\n"
+  },
+  {
+    "question": "It used to be called quicksilver \u2014 by what name is this element now known?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Mercury\n"
+  },
+  {
+    "question": " What name is given to a positively charged electron?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Positron\n"
+  },
+  {
+    "question": "What is de\ufb01ned as mass divided by density?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Volume\n"
+  },
+  {
+    "question": "Jonas Salk\u2019s 1952 vaccine helped to reduce the suffering caused by which disease?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Salk was the man who formulated the polio vaccine\n"
+  },
+  {
+    "question": " What was first demonstrated in a Surrey quarry by scientist Arthur Nobel in 1867?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Dynamite\n"
+  },
+  {
+    "question": " Galactose is one of the three main monosaccharides (simple sugars); what are the other two?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Glucose and fructose\n"
+  },
+  {
+    "question": "How many faces does a dodecahedron possess? And what 2D shape is each face?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Twelve, pentagonal\n"
+  },
+  {
+    "question": " What anomaly connects bromine and mercury?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "They are the only elements to take liquid form at ambient temperature\n"
+  },
+  {
+    "question": "In which direction would Foucault\u2019s pendulum turn if it were erected in Sydney, Australia?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Anti-clockwise\n"
+  },
+  {
+    "question": " \u2018Nitrogen-fixing\u2019 converts nitrogen into which gas (chemical symbol NH3), useful for soil nutrition and food production?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Ammonia\n"
+  },
+  {
+    "question": " Crick and Watson discovered that the DNA molecule was what particular shape?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Double helix ( a bit like a 3D figure of eight)\n"
+  },
+  {
+    "question": "If the ozone layer were to lie upon the surface of the earth, approximately how thick would it be: 3 mm, 3 cm or 3 m?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Only 3 mm, which is why it is so important that is maintained and nurtured\n"
+  },
+  {
+    "question": "Where, specifically, did the \ufb01rst moon landing take place?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The Sea of Tranquility\n"
+  },
+  {
+    "question": " What is measured in Pascals?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Pressure, defined as Newtons per metre squared\n"
+  },
+  {
+    "question": "The British overseas territory Gough Island, part of the Tristan da Cunha group, is a World Heritage wildlife site \u2013 in which ocean is it located?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "South Atlantic\n"
+  },
+  {
+    "question": " How many human chromosomes are there?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Forty-six (labelled A-G and then X and Y)\n"
+  },
+  {
+    "question": "Under the same temperature and pressure, all gases contain the same number of molecules; whose law? In which century did he postulate this?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Avogadro, nineteen century\n"
+  },
+  {
+    "question": "In the system defined by Henry Moseley, what does the symbol 2 signify in chemistry and physics?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The atomic number of an element\n"
+  },
+  {
+    "question": "Who developed, the \ufb01rst commercial process for smelting pig iron to manufacture steel?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "(Henry) Bessemer\n"
+  },
+  {
+    "question": "Roughly what proportion of their DNA do humans and chimpanzees share?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": " 98 %\n"
+  },
+  {
+    "question": "In which field did Austrian monk Gregor Mendel\u2019s study of plants lead to major breakthroughs?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Genetics or heredity\n"
+  },
+  {
+    "question": "What name is given to a biological process that sets itself naturally to a twenty-four-hour cycle?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Circadian rhythm\n"
+  },
+  {
+    "question": "What was the occupation of the Greek scientist Galen, whose work was at the forefront of thinking in his field for over 1000 years?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "A physician (doctor)\n"
+  },
+  {
+    "question": "E200+ numbers are preservatives and most E400+ numbers are emulsi\ufb01ers and stabilizers, but what are E100+ numbers?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Colourants\n"
+  },
+  {
+    "question": "What was the primary objective of the alchemists of the middle ages, whose early experiments with metals and minerals were the forerunner of chemistry?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "To find or create the Philosophers Stone\n"
+  },
+  {
+    "question": " In the classic atom model, do the electrons orbit the nucleus or does the nucleus encase the agitated electrons?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "the electrons orbit the nucleus\n"
+  },
+  {
+    "question": "Which side of the brain would be mostly used to evaluate whether a new wardrobe fits into the space available in a bedroom?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Right side, which deals most spatial issues\n"
+  },
+  {
+    "question": "Which scientific theory postulates that subatomic particles are tiny one- dimensional loops?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "String theory\n"
+  },
+  {
+    "question": "What was the name of the spaceship from which the final lunar landing took place and in which year was it?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Apollo 17 in 1972\n"
+  },
+  {
+    "question": "What is the SI unit of thermodynamic temperature?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Kelvin\n"
+  },
+  {
+    "question": " What imperial measurement is equal to 0.028 of a cubic metre?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "A cubic foot\n"
+  },
+  {
+    "question": "What is the square root of 225?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Fifteen\n"
+  },
+  {
+    "question": " Rayleigh scattering accounts for which everyday phenomenon?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The blue appearance of the daytime sky and the reddening at night\n"
+  },
+  {
+    "question": " Why would someone suffering from trypanophobia have reason to resent Charles Pravaz for his 1835 contribution to medical science?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "He invented the hypodermic syringe\n"
+  },
+  {
+    "question": "Broca\u2019s area in the human brain is responsible for which function?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Speech and articulation\n"
+  },
+  {
+    "question": "If circle A is placed within a larger circle B, what is the term for the space between the circumference of A and the circumference of B?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Annulus\n"
+  },
+  {
+    "question": "ln Einstein\u2019s famous theory E=mc2, what does the \u2018c\u2019 represent?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The speed of light\n"
+  },
+  {
+    "question": "Before Dolly, the cloned sheep, there were Megan and Morag; in what way was Dolly unique?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "She was cloned from an adult cell, whereas Megan and Morag were cloned from embryo cells\n"
+  },
+  {
+    "question": "In which three scientific disciplines are Nobel Prizes awarded?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Physics, chemistry and physics\n"
+  },
+  {
+    "question": "What typically makes up between 0.5 per cent and 3 per cent of the dry weight of tobacco?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Nicotine\n"
+  },
+  {
+    "question": "Which component of the limbic system processes human emotions and memories?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Amygdala\n"
+  },
+  {
+    "question": "By what name is N-acetyl-S-methoxy tryptamine better known?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Melatonin\n"
+  },
+  {
+    "question": "Which head of the Lyceum in Athens published Historia Plantarum, the \ufb01rst serious treatise on botany?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Theophrastus\n"
+  },
+  {
+    "question": "If an apricot is dried, its carbohydrate content rises from 13 per cent to (a) 25 per cent (b) 38 per cent or (c) 67 percent?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "67% it seems high but it is logical when you consider most fruits and vegetables have high water content and by removing everything else increases\n"
+  },
+  {
+    "question": "Whose binomial theorem applied mathematics to gambling games and developed the notion of betting odds?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Blaise Pascal\n"
+  },
+  {
+    "question": "What is the drawback to superconductors that makes them largely unviable for commercial use?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "They only operate at extremely cold temperatures \u2013 well below even the coldest air temperature\n"
+  },
+  {
+    "question": "Carrots are good for your eyesight: true or false (with explanation)?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Carrots are a source of retinal, which help the light absorb light energy, carrots will improve the ocular health\n"
+  },
+  {
+    "question": "In which state did a massive volcanic eruption occur in the US at Mount StHelens in 1980, with fifty-seven lives lost, despite a comprehensive evacuation programme?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Washington State\n"
+  },
+  {
+    "question": "What are Eagle, Intrepid, Antares, Falcon, Orion and Challenger?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The six lunar modules to carry astronauts to the moon\u2019s surface\n"
+  },
+  {
+    "question": "What fraction is denoted decimally as 0.2727 recurring?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": " 3/11 (three-eleventh)\n"
+  },
+  {
+    "question": "Which science deals with the measurement and calibration of the earth and its surface and gravitational field?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Geodetics\n"
+  },
+  {
+    "question": "What do the initials USB stand for in computer science?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Universal Serial Bus\n"
+  },
+  {
+    "question": "What is the hard, set polymer used in old-fashioned telephones and electrical insulators?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Bakelite\n"
+  },
+  {
+    "question": "What name is given to the elementary particle believed to have been finally identified at CERN in 2012?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Higgs Boson\n"
+  },
+  {
+    "question": "Who discovered oxygen before Joseph Priestley and chlorine before Humphry Davy, but failed to publish and never got the credit?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": " Sweedish scientist Karl Scheele\n"
+  },
+  {
+    "question": "The modern branch of mathematics called algebra came to the West from which area?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "The Arabic world, where it was known as al-jabr\n"
+  },
+  {
+    "question": "What was the profession of Edwin Hubble in Pasadena in the 19203?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Astronomer, he was based at the Mount Wilson Observatory and used the vast Hooker telescope to expand our knowledge of the universe\n"
+  },
+  {
+    "question": "What, after oxygen, is the second most common component of the earth\u2019s crust?\n",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Silicon\n"
+  },
+  {
+    "question": "What is the third most common gas in the earth\u2019s atmosphere after Nitrogen and Oxygen?",
+    "likes": 0,
+    "category": "Science",
+    "answer": "Argon"
   }
 ]

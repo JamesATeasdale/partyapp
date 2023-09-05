@@ -12,7 +12,7 @@ with open('./assets/quiz.json', 'r+') as fastquiz:
         print('Total Number of questions:', len(questions))
         print('Total Number of answers:', len(answers))
         for question, answer in zip(questions, answers):
-            question_obj = {'question': question,'likes': 0, 'category': "na", 'answer':answer}
+            question_obj = {'question': question,'likes': 0, 'category': "Science", 'answer':answer}
             fastquiz_loaded.append(question_obj)
     json.dump(fastquiz_loaded, fastquiz)
 
