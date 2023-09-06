@@ -44,12 +44,12 @@ export default function GameRanking({
                   style={{ backgroundColor: colour }}
                   tw={
                     "h-" +
-                    (!index ? 4 : index === 1 ? 5 : 3) +
-                    "/6 w-full justify-end "
+                    (!index ? 3 : index === 1 ? 5 : 4) +
+                    "/6 w-full justify-end"
                   }>
                   <Text
                     style={{ color: pageTheme.text, fontFamily: "header" }}
-                    tw="text-5xl text-center pt-2">
+                    tw="text-4xl text-center pt-2">
                     {player.score}
                   </Text>
                 </View>
@@ -74,15 +74,16 @@ export default function GameRanking({
                 key={player.name}
                 tw="px-2 h-full flex-row justify-center">
                 <Text
-                  tw="text-4xl pr-2"
+                  tw="text-3xl pr-1"
+                  numberOfLines={1}
                   style={{
                     color: player.colour,
-                    fontFamily: "text",
+                    fontFamily: "header",
                   }}>
                   {player.name}
                 </Text>
                 <Text
-                  tw="text-4xl"
+                  tw="text-3xl"
                   style={{ color: pageTheme.text, fontFamily: "header" }}>
                   {player.score}
                 </Text>

@@ -18,48 +18,48 @@ export default function App() {
   const [playerForm, setPlayerForm] = useState(false);
   const [highScore, setHighScore] = useState(5);
   const [speed, setSpeed] = useState(0);
-  const [playAnims, setPlayAnims] = useState(true);
+  const [playAnims, setPlayAnims] = useState(false);
   const [players, setPlayers] = useState(
     [
-      {
-        name: "aaron",
-        colour: "purple",
-        score: 11,
-        tod: "explicit",
-        fastQ: 1,
-        quiz: ["Animals"],
-      },
-      {
-        name: "reginald",
-        colour: "red",
-        score: 0,
-        tod: "na",
-        fastQ: 3,
-        quiz: ["Music"],
-      },
-      {
-        name: "sally",
-        colour: "green",
-        score: 0,
-        tod: "na",
-        fastQ: 9,
-        quiz: ["Science"],
-      },
-      {
-        name: "mmmmmmmmm",
-        colour: "blue",
-        score: 0,
-        tod: "na",
-        fastQ: 8,
-        quiz: ["Geography"],
-      },
+      //   {
+      //     name: "aaron",
+      //     colour: "purple",
+      //     score: 11,
+      //     tod: "explicit",
+      //     fastQ: 1,
+      //     quiz: ["Animals"],
+      //   },
+      //   {
+      //     name: "reginald",
+      //     colour: "red",
+      //     score: 0,
+      //     tod: "na",
+      //     fastQ: 3,
+      //     quiz: ["Music"],
+      //   },
+      //   {
+      //     name: "sally",
+      //     colour: "green",
+      //     score: 0,
+      //     tod: "na",
+      //     fastQ: 9,
+      //     quiz: ["Science"],
+      //   },
+      //   {
+      //     name: "mmmmmmmmm",
+      //     colour: "blue",
+      //     score: 0,
+      //     tod: "na",
+      //     fastQ: 8,
+      //     quiz: ["Geography"],
+      //   },
     ].sort((a, b) => b.score - a.score)
   );
-  useEffect(() => {
-    getBatteryLevel().then((perc) =>
-      perc > 0.3 && playAnims ? setSpeed(0.3) : setSpeed(0)
-    );
-  }, [playAnims]);
+  // useEffect(() => {
+  //   getBatteryLevel().then((perc) =>
+  //     perc > 0.3 && playAnims ? setSpeed(0.3) : setSpeed(0)
+  //   );
+  // }, [playAnims]);
 
   useEffect(() => {
     if (players.length && players[0].score > highScore + 2) {
@@ -70,7 +70,7 @@ export default function App() {
 
   const [fontsLoaded] = useFonts({
     text: require("./assets/fonts/Itim-Regular.ttf"),
-    header: require("./assets/fonts/Caprasimo-Regular.ttf"),
+    header: require("./assets/fonts/TitanOne-Regular.ttf"),
   });
 
   if (!fontsLoaded) return null;
@@ -79,12 +79,12 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator
         screenListeners={{ state: (e) => adplayer() }}
-        initialRouteName="Party Animals"
+        initialRouteName="Party Box"
         screenOptions={{
           headerShown: false,
           animation: "fade",
         }}>
-        <Stack.Screen name="Party Animals">
+        <Stack.Screen name="Party Box">
           {(props) => (
             <Welcome
               setPlayerForm={setPlayerForm}

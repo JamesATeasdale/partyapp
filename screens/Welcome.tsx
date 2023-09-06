@@ -35,67 +35,65 @@ export default function Welcome({
   if (err) setTimeout(() => setErr(""), 2500);
 
   return (
-    isFocused && (
-      <View
-        tw="items-center h-full w-full justify-between"
-        style={{ backgroundColor: pageTheme.bg }}>
-        <Animated.Image
-          entering={SlideInUp.duration(800)}
-          exiting={SlideOutUp.duration(800)}
-          tw="absolute h-full"
-          source={require("../assets/Images/wave.png")}
+    <View
+      tw="items-center h-full w-full justify-between"
+      style={{ backgroundColor: pageTheme.bg }}>
+      <Animated.Image
+        entering={SlideInUp.duration(800)}
+        exiting={SlideOutUp.duration(800)}
+        tw="absolute h-full"
+        source={require("../assets/Images/wave.png")}
+      />
+      <Animated.Image
+        entering={SlideInUp.duration(1000)}
+        exiting={SlideOutUp.duration(1000)}
+        tw="absolute h-full"
+        source={require("../assets/Images/wave2.png")}
+      />
+      <LottieView
+        tw="absolute h-full w-full"
+        ref={LottieRef}
+        source={require("../assets/Lottie/balloons.json")}
+        loop={false}
+        speed={2}
+      />
+      <View tw="w-full pt-4">
+        <Header />
+        <PlayerList
+          warn={warn}
+          setWarn={setWarn}
+          setPlayerForm={setPlayerForm}
+          players={players}
+          setPlayers={setPlayers}
         />
-        <Animated.Image
-          entering={SlideInUp.duration(1000)}
-          exiting={SlideOutUp.duration(1000)}
-          tw="absolute h-full"
-          source={require("../assets/Images/wave2.png")}
-        />
-        <LottieView
-          tw="absolute h-full w-full"
-          ref={LottieRef}
-          source={require("../assets/Lottie/balloons.json")}
-          loop={false}
-          speed={2}
-        />
-        <View tw="w-full pt-4">
-          <Header />
-          <PlayerList
-            warn={warn}
-            setWarn={setWarn}
-            setPlayerForm={setPlayerForm}
-            players={players}
-            setPlayers={setPlayers}
-          />
-        </View>
-        <Sets setWarn={setWarn} players={players} />
-        {playerForm ? (
-          <AddPlayerForm
-            setErr={setErr}
-            setPlayerForm={setPlayerForm}
-            setPlayers={setPlayers}
-            players={players}
-            changePlayer={changePlayer}
-            isAdd={true}
-          />
-        ) : (
-          <TouchableOpacity
-            onPress={() => setPlayerForm(true)}
-            tw="bottom-1 right-1 absolute bg-[#ee1b24] rounded-xl p-2 px-4 justify-center">
-            <Text tw=" text-center text-white font-bold text-5xl">+</Text>
-          </TouchableOpacity>
-        )}
-        {err && (
-          <Animated.Text
-            tw="bg-red-700 w-full font-bold text-white text-center text-lg pt-0 top-0 absolute"
-            exiting={FadeOut}
-            entering={FadeIn}>
-            {err}
-          </Animated.Text>
-        )}
-
-        {winners && <WinnerScreen players={players} setWinners={setWinners} />}
       </View>
-    )
+      <Sets setWarn={setWarn} players={players} />
+      {playerForm ? (
+        <AddPlayerForm
+          setErr={setErr}
+          setPlayerForm={setPlayerForm}
+          setPlayers={setPlayers}
+          players={players}
+          changePlayer={changePlayer}
+          isAdd={true}
+        />
+      ) : (
+        <TouchableOpacity
+          onPress={() => setPlayerForm(true)}
+          tw="bottom-1 right-1 h-16 w-16 absolute bg-[#ee1b24] rounded-xl items-center justify-center">
+          <Text tw="text-white font-bold text-7xl">+</Text>
+        </TouchableOpacity>
+      )}
+      {err && (
+        <Animated.Text
+          tw="bg-red-700 w-full font-bold text-white text-center text-lg pt-0 top-0 absolute"
+          exiting={FadeOut}
+          entering={FadeIn}>
+          {err}
+        </Animated.Text>
+      )}
+
+      {winners && <WinnerScreen players={players} setWinners={setWinners} />}
+    </View>
   );
 }

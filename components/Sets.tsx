@@ -21,10 +21,10 @@ export default function Sets({ setWarn, players }) {
               players.length === 0 ? setWarn(true) : navigation.navigate(page)
             }>
             <Text
-              tw="text-center text-5xl"
+              tw="text-center text-4xl"
               style={{
                 color: pageCol[ind].text,
-                fontFamily: "text",
+                fontFamily: "header",
               }}>
               {pages[ind]}
             </Text>

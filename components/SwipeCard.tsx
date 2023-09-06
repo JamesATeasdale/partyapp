@@ -71,14 +71,16 @@ export default function SwipeableCard({
             useNativeDriver: false,
           }),
         ]).start(() => {
+          setWin(value);
           LottieRef.current?.play();
-          setWin(true);
           setPlayers(
-            players.map((player) =>
-              player.name === shuffledPlayers[0].name
-                ? { ...player, score: (player.score += value) }
-                : player
-            )
+            players
+              .map((player) =>
+                player.name === shuffledPlayers[0].name
+                  ? { ...player, score: (player.score += value) }
+                  : player
+              )
+              .sort((a, b) => b.score - a.score)
           );
           setShuffledPlayers(
             shuffledPlayers.filter(

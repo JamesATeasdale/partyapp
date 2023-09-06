@@ -28,31 +28,32 @@ export default function Casual({
     { name: "", colour: "" },
   ]);
   const [options, setOptions] = useState({
-    "What If": [{ question: "" }],
-    "Ice Breakers": [{ question: "" }],
-    "Most Likely": [{ question: "" }],
-    "Never Have I Ever": [{ question: "" }],
+    "What If": [],
+    "Ice Breakers": [],
+    "Most Likely": [],
+    "Never Have I Ever": [],
   });
   const [option, setOption] = useState("Select a set");
   const [transition, setTransition] = useState(false);
   const route = useRoute();
   const pageTheme = theme(route.name);
 
-  if (option === "What If" && options[option].length <= 1)
-    return setOptions({ ...options, "What If": shuffle(whatif) });
-  if (option === "Never Have I Ever" && options[option].length <= 1)
-    return setOptions({
+  if (option === "What If" && !options[option].length)
+    setOptions({ ...options, "What If": shuffle(whatif) });
+  if (option === "Never Have I Ever" && !options[option].length)
+    setOptions({
       ...options,
       "Never Have I Ever": shuffle(neverhaveiever),
     });
-  if (option === "Ice Breakers" && options[option].length <= 1)
-    return setOptions({ ...options, "Ice Breakers": shuffle(icebreakers) });
-  if (option === "Most Likely" && options[option].length <= 1)
-    return setOptions({ ...options, "Most Likely": shuffle(mostlikely) });
-  if (shuffledPlayers.length <= 1 || !players.includes(shuffledPlayers[0]))
+  if (option === "Ice Breakers" && !options[option].length)
+    setOptions({ ...options, "Ice Breakers": shuffle(icebreakers) });
+  if (option === "Most Likely" && !options[option].length)
+    setOptions({ ...options, "Most Likely": shuffle(mostlikely) });
+  if (!shuffledPlayers.length || !players.includes(shuffledPlayers[0]))
     setShuffledPlayers(shuffle(players));
   if (!transition) setTimeout(() => setTransition(!transition), 800);
 
+  if (option === "Ice Breakers") console.log(options[option].length);
   return (
     <Animated.View
       entering={FadeIn.duration(800)}
@@ -118,22 +119,9 @@ export default function Casual({
           {Object.keys(options).includes(option)
             ? transition && (
                 <Animated.View
-                  tw="w-full h-full items-center"
+                  tw="w-full h-full justify-between"
                   entering={FadeIn.duration(800)}
                   exiting={FadeOut.duration(800)}>
-                  <View tw="w-full items-center justify-end">
-                    {shuffledPlayers[0].name && (
-                      <Text
-                        numberOfLines={1}
-                        tw="text-4xl pt-2 text-center"
-                        style={{
-                          color: shuffledPlayers[0].colour,
-                          fontFamily: "fun",
-                        }}>
-                        {shuffledPlayers[0].name},
-                      </Text>
-                    )}
-                  </View>
                   <TouchableOpacity
                     onPress={() => {
                       setShuffledPlayers(shuffledPlayers.slice(1));
@@ -143,11 +131,20 @@ export default function Casual({
                       });
                       setTransition(false);
                     }}
-                    tw="justify-center grow w-full">
-                    {options[option][0].question && (
+                    tw="justify-center h-full w-full">
+                    <Text
+                      numberOfLines={1}
+                      tw="text-4xl pt-2 text-center"
+                      style={{
+                        color: shuffledPlayers[0].colour,
+                        fontFamily: "header",
+                      }}>
+                      {shuffledPlayers[0].name},
+                    </Text>
+                    {options[option].length > 0 && (
                       <Text
-                        tw="text-3xl text-center px-2 pt-2"
-                        style={{ color: pageTheme.text, fontFamily: "fun" }}>
+                        tw="text-3xl grow text-center px-2 pt-1"
+                        style={{ color: pageTheme.text, fontFamily: "text" }}>
                         {options[option][0].question.toLowerCase()}
                       </Text>
                     )}

@@ -7,7 +7,7 @@ export default function adplayer() {
       keywords: ["fashion", "clothing"],
     }
   );
-  if (Math.floor(Math.random() * 10) === 1) {
+  if (Math.floor(Math.random() * 15) === 1) {
     interstitial.load();
     setTimeout(() => {
       interstitial.show();

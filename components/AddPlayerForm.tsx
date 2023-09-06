@@ -2,7 +2,7 @@ import { View, Text, TextInput, TouchableOpacity, Alert } from "react-native";
 import Animated, { FadeIn, FadeOut } from "react-native-reanimated";
 import { useState } from "react";
 import { multi, theme } from "../assets/colours";
-import { useRoute } from "@react-navigation/native";
+import { useNavigation, useRoute } from "@react-navigation/native";
 
 export default function playerForm({
   setErr,
@@ -12,6 +12,7 @@ export default function playerForm({
   isAdd,
   setPlayerForm,
 }) {
+  const navigation = useNavigation();
   const [player, setPlayer] = useState(
     !isAdd
       ? { ...changePlayer }
@@ -44,6 +45,7 @@ export default function playerForm({
       {
         text: "Confirm",
         onPress: () => {
+          navigation.navigate("Party Box");
           setPlayers(
             [...players].filter((player) => player.name !== playername)
           );
@@ -60,17 +62,22 @@ export default function playerForm({
     <Animated.View
       entering={FadeIn}
       exiting={FadeOut}
-      tw="h-full w-full absolute justify-center items-center rounded-">
+      tw="h-full w-full absolute justify-center items-center">
       <Animated.View tw="w-full h-full absolute bg-black opacity-70" />
       <View
         tw=" w-11/12 absolute items-center  space-y-4  py-4 rounded-lg"
-        style={{ backgroundColor: pageTheme.fg }}>
-        <View tw="flex-row w-11/12">
+        style={{ backgroundColor: pageTheme.bg }}>
+        <View
+          tw="p-1 flex-row w-11/12 rounded-md "
+          style={{
+            backgroundColor: pageTheme.fg,
+          }}>
           <Text
             style={{
-              fontFamily: "text",
+              fontFamily: "header",
+              color: pageTheme.text,
             }}
-            tw="text-4xl basis-2/6 text-gray-600">
+            tw="text-4xl pr-2">
             Name:
           </Text>
           {isAdd ? (
@@ -82,19 +89,21 @@ export default function playerForm({
               maxLength={12}
               value={player.name}
               autoFocus={true}
-              tw="bg-white grow basis-4/6 text-3xl"
+              tw="bg-purple-300 rounded-r-md grow text-3xl"
               onChangeText={(text) => setPlayer({ ...player, name: text })}
             />
           ) : (
-            <Text
-              tw="basis-4/6 text-white grow text-4xl"
-              numberOfLines={1}
-              style={{
-                fontFamily: "text",
-                color: player.colour,
-              }}>
-              {player.name}
-            </Text>
+            <View tw="grow items-center">
+              <Text
+                tw=" text-4xl"
+                numberOfLines={1}
+                style={{
+                  fontFamily: "header",
+                  color: player.colour,
+                }}>
+                {player.name}
+              </Text>
+            </View>
           )}
         </View>
         <View
@@ -112,11 +121,17 @@ export default function playerForm({
                   : cat === "explicit" && "rounded-r-lg")
               }
               onPress={() => setPlayer({ ...player, tod: cat })}
-              style={player.tod === cat && { backgroundColor: "red" }}>
+              style={
+                player.tod === cat
+                  ? { backgroundColor: "red" }
+                  : { backgroundColor: pageTheme.fg }
+              }>
               <Text tw="text-3xl">
                 {cat === "na" ? "😇" : cat === "explicit" ? "😈" : "😏"}
               </Text>
-              <Text tw="text-xl text-white pt-1" style={{ fontFamily: "fun" }}>
+              <Text
+                tw="text-2xl text-white pt-1"
+                style={{ fontFamily: "header", color: pageTheme.text }}>
                 {cat === "na" ? "SFW" : cat === "explicit" ? "NSFW" : "ANY"}
               </Text>
             </TouchableOpacity>
@@ -142,36 +157,42 @@ export default function playerForm({
                 style={
                   player.quiz.includes(category)
                     ? {
-                        fontFamily: "fun",
+                        fontFamily: "text",
                         backgroundColor: quizCatsBG[quizCats.indexOf(category)],
                       }
-                    : { fontFamily: "fun" }
+                    : { fontFamily: "text" }
                 }
-                tw="p-2 text-xl text-white bg-gray-400 m-1">
+                tw="p-2 text-2xl text-white bg-gray-400 m-1">
                 {category}
               </Text>
             </TouchableOpacity>
           ))}
         </View>
         <TouchableOpacity onPress={() => confirm(player.name)}>
-          <Text tw="bg-red-600 text-4xl py-2 px-3 rounded-lg text-white">
-            DELETE
-          </Text>
+          {!isAdd && (
+            <Text
+              style={{ fontFamily: "header" }}
+              tw="bg-red-600 text-4xl py-2 px-3 rounded-lg text-white">
+              DELETE
+            </Text>
+          )}
         </TouchableOpacity>
         <View tw="flex-row w-11/12 justify-between rounded-md">
           <TouchableOpacity
-            tw="basis-2/5 bg-white  rounded-md justify-center"
+            tw="basis-2/5  rounded-md justify-center"
             onPress={() => setPlayerForm(false)}>
             <Text
-              tw="pt-4 w-full text-center text-3xl"
+              tw="mx-1 py-2 text-center text-4xl rounded-md"
               style={{
-                fontFamily: "fun",
+                fontFamily: "header",
+                color: pageTheme.text,
+                backgroundColor: pageTheme.fg,
               }}>
               Exit
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
-            tw="basis-2/5 bg-white rounded-md justify-center"
+            tw="basis-2/5 rounded-md justify-center"
             onPress={() => {
               if (players.find((playr) => playr.name === player.name) && isAdd)
                 setErr("Player already exists");
@@ -194,11 +215,13 @@ export default function playerForm({
               }
             }}>
             <Text
-              tw="pt-4 w-full text-center text-3xl"
+              tw="mx-1 py-2 text-center text-4xl rounded-md"
               style={{
-                fontFamily: "fun",
+                fontFamily: "header",
+                color: pageTheme.text,
+                backgroundColor: pageTheme.fg,
               }}>
-              {isAdd ? "Add" : "Change"}
+              {isAdd ? "Add" : "OK"}
             </Text>
           </TouchableOpacity>
         </View>

@@ -19,10 +19,10 @@ export const multi = [
 const purple = { bg: "#370080", fg: "#9a4dff", text: "white" };
 
 const green = {
-  bg: "#90c26e",
+  bg: "#448f58",
   fg: "#ffe587",
   text: "#55094d",
-  asset: "#448f58",
+  asset: "#90c26e",
 };
 
 const orange = {
@@ -46,7 +46,7 @@ const pink = {
 };
 
 export function theme(routeName) {
-  if (routeName === "Party Animals") return purple;
+  if (routeName === "Party Box") return purple;
   else if (routeName === "Truth or Dare") return green;
   else if (routeName === "Quiz") return orange;
   else if (routeName === "Casual") return pink;

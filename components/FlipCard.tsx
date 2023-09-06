@@ -79,17 +79,17 @@ export default function FlipCard({
       tw="items-center h-5/6 w-11/12 rounded-lg"
       style={{ backgroundColor: pageTheme.bg }}>
       <Animated.View
-        tw="absolute h-full rounded-lg w-full border-4"
+        tw="absolute h-full rounded-lg w-full border-4 px-2"
         style={[Styles.front, rStyle, { backgroundColor: "#c0c0c0" }]}>
         <Text
           tw="text-3xl grow text-center pt-2"
-          style={{ color: pageTheme.text, fontFamily: "fun" }}>
+          style={{ color: pageTheme.text, fontFamily: "text" }}>
           {shuffledQuestion.question}
         </Text>
         <Text
           tw="pt-2 text-6xl pt-2 text-center text-white"
           style={{ color: pageTheme.text, fontFamily: "header" }}>
-          {counter && shuffledPlayers[0].fastQ ? counter : ""}
+          {counter && fastQ ? counter : ""}
         </Text>
       </Animated.View>
       <Animated.View
@@ -97,7 +97,7 @@ export default function FlipCard({
         tw="absolute h-full rounded-lg w-full items-center border-4">
         <Text
           tw="text-3xl pt-2 grow text-center"
-          style={{ color: pageTheme.text, fontFamily: "fun" }}>
+          style={{ color: pageTheme.text, fontFamily: "text" }}>
           {shuffledQuestion.answer}
         </Text>
         <View tw="flex-row justify-between space-x-1">
@@ -140,15 +140,17 @@ export default function FlipCard({
               setWin(fastQ ? 5 - fastQ / 4 : 1);
               removeQuestion();
               setPlayers(
-                players.map((player) =>
-                  player.name === shuffledPlayers[0].name
-                    ? {
-                        ...player,
-                        score: (player.score += fastQ ? 5 - fastQ / 4 : 1),
-                        fastQ: fastQ,
-                      }
-                    : player
-                )
+                players
+                  .map((player) =>
+                    player.name === shuffledPlayers[0].name
+                      ? {
+                          ...player,
+                          score: (player.score += fastQ ? 5 - fastQ / 4 : 1),
+                          fastQ: fastQ,
+                        }
+                      : player
+                  )
+                  .sort((a, b) => b.score - a.score)
               );
               setShuffledPlayers(
                 shuffledPlayers.filter(

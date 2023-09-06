@@ -7,7 +7,6 @@ import shuffle from "../hooks/shuffleArray";
 import fastquizquestions from "../assets/quiz.json";
 import { useState, useEffect } from "react";
 import Animated, {
-  BounceIn,
   FadeIn,
   SlideInLeft,
   SlideInRight,
@@ -47,12 +46,11 @@ export default function Quiz({
     );
 
   useEffect(() => setFastQ(shuffledPlayers[0].fastQ), [shuffledPlayers]);
-  console.log(shuffledPlayers);
 
   if (shuffledPlayers.length === 0 || !players.includes(shuffledPlayers[0]))
     setShuffledPlayers(shuffle([...players]));
 
-  if (shuffledQuestions.length === 0)
+  if (shuffledQuestions.length === 0 && shuffledPlayers.length)
     setShuffledQuestions(shuffle([...fastquizquestions]));
 
   if (!shuffledQuestion.question && shuffledPlayers.length)
@@ -93,7 +91,7 @@ export default function Quiz({
           <Animated.View
             entering={FadeIn.duration(1200)}
             tw="items-center w-full h-full">
-            <View tw="w-5/6 justify-between pt-4">
+            <View tw="w-5/6 justify-between pt-4 pb-2">
               <Slider
                 minimumTrackTintColor={pageTheme.text}
                 maximumTrackTintColor={"gray"}
@@ -108,14 +106,14 @@ export default function Quiz({
                 step={4}
               />
               <Text
-                tw="w-full text-center text-6xl pt-2"
-                style={{ color: pageTheme.text, fontFamily: "text" }}>
-                {fastQ}
+                tw="w-full text-center text-4xl"
+                style={{ color: pageTheme.bg, fontFamily: "header" }}>
+                {!fastQ ? "off" : fastQ + " seconds"}
               </Text>
             </View>
-            <Animated.View tw="grow w-full justify-center">
+            <Animated.View tw="px-2 grow w-full">
               <TouchableOpacity
-                tw="justify-center grow"
+                tw="grow"
                 onPress={() => {
                   setWin(0);
                   setNewGame(!newGame);

@@ -10,8 +10,8 @@ export default function Header() {
 
   return (
     <TouchableOpacity
-      onPress={() => navigation.navigate("Party Animals")}
-      tw="mt-2 mb-4  flex-row justify-center w-full">
+      onPress={() => navigation.navigate("Party Box")}
+      tw=" mb-4  flex-row justify-center w-full">
       {route.name.split("").map((letter, ind) => (
         <Animated.View
           entering={BounceInUp.duration(ind * 100 + 600)}
