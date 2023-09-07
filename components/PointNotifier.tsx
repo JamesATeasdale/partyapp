@@ -40,7 +40,7 @@ export default function pointNotifier({ value }) {
         <Text
           tw="text-9xl text-white pt-2"
           style={{
-            fontFamily: "Caprasimo-Regular",
+            fontFamily: "header",
           }}>
           +{value}
         </Text>

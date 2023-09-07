@@ -11,8 +11,8 @@ export default function GameRanking({
   const pageTheme = theme(route.name);
 
   return (
-    <View tw="w-full  items-center">
-      <View tw="w-full justify-center flex-row basis-4/6">
+    <View tw="w-full h-40">
+      <View tw="w-full justify-center flex-row basis-4/6 ">
         {[players[1], players[0], players[2]].map(
           (player = { name: "", score: 0, colour: "" }, index = 0) => {
             let colour = "red";
@@ -49,7 +49,7 @@ export default function GameRanking({
                   }>
                   <Text
                     style={{ color: pageTheme.text, fontFamily: "header" }}
-                    tw="text-4xl text-center pt-2">
+                    tw="text-3xl text-center">
                     {player.score}
                   </Text>
                 </View>
