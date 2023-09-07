@@ -20,15 +20,7 @@ import PlayerList from "../components/PlayerList";
 
 const idSwitch = __DEV__ ? TestIds.BANNER : ANDROID_BANNER_AD_ID;
 
-export default function Casual({
-  players,
-  setPlayers,
-  playAnims,
-  setPlayAnims,
-  speed,
-  setAdCount,
-  adCount,
-}) {
+export default function Casual({ players, setPlayers, setAdCount, adCount }) {
   const [shuffledPlayers, setShuffledPlayers] = useState([
     { name: "", colour: "" },
   ]);
@@ -65,17 +57,13 @@ export default function Casual({
       exiting={FadeOut.duration(800)}
       tw="w-full h-full"
       style={{ backgroundColor: pageTheme.bg }}>
-      <TouchableOpacity
-        tw="h-2/6 w-full absolute"
-        onPress={() => setPlayAnims(!playAnims)}>
-        <LottieView
-          tw="w-full h-full"
-          source={require("../assets/Lottie/clouds1.json")}
-          autoPlay={true}
-          loop={true}
-          speed={speed}
-        />
-      </TouchableOpacity>
+      <LottieView
+        tw="w-full h-2/6 absolute"
+        source={require("../assets/Lottie/clouds1.json")}
+        autoPlay={true}
+        loop={true}
+        speed={speed}
+      />
       <GAMBannerAd unitId={idSwitch} sizes={[BannerAdSize.FULL_BANNER]} />
       <View tw="grow justify-between items-center">
         <View tw="w-full">

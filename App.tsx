@@ -14,15 +14,13 @@ export default function App() {
   const [winners, setWinners] = useState(false);
   const [playerForm, setPlayerForm] = useState(false);
   const [highScore, setHighScore] = useState(5);
-  const [speed, setSpeed] = useState(0);
-  const [playAnims, setPlayAnims] = useState(false);
   const [adCount, setAdCount] = useState(0);
   const [players, setPlayers] = useState(
     [
       {
         name: "aaron",
         colour: "purple",
-        score: 11,
+        score: 1,
         tod: "explicit",
         fastQ: 1,
         quiz: ["Animals"],
@@ -51,21 +49,8 @@ export default function App() {
         fastQ: 8,
         quiz: ["Geography"],
       },
-      {
-        name: "mmmmmmmmm",
-        colour: "blue",
-        score: 0,
-        tod: "na",
-        fastQ: 8,
-        quiz: ["Geography"],
-      },
     ].sort((a, b) => b.score - a.score)
   );
-  // useEffect(() => {
-  //   getBatteryLevel().then((perc) =>
-  //     perc > 0.3 && playAnims ? setSpeed(0.3) : setSpeed(0)
-  //   );
-  // }, [playAnims]);
 
   useEffect(() => {
     if (players.length && players[0].score > highScore + 2) {
@@ -132,9 +117,6 @@ export default function App() {
               setChangePlayer={setChangePlayer}
               setPlayers={setPlayers}
               players={players}
-              playAnims={playAnims}
-              speed={speed}
-              setPlayAnims={setPlayAnims}
               setAdCount={setAdCount}
               adCount={adCount}
             />
@@ -145,9 +127,6 @@ export default function App() {
             <Casual
               setPlayers={setPlayers}
               players={players}
-              playAnims={playAnims}
-              speed={speed}
-              setPlayAnims={setPlayAnims}
               setAdCount={setAdCount}
               adCount={adCount}
             />

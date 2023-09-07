@@ -79,8 +79,8 @@ export default function Welcome({
       ) : (
         <TouchableOpacity
           onPress={() => setPlayerForm(true)}
-          tw="bottom-1 right-1 h-16 w-16 absolute bg-[#ee1b24] rounded-xl items-center justify-center">
-          <Text tw="text-white font-bold text-7xl">+</Text>
+          tw="bottom-1 right-1 h-14 w-14 absolute bg-[#ee1b24] rounded-xl items-center justify-center">
+          <Text tw="text-white text-4xl">+</Text>
         </TouchableOpacity>
       )}
       {err && (

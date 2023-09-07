@@ -1,6 +1,8 @@
 import { TouchableOpacity, View, Text, ScrollView, Alert } from "react-native";
 import { useRoute } from "@react-navigation/native";
 import { theme } from "../assets/colours";
+import { useEffect, useRef, useState } from "react";
+import LottieView from "lottie-react-native";
 
 export default function GameRanking({
   setChangePlayer,
@@ -9,6 +11,15 @@ export default function GameRanking({
 }) {
   const route = useRoute();
   const pageTheme = theme(route.name);
+  const [topPlayer, setTopPlayer] = useState("");
+  const LottieRef = useRef(null);
+
+  useEffect(() => {
+    if (players[0].name !== topPlayer) {
+      setTopPlayer(players[0].name);
+      LottieRef.current?.play();
+    }
+  });
 
   return (
     <View tw="w-full h-40">
@@ -44,7 +55,7 @@ export default function GameRanking({
                   style={{ backgroundColor: colour }}
                   tw={
                     "h-" +
-                    (!index ? 3 : index === 1 ? 5 : 4) +
+                    (!index ? 4 : index === 1 ? 5 : 3) +
                     "/6 w-full justify-end"
                   }>
                   <Text
@@ -91,6 +102,12 @@ export default function GameRanking({
             ))}
         </ScrollView>
       </View>
+      <LottieView
+        tw="h-full w-full absolute"
+        ref={LottieRef}
+        source={require("../assets/Lottie/fireworks2.json")}
+        loop={false}
+      />
     </View>
   );
 }

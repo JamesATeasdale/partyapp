@@ -106,7 +106,7 @@ export default function Quiz({
                   maximumValue={12}
                   slideOnTap={true}
                   thumbTintColor={pageTheme.bg}
-                  thumbSize={48}
+                  thumbSize={56}
                   onValueChange={setFastQ}
                   value={fastQ}
                   step={4}
