@@ -54,14 +54,13 @@ export default function PlayerList({
   if (warn) setTimeout(() => setWarn(false), 300);
 
   return (
-    <View tw="w-full items-center">
+    <View tw="w-full h-2/5 items-center">
       <Animated.View
         tw="w-11/12 h-full absolute justify-center items-center rounded-lg max-h-40"
         style={[animatedStyle]}
       />
-      <ScrollView tw="w-11/12 my-2">
-        <View tw="h-full w-full absolute " />
-        <View tw="flex-row flex-wrap justify-center">
+      <ScrollView horizontal={false} tw="w-11/12">
+        <View tw="flex-row flex-wrap justify-center py-2">
           {players.length === 0 && (
             <Animated.View tw="px-2 m-1">
               <TouchableOpacity onPress={() => setPlayerForm(true)}>

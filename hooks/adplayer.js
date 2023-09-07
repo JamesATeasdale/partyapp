@@ -1,16 +1,22 @@
-import { GAMInterstitialAd, TestIds } from "react-native-google-mobile-ads";
+import { REACT_APP_ANDROID_AD_ID } from "@env";
+import {
+  GAMInterstitialAd,
+  TestIds,
+  AdEventType,
+} from "react-native-google-mobile-ads";
+
+const idSwitch = __DEV__ ? TestIds : REACT_APP_ANDROID_AD_ID;
 
 export default function adplayer() {
   const interstitial = GAMInterstitialAd.createForAdRequest(
-    TestIds.INTERSTITIAL,
+    idSwitch.INTERSTITIAL,
     {
       keywords: ["fashion", "clothing"],
     }
   );
-  if (Math.floor(Math.random() * 15) === 1) {
-    interstitial.load();
-    setTimeout(() => {
-      interstitial.show();
-    }, 3000);
-  }
+
+  interstitial.load();
+  return interstitial.addAdEventListener(AdEventType.LOADED, () =>
+    interstitial.show()
+  );
 }

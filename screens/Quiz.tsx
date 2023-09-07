@@ -30,6 +30,7 @@ export default function Quiz({
   setChangePlayer,
   playerForm,
   setPlayerForm,
+  setRoll,
 }) {
   const [win, setWin] = useState(0);
   const [newGame, setNewGame] = useState(false);
@@ -40,10 +41,12 @@ export default function Quiz({
   const route = useRoute();
   const pageTheme = theme(route.name);
   let shuffledQuestion = { question: "", answer: "" };
-  const removeQuestion = () =>
+  const removeQuestion = () => {
+    setRoll(true);
     setShuffledQuestions(
       shuffledQuestions.filter((shuffledQ) => shuffledQ !== shuffledQuestion)
     );
+  };
 
   useEffect(() => setFastQ(shuffledPlayers[0].fastQ), [shuffledPlayers]);
 

@@ -29,7 +29,6 @@ export default function Welcome({
   const [err, setErr] = useState("");
   const pageTheme = theme(route.name);
   const [warn, setWarn] = useState(false);
-  const isFocused = useIsFocused();
   useEffect(() => LottieRef.current?.play(), [players]);
 
   if (err) setTimeout(() => setErr(""), 2500);

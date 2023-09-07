@@ -29,6 +29,7 @@ export default function TruthOrDare({
   setPlayers,
   playerForm,
   setPlayerForm,
+  setRoll,
 }) {
   const [win, setWin] = useState(0);
   const [shuffledPlayers, setShuffledPlayers] = useState(shuffle([...players]));
@@ -77,6 +78,7 @@ export default function TruthOrDare({
         )
       );
     setvalue(0);
+    setRoll(true);
   };
 
   return (

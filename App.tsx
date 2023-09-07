@@ -9,7 +9,7 @@ import { useFonts } from "expo-font";
 import { getBatteryLevel } from "react-native-device-info";
 import { GAMInterstitialAd, TestIds } from "react-native-google-mobile-ads";
 import adplayer from "./hooks/adplayer";
-
+import { REACT_APP_ANDROID_AD_ID } from "@env";
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -19,40 +19,41 @@ export default function App() {
   const [highScore, setHighScore] = useState(5);
   const [speed, setSpeed] = useState(0);
   const [playAnims, setPlayAnims] = useState(false);
+  const [roll, setRoll] = useState(false);
   const [players, setPlayers] = useState(
     [
-      //   {
-      //     name: "aaron",
-      //     colour: "purple",
-      //     score: 11,
-      //     tod: "explicit",
-      //     fastQ: 1,
-      //     quiz: ["Animals"],
-      //   },
-      //   {
-      //     name: "reginald",
-      //     colour: "red",
-      //     score: 0,
-      //     tod: "na",
-      //     fastQ: 3,
-      //     quiz: ["Music"],
-      //   },
-      //   {
-      //     name: "sally",
-      //     colour: "green",
-      //     score: 0,
-      //     tod: "na",
-      //     fastQ: 9,
-      //     quiz: ["Science"],
-      //   },
-      //   {
-      //     name: "mmmmmmmmm",
-      //     colour: "blue",
-      //     score: 0,
-      //     tod: "na",
-      //     fastQ: 8,
-      //     quiz: ["Geography"],
-      //   },
+      // {
+      //   name: "aaron",
+      //   colour: "purple",
+      //   score: 11,
+      //   tod: "explicit",
+      //   fastQ: 1,
+      //   quiz: ["Animals"],
+      // },
+      // {
+      //   name: "reginald",
+      //   colour: "red",
+      //   score: 0,
+      //   tod: "na",
+      //   fastQ: 3,
+      //   quiz: ["Music"],
+      // },
+      // {
+      //   name: "sally",
+      //   colour: "green",
+      //   score: 0,
+      //   tod: "na",
+      //   fastQ: 9,
+      //   quiz: ["Science"],
+      // },
+      // {
+      //   name: "mmmmmmmmm",
+      //   colour: "blue",
+      //   score: 0,
+      //   tod: "na",
+      //   fastQ: 8,
+      //   quiz: ["Geography"],
+      // },
     ].sort((a, b) => b.score - a.score)
   );
   // useEffect(() => {
@@ -74,11 +75,18 @@ export default function App() {
   });
 
   if (!fontsLoaded) return null;
+  if (roll && !Math.floor(Math.random() * 3)) adplayer();
+  if (roll) setRoll(false);
+  console.log(REACT_APP_ANDROID_AD_ID);
 
   return (
     <NavigationContainer>
       <Stack.Navigator
-        screenListeners={{ state: (e) => adplayer() }}
+        screenListeners={{
+          state: (e) => {
+            if (!Math.floor(Math.random() * 15)) adplayer();
+          },
+        }}
         initialRouteName="Party Box"
         screenOptions={{
           headerShown: false,
@@ -104,9 +112,7 @@ export default function App() {
               playerForm={playerForm}
               setPlayers={setPlayers}
               players={players}
-              playAnims={playAnims}
-              speed={speed}
-              setPlayAnims={setPlayAnims}
+              setRoll={setRoll}
             />
           )}
         </Stack.Screen>
@@ -122,6 +128,7 @@ export default function App() {
               playAnims={playAnims}
               speed={speed}
               setPlayAnims={setPlayAnims}
+              setRoll={setRoll}
             />
           )}
         </Stack.Screen>
@@ -133,6 +140,7 @@ export default function App() {
               playAnims={playAnims}
               speed={speed}
               setPlayAnims={setPlayAnims}
+              setRoll={setRoll}
             />
           )}
         </Stack.Screen>

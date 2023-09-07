@@ -34,6 +34,7 @@ export default function playerForm({
     "Geography",
     "Animals",
     "Music",
+    "Gaming",
   ];
 
   function confirm(playername) {
@@ -55,7 +56,15 @@ export default function playerForm({
     ]);
   }
 
-  const quizCatsBG = ["red", "blue", "green", "purple", "orange", "brown"];
+  const quizCatsBG = [
+    "red",
+    "blue",
+    "green",
+    "purple",
+    "orange",
+    "brown",
+    "black",
+  ];
   const todCat = ["na", "", "explicit"];
 
   return (
@@ -140,6 +149,7 @@ export default function playerForm({
         <View tw="flex-row flex-wrap w-full justify-center">
           {quizCats.map((category) => (
             <TouchableOpacity
+              tw="rounded-sm"
               key={category}
               onPress={() =>
                 player.quiz.includes(category) && player.quiz.length > 1
@@ -162,7 +172,7 @@ export default function playerForm({
                       }
                     : { fontFamily: "text" }
                 }
-                tw="p-2 text-2xl text-white bg-gray-400 m-1">
+                tw="p-2 text-3xl text-white rounded-md bg-gray-400 m-1">
                 {category}
               </Text>
             </TouchableOpacity>

@@ -9,6 +9,7 @@ import Animated, {
   withTiming,
 } from "react-native-reanimated";
 import { theme } from "../assets/colours";
+import adplayer from "../hooks/adplayer";
 
 export default function FlipCard({
   shuffledPlayers,
@@ -80,7 +81,11 @@ export default function FlipCard({
       style={{ backgroundColor: pageTheme.bg }}>
       <Animated.View
         tw="absolute h-full rounded-lg w-full border-4 px-2"
-        style={[Styles.front, rStyle, { backgroundColor: "#c0c0c0" }]}>
+        style={[
+          Styles.front,
+          rStyle,
+          { borderColor: pageTheme.text, backgroundColor: "#c0c0c0" },
+        ]}>
         <Text
           tw="text-3xl grow text-center pt-2"
           style={{ color: pageTheme.text, fontFamily: "text" }}>
@@ -93,17 +98,26 @@ export default function FlipCard({
         </Text>
       </Animated.View>
       <Animated.View
-        style={[Styles.back, bStyle, { backgroundColor: "#c0c0c0" }]}
+        style={[
+          Styles.back,
+          bStyle,
+          { borderColor: pageTheme.text, backgroundColor: "#c0c0c0" },
+        ]}
         tw="absolute h-full rounded-lg w-full items-center border-4">
         <Text
           tw="text-3xl pt-2 grow text-center"
           style={{ color: pageTheme.text, fontFamily: "text" }}>
           {shuffledQuestion.answer}
         </Text>
-        <View tw="flex-row justify-between space-x-1">
+        <View
+          tw="flex-row justify-between space-x-1 border-t-2"
+          style={{
+            backgroundColor: pageTheme.text,
+            borderColor: pageTheme.text,
+          }}>
           <TouchableOpacity
             disabled={!reveal}
-            tw="grow justify-center bg-white rounded-tr-md rounded-bl-md"
+            tw="grow justify-center bg-white rounded-bl-md"
             onPress={() => {
               setWin(0);
               removeQuestion();
@@ -126,13 +140,14 @@ export default function FlipCard({
               );
             }}>
             <Animated.Text
-              tw="text-center text-6xl text-red-700 py-2"
+              tw="text-center  text-6xl text-red-700 py-2"
+              style={{ borderColor: pageTheme.text }}
               entering={ZoomIn}>
               ✘
             </Animated.Text>
           </TouchableOpacity>
           <TouchableOpacity
-            tw="grow justify-center bg-white rounded-tl-md rounded-br-md"
+            tw="grow justify-center bg-white  rounded-br-md"
             disabled={!reveal}
             onPress={() => {
               setReveal(false);

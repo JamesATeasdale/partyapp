@@ -23,6 +23,7 @@ export default function Casual({
   playAnims,
   setPlayAnims,
   speed,
+  setRoll,
 }) {
   const [shuffledPlayers, setShuffledPlayers] = useState([
     { name: "", colour: "" },
@@ -124,6 +125,7 @@ export default function Casual({
                   exiting={FadeOut.duration(800)}>
                   <TouchableOpacity
                     onPress={() => {
+                      setRoll(true);
                       setShuffledPlayers(shuffledPlayers.slice(1));
                       setOptions({
                         ...options,
