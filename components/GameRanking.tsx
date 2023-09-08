@@ -39,6 +39,7 @@ export default function GameRanking({
                   setPlayerForm(true);
                   setChangePlayer(player);
                 }}
+                disabled={!player.name}
                 key={index}
                 tw="justify-end basis-1/3 rounded-t-sm">
                 <Text

@@ -1,11 +1,16 @@
 import GameRanking from "../components/GameRanking";
 import Header from "../components/Header";
 import { theme } from "../assets/colours";
-import { useNavigation, useRoute } from "@react-navigation/native";
-import { useEffect, useState, useRef } from "react";
+import {
+  useFocusEffect,
+  useIsFocused,
+  useNavigation,
+  useRoute,
+} from "@react-navigation/native";
+import { useEffect, useState, useRef, useCallback } from "react";
 import truths from "../assets/truths.json";
 import dares from "../assets/dares.json";
-import { TouchableOpacity, Text, View, Image } from "react-native";
+import { TouchableOpacity, Text, View, Image, BackHandler } from "react-native";
 import SwipeableCard from "../components/SwipeCard";
 import shuffle from "../hooks/shuffleArray";
 import Animated, {
@@ -48,6 +53,8 @@ export default function TruthOrDare({
   let shuffledDare = { question: "" };
   const [changePlayer, setChangePlayer] = useState({ name: "" });
   const [err, setErr] = useState("");
+
+  BackHandler.addEventListener("hardwareBackPress", () => setPlayerForm(false));
 
   if (shuffledPlayers.length === 0 || !players.includes(shuffledPlayers[0]))
     setShuffledPlayers(shuffle(players));
@@ -164,9 +171,9 @@ export default function TruthOrDare({
                       tw="items-center h-5/6 justify-center w-full">
                       <Text
                         style={{
-                          fontSize: 280,
+                          fontSize: 320,
                           opacity: 0.3,
-                          fontFamily: "Itim-Regular",
+                          fontFamily: "text",
                         }}
                         tw="absolute">
                         ?
@@ -194,9 +201,9 @@ export default function TruthOrDare({
                       tw="justify-center items-center h-5/6 w-full">
                       <Text
                         style={{
-                          fontSize: 280,
+                          fontSize: 320,
                           opacity: 0.3,
-                          fontFamily: "Itim-Regular",
+                          fontFamily: "text",
                         }}
                         tw="absolute">
                         !

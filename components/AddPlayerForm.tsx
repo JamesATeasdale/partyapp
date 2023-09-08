@@ -98,13 +98,13 @@ export default function playerForm({
               maxLength={12}
               value={player.name}
               autoFocus={true}
-              tw="bg-purple-300 rounded-r-sm grow text-3xl"
+              tw="rounded-r-sm grow text-3xl"
               onChangeText={(text) => setPlayer({ ...player, name: text })}
             />
           ) : (
             <View tw="grow items-center">
               <Text
-                tw=" text-4xl"
+                tw="w-5/6 text-4xl"
                 numberOfLines={1}
                 style={{
                   fontFamily: "header",

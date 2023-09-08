@@ -5,7 +5,7 @@ import Sets from "../components/Sets";
 import AddPlayerForm from "../components/AddPlayerForm";
 import Header from "../components/Header";
 import { theme } from "../assets/colours";
-import { useIsFocused, useRoute } from "@react-navigation/native";
+import { useRoute } from "@react-navigation/native";
 import LottieView from "lottie-react-native";
 import Animated, {
   FadeIn,
