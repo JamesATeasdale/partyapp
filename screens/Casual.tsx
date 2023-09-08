@@ -60,9 +60,8 @@ export default function Casual({ players, setPlayers, setAdCount, adCount }) {
       <LottieView
         tw="w-full h-2/6 absolute"
         source={require("../assets/Lottie/clouds1.json")}
-        autoPlay={true}
-        loop={true}
-        speed={speed}
+        autoPlay={false}
+        loop={false}
       />
       <GAMBannerAd unitId={idSwitch} sizes={[BannerAdSize.FULL_BANNER]} />
       <View tw="grow justify-between items-center">

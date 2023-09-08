@@ -55,7 +55,7 @@ export default function GameRanking({
                   style={{ backgroundColor: colour }}
                   tw={
                     "h-" +
-                    (!index ? 4 : index === 1 ? 5 : 3) +
+                    (!index ? 3 : index === 1 ? 5 : 4) +
                     "/6 w-full justify-end"
                   }>
                   <Text
@@ -102,12 +102,15 @@ export default function GameRanking({
             ))}
         </ScrollView>
       </View>
-      <LottieView
-        tw="h-full w-full absolute"
-        ref={LottieRef}
-        source={require("../assets/Lottie/fireworks2.json")}
-        loop={false}
-      />
+      <View pointerEvents="none" tw="h-full w-full absolute">
+        <LottieView
+          style={{ pointerEvents: "none" }}
+          tw="h-full w-full absolute"
+          ref={LottieRef}
+          source={require("../assets/Lottie/fireworks2.json")}
+          loop={false}
+        />
+      </View>
     </View>
   );
 }

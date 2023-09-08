@@ -248,7 +248,7 @@ export default function TruthOrDare({
                           )
                         );
                       }}>
-                      <Text tw="text-5xl pt-4">
+                      <Text tw="text-4xl pt-2">
                         {shuffledPlayers[0].tod === "na"
                           ? "😇"
                           : shuffledPlayers[0].tod === "explicit"

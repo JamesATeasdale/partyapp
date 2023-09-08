@@ -7,7 +7,10 @@ import Quiz from "./screens/Quiz";
 import Casual from "./screens/Casual";
 import { useFonts } from "expo-font";
 import adplayer from "./hooks/adplayer";
+import * as SplashScreen from "expo-splash-screen";
+
 const Stack = createNativeStackNavigator();
+// Prevent native splash screen from autohiding before App component declaration
 
 export default function App() {
   const [changePlayer, setChangePlayer] = useState({ name: "" });
@@ -17,38 +20,38 @@ export default function App() {
   const [adCount, setAdCount] = useState(0);
   const [players, setPlayers] = useState(
     [
-      {
-        name: "aaron",
-        colour: "purple",
-        score: 1,
-        tod: "explicit",
-        fastQ: 1,
-        quiz: ["Animals"],
-      },
-      {
-        name: "reginald",
-        colour: "red",
-        score: 0,
-        tod: "na",
-        fastQ: 3,
-        quiz: ["Music"],
-      },
-      {
-        name: "sally",
-        colour: "green",
-        score: 0,
-        tod: "na",
-        fastQ: 9,
-        quiz: ["Science"],
-      },
-      {
-        name: "mmmmmmmmm",
-        colour: "blue",
-        score: 0,
-        tod: "na",
-        fastQ: 8,
-        quiz: ["Geography"],
-      },
+      // {
+      //   name: "aaron",
+      //   colour: "purple",
+      //   score: 1,
+      //   tod: "explicit",
+      //   fastQ: 1,
+      //   quiz: ["Animals"],
+      // },
+      // {
+      //   name: "reginald",
+      //   colour: "red",
+      //   score: 0,
+      //   tod: "na",
+      //   fastQ: 3,
+      //   quiz: ["Music"],
+      // },
+      // {
+      //   name: "sally",
+      //   colour: "green",
+      //   score: 0,
+      //   tod: "na",
+      //   fastQ: 9,
+      //   quiz: ["Science"],
+      // },
+      // {
+      //   name: "mmmmmmmmm",
+      //   colour: "blue",
+      //   score: 0,
+      //   tod: "na",
+      //   fastQ: 8,
+      //   quiz: ["Geography"],
+      // },
     ].sort((a, b) => b.score - a.score)
   );
 

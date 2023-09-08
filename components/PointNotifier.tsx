@@ -30,8 +30,8 @@ export default function pointNotifier({ value }) {
       tw="w-full h-full justify-end items-center absolute"
       pointerEvents="none">
       <LottieView
-        source={require("../assets/Lottie/singlefirework.json")}
-        tw="h-2/6 w-full absolute bottom-0"
+        source={require("../assets/Lottie/fireworkquick.json")}
+        tw="h-full w-full absolute bottom-0"
         loop={false}
         autoPlay={true}
         speed={1}

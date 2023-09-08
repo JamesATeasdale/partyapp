@@ -77,7 +77,7 @@ export default function playerForm({
         tw=" w-11/12 absolute items-center  space-y-4  py-4 rounded-lg"
         style={{ backgroundColor: pageTheme.bg }}>
         <View
-          tw="p-1 flex-row w-11/12 rounded-md "
+          tw="p-1 flex-row w-11/12 rounded-sm "
           style={{
             backgroundColor: pageTheme.fg,
           }}>
@@ -98,7 +98,7 @@ export default function playerForm({
               maxLength={12}
               value={player.name}
               autoFocus={true}
-              tw="bg-purple-300 rounded-r-md grow text-3xl"
+              tw="bg-purple-300 rounded-r-sm grow text-3xl"
               onChangeText={(text) => setPlayer({ ...player, name: text })}
             />
           ) : (
@@ -116,7 +116,7 @@ export default function playerForm({
           )}
         </View>
         <View
-          tw="flex-row items-center w-11/12 justify-between rounded-lg"
+          tw="flex-row items-center w-11/12 justify-between"
           style={{
             backgroundColor: pageTheme.bg,
           }}>
@@ -126,8 +126,8 @@ export default function playerForm({
               tw={
                 "items-center basis-1/3 grow p-2 " +
                 (cat === "na"
-                  ? "rounded-l-lg"
-                  : cat === "explicit" && "rounded-r-lg")
+                  ? "rounded-l-sm"
+                  : cat === "explicit" && "rounded-r-sm")
               }
               onPress={() => setPlayer({ ...player, tod: cat })}
               style={
@@ -149,7 +149,6 @@ export default function playerForm({
         <View tw="flex-row flex-wrap w-full justify-center">
           {quizCats.map((category) => (
             <TouchableOpacity
-              tw="rounded-sm"
               key={category}
               onPress={() =>
                 player.quiz.includes(category) && player.quiz.length > 1
@@ -172,7 +171,7 @@ export default function playerForm({
                       }
                     : { fontFamily: "text" }
                 }
-                tw="p-2 text-3xl text-white rounded-md bg-gray-400 m-1">
+                tw="p-2 text-3xl text-white rounded-sm bg-gray-400 m-1">
                 {category}
               </Text>
             </TouchableOpacity>
@@ -182,17 +181,17 @@ export default function playerForm({
           {!isAdd && (
             <Text
               style={{ fontFamily: "header" }}
-              tw="bg-red-600 text-4xl py-2 px-3 rounded-lg text-white">
+              tw="bg-red-600 text-4xl py-2 px-3 rounded-sm text-white">
               DELETE
             </Text>
           )}
         </TouchableOpacity>
-        <View tw="flex-row w-11/12 justify-between rounded-md">
+        <View tw="flex-row w-11/12 justify-between rounded-sm">
           <TouchableOpacity
-            tw="basis-2/5  rounded-md justify-center"
+            tw="basis-2/5 justify-center"
             onPress={() => setPlayerForm(false)}>
             <Text
-              tw="mx-1 py-2 text-center text-4xl rounded-md"
+              tw="mx-1 py-2 text-center text-4xl rounded-sm"
               style={{
                 fontFamily: "header",
                 color: pageTheme.text,
@@ -202,7 +201,7 @@ export default function playerForm({
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
-            tw="basis-2/5 rounded-md justify-center"
+            tw="basis-2/5 rounded-sm justify-center"
             onPress={() => {
               if (players.find((playr) => playr.name === player.name) && isAdd)
                 setErr("Player already exists");
@@ -225,7 +224,7 @@ export default function playerForm({
               }
             }}>
             <Text
-              tw="mx-1 py-2 text-center text-4xl rounded-md"
+              tw="mx-1 py-2 text-center text-4xl rounded-sm"
               style={{
                 fontFamily: "header",
                 color: pageTheme.text,

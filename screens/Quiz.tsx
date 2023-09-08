@@ -101,7 +101,7 @@ export default function Quiz({
                 <Slider
                   minimumTrackTintColor={pageTheme.text}
                   maximumTrackTintColor={"gray"}
-                  trackHeight={12}
+                  trackHeight={20}
                   minimumValue={0}
                   maximumValue={12}
                   slideOnTap={true}
