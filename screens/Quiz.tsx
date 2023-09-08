@@ -1,10 +1,4 @@
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  Switch,
-  BackHandler,
-} from "react-native";
+import { View, Text, TouchableOpacity, BackHandler } from "react-native";
 import GameRanking from "../components/GameRanking";
 import Header from "../components/Header";
 import { theme } from "../assets/colours";

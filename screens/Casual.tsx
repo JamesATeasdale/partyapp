@@ -30,7 +30,7 @@ export default function Casual({ players, setPlayers, setAdCount, adCount }) {
     "Most Likely": [],
     "Never Have I Ever": [],
   });
-  const [option, setOption] = useState("Select a set");
+  const [option, setOption] = useState("");
   const [transition, setTransition] = useState(false);
   const route = useRoute();
   const pageTheme = theme(route.name);
@@ -82,26 +82,25 @@ export default function Casual({ players, setPlayers, setAdCount, adCount }) {
             onPress={() => {
               setOption("");
               setTransition(false);
-            }}>
-            {option
-              ? transition && (
-                  <Animated.Text
-                    entering={FadeIn.duration(800)}
-                    exiting={FadeOut.duration(800)}
-                    tw="text-4xl"
-                    style={{ color: pageTheme.text, fontFamily: "header" }}>
-                    {option}
-                  </Animated.Text>
-                )
-              : transition && (
-                  <Animated.Text
-                    entering={FadeIn.duration(800)}
-                    exiting={FadeOut.duration(800)}
-                    tw="text-4xl"
-                    style={{ color: pageTheme.text, fontFamily: "header" }}>
-                    Select a Set
-                  </Animated.Text>
-                )}
+            }}
+            disabled={!option}>
+            {option ? (
+              <Animated.Text
+                entering={FadeIn.duration(800)}
+                exiting={FadeOut.duration(800)}
+                tw="text-4xl"
+                style={{ color: pageTheme.text, fontFamily: "header" }}>
+                {option}
+              </Animated.Text>
+            ) : (
+              <Animated.Text
+                entering={FadeIn.duration(800)}
+                exiting={FadeOut.duration(800)}
+                tw="text-4xl"
+                style={{ color: pageTheme.text, fontFamily: "header" }}>
+                Select a Set
+              </Animated.Text>
+            )}
           </TouchableOpacity>
           <Animated.View
             tw={"h-5/6 rounded-lg items-center p-2 justify-center"}
